@@ -13,7 +13,7 @@
 <title>Linux IPv6 HOWTO (pt_BR)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory> 
-<revision> <revnumber>0.66wip</revnumber> <date>2010-04-20</date> <authorinitials>PB</authorinitials></revision>
+<revision> <revnumber>0.66wip</revnumber> <date>2017-01-14</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.65</revnumber> <date>2009-12-13</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.64</revnumber> <date>2009-06-11</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.60</revnumber> <date>2007-05-31</date> <authorinitials>PB</authorinitials></revision>
@@ -26,13 +26,13 @@
 <title><!-- anchor id="general-copright" -->Copyright, licença e outros</title>
 <sect2>
 <title>Copyright</title>
-<para>Escrito e com Copyright (C) 2001-2011 por Peter Bieringer</para></sect2><sect2>
+<para>Escrito e com Copyright (C) 2001-2017 por Peter Bieringer</para></sect2><sect2>
 <title>Licença</title>
 <para>Este Linux IPv6 HOWTO está publicado sob a licença GNU GPL versão 2:
 </para>
 <para>Linux IPv6 HOWTO, um guia para configurar e usar o IPv6 em sistemas Linux. 
 </para>
-<para>Copyright © 2001-2011 Peter Bieringer 
+<para>Copyright © 2001-2017 Peter Bieringer 
 </para>
 <para>Este documento é um software livre; voce pode redistribui-lo e/ou modifica-lo sob os termos da licença GNU GPL, tal como está publicado pela Free Software Foundation; seja pela versão 2 da Licença, ou (em sua opinião) qualquer versão posterior.</para>
 <para>Este programa é distribuído na esperança de que seja útil, mas SEM QUALQUER GARANTIA; nem mesmo qualquer garantia de COMERCIALIZAÇÃO ou ADEQUAÇÃO PARA UM PROPÓSITO PARTICULAR. Veja a GNU GPL para mais detalhes.</para>
@@ -69,7 +69,7 @@
 <para>2004-06-18: Tradução para o Grego em progresso</para>
 <para>2005-07-25: Tradução para o Turco disponível</para>
 <para>2007-03-28: Tradução para o Portugues-Brazil em progresso</para>
-<para>2008-07-30: Tradução para o Espanhol disponível (mas ainda em progresso)</para></sect3><sect3>
+<para>2008-07-30: Tradução para o Espanhol disponível (mas ainda em progresso) - (lost, URL no longer valid)</para></sect3><sect3>
 <title>História completa</title>
 <para>Veja <link linkend="revision-history">revision history</link> no final deste documento</para></sect3></sect2><sect2>
 <title>To-Do</title>
@@ -89,9 +89,9 @@
 <title>Frances</title>
 <para>Em 2003-04-09 foi iniciada a tradução da versão em Frances, por Michel Boucey &lt;mboucey at free dot fr&gt; e a primeira publicação foi em 2003-05-09. Ela está originalmente disponível na Deep Space 6<ulink url="http://mirrors.deepspace6.net/Linux+IPv6-HOWTO-fr/">http://mirrors.deepspace6.net/Linux+IPv6-HOWTO-fr/</ulink> (e também em <ulink url="http://mirrors.bieringer.de/Linux+IPv6-HOWTO-fr/">http://mirrors.bieringer.de/Linux+IPv6-HOWTO-fr/</ulink>).</para></sect3><sect3>
 <title>Espanhol</title>
-<para>Um membro do projeto MontevideoLibre, localizado no Uruguai (América do Sul) iniciou a tradução para espanhol no formato wiki:<ulink url="http://www.montevideolibre.org./manuales:libros:ipv6">http://www.montevideolibre.org./manuales:libros:ipv6</ulink></para></sect3><sect3>
+<para>Um membro do projeto MontevideoLibre, localizado no Uruguai (América do Sul) iniciou a tradução para espanhol no formato wiki: (lost, URL no longer valid)</para></sect3><sect3>
 <title>Italiano</title>
-<para>Em 2003-10-16 a tradução para uma versão em Italiano foi iniciada Michele Ferritto &lt;m dot ferritto at virgilio dot it&gt; para o<ulink url="http://ildp.pluto.linux.it/">ILDP</ulink> (Italian Linux Documentation Project) e a sua primeira publicação foi em 2004-03-12. Ela está originalmente disponível no ILDP em <ulink url="http://it.tldp.org/HOWTO/Linux+IPv6-HOWTO/">http://it.tldp.org/HOWTO/Linux+IPv6-HOWTO/</ulink>.</para></sect3><sect3>
+<para>Em 2003-10-16 a tradução para uma versão em Italiano foi iniciada Michele Ferritto &lt;m dot ferritto at virgilio dot it&gt; para o<ulink url="http://ildp.pluto.linux.it/">ILDP</ulink> (Italian Linux Documentation Project) e a sua primeira publicação foi em 2004-03-12. Ela está originalmente disponível no ILDP em <ulink url="http://www.pluto.it/ildp/howto/ipv6.html">http://www.pluto.it/ildp/howto/ipv6.html</ulink>.</para></sect3><sect3>
 <title>Japones</title>
 <para>Em 2003-05-14 Shino Taketani &lt;shino_1305 at hotmail dot com&gt; me enviou uma nota dizendo que planejava traduzir o HOWTO para o japones.</para></sect3><sect3>
 <title>Grego</title>
@@ -103,9 +103,9 @@
 <title>Técnico</title>
 <sect2 id='general-original-source' >
 <title><!-- anchor id="general-original-source" -->Fonte original deste HOWTO</title>
-<para>Este HOWTO foi escrito usando LyX versão 1.6.1 em um sistema Linux Fedora 10 com o template SGML/XML (DocBook). Ele está disponível em <ulink url="https://github.com/tLDP/LDP/tree/master/LDP/users/Peter-Bieringer/">github / tLDP / LDP / users / Peter-Bieringer</ulink> para contribuições.</para><sect3>
+<para>Este HOWTO foi escrito usando LyX versão 2.2.2 em um sistema Linux Fedora 25 com o template SGML/XML (DocBook). Ele está disponível em <ulink url="https://github.com/tLDP/Linux-IPv6/">github / tLDP / Linux-IPv6</ulink> para contribuições.</para><sect3>
 <title>Divisor de linha de código</title>
-<para>Eu utilizei um utilitário divisor de linha de código (Code line wrapping - "lyxcodelinewrapper.pl") feito por mim mesmo, e ele está disponível para seu próprio uso em<ulink url="http://cvs.tldp.org/go.to/LDP/LDP/users/Peter-Bieringer/">TLDP-CVS / users / Peter-Bieringer</ulink></para></sect3><sect3>
+<para>Eu utilizei um utilitário divisor de linha de código (Code line wrapping - "lyxcodelinewrapper.pl") feito por mim mesmo, e ele está disponível para seu próprio uso em<ulink url="https://github.com/tLDP/Linux-IPv6/">github / tLDP / Linux-IPv6</ulink></para></sect3><sect3>
 <title>Geração de SGML</title>
 <para>O SGML/XML é gerado usando a função de exportar do LyX</para></sect3></sect2><sect2>
 <title>Referencias On-line para a versão em HTML deste HOWTO</title>

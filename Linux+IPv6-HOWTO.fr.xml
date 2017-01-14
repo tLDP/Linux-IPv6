@@ -1,15 +1,12 @@
-<!DOCTYPE book  PUBLIC "-//OASIS//DTD DocBook V4.2//EN"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
  [ 
 <!entity header system "header.sgml">
-<!ENTITY % output.print.png "IGNORE">
-<!ENTITY % output.print.pdf "IGNORE">
-<!ENTITY % output.print.eps "IGNORE">
-<!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.2.2
+<!-- XML file was created by LyX 2.2.2
   See http://www.lyx.org/ for more information -->
-<book lang="fr">
+<book lang="fr_FR">
 <bookinfo>
 <title>Linux IPv6 HOWTO (fr)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
@@ -2765,12 +2762,12 @@ Press Version: <ulink url="http://www.he.net/releases/release6.html">Hurricane E
 <para>Des listes de listes de diffusion sont disponibles:</para><itemizedlist>
 <listitem><para><ulink url="http://www.deepspace6.net/sections/lists.html">DeepSpace6 / liste de listes de diffusion</ulink></para></listitem></itemizedlist><para>Les listes de diffusion essentielles sont listées dans le tableau suivant:</para>
 <informaltable><tgroup cols="6" colsep="1" rowsep="1">
-<colspec colname="col0" align="center">
-<colspec colname="col1" align="center">
-<colspec colname="col2" align="center">
-<colspec colname="col3" align="center">
-<colspec colname="col4" align="center">
-<colspec colname="col5" align="center">
+<colspec colname="col0" align="center"/>
+<colspec colname="col1" align="center"/>
+<colspec colname="col2" align="center"/>
+<colspec colname="col3" align="center"/>
+<colspec colname="col4" align="center"/>
+<colspec colname="col5" align="center"/>
 <tbody>
 <row>
 <entry align="center" valign="top">Centre d'intérêt</entry>

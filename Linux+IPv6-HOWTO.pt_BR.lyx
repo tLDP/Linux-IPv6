@@ -113,7 +113,7 @@ status open
 
 \begin_layout Plain Layout
 
-<revision> <revnumber>0.66wip</revnumber> <date>2010-04-20</date> <authorinitials
+<revision> <revnumber>0.66wip</revnumber> <date>2017-01-14</date> <authorinitials
 >PB</authorinitials></revision>
 \end_layout
 
@@ -266,7 +266,7 @@ Copyright
 \end_layout
 
 \begin_layout Standard
-Escrito e com Copyright (C) 2001-2011 por Peter Bieringer
+Escrito e com Copyright (C) 2001-2017 por Peter Bieringer
 \end_layout
 
 \begin_layout Subsection
@@ -299,7 +299,7 @@ Copyright
 \lang ngerman
 ©
 \lang english
- 2001-2011 Peter Bieringer 
+ 2001-2017 Peter Bieringer 
 \begin_inset Newline newline
 \end_inset
 
@@ -514,6 +514,7 @@ reference "general-translations"
 
 \begin_layout Standard
 2008-07-30: Tradução para o Espanhol disponível (mas ainda em progresso)
+ - (lost, URL no longer valid)
 \end_layout
 
 \begin_layout Subsubsection
@@ -677,15 +678,8 @@ Espanhol
 
 \begin_layout Standard
 Um membro do projeto MontevideoLibre, localizado no Uruguai (América do
- Sul) iniciou a tradução para espanhol no formato wiki:
-\begin_inset CommandInset href
-LatexCommand href
-name "http://www.montevideolibre.org./manuales:libros:ipv6"
-target "http://www.montevideolibre.org./manuales:libros:ipv6"
-
-\end_inset
-
-
+ Sul) iniciou a tradução para espanhol no formato wiki: (lost, URL no longer
+ valid)
 \end_layout
 
 \begin_layout Subsubsection
@@ -707,8 +701,8 @@ target "http://ildp.pluto.linux.it/"
  Ela está originalmente disponível no ILDP em 
 \begin_inset CommandInset href
 LatexCommand href
-name "http://it.tldp.org/HOWTO/Linux+IPv6-HOWTO/"
-target "http://it.tldp.org/HOWTO/Linux+IPv6-HOWTO/"
+name "http://www.pluto.it/ildp/howto/ipv6.html"
+target "http://www.pluto.it/ildp/howto/ipv6.html"
 
 \end_inset
 
@@ -777,13 +771,13 @@ Fonte original deste HOWTO
 \end_layout
 
 \begin_layout Standard
-Este HOWTO foi escrito usando LyX versão 1.6.1 em um sistema Linux Fedora
- 10 com o template SGML/XML (DocBook).
+Este HOWTO foi escrito usando LyX versão 2.2.2 em um sistema Linux Fedora
+ 25 com o template SGML/XML (DocBook).
  Ele está disponível em 
 \begin_inset CommandInset href
 LatexCommand href
-name "github / tLDP / LDP / users / Peter-Bieringer"
-target "https://github.com/tLDP/LDP/tree/master/LDP/users/Peter-Bieringer/"
+name "github / tLDP / Linux-IPv6"
+target "https://github.com/tLDP/Linux-IPv6/"
 
 \end_inset
 
@@ -800,8 +794,8 @@ Eu utilizei um utilitário divisor de linha de código (Code line wrapping
  seu próprio uso em
 \begin_inset CommandInset href
 LatexCommand href
-name "TLDP-CVS / users / Peter-Bieringer"
-target "http://cvs.tldp.org/go.to/LDP/LDP/users/Peter-Bieringer/"
+name "github / tLDP / Linux-IPv6"
+target "https://github.com/tLDP/Linux-IPv6/"
 
 \end_inset
 

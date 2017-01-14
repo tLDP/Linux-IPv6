@@ -1,15 +1,12 @@
-<!DOCTYPE book  PUBLIC "-//OASIS//DTD DocBook V4.2//EN"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
  [ 
 <!entity header system "header.sgml">
-<!ENTITY % output.print.png "IGNORE">
-<!ENTITY % output.print.pdf "IGNORE">
-<!ENTITY % output.print.eps "IGNORE">
-<!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.2.2
+<!-- XML file was created by LyX 2.2.2
   See http://www.lyx.org/ for more information -->
-<book lang="de">
+<book lang="de_DE">
 <bookinfo>
 <title>Linux IPv6 HOWTO (de)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
@@ -736,7 +733,7 @@ inet6 addr: fec0:0:0:f101::1/64 Scope:Site
 <![CDATA[# /sbin/ifconfig eth0 inet6 del 2001:0db8:0:f101::1/64
 ]]></screen></sect2></sect1><sect1>
 <title>Automatische IPv6-Adress-Konfiguration</title>
-<para>Im Fall, dass ein Endgerät ein Router Advertisement empfängt und der Host kein Router ist, konfiguriert sich das Endgerät selbst eine IPv6-Adresse entsprechend dem Präfix aus dem Router Advertisement (siehe auch <xref linkend="hints-daemons-radvd">).</para></sect1><sect1>
+<para>Im Fall, dass ein Endgerät ein Router Advertisement empfängt und der Host kein Router ist, konfiguriert sich das Endgerät selbst eine IPv6-Adresse entsprechend dem Präfix aus dem Router Advertisement (siehe auch <xref linkend="hints-daemons-radvd" />).</para></sect1><sect1>
 <title>Aktivieren der Privacy Extension</title>
 <para>Privacy Extension wie beschrieben in <ulink url="http://www.faqs.org/rfcs/rfc4941.html">RFC 4941 / Privacy Extensions for Stateless Address Autoconfiguration in IPv6</ulink> (Nachfolger von <ulink url="http://www.faqs.org/rfcs/rfc3041.html">RFC 3041</ulink>) ersetzt die statische Interface ID (mostly basierend auf der weltweit eindeutigen MAC-Adresse), die bei der Autokonfiguration benutzt wird, durch eine pseudo-random und von Zeit zu Zeit neu generierte.</para><sect2>
 <title>Aktivieren von Privacy Extension mit Hilfe von sysctl</title>
@@ -1775,7 +1772,7 @@ In Version 8.x wurde das Konfigurations-Setup bei SuSE komplett abgeändert.</pa
 <title><!-- anchor id="firewalling-netfilter6." -->Firewall-Funktionalität mit netfilter6 </title>
 <para>Von Haus aus unterstützt wird die IPv6-Firewall-Funktionalität im Kernel erst ab Version 2.4+. In älteren 2.2+ Versionen können sie nur mit Protocol 41 das generelle Tunnel von IPv6-in-IPv4-Paketen filtern.</para>
 <para>Achtung: Es gibt keine Garantie, dass die beschriebenen Regeln und Beispiele ihr System auch wirklich schützen können!</para>
-<para>Beobachten Sie nach der Installation ihr Regelset, siehe Abschnitt <xref linkend="IPv6-security-auditing">.</para>
+<para>Beobachten Sie nach der Installation ihr Regelset, siehe Abschnitt <xref linkend="IPv6-security-auditing" />.</para>
 <para>Kernels ab Version 2.6.20 (Februar 2007) unterstützen den IPv6-Verbindungsstatus (connection tracking) vollständig.</para>
 <para>Kernels ab Version 3.9.0 (April 2013) unterstützen NAT für IPv6 in Verbindung mit ip6tables &gt;= 1.4.18</para>
 <para>Kernels ab Version 3.13 (April 2014) unterstützen ein neues Framework namens: nftables</para><sect2>
@@ -3304,12 +3301,12 @@ Presseaussendung: <ulink url="http://www.he.net/releases/release6.html">Hurrican
 <listitem><para><ulink url="http://www.deepspace6.net/sections/lists.html">DeepSpace6 / Mailling Lists</ulink></para></listitem></itemizedlist><para>Die größten Mailinglisten sind in folgender Tabelle zusammengefasst:</para>
 <para>.</para>
 <informaltable><tgroup cols="6" colsep="1" rowsep="1">
-<colspec colname="col0" align="center">
-<colspec colname="col1" align="center">
-<colspec colname="col2" align="center">
-<colspec colname="col3" align="center">
-<colspec colname="col4" align="center">
-<colspec colname="col5" align="center">
+<colspec colname="col0" align="center"/>
+<colspec colname="col1" align="center"/>
+<colspec colname="col2" align="center"/>
+<colspec colname="col3" align="center"/>
+<colspec colname="col4" align="center"/>
+<colspec colname="col5" align="center"/>
 <tbody>
 <row>
 <entry align="center" valign="top">Schwerpunkt</entry>

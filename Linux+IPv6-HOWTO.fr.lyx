@@ -120,7 +120,7 @@ status open
 
 \begin_layout Plain Layout
 
-<revision><revnumber>0.49.fr.3wip</revnumber><date>2015-08-18</date> <authorinitial
+<revision><revnumber>0.49.fr.3wip</revnumber><date>2017-01-14</date> <authorinitial
 s>PB</authorinitials> </revision>
 \end_layout
 
@@ -272,7 +272,7 @@ Copyright
 \end_layout
 
 \begin_layout Standard
-Rédaction et Copyright (C) 2001-2007 Peter Bieringer, traduction francophone
+Rédaction et Copyright (C) 2001-2017 Peter Bieringer, traduction francophone
  et Copyright (C) 2003-2006 Michel Boucey
 \end_layout
 
@@ -315,7 +315,7 @@ L'HOWTO IPv6 Linux, un guide sur la façon de configurer et d'utiliser IPv6
 \end_layout
 
 \begin_layout Standard
-Copyright (C) 2001-2007 Peter Bieringer 
+Copyright (C) 2001-2017 Peter Bieringer 
 \begin_inset Newline newline
 \end_inset
 
@@ -509,7 +509,8 @@ reference "general-translations"
 \end_layout
 
 \begin_layout Standard
-15-08-2003: La traduction espagnole est en cours
+15-08-2003: La traduction espagnole est en cours - (lost, URL no longer
+ valid)
 \end_layout
 
 \begin_layout Standard
@@ -637,15 +638,15 @@ Le document original de cet HOWTO
 \end_layout
 
 \begin_layout Standard
-Cet HOWTO est actuellement rédigé avec la version 1.2.0 de LyX sur un système
- Linux Red Hat 7.3 avec un patron SGML (livre DocBook).
+Cet HOWTO est actuellement rédigé avec la version 2.2.2 de LyX sur un système
+ Fedora Linux 25 avec un patron SGML (livre DocBook).
  Il est disponible en vue des contributions à l'URL 
 \lang english
 
 \begin_inset CommandInset href
 LatexCommand href
-name "github / tLDP / LDP / users / Peter-Bieringer"
-target "https://github.com/tLDP/LDP/tree/master/LDP/users/Peter-Bieringer/"
+name "github / tLDP / Linux-IPv6"
+target "https://github.com/tLDP/Linux-IPv6/"
 
 \end_inset
 
@@ -677,13 +678,17 @@ lyxcodelinewrapper.pl
 \end_inset
 
 , que vous pouvez obtenir par CVS pour votre propre compte: 
+\lang english
+
 \begin_inset CommandInset href
 LatexCommand href
-name "TLDP-CVS / users / Peter-Bieringer"
-target "http://cvs.tldp.org/go.to/LDP/LDP/users/Peter-Bieringer/"
+name "github / tLDP / Linux-IPv6"
+target "https://github.com/tLDP/Linux-IPv6/"
 
 \end_inset
 
+
+\lang french
  (
 \emph on
 NdT
@@ -708,13 +713,17 @@ Le code SGML est généré en utilisant la fonction d'exportation de LyX.
 \begin_layout Standard
 Des solutions ont été apportées afin de créer un code SGML plus propre (voir
  aussi ici pour le programme Perl, 
+\lang english
+
 \begin_inset CommandInset href
 LatexCommand href
-name "TLDP-CVS / users / Peter-Bieringer"
-target "http://cvs.tldp.org/go.to/LDP/LDP/users/Peter-Bieringer/"
+name "github / tLDP / Linux-IPv6"
+target "https://github.com/tLDP/Linux-IPv6/"
 
 \end_inset
 
+
+\lang french
 ):
 \end_layout
 
