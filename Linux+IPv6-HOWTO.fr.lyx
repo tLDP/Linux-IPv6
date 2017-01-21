@@ -7,7 +7,6 @@
 \textclass docbook-book
 \begin_preamble
 
-<!entity header system "header.sgml">
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false

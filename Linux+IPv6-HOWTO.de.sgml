@@ -1,6 +1,5 @@
 <!DOCTYPE book  PUBLIC "-//OASIS//DTD DocBook V4.2//EN"
  [ 
-<!entity header system "header.sgml">
 <!ENTITY % output.print.png "IGNORE">
 <!ENTITY % output.print.pdf "IGNORE">
 <!ENTITY % output.print.eps "IGNORE">
