@@ -10,7 +10,7 @@
 <title>Linux IPv6 HOWTO (de)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory> 
-<revision> <revnumber>0.67.de.1wip</revnumber> <date>2017-01-14</date> <authorinitials>PB</authorinitials></revision>
+<revision> <revnumber>0.67.de.1wip</revnumber> <date>2017-02-18</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.66.de.1</revnumber> <date>2014-05-15</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.65.de.1</revnumber> <date>2009-12-13</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.64.de.1</revnumber> <date>2009-06-11</date> <authorinitials>PB</authorinitials></revision>
@@ -501,6 +501,8 @@ PING ff02::1(ff02::1) from fe80:::2ab:cdff:feef:0123 eth0: 56 data bytes
 <![CDATA[# ping6 ff02::1%eth0
 ]]></screen><para>Bei IPv6 kann dieses Verhalten zurzeit, im Gegensatz zu IPv4, wo Antworten auf ein Ping auf die Broadcast Adresse unterdrückt werden können, nicht unterbunden werden. Ausnahme hierbei ist der Einsatz der lokalen IPv6 Firewall-Funktionalität.</para></sect3></sect2><sect2 id='program-traceroute6.' >
 <title><!-- anchor id="program-traceroute6." -->IPv6 traceroute6</title>
+<sect3>
+<title>IPv6 traceroute6 (alt)</title>
 <para>Dieses Programm ist normal im Paket iputils enthalten. Es ist ein Programm vergleichbar dem IPv4 traceroute. Unten sehen Sie ein Beispiel:</para><screen>
 <![CDATA[# traceroute6 www.6bone.net 
 traceroute to 6bone.net (3ffe:b00:c18:1::10) from 2001:0db8:0000:f101::2, 30
@@ -512,7 +514,19 @@ traceroute to 6bone.net (3ffe:b00:c18:1::10) from 2001:0db8:0000:f101::2, 30
  5 3ffe:2e00:e:c::3 (3ffe:2e00:e:c::3) 507.784 ms 505.549 ms 508.928 ms 
  6 www.6bone.net (3ffe:b00:c18:1::10) 1265.85 ms * 1304.74 ms
 ]]></screen><para>Anmerkung: Im Unterschied zu modernen IPv4 traceroute Versionen, welche den Einsatz von ICMPv4-echo-request Paketen wie auch UDP Paketen (default) ermöglichen, können mit IPv6-traceroute nur UDP Pakete versendet werden. Wie Sie vielleicht bereits wissen, werden von Firewalls bzw. von ACLs auf Routern ICMP echo-request Pakete mehr akzeptiert als UDP Pakete. </para>
-<para>Falls ein Interface spezifiziert werden muß, kann dies durch -i &lt;device&gt; oder in der Form &lt;address&gt;%&lt;device&gt; erfolgen.</para></sect2><sect2 id='program-tracepath6.' >
+<para>Falls ein Interface spezifiziert werden muß, kann dies durch -i &lt;device&gt; oder in der Form &lt;address&gt;%&lt;device&gt; erfolgen.</para></sect3><sect3>
+<title>traceroute ab Version 2)</title>
+<para>traceroute bekam IPv6-Unterstützung ab Version 2 mit den gleichen Möglichkeiten wie für IPv4. Hier ein Beispiel für einen ICMP (ping) traceroute (benötigt root-Rechte) </para><screen>
+<![CDATA[# traceroute -I -n ipv6.google.com
+traceroute to ipv6.google.com (2a00:1450:4016:804::200e), 30 hops max, 80 byte packets
+ 1  2001:a61:***  0.410 ms  0.510 ms  0.655 ms
+ 2  2001:a60::89:705:1  26.428 ms  34.361 ms  41.777 ms
+ 3  2001:a60::89:0:1:2  19.131 ms  19.163 ms  19.248 ms
+ 4  2001:a60:0:106::2  20.464 ms  20.467 ms  20.457 ms
+ 5  2001:4860::9:4000:cf86  21.836 ms *  21.852 ms
+ 6  2001:4860:0:1::19  21.690 ms  21.585 ms  22.919 ms
+ 7  2a00:1450:4016:804::200e  23.176 ms  19.310 ms  20.065 ms
+]]></screen><para>Falls ein Interface spezifiziert werden muß, kann dies durch -i &lt;device&gt; erfolgen.</para></sect3></sect2><sect2 id='program-tracepath6.' >
 <title><!-- anchor id="program-tracepath6." -->IPv6 tracepath6</title>
 <para>Dieses Programm ist normalerweise im Paket <emphasis>iputils</emphasis> enthalten. Das Programm ist dem traceroute6 ähnlich, es gibt den Weg zu einem angegebenen Ziel wieder und misst hierbei den MTU-Wert. Unten sehen Sie ein Beispiel:</para><screen>
 <![CDATA[# tracepath6 www.6bone.net 
@@ -987,7 +1001,8 @@ ff00::/8   ::               UA  256  0  0  sit0
 ]]></screen></sect2></sect1><sect1 id='conf-ipv6-in-ipv4-point-to-point-tunnels' >
 <title><!-- anchor id="conf-ipv6-in-ipv4-point-to-point-tunnels" -->Einrichtung eines Punkt-zu-Punkt Tunnels</title>
 <para>Es gibt drei Methoden ein Punkt-zu-Punkt Tunnel hinzuzufügen bzw. zu entfernen.</para>
-<para>Eine gute Informationsquelle zum Thema Tunnel-Einrichtung mit &ldquo;ip&rdquo; ist folgender Artikel: <ulink url="http://www.deepspace6.net/docs/iproute2tunnel-en.html">Configuring tunnels with iproute2 (article)</ulink> (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/docs/iproute2tunnel-en.html">Spiegel</ulink>).</para><sect2>
+<para>Eine gute Informationsquelle zum Thema Tunnel-Einrichtung mit &ldquo;ip&rdquo; ist folgender Artikel: <ulink url="http://www.deepspace6.net/docs/iproute2tunnel-en.html">Configuring tunnels with iproute2 (article)</ulink> (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/docs/iproute2tunnel-en.html">Spiegel</ulink>).</para>
+<para>Achtung: solche Tunnels werden durch das Kernel-Modul &ldquo;sit&rdquo; unterstützt (potentiell nicht verfügbar auf Virtuozzo-Plattformen)</para><sect2>
 <title>Einen Punkt-zu-Punkt Tunnel hinzufügen</title>
 <sect3>
 <title>Verwendung von "ip"</title>

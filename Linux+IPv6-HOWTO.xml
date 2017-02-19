@@ -1,14 +1,11 @@
-<!DOCTYPE book  PUBLIC "-//OASIS//DTD DocBook V4.2//EN"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"
  [ 
-<!ENTITY % output.print.png "IGNORE">
-<!ENTITY % output.print.pdf "IGNORE">
-<!ENTITY % output.print.eps "IGNORE">
-<!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.2.2
+<!-- XML file was created by LyX 2.2.2
   See http://www.lyx.org/ for more information -->
-<book lang="en">
+<book lang="en_US">
 <bookinfo>
 <title>Linux IPv6 HOWTO (en)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
@@ -756,7 +753,7 @@ inet6 addr: fec0:0:0:f101::1/64 Scope:Site
 <![CDATA[# /sbin/ifconfig eth0 inet6 del 2001:0db8:0:f101::1/64
 ]]></screen></sect2></sect1><sect1>
 <title>Automatic IPv6 Address Configuration</title>
-<para>In case, a Router Advertisement is received by a client, and IPv6 autoconfiguration is enabled (default on non-router), the client configures itself an IPv6 address according to the prefix contained in the advertisement (see also <xref linkend="hints-daemons-radvd">).</para></sect1><sect1>
+<para>In case, a Router Advertisement is received by a client, and IPv6 autoconfiguration is enabled (default on non-router), the client configures itself an IPv6 address according to the prefix contained in the advertisement (see also <xref linkend="hints-daemons-radvd" />).</para></sect1><sect1>
 <title>Enable Privacy Extension</title>
 <para>Privacy Extension as described in <ulink url="http://www.faqs.org/rfcs/rfc4941.html">RFC 4941 / Privacy Extensions for Stateless Address Autoconfiguration in IPv6</ulink> (obsoleted <ulink url="http://www.faqs.org/rfcs/rfc3041.html">RFC 3041</ulink>) is replacing the static interface ID (mostly based on word-wide unique MAC address) used during autoconfiguration by a pseudo-random one and generating from time to time a new one deprecating the old one.</para><sect2>
 <title>Enable Privacy Extension using sysctl</title>
@@ -1799,7 +1796,7 @@ In versions 8.x they completly change their configuration setup. </para><sect2>
 <title><!-- anchor id="firewalling-netfilter6." -->Firewalling using netfilter6 </title>
 <para>Native IPv6 firewalling is only supported in kernel versions 2.4+. In older 2.2- you can only filter IPv6-in-IPv4 by protocol 41. </para>
 <para>Attention: no warranty that described rules or examples can really protect your system! </para>
-<para>Audit your ruleset after installation, see <xref linkend="IPv6-security-auditing"> for more.</para>
+<para>Audit your ruleset after installation, see <xref linkend="IPv6-security-auditing" /> for more.</para>
 <para>Since kernel version 2.6.20 (February 2007) IPv6 connection tracking is fully working (and does not break IPv4 NAT anymore like versions before)</para>
 <para>Since kernel version 3.9.0 (April 2013) NAT for IPv6 is supported with ip6tables &gt;= 1.4.18</para>
 <para>Since kernel version 3.13 (April 2014) new framework introduced named: nftables</para><sect2>
@@ -5182,12 +5179,12 @@ Press Release: <ulink url="http://www.he.net/releases/release6.html">Hurricane E
 <para>Lists of maillists are available at:</para><itemizedlist>
 <listitem><para><ulink url="http://www.deepspace6.net/sections/lists.html">DeepSpace6 / Mailling Lists</ulink></para></listitem></itemizedlist><para>Major Mailinglists are listed in following table:</para>
 <informaltable><tgroup cols="6" colsep="1" rowsep="1">
-<colspec colname="col0" align="center">
-<colspec colname="col1" align="center">
-<colspec colname="col2" align="center">
-<colspec colname="col3" align="center">
-<colspec colname="col4" align="center">
-<colspec colname="col5" align="center">
+<colspec colname="col0" align="center"/>
+<colspec colname="col1" align="center"/>
+<colspec colname="col2" align="center"/>
+<colspec colname="col3" align="center"/>
+<colspec colname="col4" align="center"/>
+<colspec colname="col5" align="center"/>
 <tbody>
 <row>
 <entry align="center" valign="top">Focus</entry>
