@@ -191,7 +191,7 @@ create_html_multipage() {
         style_multipage=$(cat <<END
 ><style> /* separate page version */
   body {
-    width:640px;
+    width:800px;
     margin-left:5%;
     font:normal normal 10pt/1.6 sans-serif;
   }
@@ -230,7 +230,7 @@ create_html_singlepage() {
         style_singlepage=$(cat <<END
 ><style> /* unified version */
   body {
-    width:640px;
+    width:800px;
     margin-left:5%;
     font:normal normal 10pt/1.6 sans-serif;
   }
