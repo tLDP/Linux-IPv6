@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# (P) & (C) 2003-2016 by Dr. Peter Bieringer <pb@bieringer.de>
+# (P) & (C) 2003-2017 by Dr. Peter Bieringer <pb@bieringer.de>
 #
 # Generator script
 #
-# $Id$
+# $Id: $
 #
 # Requires: htmldoc recode docbook-utils-pdf
 #
@@ -22,6 +22,7 @@
 #              support also ldp.dsl stored in same directory as the script
 # 20110509/PB: add charset meta header on each html page to force UTF-8
 # 20161215/PB: remove VGWort URL appender
+# 20170303/PB: add stylesheet hacks based on input from Mike Wright
 
 loglevel=6
 
@@ -187,7 +188,23 @@ create_html_multipage() {
 	local retval=$?
 	[ $loglevel -ge 7 ] && set +x
 
-	perl -pi -e 's#><META#><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"\n><META#o' *.html
+        style_multipage=$(cat <<END
+><style>h1.sect1 { width:640px; padding-left:0%; font:normal bold   18pt/1.6 sans-serif;}</style
+><style>h2.sect2 { width:640px; padding-left:0%; font:normal bold   14pt/1.6 sans-serif;}</style
+><style>h3.sect3 { width:640px; padding-left:0%; font:normal bold   12pt/1.6 sans-serif;}</style
+><style>h4.sect4 { width:640px; padding-left:0%; font:normal bold   12pt/1.6 sans-serif;}</style
+><style>.sect1   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
+><style>.sect2   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
+><style>.sect3   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
+><style>.sect4   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
+><style>.chapter { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
+><style>.book    { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
+><style>td       { width:640px; padding-left:0%; font:normal normal  8pt/1.6 sans-serif;}</style
+END
+)
+	style_multipage=$(echo "$style_multipage" | sed ':a;N;$!ba;s/\n/\\n/g')
+	perl -pi -e "s#^(><HEAD)\$#\1\n$style_multipage#g" *.html
+
 	local r=$?
 	if [ $r -ne 0 ]; then
 		retval=$?
@@ -204,7 +221,8 @@ create_html_singlepage() {
 	local retval=$?
 	[ $loglevel -ge 7 ] && set +x
 
-	perl -pi -e 's#><META#><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"\n><META#o' $file_html
+	# add inline stylesheet
+	perl -pi -e 's#^(><HEAD)$#$1\n><style>.book{ width:640px; padding-left:5%; font:normal normal 10pt/1.6 sans-serif;}</style#' $file_html
 	local r=$?
 	if [ $r -ne 0 ]; then
 		retval=$?
