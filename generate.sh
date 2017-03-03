@@ -189,17 +189,23 @@ create_html_multipage() {
 	[ $loglevel -ge 7 ] && set +x
 
         style_multipage=$(cat <<END
-><style>h1.sect1 { width:640px; padding-left:0%; font:normal bold   18pt/1.6 sans-serif;}</style
-><style>h2.sect2 { width:640px; padding-left:0%; font:normal bold   14pt/1.6 sans-serif;}</style
-><style>h3.sect3 { width:640px; padding-left:0%; font:normal bold   12pt/1.6 sans-serif;}</style
-><style>h4.sect4 { width:640px; padding-left:0%; font:normal bold   12pt/1.6 sans-serif;}</style
-><style>.sect1   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
-><style>.sect2   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
-><style>.sect3   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
-><style>.sect4   { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
-><style>.chapter { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
-><style>.book    { width:640px; padding-left:0%; font:normal normal 10pt/1.6 sans-serif;}</style
-><style>td       { width:640px; padding-left:0%; font:normal normal  8pt/1.6 sans-serif;}</style
+><style> /* separate page version */
+  body {
+    width:640px;
+    margin-left:5%;
+    font:normal normal 10pt/1.6 sans-serif;
+  }
+  h1,h2,h3,h4 { font-weight:bold; }
+  h1   { font-size:16pt; }
+  h2   { font-size:14pt; }
+  h3   { font-size:12pt; }
+  h4   { font-size:12pt; }
+  td   { font-size: 8pt; } /* general table data */
+  .navheader th,
+  .navfooter th { font-size:14pt; }
+  .navheader td,
+  .navfooter td { font-size:12pt; }
+</style
 END
 )
 	style_multipage=$(echo "$style_multipage" | sed ':a;N;$!ba;s/\n/\\n/g')
@@ -221,8 +227,21 @@ create_html_singlepage() {
 	local retval=$?
 	[ $loglevel -ge 7 ] && set +x
 
+        style_singlepage=$(cat <<END
+><style> /* unified version */
+  body {
+    width:640px;
+    margin-left:5%;
+    font:normal normal 10pt/1.6 sans-serif;
+  }
+</style
+END
+)
+	style_singlepage=$(echo "$style_singlepage" | sed ':a;N;$!ba;s/\n/\\n/g')
+
 	# add inline stylesheet
-	perl -pi -e 's#^(><HEAD)$#$1\n><style>.book{ width:640px; padding-left:5%; font:normal normal 10pt/1.6 sans-serif;}</style#' $file_html
+	perl -pi -e "s#^(><HEAD)\$#\1\n$style_singlepage#g" $file_html
+	#perl -pi -e 's#^(><HEAD)$#$1\n><style>.book{ width:640px; padding-left:5%; font:normal normal 10pt/1.6 sans-serif;}</style#' $file_html
 	local r=$?
 	if [ $r -ne 0 ]; then
 		retval=$?
