@@ -1,0 +1,16 @@
+This is the "in-progress" document source repository for the
+
+	LINUX+IPv6-HOWTO
+
+also containing translations which isn't (fully) supported by tLDP.
+
+
+Generated versions are published:
+- http://mirrors.deepspace6.net/howtos/
+- http://mirrors.bieringer.de/
+
+Released versions are also published on tLDP:
+- http://www.tldp.org/HOWTO/Linux+IPv6-HOWTO/
+
+
+2017-03-04 Peter Bieringer <pb (at) bieringer.de>
