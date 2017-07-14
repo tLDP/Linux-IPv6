@@ -113,7 +113,7 @@ status open
 
 \begin_layout Plain Layout
 
-<revision> <revnumber>0.67wip</revnumber> <date>2017-02-18</date> <authorinitials
+<revision> <revnumber>0.67wip</revnumber> <date>2017-07-14</date> <authorinitials
 >PB</authorinitials></revision>
 \end_layout
 
@@ -28150,18 +28150,6 @@ name "information-ipv6andsecurity"
 \end_inset
 
 IPv6 Security
-\end_layout
-
-\begin_layout Itemize
-Internet Security Systems: Security Center, 
-\begin_inset CommandInset href
-LatexCommand href
-name "X-Force Database Search"
-target "http://www.iss.net/security_center/search.php?type=3&type=3&pattern=IPv6"
-
-\end_inset
-
- (21.12.2002 - 6 topics found relating to IPv6)
 \end_layout
 
 \begin_layout Itemize

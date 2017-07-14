@@ -1,9 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <HTML
 ><HEAD
+><style> /* unified version */
+  body {
+    width:800px;
+    margin-left:5%;
+    font:normal normal 10pt/1.6 sans-serif;
+  }
+</style
 ><TITLE
 >Linux IPv6 HOWTO (en)</TITLE
-><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
 ><META
 NAME="GENERATOR"
 CONTENT="Modular DocBook HTML Stylesheet Version 1.79"></HEAD
@@ -62,7 +68,7 @@ ALIGN="LEFT"
 >Revision 0.67wip</TD
 ><TD
 ALIGN="LEFT"
->2017-02-18</TD
+>2017-07-14</TD
 ><TD
 ALIGN="LEFT"
 >Revised by: PB</TD
@@ -446,12 +452,12 @@ HREF="#CHAPTER-NEIGHBOR-DISCOVERY"
 ><DT
 >8.1. <A
 HREF="#AEN1238"
->Displaying neighbors using “ip”</A
+>Displaying neighbors using ”ip”</A
 ></DT
 ><DT
 >8.2. <A
 HREF="#AEN1244"
->Manipulating neighbors table using “ip”</A
+>Manipulating neighbors table using ”ip”</A
 ></DT
 ></DL
 ></DD
@@ -576,7 +582,7 @@ HREF="#CHAPTER-SUPPORT-PERSISTENT-CONFIGURATION"
 ><DT
 >15.1. <A
 HREF="#AEN2134"
->Red Hat Linux and “clones”</A
+>Red Hat Linux and ”clones”</A
 ></DT
 ><DT
 >15.2. <A
@@ -730,7 +736,7 @@ HREF="#AEN2765"
 ><DT
 >21.2. <A
 HREF="#AEN2769"
->Linux QoS using “tc”</A
+>Linux QoS using ”tc”</A
 ></DT
 ></DL
 ></DD
@@ -744,7 +750,7 @@ HREF="#CHAPTER-HINTS-DAEMONS"
 ><DT
 >22.1. <A
 HREF="#HINTS-DAEMONS-BIND"
->Berkeley Internet Name Domain (BIND) daemon “named”</A
+>Berkeley Internet Name Domain (BIND) daemon ”named”</A
 ></DT
 ><DT
 >22.2. <A
@@ -846,7 +852,7 @@ HREF="#INFORMATION-ONLINEINFORMATION"
 ></DT
 ><DT
 >25.4. <A
-HREF="#AEN3948"
+HREF="#AEN3945"
 >IPv6 Infrastructure</A
 ></DT
 ><DT
@@ -873,7 +879,7 @@ HREF="#INFORMATION-ONLINEDISCOVERY"
 ></DD
 ><DT
 >26. <A
-HREF="#AEN4325"
+HREF="#AEN4322"
 >Revision history / Credits / The End</A
 ></DT
 ><DD
@@ -890,7 +896,7 @@ HREF="#CREDITS"
 ></DT
 ><DT
 >26.3. <A
-HREF="#AEN4866"
+HREF="#AEN4863"
 >The End</A
 ></DT
 ></DL
@@ -970,7 +976,7 @@ NAME="AEN58"
 ><UL
 ><LI
 ><P
->1993: I got in contact with the Internet using console based e-mail and news client (e.g. look for “e91abier” on <A
+>1993: I got in contact with the Internet using console based e-mail and news client (e.g. look for ”e91abier” on <A
 HREF="http://groups.google.com/"
 TARGET="_top"
 >groups.google.com</A
@@ -1026,7 +1032,7 @@ NAME="GENERAL-CATEGORY"
 >1.2. Category</A
 ></H2
 ><P
->This HOWTO should be listed in category “<EM
+>This HOWTO should be listed in category ”<EM
 >Networking</EM
 >/<EM
 >Protocols</EM
@@ -1347,7 +1353,7 @@ NAME="AEN173"
 >1.5.1.1. Code line wrapping</A
 ></H4
 ><P
->Code line wrapping is done using selfmade utility “lyxcodelinewrapper.pl”, you can get it from GitHub for your own usage: <A
+>Code line wrapping is done using selfmade utility ”lyxcodelinewrapper.pl”, you can get it from GitHub for your own usage: <A
 HREF="https://github.com/tLDP/Linux-IPv6/"
 TARGET="_top"
 >github / tLDP / Linux-IPv6</A
@@ -1436,7 +1442,7 @@ TARGET="_top"
 >Linux IPv6 FAQ/HOWTO</A
 > (please use it only for historical issues). Latest version was 3.2.1 released July, 14 1997.</P
 ><P
->Please help: if someone knows the date of birth of this HOWTO, please send me an e-mail (information will be needed in “history”).</P
+>Please help: if someone knows the date of birth of this HOWTO, please send me an e-mail (information will be needed in ”history”).</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -1563,7 +1569,7 @@ CLASS="VARIABLELIST"
 >Interface</DT
 ><DD
 ><P
->Mostly same as “device”, see also NIC</P
+>Mostly same as ”device”, see also NIC</P
 ></DD
 ><DT
 >IP Header</DT
@@ -1587,7 +1593,7 @@ CLASS="VARIABLELIST"
 >Octet</DT
 ><DD
 ><P
->A collection of 8 real bits, today also similar to “byte”.</P
+>A collection of 8 real bits, today also similar to ”byte”.</P
 ></DD
 ><DT
 >Port</DT
@@ -1737,7 +1743,7 @@ NAME="AEN350"
 >1.7.2.1. Long code line wrapping signal char</A
 ></H4
 ><P
->The special character “¬” is used for signaling that this code line is wrapped for better viewing in PDF and PS files.</P
+>The special character ”¬” is used for signaling that this code line is wrapped for better viewing in PDF and PS files.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -2103,7 +2109,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Such numbers are not really addresses that can be memorized. Also the IPv6 address schema is bitwise oriented (just like IPv4, but that's not often recognized). Therefore a better notation of such big numbers is hexadecimal. In hexadecimal, 4 bits (also known as “nibble”) are represented by a digit or character from 0-9 and a-f (10-15). This format reduces the length of the IPv6 address to 32 characters.</P
+>Such numbers are not really addresses that can be memorized. Also the IPv6 address schema is bitwise oriented (just like IPv4, but that's not often recognized). Therefore a better notation of such big numbers is hexadecimal. In hexadecimal, 4 bits (also known as ”nibble”) are represented by a digit or character from 0-9 and a-f (10-15). This format reduces the length of the IPv6 address to 32 characters.</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -2298,7 +2304,7 @@ NAME="AEN466"
 ><P
 >So designers have chosen 128 bits, 4 times more in length than in IPv4 today.</P
 ><P
->The usable size is smaller than it may appear however. This is because in the currently defined address schema, 64 bits are used for interface identifiers. The other 64 bits are used for routing. Assuming the current strict levels of aggregation (/48, /32, ...), it is still possible to “run out” of space, but hopefully not in the near future.</P
+>The usable size is smaller than it may appear however. This is because in the currently defined address schema, 64 bits are used for interface identifiers. The other 64 bits are used for routing. Assuming the current strict levels of aggregation (/48, /32, ...), it is still possible to ”run out” of space, but hopefully not in the near future.</P
 ><P
 >See also for more information <A
 HREF="http://www.faqs.org/rfcs/rfc1715.html"
@@ -2355,7 +2361,7 @@ NAME="AEN485"
 >3.1.1. Localhost address</A
 ></H3
 ><P
->This is a special address for the loopback interface, similiar to IPv4 with its “127.0.0.1”. With IPv6, the localhost address is:</P
+>This is a special address for the loopback interface, similiar to IPv4 with its ”127.0.0.1”. With IPv6, the localhost address is:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -2400,7 +2406,7 @@ NAME="AEN492"
 >3.1.2. Unspecified address</A
 ></H3
 ><P
->This is a special address like “any” or “0.0.0.0” in IPv4 . For IPv6 it's:</P
+>This is a special address like ”any” or ”0.0.0.0” in IPv4 . For IPv6 it's:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -2602,9 +2608,9 @@ NAME="AEN525"
 ></UL
 ><P
 >They begin with ( where <EM
->“x”</EM
+>”x”</EM
 > is any hex character, normally <EM
->“0</EM
+>”0</EM
 >”)</P
 ><TABLE
 BORDER="1"
@@ -2665,9 +2671,9 @@ fefx:&#13;</PRE
 ></TABLE
 ><P
 >(where<EM
-> “x”</EM
+> ”x”</EM
 > is any hex character, normally <EM
->“0</EM
+>”0</EM
 >”) </P
 ><P
 >This address type is now deprecated <A
@@ -2767,7 +2773,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Note: the prefix “aggregatable” is thrown away in current drafts.
+>Note: the prefix ”aggregatable” is thrown away in current drafts.
 There are some further subtypes defined, see below:</P
 ><DIV
 CLASS="SECT3"
@@ -3292,7 +3298,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->For manual suffixes like “::1” shown in the above example, it's required that the 7th most significant bit is set to 0 (the universal/local bit of the automatically generated identifier). Also some other (otherwise unchosen ) bit combinations are reserved for anycast addresses, too.</P
+>For manual suffixes like ”::1” shown in the above example, it's required that the 7th most significant bit is set to 0 (the universal/local bit of the automatically generated identifier). Also some other (otherwise unchosen ) bit combinations are reserved for anycast addresses, too.</P
 ></DIV
 ></DIV
 ><DIV
@@ -3304,7 +3310,7 @@ NAME="AEN678"
 >3.4. Prefix lengths for routing</A
 ></H2
 ><P
->In the early design phase it was planned to use a fully hierarchical routing approach to reduce the size of the routing tables maximally. The reasons behind this approach were the number of current IPv4 routing entries in core routers (&#62; 400 thousand in 2013), reducing the need of memory in hardware routers (ASIC “Application Specified Integrated Circuit” driven) to hold the routing table and increase speed (fewer entries hopefully result in faster lookups).</P
+>In the early design phase it was planned to use a fully hierarchical routing approach to reduce the size of the routing tables maximally. The reasons behind this approach were the number of current IPv4 routing entries in core routers (&#62; 400 thousand in 2013), reducing the need of memory in hardware routers (ASIC ”Application Specified Integrated Circuit” driven) to hold the routing table and increase speed (fewer entries hopefully result in faster lookups).</P
 ><P
 >Todays view is that routing will be mostly hierarchically designed for networks with only one service provider. With more than one ISP connections, this is not possible, and subject to an issue named multi-homing (infos on multi-homing: <A
 HREF="http://www.ietf.org/ids.by.wg/multi6.html"
@@ -3707,7 +3713,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN767"
->4.1.4.1. Currently known never “IPv6 capable links”</A
+>4.1.4.1. Currently known never ”IPv6 capable links”</A
 ></H4
 ><P
 ></P
@@ -3738,7 +3744,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN778"
->4.1.4.2. Currently known “not supported IPv6 capable links”</A
+>4.1.4.2. Currently known ”not supported IPv6 capable links”</A
 ></H4
 ><P
 ></P
@@ -4335,7 +4341,7 @@ NAME="AEN891"
 ><P
 >To run the following shown tests, it's required that your system is IPv6 enabled, and some examples show addresses which only can be reached if a connection to the global IPv6 network is available.</P
 ><P
->Note: if using names instead of dedicated IPv4/IPv6 addresses which resolves to IPv4 and IPv6 addresses, some command line clients support explicitly use of specified protocol. Usually such clients have option “-4” for IPv4 and “-6” for IPv6.</P
+>Note: if using names instead of dedicated IPv4/IPv6 addresses which resolves to IPv4 and IPv6 addresses, some command line clients support explicitly use of specified protocol. Usually such clients have option ”-4” for IPv4 and ”-6” for IPv6.</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -4423,7 +4429,7 @@ Connection closed by foreign host.</PRE
 ></TR
 ></TABLE
 ><P
->If the telnet client don't understand the IPv6 address and says something like “cannot resolve hostname”, then it's not IPv6-enabled.</P
+>If the telnet client don't understand the IPv6 address and says something like ”cannot resolve hostname”, then it's not IPv6-enabled.</P
 ></DIV
 ><DIV
 CLASS="SECT2"
@@ -4473,7 +4479,7 @@ user@::1's password: ******
 ></TR
 ></TABLE
 ><P
->If your ssh client doesn't understand the option “-6” then it's not IPv6-enabled, like most ssh version 1 packages.</P
+>If your ssh client doesn't understand the option ”-6” then it's not IPv6-enabled, like most ssh version 1 packages.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -4648,7 +4654,7 @@ NAME="AEN968"
 ><P
 >Kernel doesn't know, which physical or virtual link you want to use to send such ICMPv6 packets. Therefore it displays this error message.</P
 ><P
->Solution: Specify interface like: “ping6 -I eth0 fe80::2e0:18ff:fe90:9205”, see also <A
+>Solution: Specify interface like: ”ping6 -I eth0 fe80::2e0:18ff:fe90:9205”, see also <A
 HREF="#PROGRAM-PING6."
 >program ping6 usage</A
 >.</P
@@ -4662,16 +4668,16 @@ NAME="AEN975"
 >4.7.1.2. Q: Cannot ping6 or traceroute6 as normal user</A
 ></H4
 ><P
->Error message: “<EM
+>Error message: ”<EM
 >icmp socket: Operation not permitted</EM
 >”</P
 ><P
->These utilities create special ICMPv6 packets and send them out. This is done by using raw sockets in the kernel. But raw sockets can only be used by the “root” user. Therefore normal users get such error message.</P
+>These utilities create special ICMPv6 packets and send them out. This is done by using raw sockets in the kernel. But raw sockets can only be used by the ”root” user. Therefore normal users get such error message.</P
 ><P
->Solution: If it's really needed that all users should be able to use these utilities, you can add the “suid” bit using ”chmod u+s /path/to/program”, see also <A
+>Solution: If it's really needed that all users should be able to use these utilities, you can add the ”suid” bit using ”chmod u+s /path/to/program”, see also <A
 HREF="#PROGRAM-PING6."
 >program ping6 usage</A
->. If not all users should be able to, you can change the group of the program to e.g. “wheel”, add these power users to this group and remove the execution bit for other users using “chmod o-rwx /path/to/program”. Or configure “sudo” to enable your security policy. </P
+>. If not all users should be able to, you can change the group of the program to e.g. ”wheel”, add these power users to this group and remove the execution bit for other users using ”chmod o-rwx /path/to/program”. Or configure ”sudo” to enable your security policy. </P
 ></DIV
 ></DIV
 ></DIV
@@ -4796,7 +4802,7 @@ NAME="AEN1016"
 >5.1.2.6. Ether-tap device</A
 ></H4
 ><P
->Ether-tap devices are IPv6-enabled and also stateless configured. For use, the module “ethertap” has to be loaded before.</P
+>Ether-tap devices are IPv6-enabled and also stateless configured. For use, the module ”ethertap” has to be loaded before.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -4955,7 +4961,7 @@ NAME="AEN1046"
 ><P
 >First you should check, whether and which IPv6 addresses are already configured (perhaps auto-magically during stateless auto-configuration).</P
 ><P
->Just note that addresses beginning with “fec0” are deprecated, but shown here for completness!</P
+>Just note that addresses beginning with ”fec0” are deprecated, but shown here for completness!</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -5317,7 +5323,7 @@ NAME="AEN1106"
 ></A
 >Temporary activation</H3
 ><P
->Enable privacy extension for e.g. interface “eth0” and prefer the generated address:</P
+>Enable privacy extension for e.g. interface ”eth0” and prefer the generated address:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -5568,7 +5574,7 @@ NAME="AEN1136"
 HREF="http://ip.bieringer.de/"
 TARGET="_top"
 >http://ip.bieringer.de/</A
->, in case EUI64_SCOPE shows “iid-privacy”, then everything is working fine.</P
+>, in case EUI64_SCOPE shows ”iid-privacy”, then everything is working fine.</P
 ></DIV
 ></DIV
 ></DIV
@@ -5582,7 +5588,7 @@ NAME="CHAPTER-CONFIGURATION-ROUTE"
 ><P
 >If you want to leave your link and want to send packets in the world wide IPv6-Internet, you need routing. If there is already an IPv6 enabled router on your link, it's possible enough to add IPv6 routes.</P
 ><P
->Just note that addresses beginning with “fec0” are deprecated, but shown here for completness!</P
+>Just note that addresses beginning with ”fec0” are deprecated, but shown here for completness!</P
 ><DIV
 CLASS="SECT1"
 ><HR><H2
@@ -5945,7 +5951,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Metric “1” is used here to be compatible with the metric used by route, because the default metric on using “ip” is “1024”.</P
+>Metric ”1” is used here to be compatible with the metric used by route, because the default metric on using ”ip” is ”1024”.</P
 ></DIV
 ><DIV
 CLASS="SECT2"
@@ -6117,7 +6123,7 @@ NAME="AEN1227"
 >7.6.1.1. Clients (not routing any packet!)</A
 ></H4
 ><P
->Client can setup a default route like prefix “::/0”, they also learn such route on autoconfiguration e.g. using radvd on the link like following example shows:</P
+>Client can setup a default route like prefix ”::/0”, they also learn such route on autoconfiguration e.g. using radvd on the link like following example shows:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -6145,7 +6151,7 @@ NAME="AEN1231"
 >7.6.1.2. Routers in case of packet forwarding</A
 ></H4
 ><P
->Older Linux kernel (at least &#60;= 2.4.17) don't support default routes. You can set them up, but the route lookup fails when a packet should be forwarded (normal intention of a router). If you're still using such older kernel, “default routing” can be setup using the currently used global address prefix “2000::/3”.</P
+>Older Linux kernel (at least &#60;= 2.4.17) don't support default routes. You can set them up, but the route lookup fails when a packet should be forwarded (normal intention of a router). If you're still using such older kernel, ”default routing” can be setup using the currently used global address prefix ”2000::/3”.</P
 ><P
 >Note: take care about default routing without address filtering on edge routers. Otherwise unwanted multicast or site-local traffic can leave the edge.</P
 ></DIV
@@ -6160,14 +6166,14 @@ NAME="CHAPTER-NEIGHBOR-DISCOVERY"
 ></A
 >Chapter 8. Neighbor Discovery</H1
 ><P
->Neighbor discovery was the IPv6 successor for the ARP (Address Resolution Protocol) in IPv4. You can retrieve information about the current neighbors, in addition you can set and delete entries. The kernel keeps tracking of successful neighbor detection (like ARP in IPv4). You can dig into the learnt table using “ip”.</P
+>Neighbor discovery was the IPv6 successor for the ARP (Address Resolution Protocol) in IPv4. You can retrieve information about the current neighbors, in addition you can set and delete entries. The kernel keeps tracking of successful neighbor detection (like ARP in IPv4). You can dig into the learnt table using ”ip”.</P
 ><DIV
 CLASS="SECT1"
 ><HR><H2
 CLASS="SECT1"
 ><A
 NAME="AEN1238"
->8.1. Displaying neighbors using “ip”</A
+>8.1. Displaying neighbors using ”ip”</A
 ></H2
 ><P
 >With following command you can display the learnt or configured IPv6 neighbors</P
@@ -6211,7 +6217,7 @@ CLASS="SECT1"
 CLASS="SECT1"
 ><A
 NAME="AEN1244"
->8.2. Manipulating neighbors table using “ip”</A
+>8.2. Manipulating neighbors table using ”ip”</A
 ></H2
 ><DIV
 CLASS="SECT2"
@@ -6308,7 +6314,7 @@ NAME="AEN1258"
 >8.2.3. More advanced settings</A
 ></H3
 ><P
->The tool “ip” is less documentated, but very strong. See online “help” for more:</P
+>The tool ”ip” is less documentated, but very strong. See online ”help” for more:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -6492,7 +6498,7 @@ CLASS="SCREEN"
 ><P
 >FP and TLA together (16 bits) have the value 0x2002. V4ADDR is the node's global unique IPv4 address (in hexadecimal notation). SLA is the subnet identifier (65536 local subnets possible) and are usable to represent your local network structure.</P
 ><P
->For gateways, such prefix is generated by normally using SLA “0000” and suffix “::1” (not a must, can be an arbitrary one with local-scope) and assigned to the 6to4 tunnel interface. Note that Microsoft Windows uses V4ADDR also for suffix.</P
+>For gateways, such prefix is generated by normally using SLA ”0000” and suffix ”::1” (not a must, can be an arbitrary one with local-scope) and assigned to the 6to4 tunnel interface. Note that Microsoft Windows uses V4ADDR also for suffix.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -6503,7 +6509,7 @@ NAME="AEN1311"
 >9.1.3.2. 6to4 upstream tunneling</A
 ></H4
 ><P
->The node has to know to which foreign tunnel endpoint its in IPv4 packed IPv6 packets should be send to. In “early” days of 6to4 tunneling, dedicated upstream accepting routers were defined. See  <A
+>The node has to know to which foreign tunnel endpoint its in IPv4 packed IPv6 packets should be send to. In ”early” days of 6to4 tunneling, dedicated upstream accepting routers were defined. See  <A
 HREF="http://www.kfu.com/~nsayer/6to4/"
 TARGET="_top"
 >NSayer's 6to4 information</A
@@ -6744,7 +6750,7 @@ NAME="CONF-IPV6-IN-IPV4-POINT-TO-POINT-TUNNELS"
 ><P
 >There are 3 possibilities to add or remove point-to-point tunnels.</P
 ><P
->A good additional information about tunnel setup using “ip” is <A
+>A good additional information about tunnel setup using ”ip” is <A
 HREF="http://www.deepspace6.net/docs/iproute2tunnel-en.html"
 TARGET="_top"
 >Configuring tunnels with iproute2 (article)</A
@@ -6754,7 +6760,7 @@ TARGET="_top"
 >Mirror</A
 >).</P
 ><P
->Note: support of such kind of tunnels is provided by kernel module “sit” (potentially not possible on Virtuozzo platforms)</P
+>Note: support of such kind of tunnels is provided by kernel module ”sit” (potentially not possible on Virtuozzo platforms)</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -7108,7 +7114,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Local 6to4 gateways should (but it's not a must, you can choose an arbitrary suffix with local-scope, if you feel better) always assigned the suffix “::1”, therefore your local 6to4 address will be</P
+>Local 6to4 gateways should (but it's not a must, you can choose an arbitrary suffix with local-scope, if you feel better) always assigned the suffix ”::1”, therefore your local 6to4 address will be</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -7223,7 +7229,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->It was reported that some versions of “ip” (e.g. SuSE Linux 9.0) don't support IPv4-compatible IPv6 addresses for gateways, in this case the related IPv6 address has to be used:</P
+>It was reported that some versions of ”ip” (e.g. SuSE Linux 9.0) don't support IPv4-compatible IPv6 addresses for gateways, in this case the related IPv6 address has to be used:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -7246,7 +7252,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN1445"
->9.4.1.2. Using "ifconfig" and "route" and generic tunnel device “sit0” (deprecated)</A
+>9.4.1.2. Using "ifconfig" and "route" and generic tunnel device ”sit0” (deprecated)</A
 ></H4
 ><P
 >This is now deprecated because using the generic tunnel device sit0 doesn't let specify filtering per device.</P
@@ -7377,7 +7383,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN1464"
->9.4.2.2. Using “ifconfig” and “route” and generic tunnel device “sit0” (deprecated)</A
+>9.4.2.2. Using ”ifconfig” and ”route” and generic tunnel device ”sit0” (deprecated)</A
 ></H4
 ><P
 >Remove (default) route through the 6to4 tunnel interface</P
@@ -7617,7 +7623,7 @@ NAME="CHAPTER-KERNEL-SETTINGS"
 ></A
 >Chapter 11. Kernel settings in /proc-filesystem</H1
 ><P
->Note: the source of this section is mostly the file “ip-sysctl.txt” which is included in current kernel sources in directory “Documentation/networking”. Credits to Pekka Savola for maintaining the IPv6-related part in this file. Also some text is more or less copied &#38; pasted into this document.</P
+>Note: the source of this section is mostly the file ”ip-sysctl.txt” which is included in current kernel sources in directory ”Documentation/networking”. Credits to Pekka Savola for maintaining the IPv6-related part in this file. Also some text is more or less copied &#38; pasted into this document.</P
 ><DIV
 CLASS="SECT1"
 ><HR><H2
@@ -7632,10 +7638,10 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN1501"
->11.1.1. Using “cat” and “echo”</A
+>11.1.1. Using ”cat” and ”echo”</A
 ></H3
 ><P
->Using “cat” and “echo” is the simplest way to access the /proc filesystem, but some requirements are needed for that</P
+>Using ”cat” and ”echo” is the simplest way to access the /proc filesystem, but some requirements are needed for that</P
 ><P
 ></P
 ><UL
@@ -7702,7 +7708,7 @@ NAME="AEN1516"
 >11.1.1.1. Retrieving a value</A
 ></H4
 ><P
->The value of an entry can be retrieved using “cat”:</P
+>The value of an entry can be retrieved using ”cat”:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -7729,7 +7735,7 @@ NAME="AEN1520"
 >11.1.1.2. Setting a value</A
 ></H4
 ><P
->A new value can be set (if entry is writable) using “echo”:</P
+>A new value can be set (if entry is writable) using ”echo”:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -7753,12 +7759,12 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN1524"
->11.1.2. Using “sysctl”</A
+>11.1.2. Using ”sysctl”</A
 ></H3
 ><P
->Using the “sysctl” program to access the kernel switches is a modern method today. You can use it also, if the /proc-filesystem isn't mounted. But you have only access to /proc/sys/*!</P
+>Using the ”sysctl” program to access the kernel switches is a modern method today. You can use it also, if the /proc-filesystem isn't mounted. But you have only access to /proc/sys/*!</P
 ><P
->The program “sysctl” is included in package “procps” (on Red Hat Linux systems).</P
+>The program ”sysctl” is included in package ”procps” (on Red Hat Linux systems).</P
 ><P
 ></P
 ><UL
@@ -7836,7 +7842,7 @@ net.ipv6.conf.all.forwarding = 1</PRE
 ></TR
 ></TABLE
 ><P
->Note: Don't use spaces around the “=” on setting values. Also on multiple values per line, quote them like e.g.</P
+>Note: Don't use spaces around the ”=” on setting values. Also on multiple values per line, quote them like e.g.</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -7863,11 +7869,11 @@ NAME="AEN1542"
 >11.1.2.3. Additionals</A
 ></H4
 ><P
->Note: There are sysctl versions in the wild which displaying “/” instead of the “.”</P
+>Note: There are sysctl versions in the wild which displaying ”/” instead of the ”.”</P
 ><P
 >For more details take a look into sysctl's manpage.</P
 ><P
->Hint: for digging fast into the settings, use the option “-a” (display all entries) in conjunction with “grep”.</P
+>Hint: for digging fast into the settings, use the option ”-a” (display all entries) in conjunction with ”grep”.</P
 ></DIV
 ></DIV
 ><DIV
@@ -7885,7 +7891,7 @@ NAME="AEN1547"
 ><UL
 ><LI
 ><P
->BOOLEAN: simple a “0” (false) or a “1” (true)</P
+>BOOLEAN: simple a ”0” (false) or a ”1” (true)</P
 ></LI
 ><LI
 ><P
@@ -7928,7 +7934,7 @@ NAME="AEN1562"
 ><P
 >Change all the interface-specific settings.</P
 ><P
->Exception: “conf/all/forwarding” has a different meaning here</P
+>Exception: ”conf/all/forwarding” has a different meaning here</P
 ><DIV
 CLASS="SECT3"
 ><HR><H4
@@ -8953,7 +8959,7 @@ NAME="PROC-NET"
 >11.4. IPv6-related entries in /proc/net/</A
 ></H2
 ><P
->In /proc/net there are several read-only entries available. You cannot retrieve information using “sysctl” here, so use e.g. “cat”.</P
+>In /proc/net there are several read-only entries available. You cannot retrieve information using ”sysctl” here, so use e.g. ”cat”.</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -8971,7 +8977,7 @@ NAME="AEN1912"
 ></LI
 ></UL
 ><P
->Here all configured IPv6 addresses are shown in a special format. The example displays for loopback interface only. The meaning is shown below (see “net/ipv6/addrconf.c” for more).</P
+>Here all configured IPv6 addresses are shown in a special format. The example displays for loopback interface only. The meaning is shown below (see ”net/ipv6/addrconf.c” for more).</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -9001,7 +9007,7 @@ TYPE="1"
 ></LI
 ><LI
 ><P
->Netlink device number (interface index) in hexadecimal (see “ip addr” , too)</P
+>Netlink device number (interface index) in hexadecimal (see ”ip addr” , too)</P
 ></LI
 ><LI
 ><P
@@ -9009,11 +9015,11 @@ TYPE="1"
 ></LI
 ><LI
 ><P
->Scope value (see kernel source “ include/net/ipv6.h” and “net/ipv6/addrconf.c” for more)</P
+>Scope value (see kernel source ” include/net/ipv6.h” and ”net/ipv6/addrconf.c” for more)</P
 ></LI
 ><LI
 ><P
->Interface flags (see “include/linux/rtnetlink.h” and “net/ipv6/addrconf.c” for more)</P
+>Interface flags (see ”include/linux/rtnetlink.h” and ”net/ipv6/addrconf.c” for more)</P
 ></LI
 ><LI
 ><P
@@ -9038,7 +9044,7 @@ NAME="AEN1932"
 ></LI
 ></UL
 ><P
->Here all configured IPv6 routes are shown in a special format. The example displays for loopback interface only. The meaning is shown below (see “net/ipv6/route.c” for more).</P
+>Here all configured IPv6 routes are shown in a special format. The example displays for loopback interface only. The meaning is shown below (see ”net/ipv6/route.c” for more).</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -9319,7 +9325,7 @@ TARGET="_top"
 >RFC 3484 / Default Address Selection for Internet Protocol version 6</A
 > a sorting should be applied, which can be optionally configured.</P
 ><P
->The “magic” is controlled by a file named /etc/gai.conf (it can be that it is empty or missing by default). Default is usually somewhere stored in documentation, see “man gai.conf” or e.g. /usr/share/doc/glibc-common/gai.conf.</P
+>The ”magic” is controlled by a file named /etc/gai.conf (it can be that it is empty or missing by default). Default is usually somewhere stored in documentation, see ”man gai.conf” or e.g. /usr/share/doc/glibc-common/gai.conf.</P
 ><P
 >For controlling sort order by configuration following are needed for testing:</P
 ><P
@@ -9471,15 +9477,15 @@ CLASS="BRIDGEHEAD"
 ><A
 NAME="AEN2044"
 ></A
->Source Address Selection with “ip addrlabel”</H3
+>Source Address Selection with ”ip addrlabel”</H3
 ><P
->With extension of internal “ip addrlabel” a source address can be bound to a destination address (e.g. selected via mechanisms above). Binding means here: “same label” (label is a number).</P
+>With extension of internal ”ip addrlabel” a source address can be bound to a destination address (e.g. selected via mechanisms above). Binding means here: ”same label” (label is a number).</P
 ><P
 ></P
 ><UL
 ><LI
 ><P
->Default of “ip addrlabel” (here on CentOS 6):</P
+>Default of ”ip addrlabel” (here on CentOS 6):</P
 ></LI
 ></UL
 ><TABLE
@@ -9562,7 +9568,7 @@ Trying 2a01:238:423d:8800:85b3:9e6b:3019:8909...    (dst-B)
 ><UL
 ><LI
 ><P
->Related tcpdump with filter “tcp and dst port 23” shows only the use of the upper local source IPv6 address</P
+>Related tcpdump with filter ”tcp and dst port 23” shows only the use of the upper local source IPv6 address</P
 ></LI
 ></UL
 ><TABLE
@@ -9586,7 +9592,7 @@ IP6 2001:6f8:12d8:2:5054:ff:fefb:6582.45754 &#62; 2a01:238:423d:8800:85b3:9e6b:3
 ><UL
 ><LI
 ><P
->Binding now source and destination with “ip addrlabel”</P
+>Binding now source and destination with ”ip addrlabel”</P
 ></LI
 ></UL
 ><TABLE
@@ -9612,7 +9618,7 @@ CLASS="SCREEN"
 ><UL
 ><LI
 ><P
->Resulting “ip addrlabel”</P
+>Resulting ”ip addrlabel”</P
 ></LI
 ></UL
 ><TABLE
@@ -9674,7 +9680,7 @@ Trying 2a01:238:423d:8800:85b3:9e6b:3019:8909...    (dst-B)
 ><UL
 ><LI
 ><P
->Related tcpdump with filter “tcp and dst port 23” shows now the use of both local source IPv6 addresses according to the configured pairs A and B</P
+>Related tcpdump with filter ”tcp and dst port 23” shows now the use of both local source IPv6 addresses according to the configured pairs A and B</P
 ></LI
 ></UL
 ><TABLE
@@ -9694,7 +9700,7 @@ IP6 2001:6f8:900:8cbc:5054:ff:fefb:6582.39632 &#62; 2a01:238:423d:8800:85b3:9e6b
 ></TR
 ></TABLE
 ><P
->Setup of persistent “ip addrtable” is probably currently not supported by Linux distributions, so extension of network init scripts or rc.local must be used for that. A script which uses information from /etc/gai.conf and configure “ip addrtable” accordingly can be found here: <A
+>Setup of persistent ”ip addrtable” is probably currently not supported by Linux distributions, so extension of network init scripts or rc.local must be used for that. A script which uses information from /etc/gai.conf and configure ”ip addrtable” accordingly can be found here: <A
 HREF="http://into6.com.au/?p=288"
 TARGET="_top"
 >/etc/gai.conf - it ain't what you think it is</A
@@ -9721,10 +9727,10 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN2084"
->14.1.1. Using “netstat” for server socket binding check</A
+>14.1.1. Using ”netstat” for server socket binding check</A
 ></H3
 ><P
->It's always interesting which server sockets are currently active on a node. Using “netstat” is a short way to get such information: </P
+>It's always interesting which server sockets are currently active on a node. Using ”netstat” is a short way to get such information: </P
 ><P
 >Used options: -nlptu</P
 ><P
@@ -9862,7 +9868,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Router with link-local address “fe80::212:34ff:fe12:3450” send an advertisement to the all-node-on-link multicast address “ff02::1” containing two prefixes “2002:0102:0304:1::/64” (lifetime 30 s) and “2001:0db8:0:1::/64” (lifetime 2592000 s) including its own layer 2 MAC address “0:12:34:12:34:50”.</P
+>Router with link-local address ”fe80::212:34ff:fe12:3450” send an advertisement to the all-node-on-link multicast address ”ff02::1” containing two prefixes ”2002:0102:0304:1::/64” (lifetime 30 s) and ”2001:0db8:0:1::/64” (lifetime 2592000 s) including its own layer 2 MAC address ”0:12:34:12:34:50”.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -9889,7 +9895,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Node with link-local address “fe80::212:34ff:fe12:3456” and layer 2 MAC address “0:12:34:12:34:56” is looking for a router on-link, therefore sending this solicitation to the all-router-on-link multicast address “ff02::2”.</P
+>Node with link-local address ”fe80::212:34ff:fe12:3456” and layer 2 MAC address ”0:12:34:12:34:56” is looking for a router on-link, therefore sending this solicitation to the all-router-on-link multicast address ”ff02::2”.</P
 ></DIV
 ></DIV
 ><DIV
@@ -9909,13 +9915,13 @@ NAME="AEN2106"
 >14.2.2.1. Neighbor discovery solicitation for duplicate address detection</A
 ></H4
 ><P
->Following packets are sent by a node with layer 2 MAC address “0:12:34:12:34:56” during autoconfiguration to check whether a potential address is already used by another node on the link sending this to the solicited-node link-local multicast address.</P
+>Following packets are sent by a node with layer 2 MAC address ”0:12:34:12:34:56” during autoconfiguration to check whether a potential address is already used by another node on the link sending this to the solicited-node link-local multicast address.</P
 ><P
 ></P
 ><UL
 ><LI
 ><P
->Node wants to configure its link-local address “fe80::212:34ff:fe12:3456”, checks for duplicate now</P
+>Node wants to configure its link-local address ”fe80::212:34ff:fe12:3456”, checks for duplicate now</P
 ></LI
 ></UL
 ><TABLE
@@ -9939,7 +9945,7 @@ CLASS="SCREEN"
 ><UL
 ><LI
 ><P
->Node wants to configure its global address “2002:0102:0304:1:212:34ff:fe12:3456” (after receiving advertisement shown above), checks for duplicate now</P
+>Node wants to configure its global address ”2002:0102:0304:1:212:34ff:fe12:3456” (after receiving advertisement shown above), checks for duplicate now</P
 ></LI
 ></UL
 ><TABLE
@@ -9964,7 +9970,7 @@ CLASS="SCREEN"
 ><UL
 ><LI
 ><P
->Node wants to configure its global address “2001:0db8:0:1:212:34ff:fe12:3456” (after receiving advertisement shown above), checks for duplicate now</P
+>Node wants to configure its global address ”2001:0db8:0:1:212:34ff:fe12:3456” (after receiving advertisement shown above), checks for duplicate now</P
 ></LI
 ></UL
 ><TABLE
@@ -9998,7 +10004,7 @@ NAME="AEN2121"
 ><UL
 ><LI
 ><P
->Node wants to send packages to “2001:0db8:0:1::10” but has no layer 2 MAC address to send packet, so send solicitation now</P
+>Node wants to send packages to ”2001:0db8:0:1::10” but has no layer 2 MAC address to send packet, so send solicitation now</P
 ></LI
 ></UL
 ><TABLE
@@ -10023,7 +10029,7 @@ CLASS="SCREEN"
 ><UL
 ><LI
 ><P
->Node looks for “fe80::10” now</P
+>Node looks for ”fe80::10” now</P
 ></LI
 ></UL
 ><TABLE
@@ -10061,7 +10067,7 @@ CLASS="SECT1"
 CLASS="SECT1"
 ><A
 NAME="AEN2134"
->15.1. Red Hat Linux and “clones”</A
+>15.1. Red Hat Linux and ”clones”</A
 ></H2
 ><P
 >Since starting writing the <A
@@ -10082,7 +10088,7 @@ TARGET="_top"
 ><P
 >Fortunately, in Red Hat Linux since 7.1 a snapshot of my IPv6 scripts is included, this was and is still further on assisted by Pekka Savola.</P
 ><P
->Mandrake since version 8.0 also includes an IPv6-enabled initscript package, but a minor bug still prevents usage (“ifconfig” misses “inet6” before “add”).</P
+>Mandrake since version 8.0 also includes an IPv6-enabled initscript package, but a minor bug still prevents usage (”ifconfig” misses ”inet6” before ”add”).</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -10193,7 +10199,7 @@ alias net-pf-10 off</PRE
 ><UL
 ><LI
 ><P
->If result is “off”, then enable IPv6 networking by editing /etc/sysconfig/network, add following new line</P
+>If result is ”off”, then enable IPv6 networking by editing /etc/sysconfig/network, add following new line</P
 ></LI
 ></UL
 ><TABLE
@@ -12292,7 +12298,7 @@ NAME="AEN2561"
 >18.5. Firewalling using nftables</A
 ></H2
 ><P
->nftables adds in addition to protocol specific tables “ip” (IPv4) and “ip6” (IPv6) support for a IPv4/IPv6 aware table named “inet”. Using this table it's possible to add only one rule and match both protocols (in case of UDP and TCP).</P
+>nftables adds in addition to protocol specific tables ”ip” (IPv4) and ”ip6” (IPv6) support for a IPv4/IPv6 aware table named ”inet”. Using this table it's possible to add only one rule and match both protocols (in case of UDP and TCP).</P
 ><P
 >Take care if rules are contained in more than one table, because the tables are checked in sequence:</P
 ><TABLE
@@ -12312,7 +12318,7 @@ IPv6-Packet --&#62; table "ip6" --&#62; table "inet" --&#62; further checks</PRE
 ></TR
 ></TABLE
 ><P
->If table “ip6” accepts the packet, also table “inet” must accept the packet, otherwise it can be dropped by a later drop rule.</P
+>If table ”ip6” accepts the packet, also table ”inet” must accept the packet, otherwise it can be dropped by a later drop rule.</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -12411,7 +12417,7 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN2580"
->18.5.3. Simple filter policy with nftables using only table “inet”</A
+>18.5.3. Simple filter policy with nftables using only table ”inet”</A
 ></H3
 ><DIV
 CLASS="SECT3"
@@ -12580,7 +12586,7 @@ CLASS="SCREEN"
 ><P
 >BUT TAKE CARE, IT LOOKS LIKE THAT NO LOG LEVEL CAN BE SPEFICIED CURRENTLY IN nftables, resulting that events are logged with kern.emerg - POSSIBILITY OF FLODDING THE CONSOLE WITH LOG ENTRIES!</P
 ><P
->Fir initial test with logging it can be useful to disable kernel console logging in e.g. /etc/rsyslog.conf by putting a “#” in front of the related entry and restart logging daemon</P
+>Fir initial test with logging it can be useful to disable kernel console logging in e.g. /etc/rsyslog.conf by putting a ”#” in front of the related entry and restart logging daemon</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -12621,10 +12627,10 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN2607"
->18.5.4. Filter policy with nftables using tables “ip”, “ip6” and “inet”</A
+>18.5.4. Filter policy with nftables using tables ”ip”, ”ip6” and ”inet”</A
 ></H3
 ><P
->As written above, if rules should be stored in related tables, it must be assured that earlier accepts are not discarded in the further table. This can be done using “meta mark set xxxx” on every accept rule and generic rules which accepts packets with “mark xxxx”. A resulting filter set would look like the following:</P
+>As written above, if rules should be stored in related tables, it must be assured that earlier accepts are not discarded in the further table. This can be done using ”meta mark set xxxx” on every accept rule and generic rules which accepts packets with ”mark xxxx”. A resulting filter set would look like the following:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -12999,21 +13005,21 @@ NAME="AEN2691"
 >20.3. Automatic key exchange (IKE)</A
 ></H2
 ><P
->IPsec requires a key exchange of a secret. This is mostly done automatically by so called IKE daemons. They also handle the authentication of the peers, either by a common known secret (so called “pre-shared secret”) or by RSA keys (which can also be used from X.509 certificates).</P
+>IPsec requires a key exchange of a secret. This is mostly done automatically by so called IKE daemons. They also handle the authentication of the peers, either by a common known secret (so called ”pre-shared secret”) or by RSA keys (which can also be used from X.509 certificates).</P
 ><P
 >Currently, two different IKE daemons are available for Linux, which totally differ in configuration and usage.</P
 ><P
->I prefer “pluto” from the *S/WAN implementation because of the easier and one-config-only setup.</P
+>I prefer ”pluto” from the *S/WAN implementation because of the easier and one-config-only setup.</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
 NAME="AEN2696"
->20.3.1. IKE daemon “racoon”</A
+>20.3.1. IKE daemon ”racoon”</A
 ></H3
 ><P
->The IKE daemon “racoon” is taken from the KAME project and ported to Linux. Modern Linux distributions contain this daemon in the package “ipsec-tools”. Two executables are required for a proper IPsec setup. Take a look on <A
+>The IKE daemon ”racoon” is taken from the KAME project and ported to Linux. Modern Linux distributions contain this daemon in the package ”ipsec-tools”. Two executables are required for a proper IPsec setup. Take a look on <A
 HREF="http://lartc.org/howto/lartc.ipsec.html"
 TARGET="_top"
 >Linux Advanced Routing &#38; Traffic Control HOWTO / IPSEC</A
@@ -13024,10 +13030,10 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2700"
->20.3.1.1. Manipulation of the IPsec SA/SP database with the tool “setkey”</A
+>20.3.1.1. Manipulation of the IPsec SA/SP database with the tool ”setkey”</A
 ></H4
 ><P
->“setkey” is important to define the security policy (SP) for the kernel.</P
+>”setkey” is important to define the security policy (SP) for the kernel.</P
 ><P
 >File: /etc/racoon/setkey.sh</P
 ><P
@@ -13087,7 +13093,7 @@ spdadd 2001:db8:2:2::2 2001:db8:1:1::1 any -P in  ipsec
 ></TR
 ></TABLE
 ><P
->For the other peer, you have to replace “in” with “out”.</P
+>For the other peer, you have to replace ”in” with ”out”.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -13095,10 +13101,10 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2713"
->20.3.1.2. Configuration of the IKE daemon “racoon”</A
+>20.3.1.2. Configuration of the IKE daemon ”racoon”</A
 ></H4
 ><P
->“racoon” requires a configuration file for proper execution. It includes the related settings to the security policy, which should be set up previously using “setkey”.</P
+>”racoon” requires a configuration file for proper execution. It includes the related settings to the security policy, which should be set up previously using ”setkey”.</P
 ><P
 >File: /etc/racoon/racoon.conf</P
 ><TABLE
@@ -13183,7 +13189,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2721"
->20.3.1.3. Running IPsec with IKE daemon “racoon”</A
+>20.3.1.3. Running IPsec with IKE daemon ”racoon”</A
 ></H4
 ><P
 >At least the daemon needs to be started. For the first time, use debug and foreground mode. The following example shows a successful IKE phase 1 (ISAKMP-SA) and 2 (IPsec-SA) negotiation:</P
@@ -13222,7 +13228,7 @@ Foreground mode.
 ></TR
 ></TABLE
 ><P
->Each direction got its own IPsec-SA (like defined in the IPsec standard). With “tcpdump” on the related interface, you will see as result of an IPv6 ping:</P
+>Each direction got its own IPsec-SA (like defined in the IPsec standard). With ”tcpdump” on the related interface, you will see as result of an IPv6 ping:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -13242,7 +13248,7 @@ CLASS="SCREEN"
 ><P
 >As expected, the negotiated SPIs are being used here.</P
 ><P
->And using “setkey”, current active parameters are shown:</P
+>And using ”setkey”, current active parameters are shown:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -13288,10 +13294,10 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN2730"
->20.3.2. IKE daemon “pluto”</A
+>20.3.2. IKE daemon ”pluto”</A
 ></H3
 ><P
->The IKE daemon “pluto” is included in distributions of the *S/WAN projects. *S/WAN project starts at the beginning as <A
+>The IKE daemon ”pluto” is included in distributions of the *S/WAN projects. *S/WAN project starts at the beginning as <A
 HREF="http://www.freeswan.org/"
 TARGET="_top"
 >FreeS/WAN</A
@@ -13305,14 +13311,14 @@ TARGET="_top"
 >Openswan</A
 >. Today, readily installable packages are available for at least Openswan (included in Fedora Core 3).</P
 ><P
->A major difference to “racoon”, only one configuration file is required. Also, an initscript exists for automatic setup after booting.</P
+>A major difference to ”racoon”, only one configuration file is required. Also, an initscript exists for automatic setup after booting.</P
 ><DIV
 CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
 NAME="AEN2737"
->20.3.2.1. Configuration of the IKE daemon “pluto”</A
+>20.3.2.1. Configuration of the IKE daemon ”pluto”</A
 ></H4
 ><P
 >The configuration is very similar to the IPv4 one, only one important option is necessary.</P
@@ -13385,7 +13391,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2745"
->20.3.2.2. Running IPsec with IKE daemon “pluto”</A
+>20.3.2.2. Running IPsec with IKE daemon ”pluto”</A
 ></H4
 ><P
 >If installation of Openswan was successfully, an initscript should exist for starting IPsec, simply run (on each peer):</P
@@ -13405,7 +13411,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Afterwards, start this connection on one peer. If you saw the line “IPsec SA established”, all worked fine.</P
+>Afterwards, start this connection on one peer. If you saw the line ”IPsec SA established”, all worked fine.</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -13429,7 +13435,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Because *S/WAN and setkey/racoon do use the same IPsec implementation in Linux 2.6.x kernel, “setkey” can be used here too to show current active parameters:</P
+>Because *S/WAN and setkey/racoon do use the same IPsec implementation in Linux 2.6.x kernel, ”setkey” can be used here too to show current active parameters:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -13479,7 +13485,7 @@ NAME="AEN2753"
 >20.4. Additional informations:</A
 ></H2
 ><P
->On Linux Kernel 2.6.x you can get the policy and status of IPsec also using “ip”:</P
+>On Linux Kernel 2.6.x you can get the policy and status of IPsec also using ”ip”:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -13562,10 +13568,10 @@ CLASS="SECT1"
 CLASS="SECT1"
 ><A
 NAME="AEN2769"
->21.2. Linux QoS using “tc”</A
+>21.2. Linux QoS using ”tc”</A
 ></H2
 ><P
->Linux is using “tc” from the “iproute2” package to configure traffic shaping, generally described in the <A
+>Linux is using ”tc” from the ”iproute2” package to configure traffic shaping, generally described in the <A
 HREF="http://lartc.org/"
 TARGET="_top"
 >Linux Advanced Routing &#38; Traffic Control HOWTO</A
@@ -13579,7 +13585,7 @@ NAME="AEN2773"
 >21.2.1. Example for a constant bitrate queuing</A
 ></H3
 ><P
->With the “cbq” scheduler, pipes with constant bit rates can be defined.</P
+>With the ”cbq” scheduler, pipes with constant bit rates can be defined.</P
 ><DIV
 CLASS="SECT3"
 ><HR><H4
@@ -13861,7 +13867,7 @@ CLASS="SECT1"
 CLASS="SECT1"
 ><A
 NAME="HINTS-DAEMONS-BIND"
->22.1. Berkeley Internet Name Domain (BIND) daemon “named”</A
+>22.1. Berkeley Internet Name Domain (BIND) daemon ”named”</A
 ></H2
 ><P
 >IPv6 is supported since version 9. Always use newest available version. At least version 9.1.3 must be used, older versions can contain remote exploitable security holes.</P
@@ -14534,7 +14540,7 @@ NAME="AEN2943"
 ><UL
 ><LI
 ><P
->Apache2 supports a method called “sendfile” to speedup serving data. Some NIC drivers also support offline checksumming. In some cases, this can lead to connection problems and invalid TCP checksums. In this cases, disable “sendfile” either by recompiling using configure option “--without-sendfile” or by using the "EnableSendfile off" directive in configuration file.</P
+>Apache2 supports a method called ”sendfile” to speedup serving data. Some NIC drivers also support offline checksumming. In some cases, this can lead to connection problems and invalid TCP checksums. In this cases, disable ”sendfile” either by recompiling using configure option ”--without-sendfile” or by using the "EnableSendfile off" directive in configuration file.</P
 ></LI
 ></UL
 ></DIV
@@ -14726,7 +14732,7 @@ NAME="AEN2979"
 >22.4.2. Debugging</A
 ></H3
 ><P
->A program called “radvdump” can help you looking into sent or received advertisements. Simple to use:</P
+>A program called ”radvdump” can help you looking into sent or received advertisements. Simple to use:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -15037,7 +15043,7 @@ NAME="AEN3027"
 >22.6.1. Configuration of the ISC DHCP server for IPv6 (dhcpd)</A
 ></H3
 ><P
->Note that currently, the ISC DHCP server can only serve IPv4 or IPv6, means you have to start the daemon twice (for IPv6 with option “-6”) to support both protocols.</P
+>Note that currently, the ISC DHCP server can only serve IPv4 or IPv6, means you have to start the daemon twice (for IPv6 with option ”-6”) to support both protocols.</P
 ><DIV
 CLASS="SECT3"
 ><HR><H4
@@ -15086,7 +15092,7 @@ subnet6 2001:db8:0:1::/64 {
 ></TR
 ></TABLE
 ><P
->Note that the “dhcp.client-id” no longer belongs to a MAC address, an unique ID is used instead! “dhcp6c” (see above) uses the file /var/lib/dhcpv6/dhcp6c_duid (would be created during first start, if not existing) as unique identity. It's a 14 byte long identifier, starting with a 2 byte length information (usually “0x000e”):</P
+>Note that the ”dhcp.client-id” no longer belongs to a MAC address, an unique ID is used instead! ”dhcp6c” (see above) uses the file /var/lib/dhcpv6/dhcp6c_duid (would be created during first start, if not existing) as unique identity. It's a 14 byte long identifier, starting with a 2 byte length information (usually ”0x000e”):</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -15618,7 +15624,7 @@ NAME="HINTS-DAEMONS-OTHERS"
 >22.11. Other daemons</A
 ></H2
 ><P
->Nowadays it's mostly simple, look for either a command line option or a configuration value to enable IPv6 listening. See manual page of the daemon or check related FAQs. It can happen that you can bind a daemon only to the IPv6-“any”-address (::) and not to bind to a dedicated IPv6 address, because the lack of support (depends on that what the programmer has implemented so far...).</P
+>Nowadays it's mostly simple, look for either a command line option or a configuration value to enable IPv6 listening. See manual page of the daemon or check related FAQs. It can happen that you can bind a daemon only to the IPv6-”any”-address (::) and not to bind to a dedicated IPv6 address, because the lack of support (depends on that what the programmer has implemented so far...).</P
 ></DIV
 ></DIV
 ><DIV
@@ -15673,7 +15679,7 @@ TARGET="_top"
 >http://jungla.dit.upm.es/~ecastro/IPv6-web/ipv6.html</A
 >]. Unfortunately, of the almost 360 pages in the book, maybe 60 are actually useful (the chapters mentioned). Nevertheless, without the guidance of that book, the author would have been unable to perform his job duties or compose this HowTo. While most (but certainly not all) of the information in the Hagino book is available via the Linux 'man' pages, application programmers will save a significant amount of time and frustration by reading the indicated chapters of the book rather than searching through the 'man' pages and online documentation.</P
 ><P
->Other than the Hagino book, any other information presented in this HowTo was obtained through trial and error. Some items or explanations may not be entirely “correct” in the grand IPv6 scheme, but seem to work in practical application.</P
+>Other than the Hagino book, any other information presented in this HowTo was obtained through trial and error. Some items or explanations may not be entirely ”correct” in the grand IPv6 scheme, but seem to work in practical application.</P
 ><P
 >The discussion that follows assumes the reader is already experienced with the traditional TCP/IP socket API. For more information on traditional socket programming, the Internetworking with TCP/IP series of textbooks by Comer &#38; Stevens is hard to beat, specifically Volume III: Client-Server Programming and Applications, Linux/POSIX Sockets Version (ISBN 0-13-032071-4). This HowTo also assumes that the reader has had at least a bare basic introduction to IPv6 and in particular the addressing scheme for network addresses (see Section 2.3).</P
 ><DIV
@@ -15757,7 +15763,7 @@ CLASS="SCREEN"
 ><P
 >The sin6_flowinfo field is used for flow control, but is not yet standardized and can be ignored.</P
 ><P
->The sin6_scope_id field has an odd use, and it seems (at least to this naïve author) that the IPv6 designers took a huge step backwards when devising this. Apparently, 128-bit IPv6 network addresses are not unique. For example, it is possible to have two hosts, on separate networks, with the same link-local address (see Figure 1). In order to pass information to a specific host, more than just the network address is required; the scope identifier must also be specified. In Linux, the network interface name is used for the scope identifier (e.g. “eth0”) [be warned that the scope identifier is implementation dependent!]. Use the ifconfig(1M) command to display a list of active network interfaces.</P
+>The sin6_scope_id field has an odd use, and it seems (at least to this naïve author) that the IPv6 designers took a huge step backwards when devising this. Apparently, 128-bit IPv6 network addresses are not unique. For example, it is possible to have two hosts, on separate networks, with the same link-local address (see Figure 1). In order to pass information to a specific host, more than just the network address is required; the scope identifier must also be specified. In Linux, the network interface name is used for the scope identifier (e.g. ”eth0”) [be warned that the scope identifier is implementation dependent!]. Use the ifconfig(1M) command to display a list of active network interfaces.</P
 ><P
 >A colon-hex network address can be augmented with the scope identifier to produce a "scoped address”. The percent sign ('%') is used to delimit the network address from the scope identifier. For example, fe80::1%eth0 is a scoped IPv6 address where fe80::1 represents the 128-bit network address and eth0 is the network interface (i.e. the scope identifier). Thus, if a host resides on two networks, such as Host B in example below, the user now has to know which path to take in order to get to a particular host. In Figure 1, Host B addresses Host A using the scoped address fe80::1%eth0, while Host C is addressed with fe80::1%eth1.</P
 ><TABLE
@@ -18065,7 +18071,7 @@ TARGET="_top"
 ></LI
 ></UL
 ><P
->Anyway, some other modules exist for/with IPv6 support (e.g. Net::IP), search for “IPv6” on <A
+>Anyway, some other modules exist for/with IPv6 support (e.g. Net::IP), search for ”IPv6” on <A
 HREF="http://search.cpan.org/"
 TARGET="_top"
 >http://search.cpan.org/</A
@@ -18909,7 +18915,7 @@ CLASS="VARIABLELIST"
 HREF="http://www.pld-linux.org/"
 TARGET="_top"
 >PLD Linux Distribution</A
-> (“market leader” in containing IPv6 enabled packages)</P
+> (”market leader” in containing IPv6 enabled packages)</P
 ></DD
 ><DT
 >Red Hat</DT
@@ -19885,14 +19891,6 @@ NAME="INFORMATION-IPV6ANDSECURITY"
 ><UL
 ><LI
 ><P
->Internet Security Systems: Security Center, <A
-HREF="http://www.iss.net/security_center/search.php?type=3&#38;type=3&#38;pattern=IPv6"
-TARGET="_top"
->X-Force Database Search</A
-> (21.12.2002 - 6 topics found relating to IPv6)</P
-></LI
-><LI
-><P
 ><A
 HREF="http://csrc.nist.gov/ipsec/"
 TARGET="_top"
@@ -19922,7 +19920,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN3892"
+NAME="AEN3889"
 >25.3.8. Application lists</A
 ></H3
 ><P
@@ -19970,7 +19968,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN3908"
+NAME="AEN3905"
 >25.3.8.1. Analyzer tools</A
 ></H4
 ><P
@@ -20001,7 +19999,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN3918"
+NAME="AEN3915"
 >25.3.8.2. IPv6 Products</A
 ></H4
 ><P
@@ -20093,7 +20091,7 @@ CLASS="SECT1"
 ><HR><H2
 CLASS="SECT1"
 ><A
-NAME="AEN3948"
+NAME="AEN3945"
 >25.4. IPv6 Infrastructure</A
 ></H2
 ><DIV
@@ -20101,7 +20099,7 @@ CLASS="SECT2"
 ><H3
 CLASS="SECT2"
 ><A
-NAME="AEN3950"
+NAME="AEN3947"
 >25.4.1. Statistics</A
 ></H3
 ><P
@@ -20134,7 +20132,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN3960"
+NAME="AEN3957"
 >25.4.2. Internet Exchanges</A
 ></H3
 ><P
@@ -20770,7 +20768,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN4141"
+NAME="AEN4138"
 >25.4.4.4. Radio Stations, Music Streams</A
 ></H4
 ><P
@@ -20830,7 +20828,7 @@ CLASS="INFORMALTABLE"
 ><P
 ></P
 ><A
-NAME="AEN4159"
+NAME="AEN4156"
 ></A
 ><TABLE
 BORDER="1"
@@ -21233,7 +21231,7 @@ CLASS="SECT2"
 ><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4274"
+NAME="AEN4271"
 >25.6.1. Testing tools</A
 ></H3
 ><P
@@ -21270,7 +21268,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4286"
+NAME="AEN4283"
 >25.6.2. Information retrievement</A
 ></H3
 ><P
@@ -21291,7 +21289,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4292"
+NAME="AEN4289"
 >25.6.3. IPv6 Looking Glasses</A
 ></H3
 ><P
@@ -21312,7 +21310,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4298"
+NAME="AEN4295"
 >25.6.4. Helper applications</A
 ></H3
 ><P
@@ -21402,7 +21400,7 @@ Publisher: MarketResearch.com; ISBN B00006334Y; (November 1, 2001) </P
 CLASS="CHAPTER"
 ><HR><H1
 ><A
-NAME="AEN4325"
+NAME="AEN4322"
 ></A
 >Chapter 26. Revision history / Credits / The End</H1
 ><DIV
@@ -21422,7 +21420,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4331"
+NAME="AEN4328"
 >26.1.1. Releases 0.x</A
 ></H3
 ><P
@@ -21746,7 +21744,7 @@ CLASS="VARIABLELIST"
 >0.39</DT
 ><DD
 ><P
->2003-01-13/PB: fix a bug (forgotten 'link” on “ip link set” (credits to Yaniv Kaul)</P
+>2003-01-13/PB: fix a bug (forgotten 'link” on ”ip link set” (credits to Yaniv Kaul)</P
 ></DD
 ><DT
 >0.38.1</DT
@@ -21800,7 +21798,7 @@ CLASS="VARIABLELIST"
 >0.34</DT
 ><DD
 ><P
->2002-11-19/PB: Add information about German translation (work in progress), some fixes, create a small shortcut explanation list, extend “used terms” and add two German books</P
+>2002-11-19/PB: Add information about German translation (work in progress), some fixes, create a small shortcut explanation list, extend ”used terms” and add two German books</P
 ></DD
 ><DT
 >0.33</DT
@@ -21872,7 +21870,7 @@ CLASS="VARIABLELIST"
 >0.26</DT
 ><DD
 ><P
->2002-07-13/PB: Fill /proc-filesystem chapter, update DNS information about depricated A6/DNAME, change P-t-P tunnel setup to use of “ip” only</P
+>2002-07-13/PB: Fill /proc-filesystem chapter, update DNS information about depricated A6/DNAME, change P-t-P tunnel setup to use of ”ip” only</P
 ></DD
 ><DT
 >0.25.2</DT
@@ -21974,7 +21972,7 @@ CLASS="VARIABLELIST"
 >0.18.1</DT
 ><DD
 ><P
->2002-01-23/PB: Move “the end” to the end, add USAGI to maillists</P
+>2002-01-23/PB: Move ”the end” to the end, add USAGI to maillists</P
 ></DD
 ><DT
 >0.18</DT
@@ -22004,7 +22002,7 @@ CLASS="VARIABLELIST"
 >0.16</DT
 ><DD
 ><P
->2002-01-19/PB: Minor fixes, remove “bold” and “emphasize” formats on code lines, fix “too long unwrapped code lines” using selfmade utility, extend list of URLs.</P
+>2002-01-19/PB: Minor fixes, remove ”bold” and ”emphasize” formats on code lines, fix ”too long unwrapped code lines” using selfmade utility, extend list of URLs.</P
 ></DD
 ><DT
 >0.15</DT
@@ -22016,7 +22014,7 @@ CLASS="VARIABLELIST"
 >0.14</DT
 ><DD
 ><P
->2002-01-14/PB: Minor review at all, new chapter “debugging”, review “addresses”, spell checking, grammar checking (from beginning to 3.4.1) by Martin Krafft, add tcpdump examples, copy firewalling/netfilter6 from IPv6+Linux-HowTo, minor enhancements</P
+>2002-01-14/PB: Minor review at all, new chapter ”debugging”, review ”addresses”, spell checking, grammar checking (from beginning to 3.4.1) by Martin Krafft, add tcpdump examples, copy firewalling/netfilter6 from IPv6+Linux-HowTo, minor enhancements</P
 ></DD
 ><DT
 >0.13</DT
@@ -22123,7 +22121,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4772"
+NAME="AEN4769"
 >26.2.2. Other credits</A
 ></H3
 ><DIV
@@ -22131,7 +22129,7 @@ CLASS="SECT3"
 ><H4
 CLASS="SECT3"
 ><A
-NAME="AEN4774"
+NAME="AEN4771"
 >26.2.2.1. Document technique related</A
 ></H4
 ><P
@@ -22172,7 +22170,7 @@ NAME="CONTENT-RELATED-CREDITS"
 ><UL
 ><LI
 ><P
->S .P. Meenakshi &#60;meena at cs dot iitm dot ernet dot in&#62;: For a hint using a “send mail” shell program on tcp_wrapper/hosts.deny</P
+>S .P. Meenakshi &#60;meena at cs dot iitm dot ernet dot in&#62;: For a hint using a ”send mail” shell program on tcp_wrapper/hosts.deny</P
 ></LI
 ><LI
 ><P
@@ -22264,7 +22262,7 @@ NAME="CONTENT-RELATED-CREDITS"
 ></LI
 ><LI
 ><P
->Christoph Egger &#60;cegger at chrrr dot com&#62;: Sending note about “ip” has problems with IPv4-compatible addresses on SuSE Linux 9.0 and trigger to add a hint on 6to4-radvd example</P
+>Christoph Egger &#60;cegger at chrrr dot com&#62;: Sending note about ”ip” has problems with IPv4-compatible addresses on SuSE Linux 9.0 and trigger to add a hint on 6to4-radvd example</P
 ></LI
 ><LI
 ><P
@@ -22335,7 +22333,7 @@ CLASS="SECT1"
 ><HR><H2
 CLASS="SECT1"
 ><A
-NAME="AEN4866"
+NAME="AEN4863"
 >26.3. The End</A
 ></H2
 ><P

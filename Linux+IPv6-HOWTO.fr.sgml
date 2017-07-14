@@ -6,14 +6,14 @@
 <!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.2.2
+<!-- SGML file was created by LyX 2.2.3
   See http://www.lyx.org/ for more information -->
 <book lang="fr">
 <bookinfo>
 <title>Linux IPv6 HOWTO (fr)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory>
-<revision><revnumber>0.49.fr.3wip</revnumber><date>2017-01-14</date> <authorinitials>PB</authorinitials> </revision>
+<revision><revnumber>0.49.fr.3wip</revnumber><date>2017-07-14</date> <authorinitials>PB</authorinitials> </revision>
 <revision><revnumber>0.49.fr.2</revnumber><date>2007-10-06</date> <authorinitials>PB</authorinitials> </revision>
 <revision><revnumber>0.49.fr.1</revnumber><date>2006-02-26</date> <authorinitials>MB</authorinitials> </revision>
 <revision><revnumber>0.48.1.fr.1</revnumber><date>2005-01-20</date> <authorinitials>MB</authorinitials></revision>
@@ -45,7 +45,7 @@
 <sect3>
 <title>L'auteur, Internet et IPv6</title>
 <itemizedlist>
-<listitem><para>1993: J'ai pris contact avec l'Internet par la pratique du mél et des news sur un client en mode texte (par exemple, rechercher "e91abier" sur groups.google.com, c'est moi).</para></listitem><listitem><para>1996: J'ai été sollicité pour concevoir un cours sur IPv6, incluant des travaux pratiques sur le système d'exploitation Linux.</para></listitem><listitem><para>1997: Début de la rédaction d'un guide sur la façon d'installer, de configurer et d'utiliser IPv6 sur les systèmes Linux, appelé <ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 & Linux </ulink> (voir <ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-0.html#history">IPv6 & Linux - HowTo/History</ulink> pour plus d'information).</para></listitem><listitem><para>2001: Début de la rédaction de cet HOWTO IPv6 Linux.</para></listitem></itemizedlist></sect3><sect3>
+<listitem><para>1993: J'ai pris contact avec l'Internet par la pratique du mél et des news sur un client en mode texte (par exemple, rechercher "e91abier" sur groups.google.com, c'est moi).</para></listitem><listitem><para>1996: J'ai été sollicité pour concevoir un cours sur IPv6, incluant des travaux pratiques sur le système d'exploitation Linux.</para></listitem><listitem><para>1997: Début de la rédaction d'un guide sur la façon d'installer, de configurer et d'utiliser IPv6 sur les systèmes Linux, appelé <ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 &amp; Linux </ulink> (voir <ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-0.html#history">IPv6 &amp; Linux - HowTo/History</ulink> pour plus d'information).</para></listitem><listitem><para>2001: Début de la rédaction de cet HOWTO IPv6 Linux.</para></listitem></itemizedlist></sect3><sect3>
 <title>Contact</title>
 <para>L'auteur peut être contacté par mél à &lt;pb chez bieringer point de&gt; mais aussi <emphasis>via</emphasis> <ulink url="http://www.bieringer.de/pb/">sa page personnelle</ulink>.</para>
 <para>Il vit actuellement à Munich [dans la partie nord du Schwabing] / Bavière / Allemagne (sud) / Europe (centrale) / Terre (surface/continent).</para></sect3></sect2></sect1><sect1 id='general-category' >
@@ -90,11 +90,11 @@
 <title><!-- anchor id="general-original-source" -->Le document original de cet HOWTO</title>
 <para>Cet HOWTO est actuellement rédigé avec la version 2.2.2 de LyX sur un système Fedora Linux 25 avec un patron SGML (livre DocBook). Il est disponible en vue des contributions à l'URL <ulink url="https://github.com/tLDP/Linux-IPv6/">github / tLDP / Linux-IPv6</ulink>.</para><sect3>
 <title>Modification des lignes de code propres à LyX</title>
-<para>Les modifications des lignes de code propres à LyX sont réalisées par un script &ldquo;maison&rdquo;, &ldquo;lyxcodelinewrapper.pl&rdquo;, que vous pouvez obtenir par CVS pour votre propre compte: <ulink url="https://github.com/tLDP/Linux-IPv6/">github / tLDP / Linux-IPv6</ulink> (<emphasis>NdT</emphasis>: ces lignes ne gênent pas la génération au format SGML, mais celles aux formats PS et PDF à partir du SGML généré couramment, <emphasis>i.e.</emphasis> sans ce script).</para></sect3><sect3>
+<para>Les modifications des lignes de code propres à LyX sont réalisées par un script &rdquo;maison&rdquo;, &rdquo;lyxcodelinewrapper.pl&rdquo;, que vous pouvez obtenir par CVS pour votre propre compte: <ulink url="https://github.com/tLDP/Linux-IPv6/">github / tLDP / Linux-IPv6</ulink> (<emphasis>NdT</emphasis>: ces lignes ne gênent pas la génération au format SGML, mais celles aux formats PS et PDF à partir du SGML généré couramment, <emphasis>i.e.</emphasis> sans ce script).</para></sect3><sect3>
 <title>La génération du SGML</title>
 <para>Le code SGML est généré en utilisant la fonction d'exportation de LyX.</para>
 <para>Des solutions ont été apportées afin de créer un code SGML plus propre (voir aussi ici pour le programme Perl, <ulink url="https://github.com/tLDP/Linux-IPv6/">github / tLDP / Linux-IPv6</ulink>):</para><itemizedlist>
-<listitem><para>L'exportation du document LyX ne créait pas proprement les balises &ldquo;colspan&rdquo; - l'outil qui règle le problème: &ldquo;sgmllyxtabletagfix.pl&rdquo; (le problème est définitivement réglé depuis la version 1.2.0 de LyX)</para></listitem><listitem><para>LyX utilise parfois des entités spéciales gauche/droite, à la place des guillemets habituels, qui seront présentes dans le code HTML. Certains navigateurs n'interprètent pas très bien ces balises (Opéra 6 TP 2 ou Konquéror sont connus pour ce problème) - l'outil qui règle le problème: &ldquo;sgmllyxquotefix.pl&rdquo;</para></listitem></itemizedlist></sect3></sect2><sect2>
+<listitem><para>L'exportation du document LyX ne créait pas proprement les balises &rdquo;colspan&rdquo; - l'outil qui règle le problème: &rdquo;sgmllyxtabletagfix.pl&rdquo; (le problème est définitivement réglé depuis la version 1.2.0 de LyX)</para></listitem><listitem><para>LyX utilise parfois des entités spéciales gauche/droite, à la place des guillemets habituels, qui seront présentes dans le code HTML. Certains navigateurs n'interprètent pas très bien ces balises (Opéra 6 TP 2 ou Konquéror sont connus pour ce problème) - l'outil qui règle le problème: &rdquo;sgmllyxquotefix.pl&rdquo;</para></listitem></itemizedlist></sect3></sect2><sect2>
 <title>Les références en ligne à la version HTML de cet HOWTO (lien/ancrage)</title>
 <sect3>
 <title>La page d'index maître</title>
@@ -110,21 +110,21 @@
 <para>Le premier document relatif à IPv6 a été écrit par <emphasis>Eric Osborne,</emphasis> et s'appelle <ulink url="http://www.linuxhq.com/IPv6/">FAQ/HOWTO IPv6 Linux</ulink> (merci de ne l'utiliser que pour des raisons historiques). La dernière version fut la 3.2.1, publiée le 14 juillet 1997.</para>
 <para>Merci de m'aider: si quelqu'un connaît la date anniversaire de cet HOWTO, merci de m'envoyer un mél (cette information est nécessaire à "l'historique").</para></sect3><sect3>
 <title>L'HowTo - IPv6 &amp; Linux (maintenu)</title>
-<para>Il existe une seconde version appelée <ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 & Linux - </ulink> écrite par moi-même (<emphasis>Peter Bieringer</emphasis>) en pur HTML. Elle est née en avril 1997 et la première version anglo-saxonne a été publiée en juin 1997. Je continuerais à la maintenir, mais cela déclinera lentement (mais pas complètement) en faveur de l'HOWTO IPv6 Linux que vous lisez en ce moment.</para></sect3><sect3>
+<para>Il existe une seconde version appelée <ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 &amp; Linux - </ulink> écrite par moi-même (<emphasis>Peter Bieringer</emphasis>) en pur HTML. Elle est née en avril 1997 et la première version anglo-saxonne a été publiée en juin 1997. Je continuerais à la maintenir, mais cela déclinera lentement (mais pas complètement) en faveur de l'HOWTO IPv6 Linux que vous lisez en ce moment.</para></sect3><sect3>
 <title>L'HOWTO IPv6 Linux (ce document)</title>
-<para>Parce que l'<ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 & Linux</ulink> est écrit en HTML pur, il n'est vraiment pas compatible avec le <ulink url="http://www.tldp.org/">Projet de Documentation Linux</ulink> (<emphasis>Linux Documentation Project,</emphasis> ou TLDP). J'ai (<emphasis>Peter Bieringer</emphasis>) reçu une demande fin novembre 2001 de réécriture de l'<ulink url="http://www.bieringer.de/linux/IPv6/">HowTo -IPv6 & Linux</ulink> en SGML. Cependant, à cause de la discontinuité de cet HOWTO (<ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-0.html#history">le future de l'HowTo - IPv6 & Linux</ulink>), et de la standardisation croissante d'IPv6, je décidais d'écrire un nouveau document couvrant aussi bien les questions simples ou avancées qui resteront importantes dans les toutes prochaines années. Plus dynamique, un contenu plus avancé s'y trouvera en plus, par rapport au second HOWTO (<ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 & Linux</ulink>).</para></sect3></sect2></sect1><sect1>
+<para>Parce que l'<ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 &amp; Linux</ulink> est écrit en HTML pur, il n'est vraiment pas compatible avec le <ulink url="http://www.tldp.org/">Projet de Documentation Linux</ulink> (<emphasis>Linux Documentation Project,</emphasis> ou TLDP). J'ai (<emphasis>Peter Bieringer</emphasis>) reçu une demande fin novembre 2001 de réécriture de l'<ulink url="http://www.bieringer.de/linux/IPv6/">HowTo -IPv6 &amp; Linux</ulink> en SGML. Cependant, à cause de la discontinuité de cet HOWTO (<ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-0.html#history">le future de l'HowTo - IPv6 &amp; Linux</ulink>), et de la standardisation croissante d'IPv6, je décidais d'écrire un nouveau document couvrant aussi bien les questions simples ou avancées qui resteront importantes dans les toutes prochaines années. Plus dynamique, un contenu plus avancé s'y trouvera en plus, par rapport au second HOWTO (<ulink url="http://www.bieringer.de/linux/IPv6/">HowTo - IPv6 &amp; Linux</ulink>).</para></sect3></sect2></sect1><sect1>
 <title>Termes employés, glossaire et abréviations</title>
 <sect2>
 <title>Relatifs aux réseaux</title>
 <variablelist>
-<varlistentry><term>Base&nbsp;10</term><listitem><para>Le système bien connu des nombres décimaux, représentant n'importe quelle valeur avec les chiffres 0-9.</para></listitem></varlistentry><varlistentry><term>Base&nbsp;16</term><listitem><para>Habituellement utilisée dans les langages de programmation de bas et haut niveaux, connue encore en tant que système numérique hexadécimal, représentant les valeurs avec les chiffres 0-9 et les caractères A-F (insensible à la casse).</para></listitem></varlistentry><varlistentry><term>Base&nbsp;85</term><listitem><para>Représentation d'une valeur grâce à 85 différents chiffres/caractères, cela permet des chaînes de caractères plus courtes mais jamais vue dans la pratique.</para></listitem></varlistentry><varlistentry><term>Bit</term><listitem><para>Unité minimale de stockage, allumée(<emphasis>on</emphasis>)/vraie (1) ou éteinte(<emphasis>off</emphasis>)/fausse (0).</para></listitem></varlistentry><varlistentry><term>Byte</term><listitem><para>Le plus souvent, une collection de 8 bits (mais ce n'est pas réellement une nécessité - regardez les systèmes des anciens ordinateurs).</para></listitem></varlistentry><varlistentry><term>Périphérique</term><listitem><para>ici, matériel de connexion réseau, voir aussi NIC.</para></listitem></varlistentry><varlistentry><term>Hôte&nbsp;à&nbsp;double&nbsp;résidence</term><listitem><para>Un hôte à double résidence est un noeud ayant deux interfaces réseau (physique ou virtuelle) sur deux liens différents, mais qui ne réalise pas de renvoi de paquets entre les interfaces.</para></listitem></varlistentry><varlistentry><term>Hôte</term><listitem><para>Généralement, un hôte simple résident, présent sur un lien. Normalement, il n'a seulement qu'une interface réseau active, par exemple Ethernet ou (non pas <emphasis>et</emphasis>) PPP.</para></listitem></varlistentry><varlistentry><term>Interface</term><listitem><para>quasi-synonyme de &ldquo;périphérique&rdquo;, voir aussi NIC.</para></listitem></varlistentry><varlistentry><term>En-tête&nbsp;IP</term><listitem><para>En-tête d'un paquet IP (chaque paquet réseau a un en-tête, son type dépendant de la couche réseau).</para></listitem></varlistentry><varlistentry><term>Lien</term><listitem><para>Un lien est un médium de transport de paquet réseau de la couche 2, des exemples en sont Ethernet, PPP, SLIP, ATM, RNIS, Frame Relay, <emphasis>etc.</emphasis></para></listitem></varlistentry><varlistentry><term>Noeud</term><listitem><para>Un noeud est soit un hôte, soit un routeur.</para></listitem></varlistentry><varlistentry><term>Octet</term><listitem><para>Une collection véritable de 8 bits, aujourd'hui synonyme de "byte".</para></listitem></varlistentry><varlistentry><term>Port</term><listitem><para>Information destinée au distributeur TCP/UDP (couche 4) afin de transporter l'information à la couche supérieure.</para></listitem></varlistentry><varlistentry><term>Protocole</term><listitem><para>Chaque couche réseau contient la plupart du temps un champ &ldquo;protocole&rdquo; facilitant la distribution de l'information transportée à la couche supérieure, comme cela peut se voir dans la couche 2 (MAC) et 3 (IP)</para></listitem></varlistentry><varlistentry><term>Routeur</term><listitem><para>Un routeur est un noeud possédant une ou plusieurs interface(s) réseau, capable d'envoyer les paquets entre ses interfaces.</para></listitem></varlistentry><varlistentry><term>Socket</term><listitem><para>Une socket IP est définie par ses adresses source et destination, ses ports et (association)</para></listitem></varlistentry><varlistentry><term>Pile</term><listitem><para>Une collection de couches relative au réseau.</para></listitem></varlistentry><varlistentry><term>Masque&nbsp;de&nbsp;sous-réseau</term><listitem><para>Les réseaux IP utilisent un masque de bits afin de distinguer le réseau local de ceux qui sont distants.</para></listitem></varlistentry><varlistentry><term>Tunnel</term><listitem><para>Un tunnel est typiquement une connexion point-à-point sur laquelle les paquets échangés transportent les données d'un autre protocole, un tunnel IPv6-in-IPv4 en est un exemple.</para></listitem></varlistentry></variablelist><sect3 id='Glossaire' >
+<varlistentry><term>Base&nbsp;10</term><listitem><para>Le système bien connu des nombres décimaux, représentant n'importe quelle valeur avec les chiffres 0-9.</para></listitem></varlistentry><varlistentry><term>Base&nbsp;16</term><listitem><para>Habituellement utilisée dans les langages de programmation de bas et haut niveaux, connue encore en tant que système numérique hexadécimal, représentant les valeurs avec les chiffres 0-9 et les caractères A-F (insensible à la casse).</para></listitem></varlistentry><varlistentry><term>Base&nbsp;85</term><listitem><para>Représentation d'une valeur grâce à 85 différents chiffres/caractères, cela permet des chaînes de caractères plus courtes mais jamais vue dans la pratique.</para></listitem></varlistentry><varlistentry><term>Bit</term><listitem><para>Unité minimale de stockage, allumée(<emphasis>on</emphasis>)/vraie (1) ou éteinte(<emphasis>off</emphasis>)/fausse (0).</para></listitem></varlistentry><varlistentry><term>Byte</term><listitem><para>Le plus souvent, une collection de 8 bits (mais ce n'est pas réellement une nécessité - regardez les systèmes des anciens ordinateurs).</para></listitem></varlistentry><varlistentry><term>Périphérique</term><listitem><para>ici, matériel de connexion réseau, voir aussi NIC.</para></listitem></varlistentry><varlistentry><term>Hôte&nbsp;à&nbsp;double&nbsp;résidence</term><listitem><para>Un hôte à double résidence est un noeud ayant deux interfaces réseau (physique ou virtuelle) sur deux liens différents, mais qui ne réalise pas de renvoi de paquets entre les interfaces.</para></listitem></varlistentry><varlistentry><term>Hôte</term><listitem><para>Généralement, un hôte simple résident, présent sur un lien. Normalement, il n'a seulement qu'une interface réseau active, par exemple Ethernet ou (non pas <emphasis>et</emphasis>) PPP.</para></listitem></varlistentry><varlistentry><term>Interface</term><listitem><para>quasi-synonyme de &rdquo;périphérique&rdquo;, voir aussi NIC.</para></listitem></varlistentry><varlistentry><term>En-tête&nbsp;IP</term><listitem><para>En-tête d'un paquet IP (chaque paquet réseau a un en-tête, son type dépendant de la couche réseau).</para></listitem></varlistentry><varlistentry><term>Lien</term><listitem><para>Un lien est un médium de transport de paquet réseau de la couche 2, des exemples en sont Ethernet, PPP, SLIP, ATM, RNIS, Frame Relay, <emphasis>etc.</emphasis></para></listitem></varlistentry><varlistentry><term>Noeud</term><listitem><para>Un noeud est soit un hôte, soit un routeur.</para></listitem></varlistentry><varlistentry><term>Octet</term><listitem><para>Une collection véritable de 8 bits, aujourd'hui synonyme de "byte".</para></listitem></varlistentry><varlistentry><term>Port</term><listitem><para>Information destinée au distributeur TCP/UDP (couche 4) afin de transporter l'information à la couche supérieure.</para></listitem></varlistentry><varlistentry><term>Protocole</term><listitem><para>Chaque couche réseau contient la plupart du temps un champ &rdquo;protocole&rdquo; facilitant la distribution de l'information transportée à la couche supérieure, comme cela peut se voir dans la couche 2 (MAC) et 3 (IP)</para></listitem></varlistentry><varlistentry><term>Routeur</term><listitem><para>Un routeur est un noeud possédant une ou plusieurs interface(s) réseau, capable d'envoyer les paquets entre ses interfaces.</para></listitem></varlistentry><varlistentry><term>Socket</term><listitem><para>Une socket IP est définie par ses adresses source et destination, ses ports et (association)</para></listitem></varlistentry><varlistentry><term>Pile</term><listitem><para>Une collection de couches relative au réseau.</para></listitem></varlistentry><varlistentry><term>Masque&nbsp;de&nbsp;sous-réseau</term><listitem><para>Les réseaux IP utilisent un masque de bits afin de distinguer le réseau local de ceux qui sont distants.</para></listitem></varlistentry><varlistentry><term>Tunnel</term><listitem><para>Un tunnel est typiquement une connexion point-à-point sur laquelle les paquets échangés transportent les données d'un autre protocole, un tunnel IPv6-in-IPv4 en est un exemple.</para></listitem></varlistentry></variablelist><sect3 id='Glossaire' >
 <title><!-- anchor id="Glossaire" -->Abréviations</title>
 <variablelist>
-<varlistentry><term>ACL</term><listitem><para><emphasis>Access Control List</emphasis>, Liste de Contrôle d'Accès</para></listitem></varlistentry><varlistentry><term>API</term><listitem><para><emphasis>Application Programming Interface</emphasis>, Interface de Programmation d'Application</para></listitem></varlistentry><varlistentry><term>ASIC</term><listitem><para><emphasis>Application Specified Integrated Circuit</emphasis>, Circuit Intégré d'Application Spécifique</para></listitem></varlistentry><varlistentry><term>BSD</term><listitem><para><emphasis>Berkeley Software Distribution</emphasis>, Distribution des Logiciels Berkeley</para></listitem></varlistentry><varlistentry><term>Bus&nbsp;CAN</term><listitem><para>Système de bus physique contrôlant un réseau (<emphasis>NdT</emphasis>: voir par exemple <ulink url="http://edelaunay.chez.tiscali.fr/buscan.htm">ici</ulink> pour plus d'information)</para></listitem></varlistentry><varlistentry><term>ISP</term><listitem><para><emphasis>Internet Service Provider</emphasis>, Fournisseur d'Accès à Internet (FAI)</para></listitem></varlistentry><varlistentry><term>KAME</term><listitem><para>Projet - effort conjoint de six entreprises au Japon pour fournir, mondialement et dans le cadre du logiciel libre, une pile IPv6 et IPsec (pour IPv4 et IPv6) pour les variantes de BSD <ulink url="http://www.kame.net/">www.kame.net</ulink></para></listitem></varlistentry><varlistentry><term>LIR</term><listitem><para><emphasis>Local Internet Registry</emphasis>, Bureau local d'enregistrement Internet</para></listitem></varlistentry><varlistentry><term>NIC</term><listitem><para><emphasis>Network Interface Card</emphasis>, Carte d'interface réseau</para></listitem></varlistentry><varlistentry><term>RFC</term><listitem><para><emphasis>Request for comments</emphasis>, Appel à commentaires - jeu de notes techniques et organisationnelles au sujet d'Internet.</para></listitem></varlistentry><varlistentry><term>USAGI</term><listitem><para>Projet &ldquo;UniverSAl playGround for IPv6&rdquo; - travaille à rendre disponible une pile protocolaire IPv6 destinée au système Linux qui soit d'une qualité apte à la production.</para></listitem></varlistentry></variablelist></sect3></sect2><sect2>
+<varlistentry><term>ACL</term><listitem><para><emphasis>Access Control List</emphasis>, Liste de Contrôle d'Accès</para></listitem></varlistentry><varlistentry><term>API</term><listitem><para><emphasis>Application Programming Interface</emphasis>, Interface de Programmation d'Application</para></listitem></varlistentry><varlistentry><term>ASIC</term><listitem><para><emphasis>Application Specified Integrated Circuit</emphasis>, Circuit Intégré d'Application Spécifique</para></listitem></varlistentry><varlistentry><term>BSD</term><listitem><para><emphasis>Berkeley Software Distribution</emphasis>, Distribution des Logiciels Berkeley</para></listitem></varlistentry><varlistentry><term>Bus&nbsp;CAN</term><listitem><para>Système de bus physique contrôlant un réseau (<emphasis>NdT</emphasis>: voir par exemple <ulink url="http://edelaunay.chez.tiscali.fr/buscan.htm">ici</ulink> pour plus d'information)</para></listitem></varlistentry><varlistentry><term>ISP</term><listitem><para><emphasis>Internet Service Provider</emphasis>, Fournisseur d'Accès à Internet (FAI)</para></listitem></varlistentry><varlistentry><term>KAME</term><listitem><para>Projet - effort conjoint de six entreprises au Japon pour fournir, mondialement et dans le cadre du logiciel libre, une pile IPv6 et IPsec (pour IPv4 et IPv6) pour les variantes de BSD <ulink url="http://www.kame.net/">www.kame.net</ulink></para></listitem></varlistentry><varlistentry><term>LIR</term><listitem><para><emphasis>Local Internet Registry</emphasis>, Bureau local d'enregistrement Internet</para></listitem></varlistentry><varlistentry><term>NIC</term><listitem><para><emphasis>Network Interface Card</emphasis>, Carte d'interface réseau</para></listitem></varlistentry><varlistentry><term>RFC</term><listitem><para><emphasis>Request for comments</emphasis>, Appel à commentaires - jeu de notes techniques et organisationnelles au sujet d'Internet.</para></listitem></varlistentry><varlistentry><term>USAGI</term><listitem><para>Projet &rdquo;UniverSAl playGround for IPv6&rdquo; - travaille à rendre disponible une pile protocolaire IPv6 destinée au système Linux qui soit d'une qualité apte à la production.</para></listitem></varlistentry></variablelist></sect3></sect2><sect2>
 <title>Relatifs à ce document</title>
 <sect3>
 <title>Balisage en vue de l'encodage PDF/PS</title>
-<para>Le caractère &ldquo;¬&rdquo; est utilisé pour signaler que le code est enveloppé en vue d'un meilleur affichage dans les fichiers PDF et PS.</para></sect3><sect3>
+<para>Le caractère &rdquo;¬&rdquo; est utilisé pour signaler que le code est enveloppé en vue d'un meilleur affichage dans les fichiers PDF et PS.</para></sect3><sect3>
 <title>Conventions</title>
 <para>Dans les exemples génériques vous trouverez parfois ce qui suit:</para><screen>
 <![CDATA[<monadresseip>
@@ -233,7 +233,7 @@ Itu&-ZQ82s>J%s99FJXT
 <![CDATA[::1
 ]]></screen><para>Les paquets ayant cette adresse comme source ou destination ne devraient jamais quittés l'hôte émetteur.</para></sect2><sect2>
 <title>L'adresse non spécifiée</title>
-<para>C'est une adresse spéciale telle que &ldquo;n'importe laquelle&rdquo; (&ldquo;any&rdquo;) ou &ldquo;0.0.0.0&rdquo; en IPv4 . Il s'agit pour IPv6 de:</para><screen>
+<para>C'est une adresse spéciale telle que &rdquo;n'importe laquelle&rdquo; (&rdquo;any&rdquo;) ou &rdquo;0.0.0.0&rdquo; en IPv4 . Il s'agit pour IPv6 de:</para><screen>
 <![CDATA[0000:0000:0000:0000:0000:0000:0000:0000 
 ]]></screen><para>ou:</para><screen>
 <![CDATA[::
@@ -262,7 +262,7 @@ Itu&-ZQ82s>J%s99FJXT
 <para>Jetons maintenant un coup d'oeil aux différents types de préfixe (et par conséquent aux différents types d'adresse IPv6):</para><sect2>
 <title>Le type d'adresse lien-local</title>
 <para>Ce sont des adresses particulières qui n'auront de validité que sur le lien d'une interface. En utilisant cette adresse comme adresse de destination le paquet ne devrait jamais franchir un routeur. C'est utile pour des communications sur un lien telles que:</para><itemizedlist>
-<listitem><para>Y a-t-il quelqu'un d'autre sur ce lien?</para></listitem><listitem><para>Y a-t-il quelqu'un d'autre sur ce lien ayant une adresse spéciale (on cherche par exemple à détecter la présence d'un routeur)?</para></listitem></itemizedlist><para>Elles commencent par (où <emphasis>&ldquo;x&rdquo;</emphasis> est n'importe quel caractère hexadécimal, couramment <emphasis>&ldquo;0</emphasis>&rdquo;)</para><screen>
+<listitem><para>Y a-t-il quelqu'un d'autre sur ce lien?</para></listitem><listitem><para>Y a-t-il quelqu'un d'autre sur ce lien ayant une adresse spéciale (on cherche par exemple à détecter la présence d'un routeur)?</para></listitem></itemizedlist><para>Elles commencent par (où <emphasis>&rdquo;x&rdquo;</emphasis> est n'importe quel caractère hexadécimal, couramment <emphasis>&rdquo;0</emphasis>&rdquo;)</para><screen>
 <![CDATA[fe8x:  <- actuellement le seul en usage.
 fe9x:
 feax:
@@ -277,15 +277,15 @@ fedx:
 feex:
 fefx:
 
-]]></screen><para>(où <emphasis>&ldquo;x&rdquo;</emphasis> est n'importe quel caractère hexadécimal, couramment <emphasis>&ldquo;0</emphasis>&rdquo;)</para>
+]]></screen><para>(où <emphasis>&rdquo;x&rdquo;</emphasis> est n'importe quel caractère hexadécimal, couramment <emphasis>&rdquo;0</emphasis>&rdquo;)</para>
 <para>Notez que des discussions sont en cours concernant la dépréciation de ce type d'adresse en raison de nombreux problèmes. Pour en savoir plus, lire: <ulink url="http://www.ietf.org/internet-drafts/">draft-ietf-ipv6-deprecate-site-local-XY.txt</ulink>.</para>
 <para>Pour des tests en laboratoire, de telles adresses restent un bon choix, à mon humble avis.</para></sect2><sect2>
 <title>Le type d'adresse &rdquo;unicast globale (agrégeable) "</title>
-<para>Aujourd'hui, il y a un type d'adresse globale de défini (la première conception, appelée &ldquo;basée sur le fournisseur&rdquo; a été abandonnée il y a déjà quelques années (<ulink url="http://www.faqs.org/rfcs/rfc1884.html">RFC 1884 / IP Version 6 Addressing Architecture [obsolete]</ulink>), vous en trouverez des traces dans des sources anciennes du noyau Linux).</para>
+<para>Aujourd'hui, il y a un type d'adresse globale de défini (la première conception, appelée &rdquo;basée sur le fournisseur&rdquo; a été abandonnée il y a déjà quelques années (<ulink url="http://www.faqs.org/rfcs/rfc1884.html">RFC 1884 / IP Version 6 Addressing Architecture [obsolete]</ulink>), vous en trouverez des traces dans des sources anciennes du noyau Linux).</para>
 <para>Il commence par (les <emphasis>x</emphasis> étant des caractères hexadécimaux)</para><screen>
 <![CDATA[2xxx: 
 3xxx:
-]]></screen><para>Note: la dénomination &ldquo;agrégeable&rdquo; est abandonnée dans les brouillons actuels.
+]]></screen><para>Note: la dénomination &rdquo;agrégeable&rdquo; est abandonnée dans les brouillons actuels.
 Il y a quelques sous-types définis en plus, ci-dessous:</para><sect3>
 <title>Les adresses de test 6bone</title>
 <para>Elles ont été les premières adresses globales à être définies et mises en usage. Elles commencent toutes par</para><screen>
@@ -344,7 +344,7 @@ Parce qu'IPv6 est maintenant en production, ce préfixe ne sera plus délégué 
 <title>Les types d'adresse (partie hôte)</title>
 <para>En ce qui concerne les questions d'auto-configuration et de mobilité, Il a été décidé d'utiliser les 64 bits inférieurs de la partie hôte de l'adresse pour la plupart des types d'adresse actuels. Conséquemment, chaque sous-réseau détient une grande quantité d'adresses. </para>
 <para>Cette partie hôte peut être différemment considérée: </para><sect2>
-<title>L'adresse calculée automatiquement (dite aussi &ldquo;sans état&rdquo;)</title>
+<title>L'adresse calculée automatiquement (dite aussi &rdquo;sans état&rdquo;)</title>
 <para>Avec l'auto-configuration, la partie hôte de l'adresse est calculée en convertissant l'adresse MAC d'une interface (si disponible), avec la méthode EUI-64, en une adresse IPv6 unique. Si aucune adresse MAC n'est disponible pour le périphérique en question (ce qui arrive par exemple sur les périphériques virtuels), quelque chose d'autre (comme l'adresse IPv4 ou l'adresse MAC d'une interface physique) est utilisée à la place.
 </para>
 <para>Considérons à nouveau le premier exemple:</para><screen>
@@ -356,17 +356,17 @@ Parce qu'IPv6 est maintenant en production, ce préfixe ne sera plus délégué 
 ]]></screen><para>en utilisant <ulink url="http://standards.ieee.org/regauth/oui/tutorials/EUI64.html">IEEE EUI-64</ulink> conçue pour les identifiants EUI-48.</para><sect3>
 <title>Le problème d'incursion possible dans la sphère privée (<emphasis>privacy problem</emphasis>) avec les adresses automatiquement calculées, et une solution</title>
 <para>Parce que la partie hôte "automatiquement calculée&rdquo; est globalement unique (sauf lorsqu'un fabriquant de NIC utilise la même adresse MAC sur plus d'une NIC), la traque grâce à un client (<emphasis>client tracking</emphasis>) est possible sur l'hôte, dès lors qu'aucun proxy d'aucune sorte n'est utilisé.</para>
-<para>C'est un problème connu, et une solution a été apportée: l'extension &ldquo;sphère privée&rdquo;, définie dans le RFC 3041 (<ulink url="http://www.faqs.org/rfcs/rfc3041.html">RFC 3041 / Privacy Extensions for Stateless Address</ulink>; il y a déjà aussi un brouillon plus récent disponible: <ulink url="ftp://ftp.ietf.org/internet-drafts/">draft-ietf-ipngwg-temp-addresses-*.txt</ulink>). Le principe est d'utiliser une valeur aléatoire et une valeur statique à partir desquelles un nouveau suffixe est généré à intervalle régulier. Note: ce n'est raisonnable que pour des connexions client sortantes, et n'est pas vraiment utile pour des machines réputées être des serveurs.</para></sect3></sect2><sect2>
+<para>C'est un problème connu, et une solution a été apportée: l'extension &rdquo;sphère privée&rdquo;, définie dans le RFC 3041 (<ulink url="http://www.faqs.org/rfcs/rfc3041.html">RFC 3041 / Privacy Extensions for Stateless Address</ulink>; il y a déjà aussi un brouillon plus récent disponible: <ulink url="ftp://ftp.ietf.org/internet-drafts/">draft-ietf-ipngwg-temp-addresses-*.txt</ulink>). Le principe est d'utiliser une valeur aléatoire et une valeur statique à partir desquelles un nouveau suffixe est généré à intervalle régulier. Note: ce n'est raisonnable que pour des connexions client sortantes, et n'est pas vraiment utile pour des machines réputées être des serveurs.</para></sect3></sect2><sect2>
 <title>La configuration manuelle</title>
 <para>Pour les serveurs, il est probablement plus aisé de se rappeler d'adresses plus simples; cela peut aussi se faire. Il est possible d'assigner une adresse IPv6 additionnelle à une interface, par exemple</para><screen>
 <![CDATA[3ffe:ffff:100:f101::1
-]]></screen><para>Pour les suffixes tels que &ldquo;::1&rdquo;, montré dans l'exemple ci-dessus, il est requis que le septième bit le plus significatif soit positionné à 0 (le bit universel/local d'un identifiant automatiquement généré). Certaines autres (à part celles qui n'ont pas étaient choisies) combinaisons de bits sont réservées aux adresses anycast.</para></sect2></sect1><sect1>
+]]></screen><para>Pour les suffixes tels que &rdquo;::1&rdquo;, montré dans l'exemple ci-dessus, il est requis que le septième bit le plus significatif soit positionné à 0 (le bit universel/local d'un identifiant automatiquement généré). Certaines autres (à part celles qui n'ont pas étaient choisies) combinaisons de bits sont réservées aux adresses anycast.</para></sect2></sect1><sect1>
 <title>La longueur de préfixe nécessaire au routage</title>
 <para>Dans les premières phases de la conception, il était prévu d'utiliser une approche intégrale de routage hiérarchique, et ce, afin de réduire au maximum la taille des tables de routage. A la base du raisonnement sous-tendu par cette approche, il y a la prise en compte du nombre grandissant des entrées de routage IPv4 au coeur des routeurs (supérieur à 104 000 en mai 2001), la nécessité de réduire ce nombre afin de diminuer le besoin en mémoire du matériel (piloté par Circuit Intégré d'Application Spécifique, <emphasis>Application Specified Integrated Circuit</emphasis>, ou ASIC) maintenant les tables de routage, et, en conséquence, d'accroître la vitesse (dans l'espoir que moins d'entrées génèrent des recherches plus rapides).
 </para>
 <para>Aujourd'hui, le point de vue est que le routage sera conçu quasi-hiérarchiquement pour les réseaux ayant seulement un fournisseur de service. Pour plus d'une connexion à un ISP, ce n'est pas possible, et cela relève du problème de la multi-résidence (des informations sur la multi-résidence:<ulink url="http://www.ietf.org/internet-drafts/">drafts*multi6*</ulink><ulink url="http://arneill-py.sacramento.ca.us/ipv6mh/"> IPv6 Multihoming Solutions</ulink></para><sect2>
 <title>La longueur du préfixe (aussi connue en tant que "masque de réseau")</title>
-<para>Comme pour IPv4, la notion de chemin de réseau routable nécessaire au routage a ici sa place. Parce que la notation standard d'un masque réseau n'est pas très agréable pour un adressage sur 128 bits, les concepteurs ont employé le schéma du Routage Inter-Domaines IPv4 Sans Classe (<emphasis>IPv4 Classless Inter Domain Routing</emphasis>, ou CIDR, défini dans le <ulink url="http://www.faqs.org/rfcs/rfc1519.html"> RFC 1519 / Classless Inter-Domain Routing</ulink>), dans lequel est spécifié le nombre de bits de l'adresse devant être utilisé pour le routage. Il est aussi connu comme notation &ldquo;slash&rdquo;.</para>
+<para>Comme pour IPv4, la notion de chemin de réseau routable nécessaire au routage a ici sa place. Parce que la notation standard d'un masque réseau n'est pas très agréable pour un adressage sur 128 bits, les concepteurs ont employé le schéma du Routage Inter-Domaines IPv4 Sans Classe (<emphasis>IPv4 Classless Inter Domain Routing</emphasis>, ou CIDR, défini dans le <ulink url="http://www.faqs.org/rfcs/rfc1519.html"> RFC 1519 / Classless Inter-Domain Routing</ulink>), dans lequel est spécifié le nombre de bits de l'adresse devant être utilisé pour le routage. Il est aussi connu comme notation &rdquo;slash&rdquo;.</para>
 <para>Un exemple: </para><screen>
 <![CDATA[3ffe:ffff:100:1:2:3:4:5/48
 ]]></screen><para>De cette notation seront extraits:</para><itemizedlist>
@@ -421,10 +421,10 @@ Parce qu'IPv6 est maintenant en production, ce préfixe ne sera plus délégué 
 <title>Les périphériques réseau prêts pour IPv6</title>
 <para>Les périphériques réseau n'ont pas tous déjà (ou n'auront jamais, pour certains) la capacité de transporter des paquets IPv6. L'état actuel de la situation quant à ce sujet peut être trouvé <ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-kernel.html#transport">ici</ulink>.</para>
 <para>A cause de l'implémentation de la structure de la couche réseau du noyau, un problème majeur est qu'un paquet IPv6 n'est pas réellement reconnu par son numéro d'en-tête IP (6 au lieu de 4). Il est reconnu par le numéro de protocole de la couche transport 2. En conséquence, tout protocole n'utilisant pas un tel numéro de protocole ne peut pas distribuer les paquets IPv6. Note: le paquet est bien encore transporté sur le lien, mais, côté récepteur, la distribution ne fonctionne pas (vous pouvez observer cela par exemple avec tcpdump).</para><sect3>
-<title>Actuellement connus pour ne jamais être &ldquo;capables de lien IPv6&rdquo;</title>
+<title>Actuellement connus pour ne jamais être &rdquo;capables de lien IPv6&rdquo;</title>
 <itemizedlist>
 <listitem><para>IP sur Ligne Série (<emphasis>Serial Line IP</emphasis>, SLIP, <ulink url="http://www.faqs.org/rfcs/rfc1055.html">RFC 1055 / SLIP</ulink>), serait aujourd'hui mieux dénommé SLIPv4, noms de périphérique: slX</para></listitem><listitem><para>IP sur Ligne Parallèle, comme pour SLIP, noms de périphérique: plipX</para></listitem><listitem><para>RNIS avec encapsulation <emphasis>rawip</emphasis>, noms de périphérique: isdnX</para></listitem></itemizedlist></sect3><sect3>
-<title>Actuellement connu pour ne pas être &ldquo;capable de lien IPv6&rdquo;</title>
+<title>Actuellement connu pour ne pas être &rdquo;capable de lien IPv6&rdquo;</title>
 <itemizedlist>
 <listitem><para>RNIS avec encapsulation <emphasis>syncppp</emphasis>, noms de périphérique: ipppX (au sujet de la conception de ipppd, il fusionnera dans une couche PPP plus abstraite dans la série des noyaux 2.5.x)</para></listitem></itemizedlist></sect3></sect2></sect1><sect1>
 <title>Les outils de configuration réseau prêts pour IPv6</title>
@@ -443,7 +443,7 @@ Parce qu'IPv6 est maintenant en production, ce préfixe ne sera plus délégué 
 ]]></screen><para>Si le programme /sbin/ip n'est pas trouvé, je vous recommande alors d'installer le paquetage iproute.</para><itemizedlist>
 <listitem><para>Vous pouvez le récupérer à partir de votre distribution Linux (s'il s'y trouve)</para></listitem><listitem><para>Vous pouvez télécharger l'archive tar et recompiler: <ulink url="ftp://ftp.inr.ac.ru/ip-routing/">sources sur le FTP d'origine</ulink> et miroir (manquant)</para></listitem><listitem><para>Vous pouvez rechercher le bon paquetage RPM ici, <ulink url="http://rpmfind.net/linux/rpm2html/search.php?query=iproute">RPMfind pour iproute</ulink> (parfois la reconstruction d'un paquetage SRPM est recommandée)</para></listitem></itemizedlist></sect2></sect1><sect1>
 <title>Les programmes de test/déboguage prêts pour IPv6</title>
-<para>Après avoir préparé votre système pour IPv6, vous voudrez établir des communications en utilisant IPv6. Vous devriez d'abord apprendre comment examiner les paquets IPv6 avec un programme dit &ldquo;renifleur&rdquo; (un <emphasis>sniffer</emphasis>). Cela est fortement conseillé, car cela peut aider à fournir très rapidement un diagnostic en cas de déboguage/dépannage.</para><sect2 id='program-ping6.' >
+<para>Après avoir préparé votre système pour IPv6, vous voudrez établir des communications en utilisant IPv6. Vous devriez d'abord apprendre comment examiner les paquets IPv6 avec un programme dit &rdquo;renifleur&rdquo; (un <emphasis>sniffer</emphasis>). Cela est fortement conseillé, car cela peut aider à fournir très rapidement un diagnostic en cas de déboguage/dépannage.</para><sect2 id='program-ping6.' >
 <title><!-- anchor id="program-ping6." --> ping IPv6</title>
 <para>Ce programme est normalement inclus dans le paquetage <emphasis>iputils</emphasis>. Il est conçu pour réaliser de simples tests du transport en émettant des paquets de requête d'écho (<emphasis>echo-request</emphasis>) ICMPv6 et en attendant les paquets de réponse en écho (<emphasis>echo-reply</emphasis>) ICMPv6.</para>
 <para>Usage</para><screen>
@@ -534,7 +534,7 @@ tcpdump: listening on ppp0
 ¬ 64, hlim 61) (ttl 23, id 29919, len 124)
 ]]></screen></sect3></sect2></sect1><sect1>
 <title>Les programmes prêts pour IPv6</title>
-<para>Les distributions actuelles comportent déjà les clients et les serveurs IPv6 les plus couramment utilisés. Allez d'abord voir sur <ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-distributions.html">IPv6 & Linux / l'état actuel des distributions</ulink>. Si ce que vous cherchez n'y est pas encore, vous pouvez vérifier sur <ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-apps.html">IPv6 & Linux / l'état actuel des applications disponibles</ulink>, où sont répertoriés les programmes déjà portés sur IPv6 et utilisables sous Linux. Pour les programmes les plus communément employés, il y a quelques éléments disponibles dans <ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-3.html">la troisième partie</ulink> et <ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-4.html">la quatrième partie</ulink> de l'HowTo - IPv6 &amp; Linux.</para></sect1><sect1>
+<para>Les distributions actuelles comportent déjà les clients et les serveurs IPv6 les plus couramment utilisés. Allez d'abord voir sur <ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-distributions.html">IPv6 &amp; Linux / l'état actuel des distributions</ulink>. Si ce que vous cherchez n'y est pas encore, vous pouvez vérifier sur <ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-apps.html">IPv6 &amp; Linux / l'état actuel des applications disponibles</ulink>, où sont répertoriés les programmes déjà portés sur IPv6 et utilisables sous Linux. Pour les programmes les plus communément employés, il y a quelques éléments disponibles dans <ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-3.html">la troisième partie</ulink> et <ulink url="http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-4.html">la quatrième partie</ulink> de l'HowTo - IPv6 &amp; Linux.</para></sect1><sect1>
 <title>Les programmes client prêts pour IPv6 (une sélection)</title>
 <para>Pour lancer les tests qui vont suivre, il est nécessaire que votre système dispose d'IPv6, et certains exemples montrent des adresses ne pouvant être atteintes que si une connexion au 6bone est disponible.</para><sect2>
 <title>Vérifier la résolution DNS des adresses IPv6</title>
@@ -563,7 +563,7 @@ Connection: close
 Content-Type: text/html; charset=ISO-8859-1
 
 Connection closed by foreign host.
-]]></screen><para>Si le client telnet ne comprend pas l'adresse IPv6 et dit quelque chose comme &ldquo;ne peut résoudre le nom d'hôte&rdquo; (&ldquo;<emphasis>cannot resolve hostname</emphasis>&rdquo;), IPv6 n'est alors pas disponible.</para></sect2><sect2>
+]]></screen><para>Si le client telnet ne comprend pas l'adresse IPv6 et dit quelque chose comme &rdquo;ne peut résoudre le nom d'hôte&rdquo; (&rdquo;<emphasis>cannot resolve hostname</emphasis>&rdquo;), IPv6 n'est alors pas disponible.</para></sect2><sect2>
 <title>Les clients ssh prêts pour IPv6</title>
 <sect3>
 <title>openssh</title>
@@ -572,7 +572,7 @@ Connection closed by foreign host.
 <![CDATA[$ ssh -6 ::1 
 user@::1's password: ****** 
 [user@ipv6host user]$
-]]></screen><para>Si votre client ssh ne comprend pas l'option &ldquo;-6&rdquo;, c'est qu'il n'a pas IPv6 de disponible, comme la plupart des paquetages de ssh version 1.</para></sect3><sect3>
+]]></screen><para>Si votre client ssh ne comprend pas l'option &rdquo;-6&rdquo;, c'est qu'il n'a pas IPv6 de disponible, comme la plupart des paquetages de ssh version 1.</para></sect3><sect3>
 <title>ssh.com</title>
 <para>Le client et le serveur SSH de chez SSH.com sont aussi prêts pour IPv6, et gratuits pour les machines Linux et FreeBSD selon l'usage -&nbsp;commercial ou personnel&nbsp;- qui en est fait.</para></sect3></sect2><sect2>
 <title>Les navigateurs web prêts pour IPv6</title>
@@ -591,11 +591,11 @@ user@::1's password: ******
 <title>Q: impossible d'utiliser ping6 avec des adresses lien-local</title>
 <para>Message d'erreur: "<emphasis>connect: Invalid argument</emphasis>"</para>
 <para>Le noyau ne sait pas sur quel lien (physique ou virtuel) vous voulez l'utiliser et envoyer des paquets ICMPv6. C'est pourquoi est affiché un message d'erreur.</para>
-<para>Solution: spécifier l'interface de cette façon: &ldquo;ping6 -I eth0 fe80::2e0:18ff:fe90:9205&rdquo;, voir aussi <link linkend="program-ping6.">l'usage du programme ping6</link>.</para></sect3><sect3>
+<para>Solution: spécifier l'interface de cette façon: &rdquo;ping6 -I eth0 fe80::2e0:18ff:fe90:9205&rdquo;, voir aussi <link linkend="program-ping6.">l'usage du programme ping6</link>.</para></sect3><sect3>
 <title>Q: impossible d'utiliser ping6 ou traceroute en tant qu'utilisateur courant</title>
-<para>Message d'erreur: &ldquo;<emphasis>icmp socket: Operation not permitted</emphasis>&rdquo;</para>
-<para>Ces utilitaires créent des paquets spéciaux ICMPv6 et les émettent en dehors. Ceci est réalisé par l'emploi des sockets brutes du noyau. Ces dernières ne peuvent être utilisées que par l'utilisateur &ldquo;root&rdquo;. C'est pourquoi les utilisateurs courants obtiennent un tel message d'erreur.</para>
-<para>Solution: s'il est vraiment nécessaire que tous les utilisateurs puissent utiliser ces utilitaires, vous pouvez ajouter le bit &ldquo;suid&rdquo; en faisant &rdquo;chmod u+s /chemin/vers/le/programme&rdquo;, voir aussi <link linkend="program-ping6.">l'usage du programme</link>. Si tous les utilisateurs ne doivent pas en être capables, vous pouvez changer ce programme de groupe, par exemple au profit du groupe &ldquo;wheel&rdquo;, ajouter les utilisateurs nécessaires à ce groupe et ôter le bit d'exécution aux autres utilisateurs par &ldquo;chmod o-rwx /chemin/vers/le/programme&rdquo;, ou bien configurer &ldquo;sudo&rdquo; pour mettre en place votre politique de sécurité. </para></sect3></sect2></sect1></chapter><chapter id='chapter-configuration-interface' >
+<para>Message d'erreur: &rdquo;<emphasis>icmp socket: Operation not permitted</emphasis>&rdquo;</para>
+<para>Ces utilitaires créent des paquets spéciaux ICMPv6 et les émettent en dehors. Ceci est réalisé par l'emploi des sockets brutes du noyau. Ces dernières ne peuvent être utilisées que par l'utilisateur &rdquo;root&rdquo;. C'est pourquoi les utilisateurs courants obtiennent un tel message d'erreur.</para>
+<para>Solution: s'il est vraiment nécessaire que tous les utilisateurs puissent utiliser ces utilitaires, vous pouvez ajouter le bit &rdquo;suid&rdquo; en faisant &rdquo;chmod u+s /chemin/vers/le/programme&rdquo;, voir aussi <link linkend="program-ping6.">l'usage du programme</link>. Si tous les utilisateurs ne doivent pas en être capables, vous pouvez changer ce programme de groupe, par exemple au profit du groupe &rdquo;wheel&rdquo;, ajouter les utilisateurs nécessaires à ce groupe et ôter le bit d'exécution aux autres utilisateurs par &rdquo;chmod o-rwx /chemin/vers/le/programme&rdquo;, ou bien configurer &rdquo;sudo&rdquo; pour mettre en place votre politique de sécurité. </para></sect3></sect2></sect1></chapter><chapter id='chapter-configuration-interface' >
 <title><!-- anchor id="chapter-configuration-interface" -->Configurer les interfaces</title>
 <sect1>
 <title>Les différents périphériques réseau</title>
@@ -617,7 +617,7 @@ user@::1's password: ******
 <title>SLIP + PLIP</title>
 <para>Comme il a déjà été dit, ces interfaces ne supportent pas le transport IPv6 (l'émission est OK, mais la distribution à la réception ne fonctionne pas).</para></sect3><sect3>
 <title>Le périphérique Ether-tap</title>
-<para>Les périphériques Ether-tap sont prêts pour IPv6, et sont de plus configurables sans état. Pour être utilisés, le module &ldquo;ethertap&rdquo; doit être chargé au préalable.</para></sect3><sect3>
+<para>Les périphériques Ether-tap sont prêts pour IPv6, et sont de plus configurables sans état. Pour être utilisés, le module &rdquo;ethertap&rdquo; doit être chargé au préalable.</para></sect3><sect3>
 <title>Les périphériques tun</title>
 <para>Actuellement, je ne les ai pas encore testés par moi-même.</para></sect3><sect3>
 <title>ATM</title>
@@ -677,7 +677,7 @@ inet6 addr: 3ffe:ffff:0:f101::1/64 Scope:Global
 inet6 addr: fec0:0:0:f101::1/64 Scope:Site
 ]]></screen></sect2></sect1><sect1>
 <title>Ajouter une adresse IPv6</title>
-<para>Ajouter une adresse IPv6 est similaire au mécanisme des adresses &ldquo;ALIAS IP&rdquo; sur les interfaces configurées par IPv4 Linux.</para><sect2>
+<para>Ajouter une adresse IPv6 est similaire au mécanisme des adresses &rdquo;ALIAS IP&rdquo; sur les interfaces configurées par IPv4 Linux.</para><sect2>
 <title>Utiliser "ip"</title>
 <para>Usage: </para><screen>
 <![CDATA[# /sbin/ip -6 addr add <adresseipv6>/<longueurdupréfixe> dev <interface> 
@@ -772,7 +772,7 @@ ff00::/8         ::       UA  256 0 0 eth0 <- Route de l'interface destiné à t
 ¬ metric 1
 ]]></screen><para>Exemple:</para><screen>
 <![CDATA[# /sbin/ip -6 route add 2000::/3 dev eth0 metric 1
-]]></screen><para>La distance (<emphasis>metric</emphasis>) &ldquo;1&rdquo; est utilisée ici par soucis de compatibilité avec la distance utilisée par route, car la distance par défaut fixée par &ldquo;ip&rdquo; est &ldquo;1024&rdquo;.</para></sect2><sect2>
+]]></screen><para>La distance (<emphasis>metric</emphasis>) &rdquo;1&rdquo; est utilisée ici par soucis de compatibilité avec la distance utilisée par route, car la distance par défaut fixée par &rdquo;ip&rdquo; est &rdquo;1024&rdquo;.</para></sect2><sect2>
 <title>Utiliser "route"</title>
 <para>Usage:</para><screen>
 <![CDATA[# /sbin/route -A inet6 add <réseau>/<longueurdupréfixe> dev <périphérique>
@@ -799,18 +799,18 @@ ff00::/8         ::       UA  256 0 0 eth0 <- Route de l'interface destiné à t
 <para>Une idée d'IPv6 était le routage hiérarchique, avec pour conséquence une quantité moindre d'entrées dans les tables de routage nécessaires aux routeurs.</para>
 <para>Il y a certains problèmes dans les noyaux Linux actuels:</para><sect3>
 <title>Les clients (ne routent aucun paquet!)</title>
-<para>Les clients peuvent installer une route par défaut avec pour préfixe &ldquo;::/0&rdquo;, ils peuvent aussi apprendre une telle route par auto-configuration, en utilisant par exemple radvd s'il est présent sur le lien, comme le montre ce qui suit:</para><screen>
+<para>Les clients peuvent installer une route par défaut avec pour préfixe &rdquo;::/0&rdquo;, ils peuvent aussi apprendre une telle route par auto-configuration, en utilisant par exemple radvd s'il est présent sur le lien, comme le montre ce qui suit:</para><screen>
 <![CDATA[# ip -6 route show | grep ^default
 default via fe80::212:34ff:fe12:3450 dev eth0 proto kernel metric 1024 expires
 ¬ 29sec mtu 1500 advmss 1440
 ]]></screen></sect3><sect3>
 <title>Les routeurs en cas de renvoi de paquets</title>
 <para>Dans ses grandes lignes, l'actuel noyau Linux (au moins &lt;= 2.4.17) ne supporte pas les routes par défaut. Vous pouvez les installées, mais la recherche échouera quand un paquet devra être renvoyé (une intention normale pour un routeur).</para>
-<para>Pour l'heure, le &ldquo;routage par défaut&rdquo; peut être installé en utilisant l'actuel et unique préfixe d'adresse globale &ldquo;2000::/3&rdquo;.</para>
+<para>Pour l'heure, le &rdquo;routage par défaut&rdquo; peut être installé en utilisant l'actuel et unique préfixe d'adresse globale &rdquo;2000::/3&rdquo;.</para>
 <para>Le projet USAGI supporte déjà cela dans leurs extensions grâce à une astuce de programmation (<emphasis>NdT</emphasis>: <emphasis>a hack</emphasis>, <emphasis>i.e.</emphasis> littéralement, une&rdquo;bidouille&rdquo;).</para>
 <para>Note: prenez garde au routage par défaut sans filtrage d'adresse sur les routeurs de bordure, sinon du trafic multicast ou site-local quittera l'environnement.</para></sect3></sect2></sect1></chapter><chapter id='chapter-Neighbor-Discovery' >
 <title><!-- anchor id="chapter-Neighbor-Discovery" -->La découverte de voisinage</title>
-<para>La découverte de voisinage est le successeur IPv6 de ARP (<emphasis>Address Resolution Protocol</emphasis>, protocole de résolution d'adresse) pour IPv4. Vous pouvez récupérer l'information concernant le voisinage actuel, de plus, vous pouvez fixer ou détruire des entrées. Le noyau garde la trace de la détection d'un voisin (comme ARP pour IPv4). Vous pouvez faire des recherches dans la table apprise, en utilisant &ldquo;ip&rdquo;.</para><sect1>
+<para>La découverte de voisinage est le successeur IPv6 de ARP (<emphasis>Address Resolution Protocol</emphasis>, protocole de résolution d'adresse) pour IPv4. Vous pouvez récupérer l'information concernant le voisinage actuel, de plus, vous pouvez fixer ou détruire des entrées. Le noyau garde la trace de la détection d'un voisin (comme ARP pour IPv4). Vous pouvez faire des recherches dans la table apprise, en utilisant &rdquo;ip&rdquo;.</para><sect1>
 <title>Afficher le voisinage en utilisant "ip"</title>
 <para>Avec la commande qui suit vous pouvez afficher les voisins IPv6 appris ou configurés</para><screen>
 <![CDATA[# ip -6 neigh show [dev <périphérique>]
@@ -833,7 +833,7 @@ fe80::201:23ff:fe45:6789 dev eth0 lladdr 00:01:23:45:67:89 router nud reachable
 <![CDATA[# ip -6 neigh del fec0::1 lladdr 02:01:02:03:04:05 dev eth0
 ]]></screen></sect2><sect2>
 <title>Pour plus de réglages avancés</title>
-<para>L'outil &ldquo;ip&rdquo; est sous-documenté, mais il est très puissant. Voir l'aide en ligne pour en savoir plus</para><screen>
+<para>L'outil &rdquo;ip&rdquo; est sous-documenté, mais il est très puissant. Voir l'aide en ligne pour en savoir plus</para><screen>
 <![CDATA[# ip -6 neigh help
 Usage: ip neigh { add | del | change | replace } { ADDR [ lladdr LLADDR ] 
           [ nud { permanent | noarp | stale | reachable } ] 
@@ -860,7 +860,7 @@ Usage: ip neigh { add | del | change | replace } { ADDR [ lladdr LLADDR ]
 |  0x2002  |           |        |                                | 
 +---+------+-----------+--------+--------------------------------+
 ]]></screen><para>FP et TLA ensemble (16 bits) ont la valeur 0x2002. V4ADDR est l'adresse IPv4 globale et unique du noeud (en notation hexadécimale). SLA est l'identifiant de sous-réseau (65536 sous-réseaux locaux possibles). Ils sont utilisés pour représenter la structure locale de votre réseau.</para>
-<para>Pour les passerelles, un tel préfixe est généré en utilisant normalement pour SLA &ldquo;0000&rdquo;, et pour suffixe &ldquo;::1&rdquo; (ce n'est pas une nécessité, il peut être déterminé arbitrairement, mais d'une portée locale) et assigné à l'interface de tunnelage 6to4. Notez que Windows Microsoft utilise aussi V4ADDR comme préfixe.</para></sect3><sect3>
+<para>Pour les passerelles, un tel préfixe est généré en utilisant normalement pour SLA &rdquo;0000&rdquo;, et pour suffixe &rdquo;::1&rdquo; (ce n'est pas une nécessité, il peut être déterminé arbitrairement, mais d'une portée locale) et assigné à l'interface de tunnelage 6to4. Notez que Windows Microsoft utilise aussi V4ADDR comme préfixe.</para></sect3><sect3>
 <title>Le flux de tunnelage ascendant 6to4</title>
 <para>Le noeud doit savoir à quel point de connexion terminal étranger ses paquets IPv6 dans IPv4 doivent être envoyés. Aux tout premiers jours du tunnelage 6to4, des routeurs dédiés au tunnelage de flux ascendant avaient été définis. Voir <ulink url="http://www.kfu.com/~nsayer/6to4/">l'information 6to4 de NSayer</ulink> pour une liste de ses routeurs.</para>
 <para>De nos jours, les routeurs de flux ascendant 6to4 peuvent être découverts comme par magie par l'emploi de l'adresse anycast 192.88.99.1. Les protocoles de routage s'occupent de cela en arrière-plan, voir le <ulink url="http://www.faqs.org/rfcs/rfc3068.html">RFC 3068 / An Anycast Prefix for 6to4 Relay Routers</ulink> pour les détails. </para></sect3><sect3>
@@ -893,7 +893,7 @@ ff00::/8   ::               UA  256  0  0  sit0
 ]]></screen></sect2></sect1><sect1 id='conf-ipv6-in-ipv4-point-to-point-tunnels' >
 <title><!-- anchor id="conf-ipv6-in-ipv4-point-to-point-tunnels" -->Montage d'un tunnel point-à-point</title>
 <para>Il y a 3 possibilités pour ajouter ou ôter un tunnel point-à-point.</para>
-<para>Une bonne source d'information additionnelle à propos de l'installation de tunnel grâce à &ldquo;ip&rdquo; est <ulink url="http://www.deepspace6.net/docs/iproute2tunnel-en.html">configurer les tunnels avec iproute2 (article)</ulink> (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/docs/iproute2tunnel-en.html">miroir</ulink>).</para><sect2>
+<para>Une bonne source d'information additionnelle à propos de l'installation de tunnel grâce à &rdquo;ip&rdquo; est <ulink url="http://www.deepspace6.net/docs/iproute2tunnel-en.html">configurer les tunnels avec iproute2 (article)</ulink> (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/docs/iproute2tunnel-en.html">miroir</ulink>).</para><sect2>
 <title>Ajouter un tunnel point-à-point</title>
 <sect3>
 <title>Utiliser "ip"</title>
@@ -1002,7 +1002,7 @@ ff00::/8   ::               UA  256  0  0  sit0
 <![CDATA[1.2.3.4
 ]]></screen><para>le préfixe 6to4 généré sera</para><screen>
 <![CDATA[2002:0102:0304::
-]]></screen><para>Les passerelles locales 6to4 devraient (mais cela n'est pas une nécessité, vous pouvez choisir un préfixe arbitraire de portée locale, si cela vous sied mieux) toujours assigner le suffixe &ldquo;::1&rdquo;, ce qui vous donnera comme adresse 6to4 locale</para><screen>
+]]></screen><para>Les passerelles locales 6to4 devraient (mais cela n'est pas une nécessité, vous pouvez choisir un préfixe arbitraire de portée locale, si cela vous sied mieux) toujours assigner le suffixe &rdquo;::1&rdquo;, ce qui vous donnera comme adresse 6to4 locale</para><screen>
 <![CDATA[2002:0102:0304::1
 ]]></screen><para>Utiliser par exemple ce qui suit pour une génération automatique:</para><screen>
 <![CDATA[ipv4="1.2.3.4"; printf "2002:%02x%02x:%02x%02x::1" `echo $ipv4 | tr "." " "`
@@ -1017,10 +1017,10 @@ ff00::/8   ::               UA  256  0  0  sit0
 <![CDATA[# /sbin/ip -6 addr add <adresse6to4locale>/16 dev tun6to4 
 ]]></screen><para>Ajouter une route (par défaut) au réseau global IPv6 en utilisant l'adresse anycast tous-routeurs-6to4 (<emphasis>all-6to4-routers</emphasis>)</para><screen>
 <![CDATA[# /sbin/ip -6 route add 2000::/3 via ::192.88.99.1 dev tun6to4 metric 1
-]]></screen><para>Il a été rapporté que certaines versions de &ldquo;ip&rdquo; (par exemple Linux SuSe 9.0) ne prennent pas en charge les adresses IPv6 compatibles IPv4 pour les passerelles. Dans ce cas, l'adresse IPv6 correspondante doit être employée:</para><screen>
+]]></screen><para>Il a été rapporté que certaines versions de &rdquo;ip&rdquo; (par exemple Linux SuSe 9.0) ne prennent pas en charge les adresses IPv6 compatibles IPv4 pour les passerelles. Dans ce cas, l'adresse IPv6 correspondante doit être employée:</para><screen>
 <![CDATA[# /sbin/ip -6 route add 2000::/3 via 2002:c058:6301::1 dev tun6to4 metric 1
 ]]></screen></sect3><sect3>
-<title>Utiliser "ifconfig", "route" et le périphérique de tunnelage &ldquo;sit0&rdquo; (méthode dépréciée)</title>
+<title>Utiliser "ifconfig", "route" et le périphérique de tunnelage &rdquo;sit0&rdquo; (méthode dépréciée)</title>
 <para>Cela est déprécié car le périphérique de tunnel générique sit0 ne permet pas de spécifier un filtrage par périphérique.</para>
 <para>Monter l'interface de tunnelage générique sit0</para><screen>
 <![CDATA[# /sbin/ifconfig sit0 up 
@@ -1039,7 +1039,7 @@ ff00::/8   ::               UA  256  0  0  sit0
 ]]></screen><para>Ôter un périphérique tunnel</para><screen>
 <![CDATA[# /sbin/ip tunnel del tun6to4 
 ]]></screen></sect3><sect3>
-<title>Utiliser &ldquo;ifconfig&rdquo;, &ldquo;route&rdquo; et un périphérique de tunnel générique &ldquo;sit0&rdquo; (déprécié)</title>
+<title>Utiliser &rdquo;ifconfig&rdquo;, &rdquo;route&rdquo; et un périphérique de tunnel générique &rdquo;sit0&rdquo; (déprécié)</title>
 <para>Ôter une route (par défaut) traversant une interface tunnel 6to4</para><screen>
 <![CDATA[# /sbin/route -A inet6 del 2000::/3 gw ::192.88.99.1 dev sit0
 ]]></screen><para>Ôter une adresse locale 6to4 d'une interface</para><screen>
@@ -1054,7 +1054,7 @@ ff00::/8   ::               UA  256  0  0  sit0
 <para id='proc-filesystem' ><!-- anchor id="proc-filesystem" -->Note: la source de cette section est essentiellement le fichier "ip-sysctl.txt", qui est inclus dans les sources du noyau actuel, dans le répertoire "Documentation/networking". Le crédit va à Pekka Savola qui maintient la partie de ce fichier relative à IPv6. D'autres textes sont aussi plus ou moins copier/coller dans cette partie de document.</para><sect1>
 <title>Comment accéder au système de fichiers /proc</title>
 <sect2>
-<title>Utiliser &ldquo;cat&rdquo; et &ldquo;echo&rdquo;</title>
+<title>Utiliser &rdquo;cat&rdquo; et &rdquo;echo&rdquo;</title>
 <para>Utiliser "cat" et "echo" est le moyen le plus simple d'accéder au système de fichiers /proc, mais certains pré-requis sont nécessaires à cela</para><itemizedlist>
 <listitem><para>Le système de fichiers /proc doit être rendu disponible dans le noyau, ce qui signifie qu'à la compilation le commutateur suivant doit avoir été positionné</para></listitem></itemizedlist><screen>
 <![CDATA[CONFIG_PROC_FS=y
@@ -1073,9 +1073,9 @@ none on /proc type proc (rw)
 <para>Une nouvelle valeur peut être fixée (si l'entrée est en écriture) en utilisant echo:</para><screen>
 <![CDATA[# echo "1" >/proc/sys/net/ipv6/conf/all/forwarding
 ]]></screen></sect3></sect2><sect2>
-<title>Utiliser &ldquo;sysctl&rdquo;</title>
+<title>Utiliser &rdquo;sysctl&rdquo;</title>
 <para>Utiliser le programme "sysctl" pour accéder aux commutateurs du noyau est une méthode moderne aujourd'hui. Vous pouvez aussi l'utiliser même si le système de fichiers /proc n'est pas monté. Mais vous n'avez alors accès qu'à /proc/sys/*!</para>
-<para>Le programme &ldquo;sysctl&rdquo; est compris dans le paquetage &ldquo;procps&rdquo; (sur le système Red Hat).</para><itemizedlist>
+<para>Le programme &rdquo;sysctl&rdquo; est compris dans le paquetage &rdquo;procps&rdquo; (sur le système Red Hat).</para><itemizedlist>
 <listitem><para>L'interface sysctl doit être disponible dans le noyau, ce qui signifie qu'à la compilation le commutateur suivant a à être fixé</para></listitem></itemizedlist><screen>
 <![CDATA[CONFIG_SYSCTL=y
 ]]></screen><sect3>
@@ -1093,19 +1093,19 @@ net.ipv6.conf.all.forwarding = 1
 net.ipv4.ip_local_port_range = 32768 61000
 ]]></screen></sect3><sect3>
 <title>En plus</title>
-<para>Note: il existe dans la pratique certaines versions de sysctl qui affichent &ldquo;/&rdquo; au lieu de &ldquo;.&rdquo;</para>
+<para>Note: il existe dans la pratique certaines versions de sysctl qui affichent &rdquo;/&rdquo; au lieu de &rdquo;.&rdquo;</para>
 <para>Pour plus de détails jetez un coup d'oeil dans la page de manuel de sysctl.</para>
-<para>une astuce: pour une recherche rapide parmi les réglages, utiliser &ldquo;-a&rdquo; (afficher toutes les entrées) en conjonction avec &ldquo;grep&rdquo;.</para></sect3></sect2><sect2>
+<para>une astuce: pour une recherche rapide parmi les réglages, utiliser &rdquo;-a&rdquo; (afficher toutes les entrées) en conjonction avec &rdquo;grep&rdquo;.</para></sect3></sect2><sect2>
 <title>Les types de valeur trouvés dans le système de fichiers /proc</title>
 <para>IL y a plusieurs formats observés dans le système de fichiers /proc:</para><itemizedlist>
-<listitem><para>BOOLÉEN: simple &ldquo;0&rdquo; (faux) ou &ldquo;1&rdquo; (vrai)</para></listitem><listitem><para>ENTIER: une valeur entière, peut être également non signée</para></listitem><listitem><para>Des lignes plus sophistiquées avec plusieurs valeurs: parfois un en-tête est aussi affiché, sinon, jetez un coup d'oeil aux sources du noyau pour savoir quel sens possède telle ou telle valeur...</para></listitem></itemizedlist></sect2></sect1><sect1 id='proc-sys-net-ipv6.' >
+<listitem><para>BOOLÉEN: simple &rdquo;0&rdquo; (faux) ou &rdquo;1&rdquo; (vrai)</para></listitem><listitem><para>ENTIER: une valeur entière, peut être également non signée</para></listitem><listitem><para>Des lignes plus sophistiquées avec plusieurs valeurs: parfois un en-tête est aussi affiché, sinon, jetez un coup d'oeil aux sources du noyau pour savoir quel sens possède telle ou telle valeur...</para></listitem></itemizedlist></sect2></sect1><sect1 id='proc-sys-net-ipv6.' >
 <title><!-- anchor id="proc-sys-net-ipv6." -->Les entrées de /proc/sys/net/ipv6/</title>
 <sect2>
 <title>conf/default/*</title>
 <para>Changer les réglages par défaut spécifiques à chaque interface.</para></sect2><sect2>
 <title>conf/all/*</title>
 <para>Changer tous les réglages spécifiques aux interfaces.</para>
-<para>Exception: &ldquo;conf/all/forwarding&rdquo; a une signification différente ici</para><sect3>
+<para>Exception: &rdquo;conf/all/forwarding&rdquo; a une signification différente ici</para><sect3>
 <title>conf/all/forwarding</title>
 <itemizedlist>
 <listitem><para>Type: BOOLÉEN</para></listitem></itemizedlist><para>Ceci rend disponible le renvoi global IPv6 entre toutes les interfaces.</para>
@@ -1123,7 +1123,7 @@ net.ipv4.ip_local_port_range = 32768 61000
 <listitem><para>Type: BOOLÉEN</para></listitem><listitem><para>Défaut fonctionnel: disponible si le renvoi local est indisponible. Indisponible si le renvoi local est disponible.</para></listitem></itemizedlist><para>Accepter les redirections émises par un routeur IPv6.</para></sect3><sect3>
 <title>autoconf</title>
 <itemizedlist>
-<listitem><para>Type: BOOLÉEN</para></listitem><listitem><para>Défaut: VRAI</para></listitem></itemizedlist><para>Configurer les adresses lien-local (voir aussi <link linkend="chapter-addresstypes">Les types d'adresse</link>) utilisant les adresses matérielles L2. Par exemple, ceci génère, comme par magie, une adresse telle que &ldquo;fe80::201:23ff:fe45:6789&rdquo; sur une interface ayant une adresse MAC-L2.</para></sect3><sect3>
+<listitem><para>Type: BOOLÉEN</para></listitem><listitem><para>Défaut: VRAI</para></listitem></itemizedlist><para>Configurer les adresses lien-local (voir aussi <link linkend="chapter-addresstypes">Les types d'adresse</link>) utilisant les adresses matérielles L2. Par exemple, ceci génère, comme par magie, une adresse telle que &rdquo;fe80::201:23ff:fe45:6789&rdquo; sur une interface ayant une adresse MAC-L2.</para></sect3><sect3>
 <title>dad_transmits</title>
 <itemizedlist>
 <listitem><para>Type: ENTIER</para></listitem><listitem><para>Défaut: 1</para></listitem></itemizedlist><para>Quantité de message de détection d'adresse dupliquée à émettre.</para></sect3><sect3>
@@ -1246,20 +1246,20 @@ net.ipv4.ip_local_port_range = 32768 61000
 <title>autre(s)</title>
 <para>Inconnu(s), mais probablement inutilisé(s) par IPv6.</para></sect2></sect1><sect1 id='proc-net' >
 <title><!-- anchor id="proc-net" -->Les entrées relatives à IPv6 dans /proc/net/</title>
-<para>Dans /proc/net il y a plusieurs entrées disponibles en lecture seule. Vous ne pouvez pas utiliser ici &ldquo;sysctl&rdquo; afin de récupérer des informations, utiliser &ldquo;cat&rdquo;.</para><sect2>
+<para>Dans /proc/net il y a plusieurs entrées disponibles en lecture seule. Vous ne pouvez pas utiliser ici &rdquo;sysctl&rdquo; afin de récupérer des informations, utiliser &rdquo;cat&rdquo;.</para><sect2>
 <title>if_inet6</title>
 <itemizedlist>
-<listitem><para>Type: Une ligne par adresse comporte plusieurs valeurs</para></listitem></itemizedlist><para>Ici toutes les adresses IPv6 configurées sont montrées sous un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir &ldquo;net/ipv6/addrconf.c&rdquo; pour en savoir plus).</para><screen>
+<listitem><para>Type: Une ligne par adresse comporte plusieurs valeurs</para></listitem></itemizedlist><para>Ici toutes les adresses IPv6 configurées sont montrées sous un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir &rdquo;net/ipv6/addrconf.c&rdquo; pour en savoir plus).</para><screen>
 <![CDATA[# cat /proc/net/if_inet6
 00000000000000000000000000000001 01 80 10 80 lo
 +------------------------------+ ++ ++ ++ ++ ++
 |                                |  |  |  |  |
 1                                2  3  4  5  6
 ]]></screen><orderedlist>
-<listitem><para>L'adresse IPv6 affichée grâce à 32 caractères hexadécimaux sans le séparateur ":"</para></listitem><listitem><para>Numéro de périphérique Netlink (index d'interface) in hexadécimal (voir aussi &ldquo;ip addr&rdquo;)</para></listitem><listitem><para>La longueur du préfixe en hexadécimal</para></listitem><listitem><para>La valeur de la portée (voir les sources du noyau "include/net/ipv6.h" et "net/ipv6/addrconf.c" pour plus de détails)</para></listitem><listitem><para>Les drapeaux de l'interface (voir &ldquo;include/linux/rtnetlink.h&rdquo; et &ldquo;net/ipv6/addrconf.c&rdquo; pour en savoir plus)</para></listitem><listitem><para>Le nom du périphérique</para></listitem></orderedlist></sect2><sect2>
+<listitem><para>L'adresse IPv6 affichée grâce à 32 caractères hexadécimaux sans le séparateur ":"</para></listitem><listitem><para>Numéro de périphérique Netlink (index d'interface) in hexadécimal (voir aussi &rdquo;ip addr&rdquo;)</para></listitem><listitem><para>La longueur du préfixe en hexadécimal</para></listitem><listitem><para>La valeur de la portée (voir les sources du noyau "include/net/ipv6.h" et "net/ipv6/addrconf.c" pour plus de détails)</para></listitem><listitem><para>Les drapeaux de l'interface (voir &rdquo;include/linux/rtnetlink.h&rdquo; et &rdquo;net/ipv6/addrconf.c&rdquo; pour en savoir plus)</para></listitem><listitem><para>Le nom du périphérique</para></listitem></orderedlist></sect2><sect2>
 <title>ipv6_route</title>
 <itemizedlist>
-<listitem><para>Type: Une ligne par route comporte plusieurs valeurs</para></listitem></itemizedlist><para>Ici toutes les routes IPv6 configurées sont montrées dans un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir &ldquo;net/ipv6/route.c&rdquo; pour en savoir plus).</para><screen>
+<listitem><para>Type: Une ligne par route comporte plusieurs valeurs</para></listitem></itemizedlist><para>Ici toutes les routes IPv6 configurées sont montrées dans un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir &rdquo;net/ipv6/route.c&rdquo; pour en savoir plus).</para><screen>
 <![CDATA[# cat /proc/net/ipv6_route
 00000000000000000000000000000000 00 00000000000000000000000000000000 00
 +------------------------------+ ++ +------------------------------+ ++
@@ -1304,8 +1304,8 @@ FRAG6: inuse 0 memory 0
 <sect1>
 <title>Les sockets d'écoute de serveur</title>
 <sect2>
-<title>Utiliser &ldquo;netstat&rdquo; pour vérifier les sockets d'écoute de serveur</title>
-<para>C'est toujours intéressant de savoir quelles sockets de serveur sont actives à un moment donné sur un noeud. Utiliser &ldquo;netstat&rdquo; est le moyen le plus court pour obtenir une telle information: </para>
+<title>Utiliser &rdquo;netstat&rdquo; pour vérifier les sockets d'écoute de serveur</title>
+<para>C'est toujours intéressant de savoir quelles sockets de serveur sont actives à un moment donné sur un noeud. Utiliser &rdquo;netstat&rdquo; est le moyen le plus court pour obtenir une telle information: </para>
 <para>options employées: -nlptu</para>
 <para>Exemple:</para><screen>
 <![CDATA[# netstat -nlptu
@@ -1390,47 +1390,47 @@ udp        0      0 :::53                   :::*
 ¬ prefix=2002:0102:0304:1::/64)(prefix info: LAR valid_ltime=2592000,
 ¬ preffered_ltime=604800, prefix=3ffe:ffff:0:1::/64)(src lladdr:
 ¬ 0:12:34:12:34:50) (len 88, hlim 255)
-]]></screen><para>Un routeur, avec pour adresse lien-local &ldquo;fe80::212:34ff:fe12:3450&rdquo;, émet une annonce à l'adresse multicast tous-les-noeuds-du-lien (<emphasis>all-node-on-link</emphasis>) &ldquo;ff02::1&rdquo;, contenant deux préfixes, &ldquo;2002:0102:0304:1::/64&rdquo; (d'une durée de vie de 30 s) et &ldquo;3ffe:ffff:0:1::/64&rdquo; (d'une durée de vie de 2592000 s), incluant sa propre adresse MAC de couche 2, &ldquo;0:12:34:12:34:50&rdquo;.</para></sect3><sect3>
+]]></screen><para>Un routeur, avec pour adresse lien-local &rdquo;fe80::212:34ff:fe12:3450&rdquo;, émet une annonce à l'adresse multicast tous-les-noeuds-du-lien (<emphasis>all-node-on-link</emphasis>) &rdquo;ff02::1&rdquo;, contenant deux préfixes, &rdquo;2002:0102:0304:1::/64&rdquo; (d'une durée de vie de 30 s) et &rdquo;3ffe:ffff:0:1::/64&rdquo; (d'une durée de vie de 2592000 s), incluant sa propre adresse MAC de couche 2, &rdquo;0:12:34:12:34:50&rdquo;.</para></sect3><sect3>
 <title>Une sollicitation de routeur</title>
 <screen>
 <![CDATA[15:44:21.152646 fe80::212:34ff:fe12:3456 > ff02::2: icmp6: router solicitation
 ¬ (src lladdr: 0:12:34:12:34:56) (len 16, hlim 255)
-]]></screen><para>Un noeud, avec pour adresse lien-local &ldquo;fe80::212:34ff:fe12:3456&rdquo; et comme adresse de couche 2 &ldquo;0:12:34:12:34:56&rdquo;, est en quête d'un routeur présent sur le lien, en conséquence il émet cette sollicitation à l'adresse multicast tous-routeurs-présents-sur-le-lien (<emphasis>all-router-on-link</emphasis>) &ldquo;ff02::2&rdquo;.</para></sect3></sect2><sect2>
+]]></screen><para>Un noeud, avec pour adresse lien-local &rdquo;fe80::212:34ff:fe12:3456&rdquo; et comme adresse de couche 2 &rdquo;0:12:34:12:34:56&rdquo;, est en quête d'un routeur présent sur le lien, en conséquence il émet cette sollicitation à l'adresse multicast tous-routeurs-présents-sur-le-lien (<emphasis>all-router-on-link</emphasis>) &rdquo;ff02::2&rdquo;.</para></sect3></sect2><sect2>
 <title>La découverte de voisinage</title>
 <sect3>
 <title>Une sollicitation de découverte de voisinage afin de détecter une possible duplication d'adresse</title>
-<para>Les paquets suivants sont émis par un noeud sur la couche 2, adresse MAC &ldquo;0:12:34:12:34:56&rdquo;, pendant l'auto-configuration, afin de vérifier si une adresse potentielle est déjà employée ou non par un autre noeud sur le lien permettant d'émettre ces paquets, <emphasis>via</emphasis> l'adresse multicast lien-local du noeud sollicité.</para><itemizedlist>
-<listitem><para>Le noeud veut configurer son lien-local avec l'adresse &ldquo;fe80::212:34ff:fe12:3456&rdquo;, il est en train de vérifier s'il y a duplication</para></listitem></itemizedlist><screen>
+<para>Les paquets suivants sont émis par un noeud sur la couche 2, adresse MAC &rdquo;0:12:34:12:34:56&rdquo;, pendant l'auto-configuration, afin de vérifier si une adresse potentielle est déjà employée ou non par un autre noeud sur le lien permettant d'émettre ces paquets, <emphasis>via</emphasis> l'adresse multicast lien-local du noeud sollicité.</para><itemizedlist>
+<listitem><para>Le noeud veut configurer son lien-local avec l'adresse &rdquo;fe80::212:34ff:fe12:3456&rdquo;, il est en train de vérifier s'il y a duplication</para></listitem></itemizedlist><screen>
 <![CDATA[15:44:17.712338 :: > ff02::1:ff12:3456: icmp6: neighbor sol: who has
 ¬ fe80::212:34ff:fe12:3456(src lladdr: 0:12:34:12:34:56) (len 32, hlim 255)
 ]]></screen><itemizedlist>
-<listitem><para>Le noeud veut configurer son adresse globale &ldquo;2002:0102:0304:1:212:34ff:fe12:3456&rdquo; (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</para></listitem></itemizedlist><screen>
+<listitem><para>Le noeud veut configurer son adresse globale &rdquo;2002:0102:0304:1:212:34ff:fe12:3456&rdquo; (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</para></listitem></itemizedlist><screen>
 <![CDATA[15:44:21.905596 :: > ff02::1:ff12:3456: icmp6: neighbor sol: who has
 ¬ 2002:0102:0304:1:212:34ff:fe12:3456(src lladdr: 0:12:34:12:34:56) (len 32,
 ¬ hlim 255)
 ]]></screen><itemizedlist>
-<listitem><para>Le noeud veut configurer son adresse globale &ldquo;3ffe:ffff:0:1:212:34ff:fe12:3456&rdquo; (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</para></listitem></itemizedlist><screen>
+<listitem><para>Le noeud veut configurer son adresse globale &rdquo;3ffe:ffff:0:1:212:34ff:fe12:3456&rdquo; (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</para></listitem></itemizedlist><screen>
 <![CDATA[15:44:22.304028 :: > ff02::1:ff12:3456: icmp6: neighbor sol: who has
 ¬ 3ffe:ffff:0:1:212:34ff:fe12:3456(src lladdr: 0:12:34:12:34:56) (len 32, hlim
 ¬ 255)
 ]]></screen></sect3><sect3>
 <title>Une sollicitation de découverte de voisinage à la recherche d'hôte(s) ou de passerelle(s)</title>
 <itemizedlist>
-<listitem><para>Un noeud veut émettre des paquets à &ldquo;3ffe:ffff:0:1::10&rdquo; mais il n'a aucune adresse MAC de la couche 2 vers laquelle il pourrait émettre, il émet alors maintenant une sollicitation</para></listitem></itemizedlist><screen>
+<listitem><para>Un noeud veut émettre des paquets à &rdquo;3ffe:ffff:0:1::10&rdquo; mais il n'a aucune adresse MAC de la couche 2 vers laquelle il pourrait émettre, il émet alors maintenant une sollicitation</para></listitem></itemizedlist><screen>
 <![CDATA[13:07:47.664538 2002:0102:0304:1:2e0:18ff:fe90:9205 > ff02::1:ff00:10: icmp6:
 ¬ neighbor sol: who has 3ffe:ffff:0:1::10(src lladdr: 0:e0:18:90:92:5) (len 32,
 ¬ hlim 255)
 ]]></screen><itemizedlist>
-<listitem><para>Ce noeud recherche maintenant &ldquo;fe80::10&rdquo;</para></listitem></itemizedlist><screen>
+<listitem><para>Ce noeud recherche maintenant &rdquo;fe80::10&rdquo;</para></listitem></itemizedlist><screen>
 <![CDATA[13:11:20.870070 fe80::2e0:18ff:fe90:9205 > ff02::1:ff00:10: icmp6: neighbor
 ¬ sol: who has fe80::10(src lladdr: 0:e0:18:90:92:5) (len 32, hlim 255)
 ]]></screen></sect3></sect2></sect1></chapter><chapter id='chapter-support-persistent-configuration' >
 <title><!-- anchor id="chapter-support-persistent-configuration" -->Support à la configuration persistante IPv6 dans les distributions Linux</title>
 <para>Certaines distributions Linux contiennent déjà un support à la configuration persistante IPv6 utilisant une configuration nouvelle ou préexistante, des fichiers de script, et des accroches dans les fichiers de script IPv4.</para><sect1>
 <title>Linux Red Hat et ses "clones"</title>
-<para>Depuis que j'ai commencé à écrire l'<ulink url="http://www.bieringer.de/linux/IPv6/">Howto -IPv6 & Linux </ulink>, il était dans mon intention de rendre disponible une configuration convenant aux cas les plus fréquents tels que hôte simple, routeur simple, hôte à double résidence, routeur avec un second tronçon réseau, tunnel typique, tunnel 6to4, <emphasis>etc</emphasis>. De nos jours, il existe des fichiers de configuration et des scripts qui font très bien ce travail (je n'ai jamais entendu parler de vrais problèmes, mais je ne sais pas s'ils sont beaucoup utilisés). Parce que cette configuration et ces scripts augmentent régulièrement en volume, ils ont leur propre page HOWTO: <ulink url="http://www.deepspace6.net/projects/initscripts-ipv6.html">initscripts-ipv6</ulink> (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/projects/initscripts-ipv6.html">miroir</ulink>). Parce que j'ai commencé mon expérience IPv6 sur un clone de la Linux Red Hat 5.0, mes développements concernant IPv6 sont encore essentiellement basés sur Linux Red Hat, il est par conséquent un peu logique que ces scripts soient développés sur ce type de distribution (on appelle ça une raison historique). Il est ainsi très facile d'étendre certains de ces fichiers de configuration, d'en créer de nouveaux et de créer de simples accroches d'appel à l'installation d'IPv6 à partir de l'installation d'IPV4.</para>
+<para>Depuis que j'ai commencé à écrire l'<ulink url="http://www.bieringer.de/linux/IPv6/">Howto -IPv6 &amp; Linux </ulink>, il était dans mon intention de rendre disponible une configuration convenant aux cas les plus fréquents tels que hôte simple, routeur simple, hôte à double résidence, routeur avec un second tronçon réseau, tunnel typique, tunnel 6to4, <emphasis>etc</emphasis>. De nos jours, il existe des fichiers de configuration et des scripts qui font très bien ce travail (je n'ai jamais entendu parler de vrais problèmes, mais je ne sais pas s'ils sont beaucoup utilisés). Parce que cette configuration et ces scripts augmentent régulièrement en volume, ils ont leur propre page HOWTO: <ulink url="http://www.deepspace6.net/projects/initscripts-ipv6.html">initscripts-ipv6</ulink> (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/projects/initscripts-ipv6.html">miroir</ulink>). Parce que j'ai commencé mon expérience IPv6 sur un clone de la Linux Red Hat 5.0, mes développements concernant IPv6 sont encore essentiellement basés sur Linux Red Hat, il est par conséquent un peu logique que ces scripts soient développés sur ce type de distribution (on appelle ça une raison historique). Il est ainsi très facile d'étendre certains de ces fichiers de configuration, d'en créer de nouveaux et de créer de simples accroches d'appel à l'installation d'IPv6 à partir de l'installation d'IPV4.</para>
 <para>Depuis la Red Hat 7.1, une archive de mes scripts y est incluse. Cela est dû, et cela sera encore vrai à l'avenir, à l'assistance de Pekka Savola.</para>
-<para>La Mandrake, depuis la version 8.0, inclut aussi un paquetage initscript prêt pour IPv6, cependant un bogue mineur retient de l'employer (il manque 'inet6&rdquo; à &ldquo;ifconfig&rdquo; avant &ldquo;add&rdquo;).</para><sect2>
+<para>La Mandrake, depuis la version 8.0, inclut aussi un paquetage initscript prêt pour IPv6, cependant un bogue mineur retient de l'employer (il manque 'inet6&rdquo; à &rdquo;ifconfig&rdquo; avant &rdquo;add&rdquo;).</para><sect2>
 <title>Tester la présence des scripts de configuration IPv6</title>
 <para>Vous pouvez tester si votre distribution Linux contient le support pour la configuration persistante IPv6 utilisant mon jeu d'outils. Le script de la bibliothèque devrait exister:</para><screen>
 <![CDATA[/etc/sysconfig/network-scripts/network-functions-ipv6
@@ -1448,7 +1448,7 @@ udp        0      0 :::53                   :::*
 <![CDATA[# modprobe -c | grep net-pf-10
 alias net-pf-10 off
 ]]></screen><itemizedlist>
-<listitem><para>Si le résultat est &ldquo;off&rdquo;, alors rendez disponible la mise en réseau IPv6 en éditant /etc/sysconfig/network, ajoutez la nouvelle ligne</para></listitem></itemizedlist><screen>
+<listitem><para>Si le résultat est &rdquo;off&rdquo;, alors rendez disponible la mise en réseau IPv6 en éditant /etc/sysconfig/network, ajoutez la nouvelle ligne</para></listitem></itemizedlist><screen>
 <![CDATA[NETWORKING_IPV6=yes
 ]]></screen><itemizedlist>
 <listitem><para>Redémarrez la machine, ou simplement le réseau par</para></listitem></itemizedlist><screen>
@@ -1483,7 +1483,7 @@ Dans les versions 8.x, SuSE va complétement modifier l'installation de sa confi
 <para>Voir le fichier /usr/share/doc/packages/sysconfig/Network </para></sect3></sect2></sect1><sect1 id='Configuration-Debian-Linux' >
 <title><!-- anchor id="Configuration-Debian-Linux" -->Linux Debian</title>
 <para>Les informations qui suivent sont une contribution de Stéphane Bortzmeyer &lt;bortzmeyer chez nic point fr&gt;</para><orderedlist>
-<listitem><para>Assurez-vous qu'IPv6 soit chargé; soit il est compilé dans le noyau, soit il est chargé comme module. Dans ce dernier cas, trois solutions, l'ajouter à /etc/modules, utiliser la configuration ci-dessous, ou utiliser kmod (non détaillé ici).</para></listitem><listitem><para>Configurez votre interface. Par exemple, ici, nous considérons la prise en compte de eth0, avec pour adresse &ldquo;3ffe:ffff:1234:5::1:1&rdquo;. Editez /etc/network/interfaces :</para></listitem></orderedlist><screen>
+<listitem><para>Assurez-vous qu'IPv6 soit chargé; soit il est compilé dans le noyau, soit il est chargé comme module. Dans ce dernier cas, trois solutions, l'ajouter à /etc/modules, utiliser la configuration ci-dessous, ou utiliser kmod (non détaillé ici).</para></listitem><listitem><para>Configurez votre interface. Par exemple, ici, nous considérons la prise en compte de eth0, avec pour adresse &rdquo;3ffe:ffff:1234:5::1:1&rdquo;. Editez /etc/network/interfaces :</para></listitem></orderedlist><screen>
 <![CDATA[iface eth0 inet6 static
         pre-up modprobe ipv6
         address 3ffe:ffff:1234:5::1:1
@@ -1499,7 +1499,7 @@ Dans les versions 8.x, SuSE va complétement modifier l'installation de sa confi
 ]]></screen><para>Et vous avez votre adresse statique.</para><sect2>
 <title>Plus d'information</title>
 <itemizedlist>
-<listitem><para><ulink url="http://people.debian.org/~csmall/ipv6/">IPv6 sur Linux  Debian</ulink> par Craig Small</para></listitem><listitem><para><ulink url="http://www.ruwenzori.net/ipv6/Jims_LAN_IPv6_global_connectivity_howto.html">HowTo pour Freenet6 & les utilisateurs Debian</ulink> de Jean-Marc Liotier (annoncé le 24.12.2002 sur <link linkend="information-maillists">la liste de diffusion</link> users@ipv6.org )</para></listitem></itemizedlist></sect2></sect1></chapter><chapter id='chapter-autoconfiguration' >
+<listitem><para><ulink url="http://people.debian.org/~csmall/ipv6/">IPv6 sur Linux  Debian</ulink> par Craig Small</para></listitem><listitem><para><ulink url="http://www.ruwenzori.net/ipv6/Jims_LAN_IPv6_global_connectivity_howto.html">HowTo pour Freenet6 &amp; les utilisateurs Debian</ulink> de Jean-Marc Liotier (annoncé le 24.12.2002 sur <link linkend="information-maillists">la liste de diffusion</link> users@ipv6.org )</para></listitem></itemizedlist></sect2></sect1></chapter><chapter id='chapter-autoconfiguration' >
 <title><!-- anchor id="chapter-autoconfiguration" -->L'auto-configuration et la mobilité</title>
 <sect1>
 <title>L'auto-configuration sans état</title>
@@ -1866,13 +1866,13 @@ Nmap run completed -- 1 IP address (1 host up) scanned in 0.525 seconds
 <para>Les versions actuelles (2.6.9 et supérieures, au moment de la rédaction) supportent nativement IPsec pour IPv4 et IPv6.</para>
 <para>Le projet USAGI a aidé à l'implémentation. </para></sect2></sect1><sect1>
 <title>Echange automatique de clés (IKE)</title>
-<para>IPsec requière un échange de clés afin de partager un secret. Ceci est essentiellement réalisé de façon automatisée par les démons IKE. Ils prennent également en charge l'authentification des entités en présence, soit par un secret commun (nommé &ldquo;secret pré-partagé&rdquo;), soit par clés RSA (qui peuvent provenir de certificats X.509).</para>
+<para>IPsec requière un échange de clés afin de partager un secret. Ceci est essentiellement réalisé de façon automatisée par les démons IKE. Ils prennent également en charge l'authentification des entités en présence, soit par un secret commun (nommé &rdquo;secret pré-partagé&rdquo;), soit par clés RSA (qui peuvent provenir de certificats X.509).</para>
 <para>Actuellement, deux démons IKE sont disponibles pour Linux, lesquels différent totalement par la configuration et l'emploi.</para>
-<para>Je préfère &ldquo;pluto&rdquo; à l'implémentation *S/WAN à cause de son installation plus simple et à son unique fichier de configuration.            </para><sect2>
-<title>Le démon IKE &ldquo;racoon&rdquo;</title>
-<para>Le démon IKE &ldquo;racoon&rdquo; provient du projet KAME et a été porté sur Linux. Les distributions contemporaines de Linux comportent ce démon dans le paquetage &ldquo;ipsec-tools&rdquo;. Deux exécutables sont requis pour bien installer IPsec. Jetez aussi un oeil à <ulink url="http://lartc.org/howto/lartc.ipsec.html">Linux Advanced Routing & Traffic Control HOWTO / IPSEC</ulink>.</para><sect3>
-<title>Manipulation de la base de données IPsec SA/SP grâce à l'outil &ldquo;setkey&rdquo;</title>
-<para>Le rôle important de &ldquo;setkey&rdquo; est de définir la politique de sécurité (<emphasis>SP</emphasis>, <emphasis>security policy</emphasis>) pour le noyau.</para>
+<para>Je préfère &rdquo;pluto&rdquo; à l'implémentation *S/WAN à cause de son installation plus simple et à son unique fichier de configuration.            </para><sect2>
+<title>Le démon IKE &rdquo;racoon&rdquo;</title>
+<para>Le démon IKE &rdquo;racoon&rdquo; provient du projet KAME et a été porté sur Linux. Les distributions contemporaines de Linux comportent ce démon dans le paquetage &rdquo;ipsec-tools&rdquo;. Deux exécutables sont requis pour bien installer IPsec. Jetez aussi un oeil à <ulink url="http://lartc.org/howto/lartc.ipsec.html">Linux Advanced Routing &amp; Traffic Control HOWTO / IPSEC</ulink>.</para><sect3>
+<title>Manipulation de la base de données IPsec SA/SP grâce à l'outil &rdquo;setkey&rdquo;</title>
+<para>Le rôle important de &rdquo;setkey&rdquo; est de définir la politique de sécurité (<emphasis>SP</emphasis>, <emphasis>security policy</emphasis>) pour le noyau.</para>
 <para>Fichier: /etc/racoon/setkey.sh</para><itemizedlist>
 <listitem><para>Exemple d'une connexion encryptée de boute-en-bout en mode transport</para></listitem></itemizedlist><screen>
 <![CDATA[#!/sbin/setkey -f
@@ -1890,9 +1890,9 @@ spdadd 2001:db8:1:1::1 2001:db8:2:2::2 any -P out ipsec
 ¬ esp/tunnel/2001:db8:1:1::1-2001:db8:2:2::2/require;
 spdadd 2001:db8:2:2::2 2001:db8:1:1::1 any -P in  ipsec
 ¬ esp/tunnel/2001:db8:2:2::2-2001:db8:1:1::1/require;
-]]></screen><para>Pour l'autre machine, vous avez juste à échanger &ldquo;in&rdquo; et &ldquo;out&rdquo;.</para></sect3><sect3>
-<title>La configuration du démon IKE &ldquo;racoon&rdquo;</title>
-<para>Pour sa bonne exécution, &ldquo;racoon&rdquo; requière d'être configuré. Ceci inclus les réglages relatifs à la politique de sécurité, qui doit être précédemment mise en place grâce à &ldquo;setkey&rdquo;.</para>
+]]></screen><para>Pour l'autre machine, vous avez juste à échanger &rdquo;in&rdquo; et &rdquo;out&rdquo;.</para></sect3><sect3>
+<title>La configuration du démon IKE &rdquo;racoon&rdquo;</title>
+<para>Pour sa bonne exécution, &rdquo;racoon&rdquo; requière d'être configuré. Ceci inclus les réglages relatifs à la politique de sécurité, qui doit être précédemment mise en place grâce à &rdquo;setkey&rdquo;.</para>
 <para>Fichier: /etc/racoon/racoon.conf</para><screen>
 <![CDATA[# Fichier de configuration du démon IKE racoon.
 # Voir 'man racoon.conf' pour une description du format et des entrées.
@@ -1940,7 +1940,7 @@ sainfo address 2001:db8:2:2::2 any address 2001:db8:1:1::1 any
 
 2001:db8:2:2::2 absolumentsecret
 ]]></screen></sect3><sect3>
-<title>Démarrer IPsec grâce au démon IKE &ldquo;racoon&rdquo;</title>
+<title>Démarrer IPsec grâce au démon IKE &rdquo;racoon&rdquo;</title>
 <para>Il faut pour le moins que le démon soit démarré. Au premier démarrage, utiliser les modes déboguage et premier plan (<emphasis>debug and foreground</emphasis>). L'exemple suivant montre une négociation IKE réussie dans ses phases 1 (ISAKMP-SA, <emphasis>Internet Security Association Key Management Security Association</emphasis>) and 2 (IPsec-SA, <emphasis>IPsec</emphasis> <emphasis>Security Association</emphasis>):</para><screen>
 <![CDATA[# racoon -F -v -f /etc/racoon/racoon.conf
 Foreground mode.
@@ -1961,11 +1961,11 @@ Foreground mode.
 ¬ ESP/Tunnel 2001:db8:2:2::2->2001:db8:1:1::1 spi=253935531(0xf22bfab)
 2005-01-01 20:31:10: INFO: IPsec-SA established:
 ¬ ESP/Tunnel 2001:db8:1:1::1->2001:db8:2:2::2 spi=175002564(0xa6e53c4)
-]]></screen><para>Chaque direction a sa propre IPsec-SA (comme définie dans le standard IPsec). Avec &ldquo;tcpdump&rdquo; à l'écoute de la bonne interface, vous devriez voir comme résultat d'un ping IPv6:</para><screen>
+]]></screen><para>Chaque direction a sa propre IPsec-SA (comme définie dans le standard IPsec). Avec &rdquo;tcpdump&rdquo; à l'écoute de la bonne interface, vous devriez voir comme résultat d'un ping IPv6:</para><screen>
 <![CDATA[20:35:55.305707 2001:db8:1:1::1 > 2001:db8:2:2::2: ESP(spi=0x0a6e53c4,seq=0x3)
 20:35:55.537522 2001:db8:2:2::2 > 2001:db8:1:1::1: ESP(spi=0x0f22bfab,seq=0x3)
 ]]></screen><para>Comme prévu, les SPI (<emphasis>Security Parameter Index</emphasis>) négociés sont utilisés ici.</para>
-<para>Et en utilisant &ldquo;setkey&rdquo;, les paramètres actifs courants:</para><screen>
+<para>Et en utilisant &rdquo;setkey&rdquo;, les paramètres actifs courants:</para><screen>
 <![CDATA[# setkey -D
 2001:db8:1:1::1 2001:db8:2:2::2
         esp mode=tunnel spi=175002564(0x0a6e53c4) reqid=0(0x00000000)
@@ -1990,10 +1990,10 @@ Foreground mode.
         allocated: 3    hard: 0 soft: 0
         sadb_seq=0 pid=22358 refcnt=0
 ]]></screen></sect3></sect2><sect2>
-<title>Le démon IKE &ldquo;pluto&rdquo;</title>
-<para>Le démon IKE &ldquo;pluto&rdquo; est inclus dans les distributions des projets *S/WAN, qui ont pour origine <ulink url="http://www.freeswan.org/">FreeS/WAN</ulink>. Le développement du projet FreeS/WAN a malheureusement été stoppé en 2004. A cause de la lenteur du développement dans le passé, deux projets en découlèrent: <ulink url="http://www.strongswan.org/">strongSwan</ulink> et <ulink url="http://www.openswan.org/">Openswan</ulink>. Aujourd'hui, des paquetages d'installation sont disponibles, au moins pour Openswan (inclus dans Fedora Core 3).</para>
-<para>Une différence importante par rapport à &ldquo;racoon&rdquo;, un seul et unique fichier de configuration est requis. Il y a bien sûr un script d'initialisation qui automatise le lancement au démarrage de la machine.</para><sect3>
-<title>La configuration du démon IKE &ldquo;pluto&rdquo;</title>
+<title>Le démon IKE &rdquo;pluto&rdquo;</title>
+<para>Le démon IKE &rdquo;pluto&rdquo; est inclus dans les distributions des projets *S/WAN, qui ont pour origine <ulink url="http://www.freeswan.org/">FreeS/WAN</ulink>. Le développement du projet FreeS/WAN a malheureusement été stoppé en 2004. A cause de la lenteur du développement dans le passé, deux projets en découlèrent: <ulink url="http://www.strongswan.org/">strongSwan</ulink> et <ulink url="http://www.openswan.org/">Openswan</ulink>. Aujourd'hui, des paquetages d'installation sont disponibles, au moins pour Openswan (inclus dans Fedora Core 3).</para>
+<para>Une différence importante par rapport à &rdquo;racoon&rdquo;, un seul et unique fichier de configuration est requis. Il y a bien sûr un script d'initialisation qui automatise le lancement au démarrage de la machine.</para><sect3>
+<title>La configuration du démon IKE &rdquo;pluto&rdquo;</title>
 <para>La configuration est très similaire à celle nécessaire pour IPv4, à part une importante et nécessaire option.</para>
 <para>Fichier: /etc/ipsec.conf</para><screen>
 <![CDATA[# /etc/ipsec.conf - Fichier de configuration d'IPsec Openswan
@@ -2028,10 +2028,10 @@ conn ipv6-p1-p2
 <para>Fichier: /etc/ipsec.secrets</para><screen>
 <![CDATA[2001:db8:1:1::1 2001:db8:2:2::2 : PSK      "absolumentsecret"
 ]]></screen></sect3><sect3>
-<title>Démarrer IPsec grâce au démon IKE &ldquo;pluto&rdquo;</title>
+<title>Démarrer IPsec grâce au démon IKE &rdquo;pluto&rdquo;</title>
 <para>Si l'installation d'Openswan s'est achevée avec succès, un script d'initialisation doit exister permettant le démarrage d'IPsec, lancez simplement (sur chaque machine) par:</para><screen>
 <![CDATA[# /etc/rc.d/init.d/ipsec start
-]]></screen><para>Ensuite, démarrez une connexion sur l'une des machines. Si vous pouvez voir la ligne &ldquo;IPsec SA established&rdquo;, c'est que tout fonctionne parfaitement.</para><screen>
+]]></screen><para>Ensuite, démarrez une connexion sur l'une des machines. Si vous pouvez voir la ligne &rdquo;IPsec SA established&rdquo;, c'est que tout fonctionne parfaitement.</para><screen>
 <![CDATA[# ipsec auto --up ipv6-peer1-peer2
 104 "ipv6-p1-p2" #1: STATE_MAIN_I1: initiate
 106 "ipv6-p1-p2" #1: STATE_MAIN_I2: sent MI2, expecting MR2
@@ -2040,7 +2040,7 @@ conn ipv6-p1-p2
 112 "ipv6-p1-p2" #2: STATE_QUICK_I1: initiate
 004 "ipv6-p1-p2" #2: STATE_QUICK_I2: sent QI2,
 ¬ IPsec SA established {ESP=>0xa98b7710 <0xa51e1f22}
-]]></screen><para>Parce que *S/WAN et setkey/racoon sont basés sur la même implémentation d'IPsec dans les noyaux 2.6.x,&ldquo;setkey&rdquo; peut être utilisé pour afficher les paramètres actifs courants:</para><screen>
+]]></screen><para>Parce que *S/WAN et setkey/racoon sont basés sur la même implémentation d'IPsec dans les noyaux 2.6.x,&rdquo;setkey&rdquo; peut être utilisé pour afficher les paramètres actifs courants:</para><screen>
 <![CDATA[# setkey -D
 2001:db8:1:1::1 2001:db8:2:2::2
         esp mode=transport spi=2844489488(0xa98b7710) reqid=16385(0x00004001)
@@ -2066,7 +2066,7 @@ conn ipv6-p1-p2
         sadb_seq=0 pid=23825 refcnt=0
 ]]></screen></sect3></sect2></sect1><sect1>
 <title>Informations complémentaires</title>
-<para>Pour les noyaux Linux 2.6.x, vous pouvez également obtenir la politique et l'état d'IPsec en utilisant &ldquo;ip&rdquo;:</para><screen>
+<para>Pour les noyaux Linux 2.6.x, vous pouvez également obtenir la politique et l'état d'IPsec en utilisant &rdquo;ip&rdquo;:</para><screen>
 <![CDATA[# ip xfrm policy
 ...
 
@@ -2074,7 +2074,7 @@ conn ipv6-p1-p2
 ...
 ]]></screen></sect1></chapter><chapter id='chapter-qos' >
 <title><!-- anchor id="chapter-qos" -->La Qualité de Service (QoS)</title>
-<para>IPv6 supporte QoS par l'utilisation des labels de flux et des classes de trafic. Ceci peut être contrôlé en utilisant &ldquo;tc&rdquo; (compris dans le paquetage &ldquo;iproute&rdquo;).</para>
+<para>IPv6 supporte QoS par l'utilisation des labels de flux et des classes de trafic. Ceci peut être contrôlé en utilisant &rdquo;tc&rdquo; (compris dans le paquetage &rdquo;iproute&rdquo;).</para>
 <para>Information complémentaire:</para><itemizedlist>
 <listitem><para><ulink url="http://www.faqs.org/rfcs/rfc3697.html">RFC 3697 / IPv6 Flow Label Specification</ulink></para></listitem></itemizedlist><para>A remplir plus avant...</para></chapter><chapter id='chapter-hints-daemons' >
 <title><!-- anchor id="chapter-hints-daemons" -->Eléments d'installation des démons prêts pour IPv6</title>
@@ -2236,7 +2236,7 @@ tcp 0 0 3ffe:ffff:100::2:80 :::*      LISTEN 12345/httpd2
 ]]></screen><para>Pour de simples tests, utiliser l'exemple telnet déjà montré.</para></sect3><sect3>
 <title>Note additionnelle</title>
 <itemizedlist>
-<listitem><para>D'une part, Apache2 supporte une méthode appelée &ldquo;sendfile&rdquo;, accélérant la fourniture des données. D'autre part, certains pilotes de NIC supportent la vérification différée des sommes de contrôle (<emphasis>offline checksumming</emphasis>). Dans certains cas, cela peut conduire à des problèmes de connexion et invalider les sommes de contrôle TCP. Il faut alors rendre indisponible &ldquo;sendfile&rdquo;, ou bien en recompilant par l'utilisation de l'option de configure &ldquo;--without-sendfile&rdquo;, ou bien en utilisant la directive du fichier de configuration "EnableSendfile off".</para></listitem></itemizedlist></sect3></sect2></sect1><sect1 id='hints-daemons-radvd' >
+<listitem><para>D'une part, Apache2 supporte une méthode appelée &rdquo;sendfile&rdquo;, accélérant la fourniture des données. D'autre part, certains pilotes de NIC supportent la vérification différée des sommes de contrôle (<emphasis>offline checksumming</emphasis>). Dans certains cas, cela peut conduire à des problèmes de connexion et invalider les sommes de contrôle TCP. Il faut alors rendre indisponible &rdquo;sendfile&rdquo;, ou bien en recompilant par l'utilisation de l'option de configure &rdquo;--without-sendfile&rdquo;, ou bien en utilisant la directive du fichier de configuration "EnableSendfile off".</para></listitem></itemizedlist></sect3></sect2></sect1><sect1 id='hints-daemons-radvd' >
 <title><!-- anchor id="hints-daemons-radvd" -->Le Démon d'Annonce de Routeur (radvd)</title>
 <para>Le Démon d'Annonce de Routeur est très utile sur un LAN, à partir du moment où les clients doivent être auto-configurés. Le démon lui-même doit tourner sur la passerelle par défaut IPv6 Linux (il n'est pas requis qu'elle soit aussi la passerelle IPv4, aussi prenez garde à qui émet des annonces de routeur sur votre LAN).</para>
 <para>Vous avez à spécifier certaines informations et drapeaux qui doivent être compris dans l'annonce. Les plus employés sont</para><itemizedlist>
@@ -2288,7 +2288,7 @@ tcp 0 0 3ffe:ffff:100::2:80 :::*      LISTEN 12345/httpd2
 <![CDATA[# /sbin/ip -6 route add 2002:0102:0304:f101::/64 dev eth0 metric 1
 ]]></screen><para>Cette route a besoin d'être remplacée chaque fois que le préfixe change, ce qui est le cas à chaque fois qu'une nouvelle adresse IPv4 est assignée à une interface numérotée automatiquement (<emphasis>dial-up interface</emphasis>).</para></sect3></sect2><sect2>
 <title>Le déboguage</title>
-<para>Un programme appelé &ldquo;radvdump&rdquo; peut vous aider à observer les annonces émises ou reçues. Simple à utiliser:</para><screen>
+<para>Un programme appelé &rdquo;radvdump&rdquo; peut vous aider à observer les annonces émises ou reçues. Simple à utiliser:</para><screen>
 <![CDATA[# radvdump 
 Router advertisement from fe80::280:c8ff:feb9:cef9 (hoplimit 255) 
         AdvCurHopLimit: 64 
@@ -2427,7 +2427,7 @@ Jan 2 20:42:19 gate sshd[12345]: Accepted password for user
 <title><!-- anchor id="hints-daemons-vsftpd" -->vsftpd</title>
 <sect2>
 <title>A l'écoute des adresses IPv6</title>
-<para>Editer le fichier de configuration, couramment /etc/vsftpd/vsftpd.conf, et ajuster l'option &ldquo;listen&rdquo;</para><screen>
+<para>Editer le fichier de configuration, couramment /etc/vsftpd/vsftpd.conf, et ajuster l'option &rdquo;listen&rdquo;</para><screen>
 <![CDATA[listen_ipv6=yes
 ]]></screen><para>C'est tout.</para></sect2></sect1><sect1 id='hints-daemons-proftpd' >
 <title><!-- anchor id="hints-daemons-proftpd" --> proftpd </title>
@@ -2441,7 +2441,7 @@ Jan 2 20:42:19 gate sshd[12345]: Accepted password for user
 </VirtualHost>
 ]]></screen><para>C'est tout.</para></sect2></sect1><sect1 id='hints-daemons-others' >
 <title><!-- anchor id="hints-daemons-others" -->Autres démons</title>
-<para>De nos jours c'est généralement simple, cherchez une ligne de commande d'option ou bien une valeur de configuration pour rendre disponible l'écoute IPv6. Cherchez dans la page du manuel du démon ou dans les FAQ concernées. Il peut arriver que vous ne puissiez lier le démon qu'à une adresse IPv6 &ldquo;any&rdquo; (::) et pas à une adresse IPv6 précise, par manque de support (ça dépend de la façon dont le développeur à implémenter...).</para></sect1></chapter><chapter id='chapter-programming-using-API' >
+<para>De nos jours c'est généralement simple, cherchez une ligne de commande d'option ou bien une valeur de configuration pour rendre disponible l'écoute IPv6. Cherchez dans la page du manuel du démon ou dans les FAQ concernées. Il peut arriver que vous ne puissiez lier le démon qu'à une adresse IPv6 &rdquo;any&rdquo; (::) et pas à une adresse IPv6 précise, par manque de support (ça dépend de la façon dont le développeur à implémenter...).</para></sect1></chapter><chapter id='chapter-programming-using-API' >
 <title><!-- anchor id="chapter-programming-using-API" -->Programmer (en utilisant l'API)</title>
 <para>Je n'ai aucune expérience de la programmation IPv6, peut-être que ce chapitre sera rempli par d'autres, ou déplacé vers un autre HOWTO</para>
 <para>Plus d'information peut être trouvée ici:</para><itemizedlist>
@@ -2546,16 +2546,16 @@ SourceForge: <ulink url="http://sourceforge.net/projects/tunnelc">Projet Info - 
 <listitem><para><ulink url="http://www.deepspace6.net/">DeepSpace6 / Portail Linux IPv6 (pas uniquement)</ulink> - Italie (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/">miroir</ulink>)</para></listitem><listitem><para><ulink url="http://www.bieringer.de/linux/IPv6/">IPv6-HowTo pour Linux par Peter Bieringer</ulink> - Allemagne et son <ulink url="ftp://ftp.bieringer.de/pub/linux/IPv6/">archive logiciel - Bieringer / IPv6</ulink></para></listitem><listitem><para><ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status.html">L'état de Linux+IPv6 par Peter Bieringer</ulink> - Allemagne (en cours d'obsolescence)</para></listitem><listitem><para><ulink url="ttp://www.deepspace6.net/docs/ipv6_status_page_apps.html">DeepSpace6 / La page concernant l'état IPv6</ulink> - Italie (<ulink url="http://mirrors.bieringer.de/www.deepspace6.net/docs/ipv6_status_page_apps.html">mirroir</ulink>) (remplacera la page ci-dessus)</para></listitem><listitem><para><ulink url="http://www.linux-ipv6.org/">Projet USAGI</ulink> - Japon, et son <ulink url="ftp://ftp.linux-ipv6.org/pub/">archive logiciel - projet USAGI</ulink></para></listitem><listitem><para><ulink url="http://www.tldp.org/HOWTO/OLSR-IPv6-HOWTO/">HOWTO IPv6 Protocole de routage à état de lien optimisé (OLSR)</ulink></para></listitem></itemizedlist></sect3><sect3>
 <title>Relative à Linux, par distribution</title>
 <variablelist>
-<varlistentry><term>PLD</term><listitem><para><ulink url="http://www.pld-linux.org/">PLD Linux Distribution</ulink> (&ldquo;leader du marché&rdquo; quant aux paquetages disposant d'IPv6)</para></listitem></varlistentry><varlistentry><term>Red&nbsp;Hat</term><listitem><para><ulink url="http://www.redhat.com/">Linux Red Hat</ulink>, <ulink url="http://www.netcore.fi/pekkas/linux/ipv6/"> les paquetages IPv6 de Pekka Savola (historic)</ulink></para></listitem></varlistentry><varlistentry><term>Fedora</term><listitem><para><ulink url="https://fedoraproject.org/">Fedora (Project) Linux</ulink></para></listitem></varlistentry><varlistentry><term>Debian</term><listitem><para><ulink url="http://www.debian.org/">Linux Debian</ulink>, <ulink url="http://people.debian.org/~csmall/ipv6/">Etat et information IPv6 par Craig Small</ulink>,<ulink url="">HOWTO Connectivité globale d'un LAN IPv6</ulink></para></listitem></varlistentry><varlistentry><term>SuSE</term><listitem><para><ulink url="https://www.suse.com/">SuSE Linux</ulink></para></listitem></varlistentry><varlistentry><term>Mandriva</term><listitem><para><ulink url="http://wiht.link/mandrivalinux">Mandriva (Historic)</ulink></para></listitem></varlistentry></variablelist><para>Pour en savoir plus voir la page <ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-distributions.html">état des distributions Linux+IPv6</ulink>.</para></sect3><sect3>
+<varlistentry><term>PLD</term><listitem><para><ulink url="http://www.pld-linux.org/">PLD Linux Distribution</ulink> (&rdquo;leader du marché&rdquo; quant aux paquetages disposant d'IPv6)</para></listitem></varlistentry><varlistentry><term>Red&nbsp;Hat</term><listitem><para><ulink url="http://www.redhat.com/">Linux Red Hat</ulink>, <ulink url="http://www.netcore.fi/pekkas/linux/ipv6/"> les paquetages IPv6 de Pekka Savola (historic)</ulink></para></listitem></varlistentry><varlistentry><term>Fedora</term><listitem><para><ulink url="https://fedoraproject.org/">Fedora (Project) Linux</ulink></para></listitem></varlistentry><varlistentry><term>Debian</term><listitem><para><ulink url="http://www.debian.org/">Linux Debian</ulink>, <ulink url="http://people.debian.org/~csmall/ipv6/">Etat et information IPv6 par Craig Small</ulink>,<ulink url="">HOWTO Connectivité globale d'un LAN IPv6</ulink></para></listitem></varlistentry><varlistentry><term>SuSE</term><listitem><para><ulink url="https://www.suse.com/">SuSE Linux</ulink></para></listitem></varlistentry><varlistentry><term>Mandriva</term><listitem><para><ulink url="http://wiht.link/mandrivalinux">Mandriva (Historic)</ulink></para></listitem></varlistentry></variablelist><para>Pour en savoir plus voir la page <ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-distributions.html">état des distributions Linux+IPv6</ulink>.</para></sect3><sect3>
 <title>Général</title>
 <itemizedlist>
-<listitem><para><ulink url="http://www.ipv6.org/">IPv6.org</ulink></para></listitem><listitem><para><ulink url="http://www.6bone.net/">6bone</ulink></para></listitem><listitem><para><ulink url="http://www.cs-ipv6.lancs.ac.uk/">Centre de ressources britanique IPv6</ulink> - Royaume-Uni</para></listitem><listitem><para><ulink url="http://www.v6.wide.ad.jp/">Projet WIDE</ulink> - Japon</para></listitem><listitem><para><ulink url="http://www.switch.ch/lan/ipv6/">SWITCH IPv6 Pilot</ulink> - Suisse</para></listitem><listitem><para><ulink url="http://www.feyrer.de/IPv6/">Le coin IPv6 de Hubert Feyrer</ulink> - Allemagne</para></listitem><listitem><para><ulink url="http://www.vermicelli.pasta.cs.uit.no/ipv6/">Projet Vermicelli</ulink> - Norvège</para></listitem><listitem><para><ulink url="http://www.ipv6forum.com/">IPv6 Forum</ulink> - un consortium mondial d'importants fournisseurs Internet, Research &amp; Education Networks...</para></listitem><listitem><para><ulink url="http://playground.sun.com/pub/ipng/html/ipng-main.html">Playground.sun.com / Page d'info IPv6</ulink> - maintenu par Robert Hinden, Nokia. Obtenir toute information au sujet d'IPv6, depuis de simples vues d'ensemble, en passant par les RFC et brouillons, jusqu'aux implémentations (incluant la disponibilité des piles sur différentes plates-formes &amp; le code source des piles IPv6).</para></listitem><listitem><para><ulink url="http://www.6init.com/">6INIT</ulink> - Initiative Internet IPv6 - le 5ème programme-cadre européenne R&amp;D de l'IST.</para></listitem><listitem><para><ulink url="http://www.ipv6-taskforce.org/">IPv6 Task Force (Union Européenne)</ulink> (<emphasis>NdT</emphasis>: <ulink url="http://www.france.ipv6tf.org/index.php">IPv6 Task Force France</ulink>)</para></listitem><listitem><para><ulink url="http://www.v6.sfc.wide.ad.jp/v6doc/">Projet de Documentation IPv6</ulink> (langue japonaise)</para></listitem><listitem><para><ulink url="http://www.6init.org/">6init</ulink> - IniTiative INternet IPv6</para></listitem><listitem><para><ulink url="http://www.isoc.org/HMP/PAPER/PT1/html/pt1.html.hinden">Vue d'ensemble d'IP Nouvelle Génération</ulink></para></listitem><listitem><para><ulink url="http://www.usenix.org/publications/library/proceedings/ana97/summaries/deering.html">IPv6: La nouvelle version du protocole Internet</ulink>, par Steve Deering.</para></listitem><listitem><para><ulink url="http://www.garykessler.net/library/ipv6_exp.html">IPv6: Le protocole Internet Nouvelle Génération</ulink>, par Gary C. Kessler. </para></listitem><listitem><para><ulink url="http://www.3com.com/nsc/ipv6.html">IPv6: Le protocole Internet Nouvelle Génération</ulink> - 3Com</para></listitem><listitem><para><ulink url="http://www.ngi.gov/">Initiative Internet Nouvelle Génération</ulink></para></listitem><listitem><para><ulink url="http://www.internet2.org/">internet || site</ulink> et <ulink url="http://ipv6.internet2.edu/">Groupe de travail internet2</ulink> - <ulink url="http://ipv6.internet2.edu/presentations/">Presentation (HTML + PPT)</ulink> de l'atelier IPv6: (auto-configuration sans état, adressage IPv6, USAGI, fournisseur d'adressage IPv6 indépendant et autres thèmes).</para></listitem><listitem><para>NetworkWorldFusion: <ulink url="http://search.nwfusion.com/query.html?qt=IPv6&amp;qp=&amp;ch=cn&amp;">rechercher IPv6</ulink> (102 documents trouvés au 22.12.2002)</para></listitem><listitem><para><ulink url="http://www.theregister.co.uk/">The Register</ulink> (la recherche pour IPv6 donne 30 documents, 22.12.2002)</para></listitem><listitem><para><ulink url="http://zdnet.search.com/search?cat=279&amp;q=IPv6">recherche chez ZDNet pour IPv6</ulink></para></listitem><listitem><para><ulink url="http://whatis.techtarget.com/wsearchResults/1,290214,sid9,00.html?query=IPv6">Recherche chez TechTarget pour IPv6</ulink></para></listitem><listitem><para><ulink url="http://www.faqs.org/faqs/internet/tcp-ip/resource-list/index.html">Liste de resssources IPv6 & TCP</ulink></para></listitem><listitem><para><ulink url="http://ipv6.klingon.nl/">Les outils IPv6 Klingon</ulink>, <ulink url="http://www.ipv6.klingon.nl/">les outils IPv6 Klingon (accessible seulement en IPv6 natif)</ulink>: exemples de pare-feu IPv6, test de bande passante et scanner de ports</para></listitem></itemizedlist><para>Quelque chose manque? Les suggestions sont les bienvenues!</para></sect3><sect3 id='information-marketresearch' >
+<listitem><para><ulink url="http://www.ipv6.org/">IPv6.org</ulink></para></listitem><listitem><para><ulink url="http://www.6bone.net/">6bone</ulink></para></listitem><listitem><para><ulink url="http://www.cs-ipv6.lancs.ac.uk/">Centre de ressources britanique IPv6</ulink> - Royaume-Uni</para></listitem><listitem><para><ulink url="http://www.v6.wide.ad.jp/">Projet WIDE</ulink> - Japon</para></listitem><listitem><para><ulink url="http://www.switch.ch/lan/ipv6/">SWITCH IPv6 Pilot</ulink> - Suisse</para></listitem><listitem><para><ulink url="http://www.feyrer.de/IPv6/">Le coin IPv6 de Hubert Feyrer</ulink> - Allemagne</para></listitem><listitem><para><ulink url="http://www.vermicelli.pasta.cs.uit.no/ipv6/">Projet Vermicelli</ulink> - Norvège</para></listitem><listitem><para><ulink url="http://www.ipv6forum.com/">IPv6 Forum</ulink> - un consortium mondial d'importants fournisseurs Internet, Research &amp; Education Networks...</para></listitem><listitem><para><ulink url="http://playground.sun.com/pub/ipng/html/ipng-main.html">Playground.sun.com / Page d'info IPv6</ulink> - maintenu par Robert Hinden, Nokia. Obtenir toute information au sujet d'IPv6, depuis de simples vues d'ensemble, en passant par les RFC et brouillons, jusqu'aux implémentations (incluant la disponibilité des piles sur différentes plates-formes &amp; le code source des piles IPv6).</para></listitem><listitem><para><ulink url="http://www.6init.com/">6INIT</ulink> - Initiative Internet IPv6 - le 5ème programme-cadre européenne R&amp;D de l'IST.</para></listitem><listitem><para><ulink url="http://www.ipv6-taskforce.org/">IPv6 Task Force (Union Européenne)</ulink> (<emphasis>NdT</emphasis>: <ulink url="http://www.france.ipv6tf.org/index.php">IPv6 Task Force France</ulink>)</para></listitem><listitem><para><ulink url="http://www.v6.sfc.wide.ad.jp/v6doc/">Projet de Documentation IPv6</ulink> (langue japonaise)</para></listitem><listitem><para><ulink url="http://www.6init.org/">6init</ulink> - IniTiative INternet IPv6</para></listitem><listitem><para><ulink url="http://www.isoc.org/HMP/PAPER/PT1/html/pt1.html.hinden">Vue d'ensemble d'IP Nouvelle Génération</ulink></para></listitem><listitem><para><ulink url="http://www.usenix.org/publications/library/proceedings/ana97/summaries/deering.html">IPv6: La nouvelle version du protocole Internet</ulink>, par Steve Deering.</para></listitem><listitem><para><ulink url="http://www.garykessler.net/library/ipv6_exp.html">IPv6: Le protocole Internet Nouvelle Génération</ulink>, par Gary C. Kessler. </para></listitem><listitem><para><ulink url="http://www.3com.com/nsc/ipv6.html">IPv6: Le protocole Internet Nouvelle Génération</ulink> - 3Com</para></listitem><listitem><para><ulink url="http://www.ngi.gov/">Initiative Internet Nouvelle Génération</ulink></para></listitem><listitem><para><ulink url="http://www.internet2.org/">internet || site</ulink> et <ulink url="http://ipv6.internet2.edu/">Groupe de travail internet2</ulink> - <ulink url="http://ipv6.internet2.edu/presentations/">Presentation (HTML + PPT)</ulink> de l'atelier IPv6: (auto-configuration sans état, adressage IPv6, USAGI, fournisseur d'adressage IPv6 indépendant et autres thèmes).</para></listitem><listitem><para>NetworkWorldFusion: <ulink url="http://search.nwfusion.com/query.html?qt=IPv6&amp;qp=&amp;ch=cn&amp;">rechercher IPv6</ulink> (102 documents trouvés au 22.12.2002)</para></listitem><listitem><para><ulink url="http://www.theregister.co.uk/">The Register</ulink> (la recherche pour IPv6 donne 30 documents, 22.12.2002)</para></listitem><listitem><para><ulink url="http://zdnet.search.com/search?cat=279&amp;q=IPv6">recherche chez ZDNet pour IPv6</ulink></para></listitem><listitem><para><ulink url="http://whatis.techtarget.com/wsearchResults/1,290214,sid9,00.html?query=IPv6">Recherche chez TechTarget pour IPv6</ulink></para></listitem><listitem><para><ulink url="http://www.faqs.org/faqs/internet/tcp-ip/resource-list/index.html">Liste de resssources IPv6 &amp; TCP</ulink></para></listitem><listitem><para><ulink url="http://ipv6.klingon.nl/">Les outils IPv6 Klingon</ulink>, <ulink url="http://www.ipv6.klingon.nl/">les outils IPv6 Klingon (accessible seulement en IPv6 natif)</ulink>: exemples de pare-feu IPv6, test de bande passante et scanner de ports</para></listitem></itemizedlist><para>Quelque chose manque? Les suggestions sont les bienvenues!</para></sect3><sect3 id='information-marketresearch' >
 <title><!-- anchor id="information-marketresearch" -->Etudes de marché</title>
 <itemizedlist>
 <listitem><para><ulink url="http://www.seminarinformation.com/wconnect/wc.dll?sis~details0~194045~TSN">A Tale of Two Wireless Technology Trends: Processor Development Outsourcing and IPv6</ulink>Groupe Yankee - 1/4/2002 - 12 Pages - ID: YANL768881</para></listitem><listitem><para><ulink url="http://www.marketresearch.com/product/display.asp?SID=88602378-241489274-186851952&amp;ProductID=803907">The World Atlas of the Internet: Americas</ulink>; IDATE - 2/1/2002 - 242 Pages - ID: IDT803907. Les pays couverts: Amérique Centrale, Amérique du Nord, Amérique du Sud; Liste: Prix: $ 3,500.00; à l'exception: Panorama du marché des accès à l'Internet à travers le monde. Estimation du marché et prévions jusqu'en 2006 pour 34 pays: structure du marché: les principaux ISP et le partage du marché; nombre de souscripteurs, d'ISP.</para></listitem><listitem><para><ulink url="http://www.amazon.com/exec/obidos/tg/detail/-/B000065T8E/copernicshopper/103-1420916-1341420">Earlier Interest Rising for IPv6</ulink> par IDC (Auteur); prix: $1,500.00; support: e-book (Acrobat Reader); éd. IDC; ISBN B000065T8E; ( 1 mars 2002) </para></listitem></itemizedlist></sect3><sect3 id='information-patents' >
 <title><!-- anchor id="information-patents" -->Les brevets</title>
 <itemizedlist>
-<listitem><para>Base de données des brevets canadiens: <ulink url="http://patents1.ic.gc.ca/intro-e.html">Accueil</ulink>, <ulink url="http://patents1.ic.gc.ca/srch_sim-e.html">Recherche</ulink> (Recherche simple, entrez juste &ldquo;IPv6&rdquo; dans le champs recherche ;-); 84 documents trouvés au 22.12.2002)</para></listitem><listitem><para><ulink url="http://www.european-patent-office.org/espacenet/info/index.htm">Espacenet</ulink> - information sur les brevets européens: 
+<listitem><para>Base de données des brevets canadiens: <ulink url="http://patents1.ic.gc.ca/intro-e.html">Accueil</ulink>, <ulink url="http://patents1.ic.gc.ca/srch_sim-e.html">Recherche</ulink> (Recherche simple, entrez juste &rdquo;IPv6&rdquo; dans le champs recherche ;-); 84 documents trouvés au 22.12.2002)</para></listitem><listitem><para><ulink url="http://www.european-patent-office.org/espacenet/info/index.htm">Espacenet</ulink> - information sur les brevets européens: 
 <ulink url="http://www.european-patent-office.org/espacenet/info/access.htm">Offices nationaux, membres d'Espacenet</ulink>(IPv6: 84 documents, au 22.12.2002)</para></listitem><listitem><para>Delphion: <ulink url="http://www.delphion.com/research/">Recherche de brevets</ulink>. Un simple enregistrement (gratuit) est nécessaire. Exemples trouvés au 21.12.2002 par une recherche sur l'expression IPv6:
 <ulink url="http://www.delphion.com/details?pn=US06118784__">Méthode de communication entre terminal IPv4 et terminal IPv6, mécanisme de conversion IPv4-IPv6</ulink>
 <ulink url="http://www.delphion.com/details?pn=US06038233__">Traducteur pour réseaux IP, système réseau utilisant le traducteur, mais aussi une méthode de couplage de réseaux IP</ulink></para></listitem></itemizedlist></sect3></sect2><sect2>
@@ -2637,7 +2637,7 @@ SourceForge: <ulink url="http://sourceforge.net/projects/tunnelc">Projet Info - 
 <listitem><para>IpInfusion's <ulink url="http://www.ipinfusion.com/products/server/products_server.html">ZebOS Logiciel de serveur de routage</ulink></para></listitem></itemizedlist></sect3></sect2><sect2 id='information-ipv6andsecurity' >
 <title><!-- anchor id="information-ipv6andsecurity" -->La sécurité IPv6</title>
 <itemizedlist>
-<listitem><para>Internet Security Systems: Centre Sécurité, <ulink url="http://www.iss.net/security_center/search.php?type=3&amp;type=3&amp;pattern=IPv6">recherche dans la base de donnée X-Force</ulink> (21.12.2002 - 6 thèmes relatifs à IPv6)</para></listitem><listitem><para><ulink url="http://csrc.nist.gov/ipsec/">Projet IPsec NIST</ulink> ( Institut National des Standards et Technologie, NIST)</para></listitem><listitem><para><ulink url="http://www.infosecuritymag.com/index.shtml">Information Security</ulink></para></listitem><listitem><para><ulink url="http://neworder.box.sk/search.php3?srch=IPv6">NewOrder.box.sk (recherche pour IPv6)</ulink> (Articles, exploits, files database, etc.) </para></listitem></itemizedlist></sect2><sect2>
+<listitem><para><ulink url="http://csrc.nist.gov/ipsec/">Projet IPsec NIST</ulink> ( Institut National des Standards et Technologie, NIST)</para></listitem><listitem><para><ulink url="http://www.infosecuritymag.com/index.shtml">Information Security</ulink></para></listitem><listitem><para><ulink url="http://neworder.box.sk/search.php3?srch=IPv6">NewOrder.box.sk (recherche pour IPv6)</ulink> (Articles, exploits, files database, etc.) </para></listitem></itemizedlist></sect2><sect2>
 <title>Les listes d'applications</title>
 <itemizedlist>
 <listitem><para><ulink url="http://www.ipv6.org/v6-apps.html">IPv6.org / Ies applications disposant d'Pv6</ulink></para></listitem><listitem><para><ulink url="http://freshmeat.net/search/?q=IPv6">Freshmeat / recherche IPv6</ulink>, actuellement (au 14 décembre 2002), 62 projets</para></listitem><listitem><para>Forum IPv6 : <ulink url="http://www.ipv6forum.com/navbar/links/v6routerlist.htm">IPv6 Router List</ulink></para></listitem></itemizedlist><sect3>
@@ -2654,7 +2654,7 @@ SourceForge: <ulink url="http://sourceforge.net/projects/tunnelc">Projet Info - 
 <sect2>
 <title>Statistiques</title>
 <itemizedlist>
-<listitem><para><ulink url="http://www.space.net/~gert/RIPE/">Histoire de la table de routage IPv6</ulink> créée par Gert Döring, <ulink url="http://www.space.net/">Space.Net</ulink></para></listitem><listitem><para><ulink url="http://6bone.informatik.uni-leipzig.de/ipv6/stats/stats.php3">Official 6bone Webserver list Statisic</ulink></para></listitem><listitem><para><ulink url="http://www.ripe.net/ripe/meetings/archive/ripe-42/presentations/ripe42-ipv6-survey/sld001.html">IPv6 Allocation Data & Survey Results</ulink>, IPv6 WG, Ripe 42, Ripe NCC</para></listitem></itemizedlist></sect2><sect2>
+<listitem><para><ulink url="http://www.space.net/~gert/RIPE/">Histoire de la table de routage IPv6</ulink> créée par Gert Döring, <ulink url="http://www.space.net/">Space.Net</ulink></para></listitem><listitem><para><ulink url="http://6bone.informatik.uni-leipzig.de/ipv6/stats/stats.php3">Official 6bone Webserver list Statisic</ulink></para></listitem><listitem><para><ulink url="http://www.ripe.net/ripe/meetings/archive/ripe-42/presentations/ripe42-ipv6-survey/sld001.html">IPv6 Allocation Data &amp; Survey Results</ulink>, IPv6 WG, Ripe 42, Ripe NCC</para></listitem></itemizedlist></sect2><sect2>
 <title>Points d'interconnexion Internet</title>
 <para>Une autre liste de points d'interconnexion IPv6 peut être trouvée ici: <ulink url="http://www.v6nap.net/">Site web des points d'interconnexion IPv6</ulink> ou <ulink url="http://www.euro-ix.net/isp/choosing/search/matrix.php">Statut IPv6 des IXP en Europe</ulink></para><sect3 id='information-ipv6exchanges-estonia' >
 <title><!-- anchor id="information-ipv6exchanges-estonia" -->Estonie</title>
@@ -2921,7 +2921,7 @@ Source: <ulink url="http://www.faqs.org/faqs/de-newsgroups/chartas/index.html">C
 <listitem><para><ulink url="http://www.tdoi.org/prefcalc.php">Calculatrice de préfixe IPv6</ulink> par <ulink url="http://www.tdoi.org/">TDOI</ulink></para></listitem><listitem><para><ulink url="http://www.maths.tcd.ie/cgi-bin/check_dns.pl">Vérificateur d'enregistrement DNS</ulink></para></listitem></itemizedlist></sect2></sect1><sect1 id='information-trainingsandseminars' >
 <title><!-- anchor id="information-trainingsandseminars" -->Pratique, séminaires</title>
 <itemizedlist>
-<listitem><para><ulink url="http://www.aerasec.de/workshops/ipv6.html">formation et atelier IPv6</ulink>, AERAsec, Allemagne (en langue allemande pour l'instant)</para></listitem><listitem><para><ulink url="http://www.seminarinformation.com/wconnect/wc.dll?sis~details0~307">Migrer vers IPv6</ulink>, Learning Tree International</para></listitem><listitem><para><ulink url="http://www.e-trainonline.com/html/ciw_internetworking_profession.html#IPv6">Formation professionnelle CIW la maintenance Internet CBT CD</ulink></para></listitem><listitem><para><ulink url="http://www.trainingpages.net/x/category.html?kw=125">Pages concernant la formation</ulink>, Royaume-Uni - recherche à partir du mot clé &ldquo;IPv6&rdquo; (13 cours, au 22.12.2002)</para></listitem></itemizedlist><para>Quelque chose manque? Les suggestions sont les bienvenues!</para></sect1><sect1 id='information-onlinediscovery' >
+<listitem><para><ulink url="http://www.aerasec.de/workshops/ipv6.html">formation et atelier IPv6</ulink>, AERAsec, Allemagne (en langue allemande pour l'instant)</para></listitem><listitem><para><ulink url="http://www.seminarinformation.com/wconnect/wc.dll?sis~details0~307">Migrer vers IPv6</ulink>, Learning Tree International</para></listitem><listitem><para><ulink url="http://www.e-trainonline.com/html/ciw_internetworking_profession.html#IPv6">Formation professionnelle CIW la maintenance Internet CBT CD</ulink></para></listitem><listitem><para><ulink url="http://www.trainingpages.net/x/category.html?kw=125">Pages concernant la formation</ulink>, Royaume-Uni - recherche à partir du mot clé &rdquo;IPv6&rdquo; (13 cours, au 22.12.2002)</para></listitem></itemizedlist><para>Quelque chose manque? Les suggestions sont les bienvenues!</para></sect1><sect1 id='information-onlinediscovery' >
 <title><!-- anchor id="information-onlinediscovery" -->'La découverte en ligne'...</title>
 <para><ulink url="http://www.amazon.com/exec/obidos/tg/detail/-/B00006334Y/copernicshopper/103-1420916-1341420">IPv6: Addressing The Needs Of the Future</ulink> [DOWNLOAD: PDF] 
 par le groupe Yankee (Auteur) 

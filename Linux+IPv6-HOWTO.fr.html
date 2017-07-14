@@ -1,9 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <HTML
 ><HEAD
+><style> /* unified version */
+  body {
+    width:800px;
+    margin-left:5%;
+    font:normal normal 10pt/1.6 sans-serif;
+  }
+</style
 ><TITLE
 >Linux IPv6 HOWTO (fr)</TITLE
-><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
 ><META
 NAME="GENERATOR"
 CONTENT="Modular DocBook HTML Stylesheet Version 1.79"></HEAD
@@ -62,7 +68,7 @@ ALIGN="LEFT"
 >Version 0.49.fr.3wip</TD
 ><TD
 ALIGN="LEFT"
->2017-01-14</TD
+>2017-07-14</TD
 ><TD
 ALIGN="LEFT"
 >Revu par : PB</TD
@@ -747,7 +753,7 @@ HREF="#INFORMATION-ONLINEINFORMATION"
 ></DT
 ><DT
 >23.4. <A
-HREF="#AEN3602"
+HREF="#AEN3599"
 >L'infrastructure IPv6</A
 ></DT
 ><DT
@@ -774,7 +780,7 @@ HREF="#INFORMATION-ONLINEDISCOVERY"
 ></DD
 ><DT
 >24. <A
-HREF="#AEN4153"
+HREF="#AEN4150"
 >Historique des Révisions / Crédits / La Fin</A
 ></DT
 ><DD
@@ -791,7 +797,7 @@ HREF="#CREDITS"
 ></DT
 ><DT
 >24.3. <A
-HREF="#AEN4248"
+HREF="#AEN4245"
 >La Fin</A
 ></DT
 ></DL
@@ -1122,7 +1128,7 @@ NAME="AEN135"
 >1.5.1.1. Modification des lignes de code propres à LyX</A
 ></H4
 ><P
->Les modifications des lignes de code propres à LyX sont réalisées par un script “maison”, “lyxcodelinewrapper.pl”, que vous pouvez obtenir par CVS pour votre propre compte: <A
+>Les modifications des lignes de code propres à LyX sont réalisées par un script ”maison”, ”lyxcodelinewrapper.pl”, que vous pouvez obtenir par CVS pour votre propre compte: <A
 HREF="https://github.com/tLDP/Linux-IPv6/"
 TARGET="_top"
 >github / tLDP / Linux-IPv6</A
@@ -1153,11 +1159,11 @@ TARGET="_top"
 ><UL
 ><LI
 ><P
->L'exportation du document LyX ne créait pas proprement les balises “colspan” - l'outil qui règle le problème: “sgmllyxtabletagfix.pl” (le problème est définitivement réglé depuis la version 1.2.0 de LyX)</P
+>L'exportation du document LyX ne créait pas proprement les balises ”colspan” - l'outil qui règle le problème: ”sgmllyxtabletagfix.pl” (le problème est définitivement réglé depuis la version 1.2.0 de LyX)</P
 ></LI
 ><LI
 ><P
->LyX utilise parfois des entités spéciales gauche/droite, à la place des guillemets habituels, qui seront présentes dans le code HTML. Certains navigateurs n'interprètent pas très bien ces balises (Opéra 6 TP 2 ou Konquéror sont connus pour ce problème) - l'outil qui règle le problème: “sgmllyxquotefix.pl”</P
+>LyX utilise parfois des entités spéciales gauche/droite, à la place des guillemets habituels, qui seront présentes dans le code HTML. Certains navigateurs n'interprètent pas très bien ces balises (Opéra 6 TP 2 ou Konquéror sont connus pour ce problème) - l'outil qui règle le problème: ”sgmllyxquotefix.pl”</P
 ></LI
 ></UL
 ></DIV
@@ -1368,7 +1374,7 @@ CLASS="VARIABLELIST"
 >Interface</DT
 ><DD
 ><P
->quasi-synonyme de “périphérique”, voir aussi NIC.</P
+>quasi-synonyme de ”périphérique”, voir aussi NIC.</P
 ></DD
 ><DT
 >En-tête IP</DT
@@ -1406,7 +1412,7 @@ CLASS="VARIABLELIST"
 >Protocole</DT
 ><DD
 ><P
->Chaque couche réseau contient la plupart du temps un champ “protocole” facilitant la distribution de l'information transportée à la couche supérieure, comme cela peut se voir dans la couche 2 (MAC) et 3 (IP)</P
+>Chaque couche réseau contient la plupart du temps un champ ”protocole” facilitant la distribution de l'information transportée à la couche supérieure, comme cela peut se voir dans la couche 2 (MAC) et 3 (IP)</P
 ></DD
 ><DT
 >Routeur</DT
@@ -1543,7 +1549,7 @@ TARGET="_top"
 >USAGI</DT
 ><DD
 ><P
->Projet “UniverSAl playGround for IPv6” - travaille à rendre disponible une pile protocolaire IPv6 destinée au système Linux qui soit d'une qualité apte à la production.</P
+>Projet ”UniverSAl playGround for IPv6” - travaille à rendre disponible une pile protocolaire IPv6 destinée au système Linux qui soit d'une qualité apte à la production.</P
 ></DD
 ></DL
 ></DIV
@@ -1566,7 +1572,7 @@ NAME="AEN336"
 >1.7.2.1. Balisage en vue de l'encodage PDF/PS</A
 ></H4
 ><P
->Le caractère “¬” est utilisé pour signaler que le code est enveloppé en vue d'un meilleur affichage dans les fichiers PDF et PS.</P
+>Le caractère ”¬” est utilisé pour signaler que le code est enveloppé en vue d'un meilleur affichage dans les fichiers PDF et PS.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -2245,7 +2251,7 @@ NAME="AEN485"
 >3.1.2. L'adresse non spécifiée</A
 ></H3
 ><P
->C'est une adresse spéciale telle que “n'importe laquelle” (“any”) ou “0.0.0.0” en IPv4 . Il s'agit pour IPv6 de:</P
+>C'est une adresse spéciale telle que ”n'importe laquelle” (”any”) ou ”0.0.0.0” en IPv4 . Il s'agit pour IPv6 de:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -2451,9 +2457,9 @@ NAME="AEN519"
 ></UL
 ><P
 >Elles commencent par (où <EM
->“x”</EM
+>”x”</EM
 > est n'importe quel caractère hexadécimal, couramment <EM
->“0</EM
+>”0</EM
 >”)</P
 ><TABLE
 BORDER="1"
@@ -2514,9 +2520,9 @@ fefx:&#13;</PRE
 ></TABLE
 ><P
 >(où <EM
->“x”</EM
+>”x”</EM
 > est n'importe quel caractère hexadécimal, couramment <EM
->“0</EM
+>”0</EM
 >”)</P
 ><P
 >Notez que des discussions sont en cours concernant la dépréciation de ce type d'adresse en raison de nombreux problèmes. Pour en savoir plus, lire: <A
@@ -2536,7 +2542,7 @@ NAME="AEN545"
 >3.2.3. Le type d'adresse ”unicast globale (agrégeable) "</A
 ></H3
 ><P
->Aujourd'hui, il y a un type d'adresse globale de défini (la première conception, appelée “basée sur le fournisseur” a été abandonnée il y a déjà quelques années (<A
+>Aujourd'hui, il y a un type d'adresse globale de défini (la première conception, appelée ”basée sur le fournisseur” a été abandonnée il y a déjà quelques années (<A
 HREF="http://www.faqs.org/rfcs/rfc1884.html"
 TARGET="_top"
 >RFC 1884 / IP Version 6 Addressing Architecture [obsolete]</A
@@ -2562,7 +2568,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Note: la dénomination “agrégeable” est abandonnée dans les brouillons actuels.
+>Note: la dénomination ”agrégeable” est abandonnée dans les brouillons actuels.
 Il y a quelques sous-types définis en plus, ci-dessous:</P
 ><DIV
 CLASS="SECT3"
@@ -2976,7 +2982,7 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN641"
->3.3.1. L'adresse calculée automatiquement (dite aussi “sans état”)</A
+>3.3.1. L'adresse calculée automatiquement (dite aussi ”sans état”)</A
 ></H3
 ><P
 >Avec l'auto-configuration, la partie hôte de l'adresse est calculée en convertissant l'adresse MAC d'une interface (si disponible), avec la méthode EUI-64, en une adresse IPv6 unique. Si aucune adresse MAC n'est disponible pour le périphérique en question (ce qui arrive par exemple sur les périphériques virtuels), quelque chose d'autre (comme l'adresse IPv4 ou l'adresse MAC d'une interface physique) est utilisée à la place.</P
@@ -3052,7 +3058,7 @@ NAME="AEN652"
 >client tracking</EM
 >) est possible sur l'hôte, dès lors qu'aucun proxy d'aucune sorte n'est utilisé.</P
 ><P
->C'est un problème connu, et une solution a été apportée: l'extension “sphère privée”, définie dans le RFC 3041 (<A
+>C'est un problème connu, et une solution a été apportée: l'extension ”sphère privée”, définie dans le RFC 3041 (<A
 HREF="http://www.faqs.org/rfcs/rfc3041.html"
 TARGET="_top"
 >RFC 3041 / Privacy Extensions for Stateless Address</A
@@ -3089,7 +3095,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Pour les suffixes tels que “::1”, montré dans l'exemple ci-dessus, il est requis que le septième bit le plus significatif soit positionné à 0 (le bit universel/local d'un identifiant automatiquement généré). Certaines autres (à part celles qui n'ont pas étaient choisies) combinaisons de bits sont réservées aux adresses anycast.</P
+>Pour les suffixes tels que ”::1”, montré dans l'exemple ci-dessus, il est requis que le septième bit le plus significatif soit positionné à 0 (le bit universel/local d'un identifiant automatiquement généré). Certaines autres (à part celles qui n'ont pas étaient choisies) combinaisons de bits sont réservées aux adresses anycast.</P
 ></DIV
 ></DIV
 ><DIV
@@ -3129,7 +3135,7 @@ NAME="AEN672"
 HREF="http://www.faqs.org/rfcs/rfc1519.html"
 TARGET="_top"
 > RFC 1519 / Classless Inter-Domain Routing</A
->), dans lequel est spécifié le nombre de bits de l'adresse devant être utilisé pour le routage. Il est aussi connu comme notation “slash”.</P
+>), dans lequel est spécifié le nombre de bits de l'adresse devant être utilisé pour le routage. Il est aussi connu comme notation ”slash”.</P
 ><P
 >Un exemple: </P
 ><TABLE
@@ -3507,7 +3513,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN756"
->4.1.3.1. Actuellement connus pour ne jamais être “capables de lien IPv6”</A
+>4.1.3.1. Actuellement connus pour ne jamais être ”capables de lien IPv6”</A
 ></H4
 ><P
 ></P
@@ -3540,7 +3546,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN768"
->4.1.3.2. Actuellement connu pour ne pas être “capable de lien IPv6”</A
+>4.1.3.2. Actuellement connu pour ne pas être ”capable de lien IPv6”</A
 ></H4
 ><P
 ></P
@@ -3673,7 +3679,7 @@ NAME="AEN798"
 >4.3. Les programmes de test/déboguage prêts pour IPv6</A
 ></H2
 ><P
->Après avoir préparé votre système pour IPv6, vous voudrez établir des communications en utilisant IPv6. Vous devriez d'abord apprendre comment examiner les paquets IPv6 avec un programme dit “renifleur” (un <EM
+>Après avoir préparé votre système pour IPv6, vous voudrez établir des communications en utilisant IPv6. Vous devriez d'abord apprendre comment examiner les paquets IPv6 avec un programme dit ”renifleur” (un <EM
 >sniffer</EM
 >). Cela est fortement conseillé, car cela peut aider à fournir très rapidement un diagnostic en cas de déboguage/dépannage.</P
 ><DIV
@@ -4150,7 +4156,7 @@ Connection closed by foreign host.</PRE
 ></TR
 ></TABLE
 ><P
->Si le client telnet ne comprend pas l'adresse IPv6 et dit quelque chose comme “ne peut résoudre le nom d'hôte” (“<EM
+>Si le client telnet ne comprend pas l'adresse IPv6 et dit quelque chose comme ”ne peut résoudre le nom d'hôte” (”<EM
 >cannot resolve hostname</EM
 >”), IPv6 n'est alors pas disponible.</P
 ></DIV
@@ -4202,7 +4208,7 @@ user@::1's password: ******
 ></TR
 ></TABLE
 ><P
->Si votre client ssh ne comprend pas l'option “-6”, c'est qu'il n'a pas IPv6 de disponible, comme la plupart des paquetages de ssh version 1.</P
+>Si votre client ssh ne comprend pas l'option ”-6”, c'est qu'il n'a pas IPv6 de disponible, comme la plupart des paquetages de ssh version 1.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -4317,7 +4323,7 @@ NAME="AEN933"
 ><P
 >Le noyau ne sait pas sur quel lien (physique ou virtuel) vous voulez l'utiliser et envoyer des paquets ICMPv6. C'est pourquoi est affiché un message d'erreur.</P
 ><P
->Solution: spécifier l'interface de cette façon: “ping6 -I eth0 fe80::2e0:18ff:fe90:9205”, voir aussi <A
+>Solution: spécifier l'interface de cette façon: ”ping6 -I eth0 fe80::2e0:18ff:fe90:9205”, voir aussi <A
 HREF="#PROGRAM-PING6."
 >l'usage du programme ping6</A
 >.</P
@@ -4331,16 +4337,16 @@ NAME="AEN940"
 >4.7.1.2. Q: impossible d'utiliser ping6 ou traceroute en tant qu'utilisateur courant</A
 ></H4
 ><P
->Message d'erreur: “<EM
+>Message d'erreur: ”<EM
 >icmp socket: Operation not permitted</EM
 >”</P
 ><P
->Ces utilitaires créent des paquets spéciaux ICMPv6 et les émettent en dehors. Ceci est réalisé par l'emploi des sockets brutes du noyau. Ces dernières ne peuvent être utilisées que par l'utilisateur “root”. C'est pourquoi les utilisateurs courants obtiennent un tel message d'erreur.</P
+>Ces utilitaires créent des paquets spéciaux ICMPv6 et les émettent en dehors. Ceci est réalisé par l'emploi des sockets brutes du noyau. Ces dernières ne peuvent être utilisées que par l'utilisateur ”root”. C'est pourquoi les utilisateurs courants obtiennent un tel message d'erreur.</P
 ><P
->Solution: s'il est vraiment nécessaire que tous les utilisateurs puissent utiliser ces utilitaires, vous pouvez ajouter le bit “suid” en faisant ”chmod u+s /chemin/vers/le/programme”, voir aussi <A
+>Solution: s'il est vraiment nécessaire que tous les utilisateurs puissent utiliser ces utilitaires, vous pouvez ajouter le bit ”suid” en faisant ”chmod u+s /chemin/vers/le/programme”, voir aussi <A
 HREF="#PROGRAM-PING6."
 >l'usage du programme</A
->. Si tous les utilisateurs ne doivent pas en être capables, vous pouvez changer ce programme de groupe, par exemple au profit du groupe “wheel”, ajouter les utilisateurs nécessaires à ce groupe et ôter le bit d'exécution aux autres utilisateurs par “chmod o-rwx /chemin/vers/le/programme”, ou bien configurer “sudo” pour mettre en place votre politique de sécurité. </P
+>. Si tous les utilisateurs ne doivent pas en être capables, vous pouvez changer ce programme de groupe, par exemple au profit du groupe ”wheel”, ajouter les utilisateurs nécessaires à ce groupe et ôter le bit d'exécution aux autres utilisateurs par ”chmod o-rwx /chemin/vers/le/programme”, ou bien configurer ”sudo” pour mettre en place votre politique de sécurité. </P
 ></DIV
 ></DIV
 ></DIV
@@ -4467,7 +4473,7 @@ NAME="AEN982"
 >5.1.2.6. Le périphérique Ether-tap</A
 ></H4
 ><P
->Les périphériques Ether-tap sont prêts pour IPv6, et sont de plus configurables sans état. Pour être utilisés, le module “ethertap” doit être chargé au préalable.</P
+>Les périphériques Ether-tap sont prêts pour IPv6, et sont de plus configurables sans état. Pour être utilisés, le module ”ethertap” doit être chargé au préalable.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -4754,7 +4760,7 @@ NAME="AEN1030"
 >6.2. Ajouter une adresse IPv6</A
 ></H2
 ><P
->Ajouter une adresse IPv6 est similaire au mécanisme des adresses “ALIAS IP” sur les interfaces configurées par IPv4 Linux.</P
+>Ajouter une adresse IPv6 est similaire au mécanisme des adresses ”ALIAS IP” sur les interfaces configurées par IPv4 Linux.</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -5314,7 +5320,7 @@ CLASS="SCREEN"
 ><P
 >La distance (<EM
 >metric</EM
->) “1” est utilisée ici par soucis de compatibilité avec la distance utilisée par route, car la distance par défaut fixée par “ip” est “1024”.</P
+>) ”1” est utilisée ici par soucis de compatibilité avec la distance utilisée par route, car la distance par défaut fixée par ”ip” est ”1024”.</P
 ></DIV
 ><DIV
 CLASS="SECT2"
@@ -5486,7 +5492,7 @@ NAME="AEN1148"
 >7.6.1.1. Les clients (ne routent aucun paquet!)</A
 ></H4
 ><P
->Les clients peuvent installer une route par défaut avec pour préfixe “::/0”, ils peuvent aussi apprendre une telle route par auto-configuration, en utilisant par exemple radvd s'il est présent sur le lien, comme le montre ce qui suit:</P
+>Les clients peuvent installer une route par défaut avec pour préfixe ”::/0”, ils peuvent aussi apprendre une telle route par auto-configuration, en utilisant par exemple radvd s'il est présent sur le lien, comme le montre ce qui suit:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -5516,7 +5522,7 @@ NAME="AEN1152"
 ><P
 >Dans ses grandes lignes, l'actuel noyau Linux (au moins &#60;= 2.4.17) ne supporte pas les routes par défaut. Vous pouvez les installées, mais la recherche échouera quand un paquet devra être renvoyé (une intention normale pour un routeur).</P
 ><P
->Pour l'heure, le “routage par défaut” peut être installé en utilisant l'actuel et unique préfixe d'adresse globale “2000::/3”.</P
+>Pour l'heure, le ”routage par défaut” peut être installé en utilisant l'actuel et unique préfixe d'adresse globale ”2000::/3”.</P
 ><P
 >Le projet USAGI supporte déjà cela dans leurs extensions grâce à une astuce de programmation (<EM
 >NdT</EM
@@ -5541,7 +5547,7 @@ NAME="CHAPTER-NEIGHBOR-DISCOVERY"
 ><P
 >La découverte de voisinage est le successeur IPv6 de ARP (<EM
 >Address Resolution Protocol</EM
->, protocole de résolution d'adresse) pour IPv4. Vous pouvez récupérer l'information concernant le voisinage actuel, de plus, vous pouvez fixer ou détruire des entrées. Le noyau garde la trace de la détection d'un voisin (comme ARP pour IPv4). Vous pouvez faire des recherches dans la table apprise, en utilisant “ip”.</P
+>, protocole de résolution d'adresse) pour IPv4. Vous pouvez récupérer l'information concernant le voisinage actuel, de plus, vous pouvez fixer ou détruire des entrées. Le noyau garde la trace de la détection d'un voisin (comme ARP pour IPv4). Vous pouvez faire des recherches dans la table apprise, en utilisant ”ip”.</P
 ><DIV
 CLASS="SECT1"
 ><HR><H2
@@ -5689,7 +5695,7 @@ NAME="AEN1185"
 >8.2.3. Pour plus de réglages avancés</A
 ></H3
 ><P
->L'outil “ip” est sous-documenté, mais il est très puissant. Voir l'aide en ligne pour en savoir plus</P
+>L'outil ”ip” est sous-documenté, mais il est très puissant. Voir l'aide en ligne pour en savoir plus</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -5829,7 +5835,7 @@ CLASS="SCREEN"
 ><P
 >FP et TLA ensemble (16 bits) ont la valeur 0x2002. V4ADDR est l'adresse IPv4 globale et unique du noeud (en notation hexadécimale). SLA est l'identifiant de sous-réseau (65536 sous-réseaux locaux possibles). Ils sont utilisés pour représenter la structure locale de votre réseau.</P
 ><P
->Pour les passerelles, un tel préfixe est généré en utilisant normalement pour SLA “0000”, et pour suffixe “::1” (ce n'est pas une nécessité, il peut être déterminé arbitrairement, mais d'une portée locale) et assigné à l'interface de tunnelage 6to4. Notez que Windows Microsoft utilise aussi V4ADDR comme préfixe.</P
+>Pour les passerelles, un tel préfixe est généré en utilisant normalement pour SLA ”0000”, et pour suffixe ”::1” (ce n'est pas une nécessité, il peut être déterminé arbitrairement, mais d'une portée locale) et assigné à l'interface de tunnelage 6to4. Notez que Windows Microsoft utilise aussi V4ADDR comme préfixe.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -6019,7 +6025,7 @@ NAME="CONF-IPV6-IN-IPV4-POINT-TO-POINT-TUNNELS"
 ><P
 >Il y a 3 possibilités pour ajouter ou ôter un tunnel point-à-point.</P
 ><P
->Une bonne source d'information additionnelle à propos de l'installation de tunnel grâce à “ip” est <A
+>Une bonne source d'information additionnelle à propos de l'installation de tunnel grâce à ”ip” est <A
 HREF="http://www.deepspace6.net/docs/iproute2tunnel-en.html"
 TARGET="_top"
 >configurer les tunnels avec iproute2 (article)</A
@@ -6385,7 +6391,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Les passerelles locales 6to4 devraient (mais cela n'est pas une nécessité, vous pouvez choisir un préfixe arbitraire de portée locale, si cela vous sied mieux) toujours assigner le suffixe “::1”, ce qui vous donnera comme adresse 6to4 locale</P
+>Les passerelles locales 6to4 devraient (mais cela n'est pas une nécessité, vous pouvez choisir un préfixe arbitraire de portée locale, si cela vous sied mieux) toujours assigner le suffixe ”::1”, ce qui vous donnera comme adresse 6to4 locale</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -6501,7 +6507,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Il a été rapporté que certaines versions de “ip” (par exemple Linux SuSe 9.0) ne prennent pas en charge les adresses IPv6 compatibles IPv4 pour les passerelles. Dans ce cas, l'adresse IPv6 correspondante doit être employée:</P
+>Il a été rapporté que certaines versions de ”ip” (par exemple Linux SuSe 9.0) ne prennent pas en charge les adresses IPv6 compatibles IPv4 pour les passerelles. Dans ce cas, l'adresse IPv6 correspondante doit être employée:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -6524,7 +6530,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN1343"
->9.4.1.2. Utiliser "ifconfig", "route" et le périphérique de tunnelage “sit0” (méthode dépréciée)</A
+>9.4.1.2. Utiliser "ifconfig", "route" et le périphérique de tunnelage ”sit0” (méthode dépréciée)</A
 ></H4
 ><P
 >Cela est déprécié car le périphérique de tunnel générique sit0 ne permet pas de spécifier un filtrage par périphérique.</P
@@ -6657,7 +6663,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN1363"
->9.4.2.2. Utiliser “ifconfig”, “route” et un périphérique de tunnel générique “sit0” (déprécié)</A
+>9.4.2.2. Utiliser ”ifconfig”, ”route” et un périphérique de tunnel générique ”sit0” (déprécié)</A
 ></H4
 ><P
 >Ôter une route (par défaut) traversant une interface tunnel 6to4</P
@@ -6753,7 +6759,7 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN1381"
->11.1.1. Utiliser “cat” et “echo”</A
+>11.1.1. Utiliser ”cat” et ”echo”</A
 ></H3
 ><P
 >Utiliser "cat" et "echo" est le moyen le plus simple d'accéder au système de fichiers /proc, mais certains pré-requis sont nécessaires à cela</P
@@ -6874,12 +6880,12 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN1404"
->11.1.2. Utiliser “sysctl”</A
+>11.1.2. Utiliser ”sysctl”</A
 ></H3
 ><P
 >Utiliser le programme "sysctl" pour accéder aux commutateurs du noyau est une méthode moderne aujourd'hui. Vous pouvez aussi l'utiliser même si le système de fichiers /proc n'est pas monté. Mais vous n'avez alors accès qu'à /proc/sys/*!</P
 ><P
->Le programme “sysctl” est compris dans le paquetage “procps” (sur le système Red Hat).</P
+>Le programme ”sysctl” est compris dans le paquetage ”procps” (sur le système Red Hat).</P
 ><P
 ></P
 ><UL
@@ -6984,11 +6990,11 @@ NAME="AEN1422"
 >11.1.2.3. En plus</A
 ></H4
 ><P
->Note: il existe dans la pratique certaines versions de sysctl qui affichent “/” au lieu de “.”</P
+>Note: il existe dans la pratique certaines versions de sysctl qui affichent ”/” au lieu de ”.”</P
 ><P
 >Pour plus de détails jetez un coup d'oeil dans la page de manuel de sysctl.</P
 ><P
->une astuce: pour une recherche rapide parmi les réglages, utiliser “-a” (afficher toutes les entrées) en conjonction avec “grep”.</P
+>une astuce: pour une recherche rapide parmi les réglages, utiliser ”-a” (afficher toutes les entrées) en conjonction avec ”grep”.</P
 ></DIV
 ></DIV
 ><DIV
@@ -7006,7 +7012,7 @@ NAME="AEN1427"
 ><UL
 ><LI
 ><P
->BOOLÉEN: simple “0” (faux) ou “1” (vrai)</P
+>BOOLÉEN: simple ”0” (faux) ou ”1” (vrai)</P
 ></LI
 ><LI
 ><P
@@ -7049,7 +7055,7 @@ NAME="AEN1442"
 ><P
 >Changer tous les réglages spécifiques aux interfaces.</P
 ><P
->Exception: “conf/all/forwarding” a une signification différente ici</P
+>Exception: ”conf/all/forwarding” a une signification différente ici</P
 ><DIV
 CLASS="SECT3"
 ><HR><H4
@@ -7161,7 +7167,7 @@ NAME="AEN1476"
 >Configurer les adresses lien-local (voir aussi <A
 HREF="#CHAPTER-ADDRESSTYPES"
 >Les types d'adresse</A
->) utilisant les adresses matérielles L2. Par exemple, ceci génère, comme par magie, une adresse telle que “fe80::201:23ff:fe45:6789” sur une interface ayant une adresse MAC-L2.</P
+>) utilisant les adresses matérielles L2. Par exemple, ceci génère, comme par magie, une adresse telle que ”fe80::201:23ff:fe45:6789” sur une interface ayant une adresse MAC-L2.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -8078,7 +8084,7 @@ NAME="PROC-NET"
 >11.4. Les entrées relatives à IPv6 dans /proc/net/</A
 ></H2
 ><P
->Dans /proc/net il y a plusieurs entrées disponibles en lecture seule. Vous ne pouvez pas utiliser ici “sysctl” afin de récupérer des informations, utiliser “cat”.</P
+>Dans /proc/net il y a plusieurs entrées disponibles en lecture seule. Vous ne pouvez pas utiliser ici ”sysctl” afin de récupérer des informations, utiliser ”cat”.</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -8096,7 +8102,7 @@ NAME="AEN1794"
 ></LI
 ></UL
 ><P
->Ici toutes les adresses IPv6 configurées sont montrées sous un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir “net/ipv6/addrconf.c” pour en savoir plus).</P
+>Ici toutes les adresses IPv6 configurées sont montrées sous un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir ”net/ipv6/addrconf.c” pour en savoir plus).</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -8126,7 +8132,7 @@ TYPE="1"
 ></LI
 ><LI
 ><P
->Numéro de périphérique Netlink (index d'interface) in hexadécimal (voir aussi “ip addr”)</P
+>Numéro de périphérique Netlink (index d'interface) in hexadécimal (voir aussi ”ip addr”)</P
 ></LI
 ><LI
 ><P
@@ -8138,7 +8144,7 @@ TYPE="1"
 ></LI
 ><LI
 ><P
->Les drapeaux de l'interface (voir “include/linux/rtnetlink.h” et “net/ipv6/addrconf.c” pour en savoir plus)</P
+>Les drapeaux de l'interface (voir ”include/linux/rtnetlink.h” et ”net/ipv6/addrconf.c” pour en savoir plus)</P
 ></LI
 ><LI
 ><P
@@ -8163,7 +8169,7 @@ NAME="AEN1814"
 ></LI
 ></UL
 ><P
->Ici toutes les routes IPv6 configurées sont montrées dans un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir “net/ipv6/route.c” pour en savoir plus).</P
+>Ici toutes les routes IPv6 configurées sont montrées dans un format particulier. L'exemple affiche seulement l'interface loopback. Sa signification est détaillée ci-dessous (voir ”net/ipv6/route.c” pour en savoir plus).</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -8401,10 +8407,10 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN1883"
->13.1.1. Utiliser “netstat” pour vérifier les sockets d'écoute de serveur</A
+>13.1.1. Utiliser ”netstat” pour vérifier les sockets d'écoute de serveur</A
 ></H3
 ><P
->C'est toujours intéressant de savoir quelles sockets de serveur sont actives à un moment donné sur un noeud. Utiliser “netstat” est le moyen le plus court pour obtenir une telle information: </P
+>C'est toujours intéressant de savoir quelles sockets de serveur sont actives à un moment donné sur un noeud. Utiliser ”netstat” est le moyen le plus court pour obtenir une telle information: </P
 ><P
 >options employées: -nlptu</P
 ><P
@@ -8542,9 +8548,9 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Un routeur, avec pour adresse lien-local “fe80::212:34ff:fe12:3450”, émet une annonce à l'adresse multicast tous-les-noeuds-du-lien (<EM
+>Un routeur, avec pour adresse lien-local ”fe80::212:34ff:fe12:3450”, émet une annonce à l'adresse multicast tous-les-noeuds-du-lien (<EM
 >all-node-on-link</EM
->) “ff02::1”, contenant deux préfixes, “2002:0102:0304:1::/64” (d'une durée de vie de 30 s) et “3ffe:ffff:0:1::/64” (d'une durée de vie de 2592000 s), incluant sa propre adresse MAC de couche 2, “0:12:34:12:34:50”.</P
+>) ”ff02::1”, contenant deux préfixes, ”2002:0102:0304:1::/64” (d'une durée de vie de 30 s) et ”3ffe:ffff:0:1::/64” (d'une durée de vie de 2592000 s), incluant sa propre adresse MAC de couche 2, ”0:12:34:12:34:50”.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -8571,9 +8577,9 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Un noeud, avec pour adresse lien-local “fe80::212:34ff:fe12:3456” et comme adresse de couche 2 “0:12:34:12:34:56”, est en quête d'un routeur présent sur le lien, en conséquence il émet cette sollicitation à l'adresse multicast tous-routeurs-présents-sur-le-lien (<EM
+>Un noeud, avec pour adresse lien-local ”fe80::212:34ff:fe12:3456” et comme adresse de couche 2 ”0:12:34:12:34:56”, est en quête d'un routeur présent sur le lien, en conséquence il émet cette sollicitation à l'adresse multicast tous-routeurs-présents-sur-le-lien (<EM
 >all-router-on-link</EM
->) “ff02::2”.</P
+>) ”ff02::2”.</P
 ></DIV
 ></DIV
 ><DIV
@@ -8593,7 +8599,7 @@ NAME="AEN1907"
 >13.2.2.1. Une sollicitation de découverte de voisinage afin de détecter une possible duplication d'adresse</A
 ></H4
 ><P
->Les paquets suivants sont émis par un noeud sur la couche 2, adresse MAC “0:12:34:12:34:56”, pendant l'auto-configuration, afin de vérifier si une adresse potentielle est déjà employée ou non par un autre noeud sur le lien permettant d'émettre ces paquets, <EM
+>Les paquets suivants sont émis par un noeud sur la couche 2, adresse MAC ”0:12:34:12:34:56”, pendant l'auto-configuration, afin de vérifier si une adresse potentielle est déjà employée ou non par un autre noeud sur le lien permettant d'émettre ces paquets, <EM
 >via</EM
 > l'adresse multicast lien-local du noeud sollicité.</P
 ><P
@@ -8601,7 +8607,7 @@ NAME="AEN1907"
 ><UL
 ><LI
 ><P
->Le noeud veut configurer son lien-local avec l'adresse “fe80::212:34ff:fe12:3456”, il est en train de vérifier s'il y a duplication</P
+>Le noeud veut configurer son lien-local avec l'adresse ”fe80::212:34ff:fe12:3456”, il est en train de vérifier s'il y a duplication</P
 ></LI
 ></UL
 ><TABLE
@@ -8625,7 +8631,7 @@ CLASS="SCREEN"
 ><UL
 ><LI
 ><P
->Le noeud veut configurer son adresse globale “2002:0102:0304:1:212:34ff:fe12:3456” (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</P
+>Le noeud veut configurer son adresse globale ”2002:0102:0304:1:212:34ff:fe12:3456” (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</P
 ></LI
 ></UL
 ><TABLE
@@ -8650,7 +8656,7 @@ CLASS="SCREEN"
 ><UL
 ><LI
 ><P
->Le noeud veut configurer son adresse globale “3ffe:ffff:0:1:212:34ff:fe12:3456” (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</P
+>Le noeud veut configurer son adresse globale ”3ffe:ffff:0:1:212:34ff:fe12:3456” (après avoir reçu l'annonce montrée plus haut), il est en train de vérifier s'il y a ou non duplication</P
 ></LI
 ></UL
 ><TABLE
@@ -8684,7 +8690,7 @@ NAME="AEN1923"
 ><UL
 ><LI
 ><P
->Un noeud veut émettre des paquets à “3ffe:ffff:0:1::10” mais il n'a aucune adresse MAC de la couche 2 vers laquelle il pourrait émettre, il émet alors maintenant une sollicitation</P
+>Un noeud veut émettre des paquets à ”3ffe:ffff:0:1::10” mais il n'a aucune adresse MAC de la couche 2 vers laquelle il pourrait émettre, il émet alors maintenant une sollicitation</P
 ></LI
 ></UL
 ><TABLE
@@ -8709,7 +8715,7 @@ CLASS="SCREEN"
 ><UL
 ><LI
 ><P
->Ce noeud recherche maintenant “fe80::10”</P
+>Ce noeud recherche maintenant ”fe80::10”</P
 ></LI
 ></UL
 ><TABLE
@@ -8768,7 +8774,7 @@ TARGET="_top"
 ><P
 >Depuis la Red Hat 7.1, une archive de mes scripts y est incluse. Cela est dû, et cela sera encore vrai à l'avenir, à l'assistance de Pekka Savola.</P
 ><P
->La Mandrake, depuis la version 8.0, inclut aussi un paquetage initscript prêt pour IPv6, cependant un bogue mineur retient de l'employer (il manque 'inet6” à “ifconfig” avant “add”).</P
+>La Mandrake, depuis la version 8.0, inclut aussi un paquetage initscript prêt pour IPv6, cependant un bogue mineur retient de l'employer (il manque 'inet6” à ”ifconfig” avant ”add”).</P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
@@ -8879,7 +8885,7 @@ alias net-pf-10 off</PRE
 ><UL
 ><LI
 ><P
->Si le résultat est “off”, alors rendez disponible la mise en réseau IPv6 en éditant /etc/sysconfig/network, ajoutez la nouvelle ligne</P
+>Si le résultat est ”off”, alors rendez disponible la mise en réseau IPv6 en éditant /etc/sysconfig/network, ajoutez la nouvelle ligne</P
 ></LI
 ></UL
 ><TABLE
@@ -9095,7 +9101,7 @@ TYPE="1"
 ></LI
 ><LI
 ><P
->Configurez votre interface. Par exemple, ici, nous considérons la prise en compte de eth0, avec pour adresse “3ffe:ffff:1234:5::1:1”. Editez /etc/network/interfaces :</P
+>Configurez votre interface. Par exemple, ici, nous considérons la prise en compte de eth0, avec pour adresse ”3ffe:ffff:1234:5::1:1”. Editez /etc/network/interfaces :</P
 ></LI
 ></OL
 ><TABLE
@@ -11078,21 +11084,21 @@ NAME="AEN2427"
 >18.3. Echange automatique de clés (IKE)</A
 ></H2
 ><P
->IPsec requière un échange de clés afin de partager un secret. Ceci est essentiellement réalisé de façon automatisée par les démons IKE. Ils prennent également en charge l'authentification des entités en présence, soit par un secret commun (nommé “secret pré-partagé”), soit par clés RSA (qui peuvent provenir de certificats X.509).</P
+>IPsec requière un échange de clés afin de partager un secret. Ceci est essentiellement réalisé de façon automatisée par les démons IKE. Ils prennent également en charge l'authentification des entités en présence, soit par un secret commun (nommé ”secret pré-partagé”), soit par clés RSA (qui peuvent provenir de certificats X.509).</P
 ><P
 >Actuellement, deux démons IKE sont disponibles pour Linux, lesquels différent totalement par la configuration et l'emploi.</P
 ><P
->Je préfère “pluto” à l'implémentation *S/WAN à cause de son installation plus simple et à son unique fichier de configuration.            </P
+>Je préfère ”pluto” à l'implémentation *S/WAN à cause de son installation plus simple et à son unique fichier de configuration.            </P
 ><DIV
 CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
 NAME="AEN2432"
->18.3.1. Le démon IKE “racoon”</A
+>18.3.1. Le démon IKE ”racoon”</A
 ></H3
 ><P
->Le démon IKE “racoon” provient du projet KAME et a été porté sur Linux. Les distributions contemporaines de Linux comportent ce démon dans le paquetage “ipsec-tools”. Deux exécutables sont requis pour bien installer IPsec. Jetez aussi un oeil à <A
+>Le démon IKE ”racoon” provient du projet KAME et a été porté sur Linux. Les distributions contemporaines de Linux comportent ce démon dans le paquetage ”ipsec-tools”. Deux exécutables sont requis pour bien installer IPsec. Jetez aussi un oeil à <A
 HREF="http://lartc.org/howto/lartc.ipsec.html"
 TARGET="_top"
 >Linux Advanced Routing &#38; Traffic Control HOWTO / IPSEC</A
@@ -11103,10 +11109,10 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2436"
->18.3.1.1. Manipulation de la base de données IPsec SA/SP grâce à l'outil “setkey”</A
+>18.3.1.1. Manipulation de la base de données IPsec SA/SP grâce à l'outil ”setkey”</A
 ></H4
 ><P
->Le rôle important de “setkey” est de définir la politique de sécurité (<EM
+>Le rôle important de ”setkey” est de définir la politique de sécurité (<EM
 >SP</EM
 >, <EM
 >security policy</EM
@@ -11170,7 +11176,7 @@ spdadd 2001:db8:2:2::2 2001:db8:1:1::1 any -P in  ipsec
 ></TR
 ></TABLE
 ><P
->Pour l'autre machine, vous avez juste à échanger “in” et “out”.</P
+>Pour l'autre machine, vous avez juste à échanger ”in” et ”out”.</P
 ></DIV
 ><DIV
 CLASS="SECT3"
@@ -11178,10 +11184,10 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2451"
->18.3.1.2. La configuration du démon IKE “racoon”</A
+>18.3.1.2. La configuration du démon IKE ”racoon”</A
 ></H4
 ><P
->Pour sa bonne exécution, “racoon” requière d'être configuré. Ceci inclus les réglages relatifs à la politique de sécurité, qui doit être précédemment mise en place grâce à “setkey”.</P
+>Pour sa bonne exécution, ”racoon” requière d'être configuré. Ceci inclus les réglages relatifs à la politique de sécurité, qui doit être précédemment mise en place grâce à ”setkey”.</P
 ><P
 >Fichier: /etc/racoon/racoon.conf</P
 ><TABLE
@@ -11266,7 +11272,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2459"
->18.3.1.3. Démarrer IPsec grâce au démon IKE “racoon”</A
+>18.3.1.3. Démarrer IPsec grâce au démon IKE ”racoon”</A
 ></H4
 ><P
 >Il faut pour le moins que le démon soit démarré. Au premier démarrage, utiliser les modes déboguage et premier plan (<EM
@@ -11312,7 +11318,7 @@ Foreground mode.
 ></TR
 ></TABLE
 ><P
->Chaque direction a sa propre IPsec-SA (comme définie dans le standard IPsec). Avec “tcpdump” à l'écoute de la bonne interface, vous devriez voir comme résultat d'un ping IPv6:</P
+>Chaque direction a sa propre IPsec-SA (comme définie dans le standard IPsec). Avec ”tcpdump” à l'écoute de la bonne interface, vous devriez voir comme résultat d'un ping IPv6:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -11334,7 +11340,7 @@ CLASS="SCREEN"
 >Security Parameter Index</EM
 >) négociés sont utilisés ici.</P
 ><P
->Et en utilisant “setkey”, les paramètres actifs courants:</P
+>Et en utilisant ”setkey”, les paramètres actifs courants:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -11380,10 +11386,10 @@ CLASS="SECT2"
 CLASS="SECT2"
 ><A
 NAME="AEN2473"
->18.3.2. Le démon IKE “pluto”</A
+>18.3.2. Le démon IKE ”pluto”</A
 ></H3
 ><P
->Le démon IKE “pluto” est inclus dans les distributions des projets *S/WAN, qui ont pour origine <A
+>Le démon IKE ”pluto” est inclus dans les distributions des projets *S/WAN, qui ont pour origine <A
 HREF="http://www.freeswan.org/"
 TARGET="_top"
 >FreeS/WAN</A
@@ -11397,14 +11403,14 @@ TARGET="_top"
 >Openswan</A
 >. Aujourd'hui, des paquetages d'installation sont disponibles, au moins pour Openswan (inclus dans Fedora Core 3).</P
 ><P
->Une différence importante par rapport à “racoon”, un seul et unique fichier de configuration est requis. Il y a bien sûr un script d'initialisation qui automatise le lancement au démarrage de la machine.</P
+>Une différence importante par rapport à ”racoon”, un seul et unique fichier de configuration est requis. Il y a bien sûr un script d'initialisation qui automatise le lancement au démarrage de la machine.</P
 ><DIV
 CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
 NAME="AEN2480"
->18.3.2.1. La configuration du démon IKE “pluto”</A
+>18.3.2.1. La configuration du démon IKE ”pluto”</A
 ></H4
 ><P
 >La configuration est très similaire à celle nécessaire pour IPv4, à part une importante et nécessaire option.</P
@@ -11477,7 +11483,7 @@ CLASS="SECT3"
 CLASS="SECT3"
 ><A
 NAME="AEN2488"
->18.3.2.2. Démarrer IPsec grâce au démon IKE “pluto”</A
+>18.3.2.2. Démarrer IPsec grâce au démon IKE ”pluto”</A
 ></H4
 ><P
 >Si l'installation d'Openswan s'est achevée avec succès, un script d'initialisation doit exister permettant le démarrage d'IPsec, lancez simplement (sur chaque machine) par:</P
@@ -11497,7 +11503,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Ensuite, démarrez une connexion sur l'une des machines. Si vous pouvez voir la ligne “IPsec SA established”, c'est que tout fonctionne parfaitement.</P
+>Ensuite, démarrez une connexion sur l'une des machines. Si vous pouvez voir la ligne ”IPsec SA established”, c'est que tout fonctionne parfaitement.</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -11521,7 +11527,7 @@ CLASS="SCREEN"
 ></TR
 ></TABLE
 ><P
->Parce que *S/WAN et setkey/racoon sont basés sur la même implémentation d'IPsec dans les noyaux 2.6.x,“setkey” peut être utilisé pour afficher les paramètres actifs courants:</P
+>Parce que *S/WAN et setkey/racoon sont basés sur la même implémentation d'IPsec dans les noyaux 2.6.x,”setkey” peut être utilisé pour afficher les paramètres actifs courants:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -11571,7 +11577,7 @@ NAME="AEN2496"
 >18.4. Informations complémentaires</A
 ></H2
 ><P
->Pour les noyaux Linux 2.6.x, vous pouvez également obtenir la politique et l'état d'IPsec en utilisant “ip”:</P
+>Pour les noyaux Linux 2.6.x, vous pouvez également obtenir la politique et l'état d'IPsec en utilisant ”ip”:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -11601,7 +11607,7 @@ NAME="CHAPTER-QOS"
 ></A
 >Chapitre 19. La Qualité de Service (QoS)</H1
 ><P
->IPv6 supporte QoS par l'utilisation des labels de flux et des classes de trafic. Ceci peut être contrôlé en utilisant “tc” (compris dans le paquetage “iproute”).</P
+>IPv6 supporte QoS par l'utilisation des labels de flux et des classes de trafic. Ceci peut être contrôlé en utilisant ”tc” (compris dans le paquetage ”iproute”).</P
 ><P
 >Information complémentaire:</P
 ><P
@@ -12313,9 +12319,9 @@ NAME="AEN2639"
 ><UL
 ><LI
 ><P
->D'une part, Apache2 supporte une méthode appelée “sendfile”, accélérant la fourniture des données. D'autre part, certains pilotes de NIC supportent la vérification différée des sommes de contrôle (<EM
+>D'une part, Apache2 supporte une méthode appelée ”sendfile”, accélérant la fourniture des données. D'autre part, certains pilotes de NIC supportent la vérification différée des sommes de contrôle (<EM
 >offline checksumming</EM
->). Dans certains cas, cela peut conduire à des problèmes de connexion et invalider les sommes de contrôle TCP. Il faut alors rendre indisponible “sendfile”, ou bien en recompilant par l'utilisation de l'option de configure “--without-sendfile”, ou bien en utilisant la directive du fichier de configuration "EnableSendfile off".</P
+>). Dans certains cas, cela peut conduire à des problèmes de connexion et invalider les sommes de contrôle TCP. Il faut alors rendre indisponible ”sendfile”, ou bien en recompilant par l'utilisation de l'option de configure ”--without-sendfile”, ou bien en utilisant la directive du fichier de configuration "EnableSendfile off".</P
 ></LI
 ></UL
 ></DIV
@@ -12513,7 +12519,7 @@ NAME="AEN2679"
 >20.4.2. Le déboguage</A
 ></H3
 ><P
->Un programme appelé “radvdump” peut vous aider à observer les annonces émises ou reçues. Simple à utiliser:</P
+>Un programme appelé ”radvdump” peut vous aider à observer les annonces émises ou reçues. Simple à utiliser:</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -13084,7 +13090,7 @@ NAME="AEN2780"
 >20.7.1. A l'écoute des adresses IPv6</A
 ></H3
 ><P
->Editer le fichier de configuration, couramment /etc/vsftpd/vsftpd.conf, et ajuster l'option “listen”</P
+>Editer le fichier de configuration, couramment /etc/vsftpd/vsftpd.conf, et ajuster l'option ”listen”</P
 ><TABLE
 BORDER="1"
 BGCOLOR="#E0E0E0"
@@ -13154,7 +13160,7 @@ NAME="HINTS-DAEMONS-OTHERS"
 >20.9. Autres démons</A
 ></H2
 ><P
->De nos jours c'est généralement simple, cherchez une ligne de commande d'option ou bien une valeur de configuration pour rendre disponible l'écoute IPv6. Cherchez dans la page du manuel du démon ou dans les FAQ concernées. Il peut arriver que vous ne puissiez lier le démon qu'à une adresse IPv6 “any” (::) et pas à une adresse IPv6 précise, par manque de support (ça dépend de la façon dont le développeur à implémenter...).</P
+>De nos jours c'est généralement simple, cherchez une ligne de commande d'option ou bien une valeur de configuration pour rendre disponible l'écoute IPv6. Cherchez dans la page du manuel du démon ou dans les FAQ concernées. Il peut arriver que vous ne puissiez lier le démon qu'à une adresse IPv6 ”any” (::) et pas à une adresse IPv6 précise, par manque de support (ça dépend de la façon dont le développeur à implémenter...).</P
 ></DIV
 ></DIV
 ><DIV
@@ -14311,7 +14317,7 @@ CLASS="VARIABLELIST"
 HREF="http://www.pld-linux.org/"
 TARGET="_top"
 >PLD Linux Distribution</A
-> (“leader du marché” quant aux paquetages disposant d'IPv6)</P
+> (”leader du marché” quant aux paquetages disposant d'IPv6)</P
 ></DD
 ><DT
 >Red Hat</DT
@@ -14675,7 +14681,7 @@ TARGET="_top"
 HREF="http://patents1.ic.gc.ca/srch_sim-e.html"
 TARGET="_top"
 >Recherche</A
-> (Recherche simple, entrez juste “IPv6” dans le champs recherche ;-); 84 documents trouvés au 22.12.2002)</P
+> (Recherche simple, entrez juste ”IPv6” dans le champs recherche ;-); 84 documents trouvés au 22.12.2002)</P
 ></LI
 ><LI
 ><P
@@ -15464,14 +15470,6 @@ NAME="INFORMATION-IPV6ANDSECURITY"
 ><UL
 ><LI
 ><P
->Internet Security Systems: Centre Sécurité, <A
-HREF="http://www.iss.net/security_center/search.php?type=3&#38;type=3&#38;pattern=IPv6"
-TARGET="_top"
->recherche dans la base de donnée X-Force</A
-> (21.12.2002 - 6 thèmes relatifs à IPv6)</P
-></LI
-><LI
-><P
 ><A
 HREF="http://csrc.nist.gov/ipsec/"
 TARGET="_top"
@@ -15501,7 +15499,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN3548"
+NAME="AEN3545"
 >23.3.8. Les listes d'applications</A
 ></H3
 ><P
@@ -15537,7 +15535,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN3560"
+NAME="AEN3557"
 >23.3.8.1. Les outils d'analyse</A
 ></H4
 ><P
@@ -15566,7 +15564,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN3569"
+NAME="AEN3566"
 >23.3.8.2. Les produits IPv6</A
 ></H4
 ><P
@@ -15666,7 +15664,7 @@ CLASS="SECT1"
 ><HR><H2
 CLASS="SECT1"
 ><A
-NAME="AEN3602"
+NAME="AEN3599"
 >23.4. L'infrastructure IPv6</A
 ></H2
 ><DIV
@@ -15674,7 +15672,7 @@ CLASS="SECT2"
 ><H3
 CLASS="SECT2"
 ><A
-NAME="AEN3604"
+NAME="AEN3601"
 >23.4.1. Statistiques</A
 ></H3
 ><P
@@ -15715,7 +15713,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN3617"
+NAME="AEN3614"
 >23.4.2. Points d'interconnexion Internet</A
 ></H3
 ><P
@@ -16068,7 +16066,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN3720"
+NAME="AEN3717"
 >23.4.3.5. Europe</A
 ></H4
 ><P
@@ -16532,7 +16530,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN3857"
+NAME="AEN3854"
 >23.4.4.3. Stations Radio, flux de musique</A
 ></H4
 ><P
@@ -16602,7 +16600,7 @@ CLASS="INFORMALTABLE"
 ><P
 ></P
 ><A
-NAME="AEN3878"
+NAME="AEN3875"
 ></A
 ><TABLE
 BORDER="1"
@@ -17310,7 +17308,7 @@ CLASS="SECT2"
 ><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4083"
+NAME="AEN4080"
 >23.6.1. Outils de test</A
 ></H3
 ><P
@@ -17371,7 +17369,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4104"
+NAME="AEN4101"
 >23.6.2. Recherche d'information</A
 ></H3
 ><P
@@ -17400,7 +17398,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4113"
+NAME="AEN4110"
 >23.6.3. Outils d'observation des réseaux IPv6</A
 ></H3
 ><P
@@ -17429,7 +17427,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4122"
+NAME="AEN4119"
 >23.6.4. Applications venant en aide</A
 ></H3
 ><P
@@ -17499,7 +17497,7 @@ TARGET="_top"
 HREF="http://www.trainingpages.net/x/category.html?kw=125"
 TARGET="_top"
 >Pages concernant la formation</A
->, Royaume-Uni - recherche à partir du mot clé “IPv6” (13 cours, au 22.12.2002)</P
+>, Royaume-Uni - recherche à partir du mot clé ”IPv6” (13 cours, au 22.12.2002)</P
 ></LI
 ></UL
 ><P
@@ -17532,7 +17530,7 @@ Editeur: MarketResearch.com; ISBN B00006334Y; (1 novembre 2001) </P
 CLASS="CHAPTER"
 ><HR><H1
 ><A
-NAME="AEN4153"
+NAME="AEN4150"
 ></A
 >Chapitre 24. Historique des Révisions / Crédits / La Fin</H1
 ><DIV
@@ -17548,7 +17546,7 @@ CLASS="SECT2"
 ><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4157"
+NAME="AEN4154"
 >24.1.1. Révisions 0.x</A
 ></H3
 ><DIV
@@ -17556,7 +17554,7 @@ CLASS="SECT3"
 ><H4
 CLASS="SECT3"
 ><A
-NAME="AEN4159"
+NAME="AEN4156"
 >24.1.1.1. La version anglo-saxonne (document original de Peter Bieringer)</A
 ></H4
 ><P
@@ -17571,7 +17569,7 @@ CLASS="SECT3"
 ><HR><H4
 CLASS="SECT3"
 ><A
-NAME="AEN4163"
+NAME="AEN4160"
 >24.1.1.2. La version francophone</A
 ></H4
 ><P
@@ -17715,7 +17713,7 @@ CLASS="SECT2"
 ><HR><H3
 CLASS="SECT2"
 ><A
-NAME="AEN4233"
+NAME="AEN4230"
 >24.2.2. Autres crédits</A
 ></H3
 ><DIV
@@ -17723,7 +17721,7 @@ CLASS="SECT3"
 ><H4
 CLASS="SECT3"
 ><A
-NAME="AEN4235"
+NAME="AEN4232"
 >24.2.2.1. Crédits relatifs aux documents techniques</A
 ></H4
 ><P
@@ -17767,7 +17765,7 @@ CLASS="SECT1"
 ><HR><H2
 CLASS="SECT1"
 ><A
-NAME="AEN4248"
+NAME="AEN4245"
 >24.3. La Fin</A
 ></H2
 ><P
