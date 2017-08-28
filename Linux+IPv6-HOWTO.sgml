@@ -13,7 +13,7 @@
 <title>Linux IPv6 HOWTO (en)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory> 
-<revision> <revnumber>0.67wip</revnumber> <date>2017-07-14</date> <authorinitials>PB</authorinitials></revision>
+<revision> <revnumber>0.67wip</revnumber> <date>2017-08-28</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.66</revnumber> <date>2014-05-15</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.65</revnumber> <date>2009-12-13</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.64</revnumber> <date>2009-06-11</date> <authorinitials>PB</authorinitials></revision>
@@ -159,7 +159,7 @@
 <title>Experience with Unix tools</title>
 <para>You should be familiar with the major Unix tools e.g. <emphasis>grep</emphasis>, <emphasis>awk</emphasis>, <emphasis>find</emphasis>, ... , and know about their most commonly used command-line options.</para></sect3><sect3>
 <title>Experience with networking theory</title>
-<para>You should know about layers, protocols, addresses, cables, plugs, etc. If you are new to this field, here is one good starting point for you: <ulink url="http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm">http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm</ulink></para></sect3><sect3>
+<para>You should know about layers, protocols, addresses, cables, plugs, etc. If you are new to this field, here is one good starting point for you: <ulink url=" https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"> https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm</ulink></para></sect3><sect3>
 <title>Experience with IPv4 configuration</title>
 <para>You should definitely have some experience in IPv4 configuration, otherwise it will be hard for you to understand what is really going on.</para></sect3><sect3>
 <title>Experience with the Domain Name System (DNS)</title>

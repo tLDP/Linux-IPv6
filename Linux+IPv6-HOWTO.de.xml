@@ -10,7 +10,7 @@
 <title>Linux IPv6 HOWTO (de)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory> 
-<revision> <revnumber>0.67.de.1wip</revnumber> <date>2017-07-14</date> <authorinitials>PB</authorinitials></revision>
+<revision> <revnumber>0.67.de.1wip</revnumber> <date>2017-08-28</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.66.de.1</revnumber> <date>2014-05-15</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.65.de.1</revnumber> <date>2009-12-13</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.64.de.1</revnumber> <date>2009-06-11</date> <authorinitials>PB</authorinitials></revision>
@@ -148,7 +148,7 @@ Deutsche Übersetzung Copyright © 2002-2003 Georg Käfer, weitergeführt von Pe
 <title>Erfahrung mit Unix Tools</title>
 <para>Sie sollten mit den gängigsten Unix Tools wie<emphasis> grep</emphasis>, <emphasis>awk</emphasis>, <emphasis>find</emphasis>, etc. und deren Kommandozeilen-Optionen vertraut sein.</para></sect3><sect3>
 <title>Erfahrung mit Netzwerktheorie</title>
-<para>Sie sollten das Schichtmodell und die einzelnen Schichten, Protokolle, Adressarten, Kabelsorten, Stecker etc. kennen. Wenn das Neuland für Sie sein sollte, finden Sie hier einen guten Ausgangspunkt: <ulink url="http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm">http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm</ulink></para></sect3><sect3>
+<para>Sie sollten das Schichtmodell und die einzelnen Schichten, Protokolle, Adressarten, Kabelsorten, Stecker etc. kennen. Wenn das Neuland für Sie sein sollte, finden Sie hier einen guten Ausgangspunkt: <ulink url=" https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"> https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm</ulink></para></sect3><sect3>
 <title>Erfahrung mit der Konfiguration von IPv4 Netzen</title>
 <para>Sie sollten definitiv Erfahrung mit der Konfiguration von IPv4 Netzwerken haben, andernfalls werden Sie dem Text nur schwer folgen können.</para></sect3><sect3>
 <title>Erfahrung mit dem Domain Name System (DNS)</title>

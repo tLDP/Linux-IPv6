@@ -117,7 +117,7 @@ status open
 
 \begin_layout Plain Layout
 
-<revision> <revnumber>0.67.de.1wip</revnumber> <date>2017-07-14</date> <authoriniti
+<revision> <revnumber>0.67.de.1wip</revnumber> <date>2017-08-28</date> <authoriniti
 als>PB</authorinitials></revision>
 \end_layout
 
@@ -1353,8 +1353,9 @@ en, Kabelsorten, Stecker etc.
 : 
 \begin_inset CommandInset href
 LatexCommand href
-name "http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"
-target "http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"
+name " https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"
+target " https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"
+type "mailto:"
 
 \end_inset
 
