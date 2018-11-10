@@ -6,14 +6,14 @@
 <!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.2.3
+<!-- SGML file was created by LyX 2.3.1
   See http://www.lyx.org/ for more information -->
 <book lang="en">
 <bookinfo>
 <title>Linux IPv6 HOWTO (pt_BR)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory> 
-<revision> <revnumber>0.66wip</revnumber> <date>2017-08-28</date> <authorinitials>PB</authorinitials></revision>
+<revision> <revnumber>0.66wip</revnumber> <date>2018-11-10</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.65</revnumber> <date>2009-12-13</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.64</revnumber> <date>2009-06-11</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.60</revnumber> <date>2007-05-31</date> <authorinitials>PB</authorinitials></revision>
@@ -2380,7 +2380,7 @@ www.6bone.net. is an alias for 6bone.net.
 6bone.net. has AAAA address 3ffe:b00:c18:1::10
 ]]></screen></sect3></sect2></sect1><sect1 id='hints-daemons-xinetd' >
 <title><!-- anchor id="hints-daemons-xinetd" -->Internet super daemon (xinetd)</title>
-<para>IPv6 is supported since <ulink url="http://www.xinetd.org/">xinetd</ulink> version around 1.8.9. Always use newest available version. At least version 2.3.3 must be used, older versions can contain remote exploitable security holes.</para>
+<para>IPv6 is supported since <ulink url="https://github.com/xinetd-org/xinetd">xinetd</ulink> version around 1.8.9. Always use newest available version. At least version 2.3.3 must be used, older versions can contain remote exploitable security holes.</para>
 <para>Some Linux distribution contain an extra package for the IPv6 enabled xinetd, some others start the IPv6-enabled xinetd if following variable is set: NETWORKING_IPV6="yes", mostly done by /etc/sysconfig/network (only valid for Red Hat like distributions). In newer releases, one binary supports IPv4 and IPv6.</para>
 <para>If you enable a built-in service like e.g. daytime by modifying the configuration file in /etc/xinetd.d/daytime like</para><screen>
 <![CDATA[# diff -u /etc/xinetd.d/daytime.orig /etc/xinetd.d/daytime 

@@ -6,14 +6,14 @@
 <!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.2.3
+<!-- SGML file was created by LyX 2.3.1
   See http://www.lyx.org/ for more information -->
 <book lang="fr">
 <bookinfo>
 <title>Linux IPv6 HOWTO (fr)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory>
-<revision><revnumber>0.49.fr.3wip</revnumber><date>2017-07-14</date> <authorinitials>PB</authorinitials> </revision>
+<revision><revnumber>0.49.fr.3wip</revnumber><date>2018-11-10</date> <authorinitials>PB</authorinitials> </revision>
 <revision><revnumber>0.49.fr.2</revnumber><date>2007-10-06</date> <authorinitials>PB</authorinitials> </revision>
 <revision><revnumber>0.49.fr.1</revnumber><date>2006-02-26</date> <authorinitials>MB</authorinitials> </revision>
 <revision><revnumber>0.48.1.fr.1</revnumber><date>2005-01-20</date> <authorinitials>MB</authorinitials></revision>
@@ -2187,7 +2187,7 @@ www.6bone.net. is an alias for 6bone.net.
 6bone.net. has AAAA address 3ffe:b00:c18:1::10
 ]]></screen></sect3></sect2></sect1><sect1 id='hints-daemons-xinetd' >
 <title><!-- anchor id="hints-daemons-xinetd" -->Le super démon Internet (xinetd)</title>
-<para>IPv6 est supporté, approximativement, depuis la version 1.8.9 de <ulink url="http://www.xinetd.org/">xinetd</ulink>. Utilisez toujours la version disponible la plus récente. Seules les versions antérieures à la version 2.3.3 doivent être utilisées, les versions plus anciennes peuvent contenir des trous de sécurité exploitables à distance.</para>
+<para>IPv6 est supporté, approximativement, depuis la version 1.8.9 de <ulink url="https://github.com/xinetd-org/xinetd">xinetd</ulink>. Utilisez toujours la version disponible la plus récente. Seules les versions antérieures à la version 2.3.3 doivent être utilisées, les versions plus anciennes peuvent contenir des trous de sécurité exploitables à distance.</para>
 <para>Certaines distributions Linux contiennent un paquetage supplémentaire pour xinetd prêt pour IPv6, d'autres démarrent xinetd prêt pour IPv6 si la variable suivante est positionnée: NETWORKING_IPV6="yes", chose normalement réalisée par /etc/sysconfig/network (valide uniquement pour la distribution Red Hat et ses dérivées). Dans les nouvelles livraisons des distributions, un binaire supporte à la fois IPv4 et IPv6.</para>
 <para>Si vous rendez disponible un service fourni avec xinetd, comme par exemple daytime, en modifiant la configuration dans le fichier /etc/xinetd.d/daytime comme suit</para><screen>
 <![CDATA[# diff -u /etc/xinetd.d/daytime.orig /etc/xinetd.d/daytime 

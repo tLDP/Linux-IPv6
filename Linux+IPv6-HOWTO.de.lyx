@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -24,6 +24,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -53,6 +55,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Stichwortverzeichnis
 \shortcut idx
 \color #008000
@@ -61,7 +64,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language swedish
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style swedish
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -117,7 +123,7 @@ status open
 
 \begin_layout Plain Layout
 
-<revision> <revnumber>0.67.de.1wip</revnumber> <date>2017-08-28</date> <authoriniti
+<revision> <revnumber>0.67.de.1wip</revnumber> <date>2018-11-10</date> <authoriniti
 als>PB</authorinitials></revision>
 \end_layout
 
@@ -212,6 +218,7 @@ Zwischen-Versionen sind auf
 LatexCommand href
 name "mirrors.bieringer.de"
 target "http://mirrors.bieringer.de/Linux+IPv6-HOWTO/"
+literal "false"
 
 \end_inset
 
@@ -220,6 +227,7 @@ target "http://mirrors.bieringer.de/Linux+IPv6-HOWTO/"
 LatexCommand href
 name "mirrors.deepspace6.net"
 target "http://mirrors.deepspace6.net/Linux+IPv6-HOWTO/"
+literal "false"
 
 \end_inset
 
@@ -375,6 +383,7 @@ e91abier
 LatexCommand href
 name "groups.google.com"
 target "http://groups.google.com/"
+literal "false"
 
 \end_inset
 
@@ -393,6 +402,7 @@ target "http://groups.google.com/"
 LatexCommand href
 name "IPv6 & Linux - HowTo"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -401,6 +411,7 @@ target "http://www.bieringer.de/linux/IPv6/"
 LatexCommand href
 name "IPv6 & Linux - HowTo/History"
 target "http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-0.html#history"
+literal "false"
 
 \end_inset
 
@@ -421,6 +432,7 @@ Der Autor kann via E-Mail <pb at bieringer dot de> und auch über seine
 LatexCommand href
 name "homepage"
 target "http://www.bieringer.de/pb/"
+literal "false"
 
 \end_inset
 
@@ -482,6 +494,7 @@ Für andere verfügbare Versionen/Übersetzungen siehe auch
 LatexCommand href
 name "http://www.bieringer.de/linux/IPv6/"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -656,6 +669,7 @@ Notiz: eine Übersicht mit URLs ist zu finden unter
 LatexCommand href
 name "http://www.bieringer.de/linux/IPv6/"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -700,6 +714,7 @@ Die URL für diese deutsche Übersetzung ist:
 LatexCommand href
 name "http://mirrors.deepspace6.net/Linux+IPv6-HOWTO-de/"
 target "http://mirrors.deepspace6.net/Linux+IPv6-HOWTO-de/"
+literal "false"
 
 \end_inset
 
@@ -717,6 +732,7 @@ okument:
 LatexCommand href
 name "TLDP / Linux+IPv6-HOWTO / Übersetzungen"
 target "http://www.tldp.org/HOWTO/Linux+IPv6-HOWTO/general-translations.html"
+literal "false"
 
 \end_inset
 
@@ -747,6 +763,7 @@ Aktuelle Versionen dieses HOWTOs werden mit LyX Version 2.2.2 auf einem Fedora
 LatexCommand href
 name "github / tLDP / Linux-IPv6"
 target "https://github.com/tLDP/Linux-IPv6/"
+literal "false"
 
 \end_inset
 
@@ -780,6 +797,7 @@ lyxcodelinewrapper.pl
 LatexCommand href
 name "github / tLDP / Linux-IPv6"
 target "https://github.com/tLDP/Linux-IPv6/"
+literal "false"
 
 \end_inset
 
@@ -803,6 +821,7 @@ Um korrekten SGML Code zu erstellen, müssen einige Korrekturen gemacht werden.
 LatexCommand href
 name "github / tLDP / Linux-IPv6"
 target "https://github.com/tLDP/Linux-IPv6/"
+literal "false"
 
 \end_inset
 
@@ -907,6 +926,7 @@ Eric Osborne
 LatexCommand href
 name "Linux IPv6 FAQ/HOWTO"
 target "http://www.linuxhq.com/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -946,6 +966,7 @@ Ein zweites Dokument (
 LatexCommand href
 name "IPv6 & Linux - HowTo"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -978,6 +999,7 @@ Da das
 LatexCommand href
 name "IPv6 & Linux - HowTo"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -986,6 +1008,7 @@ target "http://www.bieringer.de/linux/IPv6/"
 LatexCommand href
 name "The Linux Documentation Project (TLDP)"
 target "http://www.tldp.org/"
+literal "false"
 
 \end_inset
 
@@ -996,6 +1019,7 @@ target "http://www.tldp.org/"
 LatexCommand href
 name "IPv6 & Linux - HowTo"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -1005,6 +1029,7 @@ target "http://www.bieringer.de/linux/IPv6/"
 LatexCommand href
 name "Future of IPv6 & Linux - HowTo"
 target "http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-0.html#history"
+literal "false"
 
 \end_inset
 
@@ -1015,6 +1040,7 @@ target "http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-0.html#history"
 LatexCommand href
 name "IPv6 & Linux - HowTo"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -1219,6 +1245,7 @@ keit zur Verfügung zu stellen
 LatexCommand href
 name "www.kame.net"
 target "http://www.kame.net/"
+literal "false"
 
 \end_inset
 
@@ -1356,6 +1383,7 @@ LatexCommand href
 name " https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"
 target " https://web.archive.org/web/20121018222845/http://www.rigacci.org/docs/biblio/online/intro_to_networking/book1.htm"
 type "mailto:"
+literal "false"
 
 \end_inset
 
@@ -1423,6 +1451,7 @@ und es wird IPv4 (auch als IP bekannt) ablösen.
 LatexCommand href
 name "RFC 760 / Internet Protocol"
 target "http://www.faqs.org/rfcs/rfc760.html"
+literal "false"
 
 \end_inset
 
@@ -1435,6 +1464,7 @@ target "http://www.faqs.org/rfcs/rfc760.html"
 LatexCommand href
 name "RFC 2460 / Internet Protocol Version 6 Specification"
 target "http://www.faqs.org/rfcs/rfc2460.html"
+literal "false"
 
 \end_inset
 
@@ -1455,6 +1485,7 @@ Für weitere Informationen zur IPv6 Geschichte siehe die älteren RFCs z.B.
 LatexCommand href
 name "SWITCH IPv6 Pilot / References"
 target "http://www.switch.ch/lan/ipv6/references.html"
+literal "false"
 
 \end_inset
 
@@ -1478,6 +1509,7 @@ Die Jahre 1992, 1993 und 1994 der allgemeinen IPv6 Geschichte können Sie
 LatexCommand href
 name "IPv6 or IPng (IP next generation)"
 target "http://www.laynetworks.com/IPv6.htm#CH3"
+literal "false"
 
 \end_inset
 
@@ -1571,6 +1603,7 @@ Aufgrund fehlender Arbeitskraft konnte die IPv6-Kernel-Implementierung nicht
 LatexCommand href
 name "USAGI"
 target "http://www.linux-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -1583,6 +1616,7 @@ target "http://www.linux-ipv6.org/"
 LatexCommand href
 name "KAME project"
 target "http://www.kame.net/"
+literal "false"
 
 \end_inset
 
@@ -1600,6 +1634,7 @@ Bis zum Start der Entwicklungs-Kernel Serie 2.5.x, der
 LatexCommand href
 name "USAGI"
 target "http://www.linux-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -1616,6 +1651,7 @@ Während der Entwicklung in der Serie 2.5.x hat
 LatexCommand href
 name "USAGI"
 target "http://www.linux-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -1634,6 +1670,7 @@ Viele der von
 LatexCommand href
 name "USAGI"
 target "http://www.linux-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -1652,6 +1689,7 @@ Zukunft
 LatexCommand href
 name "USAGI"
 target "http://www.linux-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -1785,6 +1823,7 @@ kompakte
 LatexCommand href
 name "RFC 1924 / A Compact Representation of IPv6 Addresses"
 target "http://www.faqs.org/rfcs/rfc1924.html"
+literal "false"
 
 \end_inset
 
@@ -1814,6 +1853,7 @@ ipv6calc
 LatexCommand href
 name "ipv6calc homepage"
 target "http://www.deepspace6.net/projects/ipv6calc.html"
+literal "false"
 
 \end_inset
 
@@ -1822,6 +1862,7 @@ target "http://www.deepspace6.net/projects/ipv6calc.html"
 LatexCommand href
 name "Mirror"
 target "http://mirrors.bieringer.de/www.deepspace6.net/projects/ipv6calc.html"
+literal "false"
 
 \end_inset
 
@@ -1854,6 +1895,7 @@ In jedem IP-Header werden die ersten 4 Bits für die Protokollversion reserviert
 LatexCommand href
 name "RFC 1819 / Internet Stream Protocol Version 2"
 target "http://www.faqs.org/rfcs/rfc1819.html"
+literal "false"
 
 \end_inset
 
@@ -1903,6 +1945,7 @@ Weitere Informationen finden Sie unter
 LatexCommand href
 name "RFC 1715 / The H Ratio for Address Assignment Efficiency"
 target "http://www.faqs.org/rfcs/rfc1715.html"
+literal "false"
 
 \end_inset
 
@@ -1911,6 +1954,7 @@ target "http://www.faqs.org/rfcs/rfc1715.html"
 LatexCommand href
 name "RFC 3194 / The Host-Density Ratio for Address Assignment Efficiency"
 target "http://www.faqs.org/rfcs/rfc3194.html"
+literal "false"
 
 \end_inset
 
@@ -2140,6 +2184,7 @@ Dieser Adress-Typ wurde für das automatische Tunneln (
 LatexCommand href
 name "RFC 2893 / Transition Mechanisms for IPv6 Hosts and Routers"
 target "http://www.faqs.org/rfcs/rfc2893.html"
+literal "false"
 
 \end_inset
 
@@ -2180,6 +2225,7 @@ Es wurden einige Adress-Typen definiert und zugleich blieb für zukünftige
 LatexCommand href
 name "RFC 4291 / IP Version 6 Addressing Architecture"
 target "http://www.faqs.org/rfcs/rfc4291.html"
+literal "false"
 
 \end_inset
 
@@ -2282,6 +2328,7 @@ Diese Adressen sind vergleichbar zu den
 LatexCommand href
 name "RFC 1918 / Address Allocation for Private Internets"
 target "http://www.faqs.org/rfcs/rfc1918.html"
+literal "false"
 
 \end_inset
 
@@ -2357,6 +2404,7 @@ Dieser Adresstyp ist nun abgekündigt
 LatexCommand href
 name "RFC 3879 / Deprecating Site Local Addresses"
 target "http://www.faqs.org/rfcs/rfc3879.html"
+literal "false"
 
 \end_inset
 
@@ -2388,6 +2436,7 @@ Weil die schon früh definierten site-local Adressen nicht eindeutig sind,
 LatexCommand href
 name "RFC 4193 / Unique Local IPv6 Unicast Addresses"
 target "http://www.faqs.org/rfcs/rfc4193.html"
+literal "false"
 
 \end_inset
 
@@ -2429,6 +2478,7 @@ Ein Beispiel für einen Präfix (generiert mit Hilfe des web-basierten Werkzeugs
 LatexCommand href
 name "Goebel Consult / createLULA"
 target "http://www.goebel-consult.de/ipv6/createLULA"
+literal "false"
 
 \end_inset
 
@@ -2451,6 +2501,7 @@ Heute gibt es ist per Definition eine globale Adress-Art (Das erste Design,
 LatexCommand href
 name "RFC 1884 / IP Version 6 Addressing Architecture [obsolete]"
 target "http://www.faqs.org/rfcs/rfc1884.html"
+literal "false"
 
 \end_inset
 
@@ -2540,6 +2591,7 @@ Aufgrund dessen, daß IPv6 nun produktiv ist, wird dieser Präfix nicht mehr
 LatexCommand href
 name "RFC 3701 / 6bone Phaseout"
 target "http://www.faqs.org/rfcs/rfc3701.html"
+literal "false"
 
 \end_inset
 
@@ -2557,6 +2609,7 @@ Diese Adressen werden für einen speziellen Tunnelmechanismus verwendet [
 LatexCommand href
 name "RFC 3056 / Connection of IPv6 Domains via IPv4 Clouds"
 target "http://www.faqs.org/rfcs/rfc3056.html"
+literal "false"
 
 \end_inset
 
@@ -2565,6 +2618,7 @@ target "http://www.faqs.org/rfcs/rfc3056.html"
 LatexCommand href
 name "RFC 2893 / Transition Mechanisms for IPv6 Hosts and Routers"
 target "http://www.faqs.org/rfcs/rfc2893.html"
+literal "false"
 
 \end_inset
 
@@ -2663,6 +2717,7 @@ Momentan sind zwei Adressbereiche für Beispiele und Dokumentationen
 LatexCommand href
 name "RFC 3849 / IPv6 Address Prefix Reserved for Documentation"
 target "http://www.faqs.org/rfcs/rfc3849.html"
+literal "false"
 
 \end_inset
 
@@ -2759,6 +2814,7 @@ Es sind bereits viele Typen definiert bzw.
 LatexCommand href
 name "RFC 4291 / IP Version 6 Addressing Architecture"
 target "http://www.faqs.org/rfcs/rfc4291.html"
+literal "false"
 
 \end_inset
 
@@ -2921,6 +2977,7 @@ Diese wird gemäß dem
 LatexCommand href
 name "IEEE-Tutorial EUI-64"
 target "http://standards.ieee.org/regauth/oui/tutorials/EUI64.html"
+literal "false"
 
 \end_inset
 
@@ -2962,6 +3019,7 @@ z-Erweiterung, definiert in
 LatexCommand href
 name "RFC 3041 / Privacy Extensions for Stateless Address Autoconfiguration in IPv6"
 target "http://www.faqs.org/rfcs/rfc3041.html"
+literal "false"
 
 \end_inset
 
@@ -2972,6 +3030,7 @@ target "http://www.faqs.org/rfcs/rfc3041.html"
 LatexCommand href
 name "draft-ietf-ipv6-privacy-addrs-v2-*"
 target "http://www.ietf.org/ids.by.wg/ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -3049,6 +3108,7 @@ Heutiger Standpunkt ist, dass das Routing für Netzwerke mit nur einem Service
 LatexCommand href
 name "drafts-ietf-multi6-*"
 target "http://www.ietf.org/ids.by.wg/multi6.html"
+literal "false"
 
 \end_inset
 
@@ -3059,6 +3119,7 @@ target "http://www.ietf.org/ids.by.wg/multi6.html"
 LatexCommand href
 name "IPv6 Multihoming Solutions"
 target "http://arneill-py.sacramento.ca.us/ipv6mh/"
+literal "false"
 
 \end_inset
 
@@ -3079,6 +3140,7 @@ Vergleichbar zu IPv4, handelt es sich hierbei um den routbaren Netzwerkpfad
 LatexCommand href
 name "RFC 1519 / Classless Inter-Domain Routing"
 target "http://www.faqs.org/rfcs/rfc1519.html"
+literal "false"
 
 \end_inset
 
@@ -3330,6 +3392,7 @@ ierung haben sowie das
 LatexCommand href
 name "Linux Kernel HOWTO"
 target "http://www.tldp.org/HOWTO/Kernel-HOWTO.html"
+literal "false"
 
 \end_inset
 
@@ -3343,6 +3406,7 @@ n ist verfügbar unter
 LatexCommand href
 name "IPv6+Linux-Status-Kernel"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-kernel.html"
+literal "false"
 
 \end_inset
 
@@ -3360,6 +3424,7 @@ Detailliertere Ausführungen zur Kompilierung eines IPv6 fähigen Kernels
 LatexCommand href
 name "IPv6-HOWTO-2#kernel"
 target "http://www.bieringer.de/linux/IPv6/IPv6-HOWTO/IPv6-HOWTO-2.html#kernel"
+literal "false"
 
 \end_inset
 
@@ -3389,6 +3454,7 @@ Siehe auch
 LatexCommand href
 name "USAGI project / FAQ"
 target "http://www.linux-ipv6.org/faq.html"
+literal "false"
 
 \end_inset
 
@@ -3397,6 +3463,7 @@ target "http://www.linux-ipv6.org/faq.html"
 LatexCommand href
 name "Obtaining the best IPv6 support with Linux (Article)"
 target "http://www.deepspace6.net/docs/best_ipv6_support.html"
+literal "false"
 
 \end_inset
 
@@ -3407,6 +3474,7 @@ target "http://www.deepspace6.net/docs/best_ipv6_support.html"
 LatexCommand href
 name "Spiegel"
 target "http://mirrors.bieringer.de/www.deepspace6.net/docs/best_ipv6_support.html"
+literal "false"
 
 \end_inset
 
@@ -3427,6 +3495,7 @@ Nicht alle Netzwerkgeräte sind bereits (bzw.
 LatexCommand href
 name "IPv6+Linux-status-kernel.html#transport"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-kernel.html#transport"
+literal "false"
 
 \end_inset
 
@@ -3457,6 +3526,7 @@ Serial Line IP (
 LatexCommand href
 name "RFC 1055 / SLIP"
 target "http://www.faqs.org/rfcs/rfc1055.html"
+literal "false"
 
 \end_inset
 
@@ -3592,6 +3662,7 @@ Sie können nach einem passenden RPM Paket unter
 LatexCommand href
 name "RPMfind/iproute"
 target "http://rpmfind.net/linux/rpm2html/search.php?query=iproute"
+literal "false"
 
 \end_inset
 
@@ -4185,6 +4256,7 @@ Aktuelle Distributionen beinhalten bereits die gängigsten IPv6 kompatiblen
 LatexCommand href
 name "IPv6+Linux-Status-Distribution"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-distributions.html"
+literal "false"
 
 \end_inset
 
@@ -4195,6 +4267,7 @@ target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-distribution
 LatexCommand href
 name "Current Status of IPv6 Support for Networking Applications"
 target "http://www.deepspace6.net/docs/ipv6_status_page_apps.html"
+literal "false"
 
 \end_inset
 
@@ -4443,6 +4516,7 @@ Einen aktuellen Statusüberblick zum Thema IPv6 kompatible Web-Browser ist
 LatexCommand href
 name "Current Status of IPv6 Support for Networking Applications - HTTP"
 target "http://www.deepspace6.net/docs/ipv6_status_page_apps.html#http"
+literal "false"
 
 \end_inset
 
@@ -4481,6 +4555,7 @@ Automatik-Einstellungen des Proxy (*.pac) können aufgrund ihrer Beschaffenheit
 LatexCommand href
 name "http://[2001:4dd0:f838:a006::6]/"
 target "http://[2001:4dd0:f838:a006::6]/"
+literal "false"
 
 \end_inset
 
@@ -4489,6 +4564,7 @@ target "http://[2001:4dd0:f838:a006::6]/"
 LatexCommand href
 name "http://www.ipv6.bieringer.de/"
 target "http://www.ipv6.bieringer.de/"
+literal "false"
 
 \end_inset
 
@@ -4512,6 +4588,7 @@ Ein guter Ausgangspunkt zum Betrachten von Webseiten mit IPv6 ist
 LatexCommand href
 name "http://www.kame.net/"
 target "http://www.kame.net/"
+literal "false"
 
 \end_inset
 
@@ -4529,6 +4606,7 @@ Andere Test-Server sind z.B.
 LatexCommand href
 name "What Is My IPv6"
 target "http://www.whatismyipv6.com/"
+literal "false"
 
 \end_inset
 
@@ -4540,6 +4618,7 @@ target "http://www.whatismyipv6.com/"
 LatexCommand href
 name "ip.bieringer.de"
 target "http://ip.bieringer.de/"
+literal "false"
 
 \end_inset
 
@@ -4551,6 +4630,7 @@ target "http://ip.bieringer.de/"
 LatexCommand href
 name "IPv6 Test"
 target "http://ipv6-test.com/"
+literal "false"
 
 \end_inset
 
@@ -4562,6 +4642,7 @@ target "http://ipv6-test.com/"
 LatexCommand href
 name "test-ipv6.com"
 target "http://test-ipv6.com/"
+literal "false"
 
 \end_inset
 
@@ -4573,6 +4654,7 @@ target "http://test-ipv6.com/"
 LatexCommand href
 name "The ICSI Netalyzr"
 target "http://netalyzr.icsi.berkeley.edu/"
+literal "false"
 
 \end_inset
 
@@ -4584,6 +4666,7 @@ target "http://netalyzr.icsi.berkeley.edu/"
 LatexCommand href
 name "Speedtest Comcast"
 target "http://speedtest.comcast.net/"
+literal "false"
 
 \end_inset
 
@@ -4592,6 +4675,7 @@ target "http://speedtest.comcast.net/"
 LatexCommand href
 name "IPv6 Speedtest Comcast"
 target "http://ipv6.speedtest.comcast.net/"
+literal "false"
 
 \end_inset
 
@@ -5309,6 +5393,7 @@ Privacy Extension wie beschrieben in
 LatexCommand href
 name "RFC 4941 / Privacy Extensions for Stateless Address Autoconfiguration in IPv6"
 target "http://www.faqs.org/rfcs/rfc4941.html"
+literal "false"
 
 \end_inset
 
@@ -5317,6 +5402,7 @@ target "http://www.faqs.org/rfcs/rfc4941.html"
 LatexCommand href
 name "RFC 3041"
 target "http://www.faqs.org/rfcs/rfc3041.html"
+literal "false"
 
 \end_inset
 
@@ -5578,6 +5664,7 @@ Ob die IPv6-Adresss mit einer durch die Privacy Extension generierte Interface
 LatexCommand href
 name "http://ip.bieringer.de/"
 target "http://ip.bieringer.de/"
+literal "false"
 
 \end_inset
 
@@ -6295,6 +6382,7 @@ Ein Punkt-zu-Punkt Tunnel ist ein dedizierter Tunnel zu einem Endpunkt,
 LatexCommand href
 name "RFC 4213 / Basic Transition Mechanisms for IPv6 Hosts and Routers"
 target "http://www.faqs.org/rfcs/rfc4213.html"
+literal "false"
 
 \end_inset
 
@@ -6324,6 +6412,7 @@ Wenn keine statische IPv4 Addresse verfügbar ist, muß der Tunnel-Provider
 LatexCommand href
 name "SixXS / AICCU"
 target "http://www.sixxs.net/"
+literal "false"
 
 \end_inset
 
@@ -6332,6 +6421,7 @@ target "http://www.sixxs.net/"
 LatexCommand href
 name "gogo6"
 target "http://gogo6.com/"
+literal "false"
 
 \end_inset
 
@@ -6373,6 +6463,7 @@ Statische Tunnelprovider:
 LatexCommand href
 name "Hurricane Electric"
 target "http://he.com/"
+literal "false"
 
 \end_inset
 
@@ -6386,6 +6477,7 @@ target "http://he.com/"
 LatexCommand href
 name "SixXS"
 target "http://www.sixxs.net/"
+literal "false"
 
 \end_inset
 
@@ -6421,6 +6513,7 @@ name "tunneling-6to4"
 LatexCommand href
 name "RFC 3056 / Connection of IPv6 Domains via IPv4 Clouds"
 target "http://www.faqs.org/rfcs/rfc3056.html"
+literal "false"
 
 \end_inset
 
@@ -6446,6 +6539,7 @@ Die 6to4 Adresse wird wie folgt definiert (Schema ist dem
 LatexCommand href
 name "RFC 3056 / Connection of IPv6 Domains via IPv4 Clouds"
 target "http://www.faqs.org/rfcs/rfc3056.html"
+literal "false"
 
 \end_inset
 
@@ -6524,6 +6618,7 @@ Anfängen
 LatexCommand href
 name "NSayer's 6to4 information"
 target "http://www.kfu.com/~nsayer/6to4/"
+literal "false"
 
 \end_inset
 
@@ -6539,6 +6634,7 @@ Heute können Upstream Router automatisch mittels der anycast Adresse 192.88.99.
 LatexCommand href
 name "RFC 3068 / An Anycast Prefix for 6to4 Relay Routers"
 target "http://www.faqs.org/rfcs/rfc3068.html"
+literal "false"
 
 \end_inset
 
@@ -6618,6 +6714,7 @@ Teredo Tunnel
 LatexCommand href
 name "RFC 4380 / Teredo: Tunneling IPv6 over UDP through Network Address Translations"
 target "http://www.faqs.org/rfcs/rfc4380.html"
+literal "false"
 
 \end_inset
 
@@ -6627,6 +6724,7 @@ beschreibt das Tunneln von IPv6 Pakete über IPv4 UDP Pakete (Bubbles), siehe
 LatexCommand href
 name "Wikipedia / Teredo"
 target "http://de.wikipedia.org/wiki/Teredo"
+literal "false"
 
 \end_inset
 
@@ -6637,6 +6735,7 @@ target "http://de.wikipedia.org/wiki/Teredo"
 LatexCommand href
 name "miredo"
 target "http://www.remlab.net/miredo/"
+literal "false"
 
 \end_inset
 
@@ -6659,6 +6758,7 @@ Tunnel provider
 LatexCommand href
 name "SixXS"
 target "http://www.sixxs.net/"
+literal "false"
 
 \end_inset
 
@@ -6680,6 +6780,7 @@ Tunnel provider
 LatexCommand href
 name "gogo6"
 target "http://gogo6.com/"
+literal "false"
 
 \end_inset
 
@@ -6793,6 +6894,7 @@ ip
 LatexCommand href
 name "Configuring tunnels with iproute2 (article)"
 target "http://www.deepspace6.net/docs/iproute2tunnel-en.html"
+literal "false"
 
 \end_inset
 
@@ -6803,6 +6905,7 @@ target "http://www.deepspace6.net/docs/iproute2tunnel-en.html"
 LatexCommand href
 name "Spiegel"
 target "http://mirrors.bieringer.de/www.deepspace6.net/docs/iproute2tunnel-en.html"
+literal "false"
 
 \end_inset
 
@@ -7507,6 +7610,7 @@ Konfiguration eines IPv4-in-IPv6 Tunnels
 LatexCommand href
 name "RFC 2473 / Generic Packet Tunneling in IPv6 Specification"
 target "http://www.faqs.org/rfcs/rfc2473.html"
+literal "false"
 
 \end_inset
 
@@ -8425,6 +8529,7 @@ Wenn Sie viele Interfaces und Probleme mit inkorrekt oder nicht funktionierenden
 LatexCommand href
 name "Zebra (routing daemon)"
 target "http://www.zebra.org/"
+literal "false"
 
 \end_inset
 
@@ -9250,6 +9355,7 @@ Zusätzliche Informationen sind hier zu finden
 LatexCommand href
 name "Linux & IPv6: getaddrinfo and search domains - Research"
 target "http://www.bieringer.de/linux/IPv6/getaddrinfo/"
+literal "false"
 
 \end_inset
 
@@ -9263,6 +9369,7 @@ target "http://www.bieringer.de/linux/IPv6/getaddrinfo/"
 LatexCommand href
 name "RFC 3484 on Linux"
 target "http://people.redhat.com/drepper/linux-rfc3484.html"
+literal "false"
 
 \end_inset
 
@@ -9277,6 +9384,7 @@ Karl Auer's Blog:
 LatexCommand href
 name "Controlling IPv6 source address selection"
 target "http://biplane.com.au/blog/?p=30"
+literal "false"
 
 \end_inset
 
@@ -9285,6 +9393,7 @@ target "http://biplane.com.au/blog/?p=30"
 LatexCommand href
 name "IPv6 Source Address Selection - what, why, how"
 target "http://biplane.com.au/blog/?p=22"
+literal "false"
 
 \end_inset
 
@@ -9299,6 +9408,7 @@ Into6:
 LatexCommand href
 name "/etc/gai.conf - it ain't what you think it is"
 target "http://into6.com.au/?p=288"
+literal "false"
 
 \end_inset
 
@@ -9328,6 +9438,7 @@ getaddrinfo
 LatexCommand href
 name "RFC 3484 / Default Address Selection for Internet Protocol version 6"
 target "http://www.faqs.org/rfcs/rfc3484.html"
+literal "false"
 
 \end_inset
 
@@ -9836,6 +9947,7 @@ ip addrtable
 LatexCommand href
 name "/etc/gai.conf - it ain't what you think it is"
 target "http://into6.com.au/?p=288"
+literal "false"
 
 \end_inset
 
@@ -10512,6 +10624,7 @@ Seitdem der Autor begann das
 LatexCommand href
 name "IPv6 & Linux - HowTo"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -10531,6 +10644,7 @@ target "http://www.bieringer.de/linux/IPv6/"
 LatexCommand href
 name "initscripts-ipv6 homepage"
 target "http://www.deepspace6.net/projects/initscripts-ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -10539,6 +10653,7 @@ target "http://www.deepspace6.net/projects/initscripts-ipv6.html"
 LatexCommand href
 name "Spiegel"
 target "http://mirrors.bieringer.de/www.deepspace6.net/projects/initscripts-ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -10649,6 +10764,7 @@ Im obigen Beispiel ist die Versionsnummer
 LatexCommand href
 name "initscripts-ipv6 homepage"
 target "http://www.deepspace6.net/projects/initscripts-ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -10657,6 +10773,7 @@ target "http://www.deepspace6.net/projects/initscripts-ipv6.html"
 LatexCommand href
 name "Spiegel"
 target "http://mirrors.bieringer.de/www.deepspace6.net/projects/initscripts-ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -10759,6 +10876,7 @@ SuSE Linux 7.3
 LatexCommand href
 name "How to setup 6to4 IPv6 with SuSE 7.3"
 target "http://www.feyrer.de/IPv6/SuSE73-IPv6+6to4-setup.html"
+literal "false"
 
 \end_inset
 
@@ -10941,6 +11059,7 @@ Weiterführende Informationen
 LatexCommand href
 name "IPv6 with Debian Linux"
 target "http://ipv6.debian.net/"
+literal "false"
 
 \end_inset
 
@@ -10956,6 +11075,7 @@ Jean-Marc V.
 LatexCommand href
 name "HOWTO for Freenet6 & Debian Users"
 target "http://www.ruwenzori.net/ipv6/Jims_LAN_IPv6_global_connectivity_howto.html"
+literal "false"
 
 \end_inset
 
@@ -11043,6 +11163,7 @@ Nach einer langen Zeit der Diskussion wurde
 LatexCommand href
 name "RFC 3315 / Dynamic Host Configuration Protocol for IPv6 (DHCPv6)"
 target "http://www.faqs.org/rfcs/rfc3315.html"
+literal "false"
 
 \end_inset
 
@@ -11057,6 +11178,7 @@ target "http://www.faqs.org/rfcs/rfc3315.html"
 LatexCommand href
 name "Dibbler"
 target "http://klub.com.pl/dhcpv6/"
+literal "false"
 
 \end_inset
 
@@ -11078,6 +11200,7 @@ reference "hints-daemons-dibbler"
 LatexCommand href
 name "dhcpv6"
 target "https://fedorahosted.org/dhcpv6/"
+literal "false"
 
 \end_inset
 
@@ -11099,6 +11222,7 @@ reference "hints-daemons-dhcpv6"
 LatexCommand href
 name "ISC DHCP"
 target "http://www.isc.org/software/dhcp"
+literal "false"
 
 \end_inset
 
@@ -11142,6 +11266,7 @@ Die Unterstützung für IPv6-Mobilität in Linux kann durch die Installation
 LatexCommand href
 name "http://www.mobile-ipv6.org/"
 target "http://www.mobile-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -11165,6 +11290,7 @@ Installation und Setup sind im
 LatexCommand href
 name "Linux Mobile IPv6 HOWTO"
 target "http://tldp.org/HOWTO/Mobile-IPv6-HOWTO/"
+literal "false"
 
 \end_inset
 
@@ -11187,6 +11313,7 @@ Zusätzlich existiert die Implementierung der Netzwerk-Mobilität für Linux,
 LatexCommand href
 name "http://www.mobile-ipv6.org/"
 target "http://www.mobile-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -11201,6 +11328,7 @@ Folgendes HOWTO Dokument beschreibt Setup und Konfiguration:
 LatexCommand href
 name "http://www.nautilus6.org/doc/nepl-howto/"
 target "http://www.nautilus6.org/doc/nepl-howto/"
+literal "false"
 
 \end_inset
 
@@ -11221,6 +11349,7 @@ Mobile IPv6 for Linux (MIPL) project:
 LatexCommand href
 name "http://www.mobile-ipv6.org/"
 target "http://www.mobile-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -11235,6 +11364,7 @@ Nautilus6 working group:
 LatexCommand href
 name "http://nautilus6.org/"
 target "http://nautilus6.org/"
+literal "false"
 
 \end_inset
 
@@ -11249,6 +11379,7 @@ Fast Handovers for Mobile IPv6 for Linux project:
 LatexCommand href
 name "http://www.fmipv6.org/"
 target "http://www.fmipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -11263,6 +11394,7 @@ USAGI-patched Mobile IPv6 for Linux (UMIP):
 LatexCommand href
 name "http://umip.linux-ipv6.org/"
 target "http://umip.linux-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -11277,6 +11409,7 @@ Deploying IPsec/IKE-protected MIPv6 under Linux:
 LatexCommand href
 name "http://natisbad.org/MIPv6/"
 target "http://natisbad.org/MIPv6/"
+literal "false"
 
 \end_inset
 
@@ -11290,6 +11423,7 @@ target "http://natisbad.org/MIPv6/"
 LatexCommand href
 name "RFC 3775 / Mobility Support in IPv6"
 target "http://www.faqs.org/rfcs/rfc3775.html"
+literal "false"
 
 \end_inset
 
@@ -11303,6 +11437,7 @@ target "http://www.faqs.org/rfcs/rfc3775.html"
 LatexCommand href
 name "RFC 3776 / Using IPsec to Protect Mobile IPv6 Signaling Between Mobile Nodes and Home Agents"
 target "http://www.faqs.org/rfcs/rfc3776.html"
+literal "false"
 
 \end_inset
 
@@ -11316,6 +11451,7 @@ target "http://www.faqs.org/rfcs/rfc3776.html"
 LatexCommand href
 name "RFC 3963 / Network Mobility (NEMO)"
 target "http://www.faqs.org/rfcs/rfc3963.html"
+literal "false"
 
 \end_inset
 
@@ -11329,6 +11465,7 @@ target "http://www.faqs.org/rfcs/rfc3963.html"
 LatexCommand href
 name "RFC 4068 / Fast Handovers for Mobile IPv6"
 target "http://www.faqs.org/rfcs/rfc4068.html"
+literal "false"
 
 \end_inset
 
@@ -11342,6 +11479,7 @@ target "http://www.faqs.org/rfcs/rfc4068.html"
 LatexCommand href
 name "RFC 4423 / Host Identity Protocol (HIP) Architecture"
 target "http://www.faqs.org/rfcs/rfc4423.html"
+literal "false"
 
 \end_inset
 
@@ -11355,6 +11493,7 @@ target "http://www.faqs.org/rfcs/rfc4423.html"
 LatexCommand href
 name "RFC 5201 / Host Identity Protocol"
 target "http://www.faqs.org/rfcs/rfc5201.html"
+literal "false"
 
 \end_inset
 
@@ -11369,6 +11508,7 @@ HIP Implementierungen:
 LatexCommand href
 name "http://infrahip.hiit.fi/"
 target "http://infrahip.hiit.fi/"
+literal "false"
 
 \end_inset
 
@@ -11377,6 +11517,7 @@ target "http://infrahip.hiit.fi/"
 LatexCommand href
 name "http://hip4inter.net/"
 target "http://hip4inter.net/"
+literal "false"
 
 \end_inset
 
@@ -11385,6 +11526,7 @@ target "http://hip4inter.net/"
 LatexCommand href
 name "http://www.openhip.org/"
 target "http://www.openhip.org/"
+literal "false"
 
 \end_inset
 
@@ -11410,6 +11552,7 @@ Die IPv6 Firewall-Funktionalität ist wichtig; vor allem dann, wenn Sie auf
 LatexCommand href
 name "RFC 1918 / Address Allocation for Private Internets"
 target "http://www.faqs.org/rfcs/rfc1918.html"
+literal "false"
 
 \end_inset
 
@@ -11419,6 +11562,7 @@ target "http://www.faqs.org/rfcs/rfc1918.html"
 LatexCommand href
 name "Google search for Microsoft + APIPA"
 target "http://www.google.com/search?q=apipa+microsoft"
+literal "false"
 
 \end_inset
 
@@ -11489,6 +11633,7 @@ Weitere Informationen
 LatexCommand href
 name "Netfilter project"
 target "http://www.netfilter.org/"
+literal "false"
 
 \end_inset
 
@@ -11502,6 +11647,7 @@ target "http://www.netfilter.org/"
 LatexCommand href
 name "maillist archive of netfilter users"
 target "https://lists.netfilter.org/mailman/listinfo/netfilter"
+literal "false"
 
 \end_inset
 
@@ -11515,6 +11661,7 @@ target "https://lists.netfilter.org/mailman/listinfo/netfilter"
 LatexCommand href
 name "maillist archive of netfilter developers"
 target "https://lists.netfilter.org/mailman/listinfo/netfilter-devel"
+literal "false"
 
 \end_inset
 
@@ -11526,6 +11673,7 @@ target "https://lists.netfilter.org/mailman/listinfo/netfilter-devel"
 LatexCommand href
 name "Unofficial status informations"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-kernel.html#netfilter6 "
+literal "false"
 
 \end_inset
 
@@ -11554,6 +11702,7 @@ Besorgen Sie sich den aktuellsten Kernel:
 LatexCommand href
 name "http://www.kernel.org/"
 target "http://www.kernel.org/"
+literal "false"
 
 \end_inset
 
@@ -11570,6 +11719,7 @@ Source tarball (für Kernel Patches):
 LatexCommand href
 name "http://www.netfilter.org/"
 target "http://www.netfilter.org/"
+literal "false"
 
 \end_inset
 
@@ -13571,6 +13721,7 @@ Aktuell gibt es keine komfortablen Sicherheitstools mit denen man ein System
 LatexCommand href
 name "Nessus"
 target "http://www.nessus.org/"
+literal "false"
 
 \end_inset
 
@@ -13603,6 +13754,7 @@ Mit dem IPv6 fähigen netcat (siehe
 LatexCommand href
 name "IPv6+Linux-status-apps/security-auditing"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-apps.html#security-auditing"
+literal "false"
 
 \end_inset
 
@@ -13629,6 +13781,7 @@ Sicherheitsüberwachung mit IPv6 fähigen NMap
 LatexCommand href
 name "NMap"
 target "http://www.insecure.org/nmap/"
+literal "false"
 
 \end_inset
 
@@ -13689,6 +13842,7 @@ Strobe ist (im Vergleich zu NMap) ein low budget Portscanner.
 LatexCommand href
 name "IPv6+Linux-status-apps/security-auditing"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-apps.html#security-auditing"
+literal "false"
 
 \end_inset
 
@@ -13746,6 +13900,7 @@ nfiguration bzgl.
 LatexCommand href
 name "Tim's Online IPv6 TCP/UDP Port Scanner"
 target "http://ipv6.chappell-family.com/ipv6tcptest/"
+literal "false"
 
 \end_inset
 
@@ -13759,6 +13914,7 @@ target "http://ipv6.chappell-family.com/ipv6tcptest/"
 LatexCommand href
 name "SubnetOnline IPv6 Scanner"
 target "http://www.subnetonline.com/pages/ipv6-network-tools/online-ipv6-port-scanner.php"
+literal "false"
 
 \end_inset
 
@@ -13797,6 +13953,7 @@ Hinweis: Detailliertere Informationen zum Thema IPv6 Sicherheit finden Sie
 LatexCommand href
 name "IETF drafts - IPv6 Operations (v6ops)"
 target "http://www.ietf.org/ids.by.wg/v6ops.html"
+literal "false"
 
 \end_inset
 
@@ -13810,6 +13967,7 @@ target "http://www.ietf.org/ids.by.wg/v6ops.html"
 LatexCommand href
 name "RFC 3964 / Security Considerations for 6to4"
 target "http://www.faqs.org/rfcs/rfc3964.html"
+literal "false"
 
 \end_inset
 
@@ -13919,6 +14077,7 @@ Fehlt in vanilla 2.4.
 LatexCommand href
 name "FreeS/WAN project"
 target "http://www.freeswan.org/"
+literal "false"
 
 \end_inset
 
@@ -14041,6 +14200,7 @@ ipsec-tools
 LatexCommand href
 name "Linux Advanced Routing & Traffic Control HOWTO / IPSEC"
 target "http://lartc.org/howto/lartc.ipsec.html"
+literal "false"
 
 \end_inset
 
@@ -14662,6 +14822,7 @@ pluto
 LatexCommand href
 name "FreeS/WAN"
 target "http://www.freeswan.org/"
+literal "false"
 
 \end_inset
 
@@ -14673,6 +14834,7 @@ target "http://www.freeswan.org/"
 LatexCommand href
 name "strongSwan"
 target "http://www.strongswan.org/"
+literal "false"
 
 \end_inset
 
@@ -14681,6 +14843,7 @@ target "http://www.strongswan.org/"
 LatexCommand href
 name "Openswan"
 target "http://www.openswan.org/"
+literal "false"
 
 \end_inset
 
@@ -15104,6 +15267,7 @@ Zusätzliche Infos:
 LatexCommand href
 name "RFC 3697 / IPv6 Flow Label Specification"
 target "http://www.faqs.org/rfcs/rfc3697.html"
+literal "false"
 
 \end_inset
 
@@ -15194,6 +15358,7 @@ iproute2
 LatexCommand href
 name "Linux Advanced Routing & Traffic Control HOWTO"
 target "http://lartc.org/"
+literal "false"
 
 \end_inset
 
@@ -15775,6 +15940,7 @@ Einige Informationen finden Sie auch unter
 LatexCommand href
 name "IPv6 DNS Setup Information (article)"
 target "http://www.isi.edu/~bmanning/v6DNS.html"
+literal "false"
 
 \end_inset
 
@@ -15784,6 +15950,7 @@ target "http://www.isi.edu/~bmanning/v6DNS.html"
 LatexCommand href
 name "IPv6 Reverse DNS zone builder for BIND 8/9 (webtool)"
 target "http://tools.fpsn.net/ipv6-inaddr/"
+literal "false"
 
 \end_inset
 
@@ -15804,6 +15971,7 @@ AAAA und reverse IP6.INT: beschrieben in
 LatexCommand href
 name "RFC 1886 / DNS Extensions to support IP version 6"
 target "http://www.faqs.org/rfcs/rfc1886.html"
+literal "false"
 
 \end_inset
 
@@ -15816,6 +15984,7 @@ A6, DNAME (WURDE ABGELEHNT!) und reverse IP6.ARPA: beschrieben in
 LatexCommand href
 name "RFC 2874 / DNS Extensions to Support IPv6 Address Aggregation and Renumbering"
 target "http://www.faqs.org/rfcs/rfc2874.html"
+literal "false"
 
 \end_inset
 
@@ -15825,6 +15994,7 @@ target "http://www.faqs.org/rfcs/rfc2874.html"
 LatexCommand href
 name "Domain Name System Extension (dnsext)"
 target "http://www.ietf.org/ids.by.wg/dnsext.html"
+literal "false"
 
 \end_inset
 
@@ -15842,6 +16012,7 @@ AAAA und reverse IP6.INT:
 LatexCommand href
 name "IPv6 DNS Setup Information"
 target "http://www.isi.edu/~bmanning/v6DNS.html"
+literal "false"
 
 \end_inset
 
@@ -15859,6 +16030,7 @@ A6, DNAME (WURDE ABGELEHNT!) und reverse IP6.ARPA: lesen Sie im Kapitel 4
 LatexCommand href
 name "BIND manual version 9.3"
 target "http://www.isc.org/sw/bind/arm93/"
+literal "false"
 
 \end_inset
 
@@ -16026,7 +16198,8 @@ IPv6 wird ungefähr seit der
 \begin_inset CommandInset href
 LatexCommand href
 name "xinetd"
-target "http://www.xinetd.org/"
+target "https://github.com/xinetd-org/xinetd"
+literal "false"
 
 \end_inset
 
@@ -16150,6 +16323,7 @@ IPv6 wird beim Apache Webserver durch die Entwickler seit der Version 2.0.14
 LatexCommand href
 name "KAME / Misc"
 target "ftp://ftp.kame.net/pub/kame/misc/"
+literal "false"
 
 \end_inset
 
@@ -17790,6 +17964,7 @@ Dieser Abschnitt ist momentan nicht in Deutsch verfügbar, die englische
 LatexCommand href
 name "TLDP / Linux+IPv6-HOWTO / Programming using C-API"
 target "http://www.tldp.org/HOWTO/Linux+IPv6-HOWTO/chapter-section-using-api.html"
+literal "false"
 
 \end_inset
 
@@ -17817,6 +17992,7 @@ In Sun Java Versionen ab 1.4 ist Unterstützung für IPv6 vorhanden, siehe
 LatexCommand href
 name "Inet6Address (1.5/5.0)"
 target "http://java.sun.com/j2se/1.5.0/docs/api/java/net/Inet6Address.html"
+literal "false"
 
 \end_inset
 
@@ -17830,6 +18006,7 @@ Networking IPv6 User Guide for JDK/JRE
 LatexCommand href
 name "1.4"
 target "http://java.sun.com/j2se/1.4.2/docs/guide/net/ipv6_guide/index.html"
+literal "false"
 
 \end_inset
 
@@ -17838,6 +18015,7 @@ target "http://java.sun.com/j2se/1.4.2/docs/guide/net/ipv6_guide/index.html"
 LatexCommand href
 name "1.5 (5.0)"
 target "http://java.sun.com/j2se/1.5.0/docs/guide/net/ipv6_guide/index.html"
+literal "false"
 
 \end_inset
 
@@ -17864,6 +18042,7 @@ Stand Mai 2007 ist nichts bekannt, daß der Kern von Perl IPv6 nativ unterstütz
 LatexCommand href
 name "Socket6"
 target "http://search.cpan.org/~umemoto/Socket6/"
+literal "false"
 
 \end_inset
 
@@ -17887,6 +18066,7 @@ IPv6
 LatexCommand href
 name "http://search.cpan.org/"
 target "http://search.cpan.org/"
+literal "false"
 
 \end_inset
 
@@ -17911,6 +18091,7 @@ Das
 LatexCommand href
 name "TAHI Project"
 target "http://www.tahi.org/"
+literal "false"
 
 \end_inset
 
@@ -17925,6 +18106,7 @@ tät und Implementierung
 LatexCommand href
 name "IPv6 Ready Logo Phase 1"
 target "http://www.linux-ipv6.org/v6ready/"
+literal "false"
 
 \end_inset
 
@@ -17993,6 +18175,7 @@ Allgemein
 LatexCommand href
 name "IPv6 in Practice: A Unixer's Guide to the Next Generation Internet"
 target "http://www.benedikt-stockebrand.de/books_e.html#ipv6-in-practice"
+literal "false"
 
 \end_inset
 
@@ -18004,6 +18187,7 @@ target "http://www.benedikt-stockebrand.de/books_e.html#ipv6-in-practice"
 LatexCommand href
 name "IPv6 Essentials"
 target "http://www.sunny.ch/publications/f_ipv6.htm"
+literal "false"
 
 \end_inset
 
@@ -18016,6 +18200,7 @@ target "http://www.sunny.ch/publications/f_ipv6.htm"
 LatexCommand href
 name "ToC, Index, Sample Chapter etc."
 target "http://www.oreilly.com/catalog/ipv6ess/"
+literal "false"
 
 \end_inset
 
@@ -18024,6 +18209,7 @@ target "http://www.oreilly.com/catalog/ipv6ess/"
 LatexCommand href
 name "O'Reilly Pressrelease"
 target "http://press.oreilly.com/ipv6ess.html"
+literal "false"
 
 \end_inset
 
@@ -18050,6 +18236,7 @@ Quelle:
 LatexCommand href
 name "http://www.cs.uu.nl/wais/html/na-dir/internet/tcp-ip/resource-list.html"
 target "http://www.cs.uu.nl/wais/html/na-dir/internet/tcp-ip/resource-list.html"
+literal "false"
 
 \end_inset
 
@@ -18061,6 +18248,7 @@ target "http://www.cs.uu.nl/wais/html/na-dir/internet/tcp-ip/resource-list.html"
 LatexCommand href
 name "IPv6 Networks"
 target "http://www.epinions.com/book_mu-3402412/display_~full_specs"
+literal "false"
 
 \end_inset
 
@@ -18097,6 +18285,7 @@ Big Book of Ipv6 Addressing Rfcs
 LatexCommand href
 name "Understanding IPV6"
 target "http://www.epinions.com/book_mu-3922588/display_~full_specs"
+literal "false"
 
 \end_inset
 
@@ -18124,6 +18313,7 @@ Ipv6 Network Programming von Jun-ichiro Hagino; ISBN 1555583180
 LatexCommand href
 name "Wireless boosting IPv6"
 target "http://www.nwfusion.com/news/2000/1023ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -18135,6 +18325,7 @@ target "http://www.nwfusion.com/news/2000/1023ipv6.html"
 LatexCommand href
 name "O'reilly Network search for keyword IPv6"
 target "http://www.oreillynet.com/search/index.ncsp?sp-q=IPv6"
+literal "false"
 
 \end_inset
 
@@ -18151,6 +18342,7 @@ Artikel, eBooks, Online Rezensionen
 LatexCommand href
 name "Getting Connected with 6to4"
 target "http://www.onlamp.com/pub/a/onlamp/2001/06/01/ipv6_tutorial.html"
+literal "false"
 
 \end_inset
 
@@ -18166,6 +18358,7 @@ Transient Addressing for Related Processes: Improved Firewalling by Using
 LatexCommand href
 name "PC-PDF-Version"
 target "http://www.securiteinfo.com/ebooks/pdf/tarp.pdf"
+literal "false"
 
 \end_inset
 
@@ -18174,6 +18367,7 @@ target "http://www.securiteinfo.com/ebooks/pdf/tarp.pdf"
 LatexCommand href
 name "Palm-PDF-Version"
 target "http://www.securiteinfo.com/ebooks/palm/tarp.pdf"
+literal "false"
 
 \end_inset
 
@@ -18182,6 +18376,7 @@ target "http://www.securiteinfo.com/ebooks/palm/tarp.pdf"
 LatexCommand href
 name "PDB-Version"
 target "http://www.securiteinfo.com/ebooks/pdb/tarp.pdb"
+literal "false"
 
 \end_inset
 
@@ -18193,6 +18388,7 @@ target "http://www.securiteinfo.com/ebooks/pdb/tarp.pdb"
 LatexCommand href
 name "Internetworking IPv6 with Cisco Routers"
 target "http://www.ip6.com/index.html"
+literal "false"
 
 \end_inset
 
@@ -18205,6 +18401,7 @@ target "http://www.ip6.com/index.html"
 LatexCommand href
 name "Migration and Co-existence of IPv4 and IPv6 in Residential Networks"
 target "http://www.csc.fi/~psavola/residential.html"
+literal "false"
 
 \end_inset
 
@@ -18230,6 +18427,7 @@ Siehe auch:
 LatexCommand href
 name "liinwww.ira.uka.de/ipv6"
 target "http://liinwww.ira.uka.de/mpsbib?query=ipv6&maxnum=200"
+literal "false"
 
 \end_inset
 
@@ -18239,6 +18437,7 @@ target "http://liinwww.ira.uka.de/mpsbib?query=ipv6&maxnum=200"
 LatexCommand href
 name "Google / Scholar / IPv6"
 target "http://www.google.com/scholar?q=ipv6"
+literal "false"
 
 \end_inset
 
@@ -18250,6 +18449,7 @@ target "http://www.google.com/scholar?q=ipv6"
 LatexCommand href
 name "GEANT IPv6 Workplan"
 target "http://www.ipv6.ac.uk/gtpv6/workplan.html"
+literal "false"
 
 \end_inset
 
@@ -18261,6 +18461,7 @@ target "http://www.ipv6.ac.uk/gtpv6/workplan.html"
 LatexCommand href
 name "IPv6 Trials on UK Academic Networks: Bermuda Project Aug.2002"
 target "http://www.ipv6.ac.uk/bermuda2/"
+literal "false"
 
 \end_inset
 
@@ -18275,6 +18476,7 @@ target "http://www.ipv6.ac.uk/bermuda2/"
 LatexCommand href
 name "http://www.ipv6.ac.uk/"
 target "http://www.ipv6.ac.uk/"
+literal "false"
 
 \end_inset
 
@@ -18286,6 +18488,7 @@ target "http://www.ipv6.ac.uk/"
 LatexCommand href
 name "IPv6 at the University of Southampton"
 target "http://www.ipv6.ecs.soton.ac.uk/"
+literal "false"
 
 \end_inset
 
@@ -18298,6 +18501,7 @@ Microsoft Research IPv6 Implementation (MSRIPv6):
 LatexCommand href
 name "MSRIPv6 Configuring 6to4 - Connectivity with MSR IPv6 - Our 6Bone Node... "
 target "http://www.research.microsoft.com/msripv6/"
+literal "false"
 
 \end_inset
 
@@ -18314,6 +18518,7 @@ Mehr Infos gibt es unter:
 LatexCommand href
 name "SWITCH IPv6 Pilot / References"
 target "http://www.switch.ch/lan/ipv6/references.html"
+literal "false"
 
 \end_inset
 
@@ -18401,6 +18606,7 @@ Amerika:
 LatexCommand href
 name "ARIN"
 target "http://www.arin.net/"
+literal "false"
 
 \end_inset
 
@@ -18409,6 +18615,7 @@ target "http://www.arin.net/"
 LatexCommand href
 name "ARIN / registration page"
 target "http://www.arin.net/registration/ipv6/index.html"
+literal "false"
 
 \end_inset
 
@@ -18417,6 +18624,7 @@ target "http://www.arin.net/registration/ipv6/index.html"
 LatexCommand href
 name "ARIN / IPv6 guidelines"
 target "http://www.arin.net/registration/ipv6/index.html"
+literal "false"
 
 \end_inset
 
@@ -18429,6 +18637,7 @@ EMEA:
 LatexCommand href
 name "Ripe NCC"
 target "http://www.ripe.net/"
+literal "false"
 
 \end_inset
 
@@ -18437,6 +18646,7 @@ target "http://www.ripe.net/"
 LatexCommand href
 name "Ripe NCC / registration page"
 target "http://www.ripe.net/ripencc/mem-services/registration/"
+literal "false"
 
 \end_inset
 
@@ -18447,6 +18657,7 @@ target "http://www.ripe.net/ripencc/mem-services/registration/"
 LatexCommand href
 name "Ripe NCC / IPv6 registration"
 target "http://www.ripe.net/ripencc/mem-services/registration/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -18459,6 +18670,7 @@ Asien/Pazifik:
 LatexCommand href
 name "APNIC"
 target "http://www.apnic.net/"
+literal "false"
 
 \end_inset
 
@@ -18467,6 +18679,7 @@ target "http://www.apnic.net/"
 LatexCommand href
 name "APNIC / IPv6 ressource guide"
 target "http://www.apnic.net/services/ipv6_guide.html"
+literal "false"
 
 \end_inset
 
@@ -18479,6 +18692,7 @@ Latein Amerika und Karikik:
 LatexCommand href
 name "LACNIC"
 target "http://lacnic.org/"
+literal "false"
 
 \end_inset
 
@@ -18487,6 +18701,7 @@ target "http://lacnic.org/"
 LatexCommand href
 name "IPv6 Registration Services"
 target "http://lacnic.net/en/bt-IPv6.html"
+literal "false"
 
 \end_inset
 
@@ -18495,6 +18710,7 @@ target "http://lacnic.net/en/bt-IPv6.html"
 LatexCommand href
 name "IPv6 Allocation Policy"
 target "http://lacnic.net/en/chapter-4-en.pdf"
+literal "false"
 
 \end_inset
 
@@ -18507,6 +18723,7 @@ Afrika:
 LatexCommand href
 name "AfriNIC"
 target "http://www.afrinic.org/"
+literal "false"
 
 \end_inset
 
@@ -18520,6 +18737,7 @@ Es existiert auch eine Liste der größten Zuteilungen sortiert nach lokalen
 LatexCommand href
 name "Ripe NCC / IPv6 allocations"
 target "http://www.ripe.net/ripencc/mem-services/registration/ipv6/ipv6allocs.html"
+literal "false"
 
 \end_inset
 
@@ -18556,6 +18774,7 @@ Former IPng.
 LatexCommand href
 name "SixXs System"
 target "http://www.sixxs.net/main/"
+literal "false"
 
 \end_inset
 
@@ -18568,6 +18787,7 @@ Eckes
 LatexCommand href
 name "IPv6-with-Linux"
 target "http://sites.inka.de/lina/linux/ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -18584,6 +18804,7 @@ freshmeat.net:
 LatexCommand href
 name "Project details for tunnel client"
 target "http://freshmeat.net/projects/tunnelc"
+literal "false"
 
 \end_inset
 
@@ -18596,6 +18817,7 @@ SourceForge:
 LatexCommand href
 name "Project Info - tunnelc"
 target "http://sourceforge.net/projects/tunnelc"
+literal "false"
 
 \end_inset
 
@@ -18604,6 +18826,7 @@ target "http://sourceforge.net/projects/tunnelc"
 LatexCommand href
 name "here"
 target "http://tunnelc.sourceforge.net/"
+literal "false"
 
 \end_inset
 
@@ -18616,6 +18839,7 @@ Linux Advanced Routing & Traffic Control HOWTO,
 LatexCommand href
 name "Chapter 6: IPv6 tunneling with Cisco and/or 6bone"
 target "http://howtos.linuxbroker.com/howtoreader.shtml?file=Adv-Routing-HOWTO.html#LARTC.TUNNEL-IPV6.ADDRESSING"
+literal "false"
 
 \end_inset
 
@@ -18637,6 +18861,7 @@ name "information-joinipv6-6to4-tunneling"
 LatexCommand href
 name "NSayer's 6to4 information"
 target "http://www.kfu.com/~nsayer/6to4/"
+literal "false"
 
 \end_inset
 
@@ -18648,6 +18873,7 @@ target "http://www.kfu.com/~nsayer/6to4/"
 LatexCommand href
 name "RFC 3068 / An Anycast Prefix for 6to4 Relay Routers"
 target "http://www.faqs.org/rfcs/rfc3068.html"
+literal "false"
 
 \end_inset
 
@@ -18673,6 +18899,7 @@ ISATAP
 LatexCommand href
 name "ISATAP (Intra-Site Automatic Tunnel Access Protocol) Information"
 target "http://www.join.uni-muenster.de/Dokumente/Howtos/Howto_ISATAP.php?lang=en"
+literal "false"
 
 \end_inset
 
@@ -18681,6 +18908,7 @@ target "http://www.join.uni-muenster.de/Dokumente/Howtos/Howto_ISATAP.php?lang=e
 LatexCommand href
 name "JOIN"
 target "http://www.join.uni-muenster.de/"
+literal "false"
 
 \end_inset
 
@@ -18698,6 +18926,7 @@ Neueste Nachrichten und URLs zu anderen Dokumenten
 LatexCommand href
 name "Viele URLs zu anderen Dokumenten"
 target "http://www.estoile.com/links/ipv6"
+literal "false"
 
 \end_inset
 
@@ -18711,6 +18940,7 @@ target "http://www.estoile.com/links/ipv6"
 LatexCommand href
 name "go6 - The IPv6 Portal"
 target "http://www.go6.net/"
+literal "false"
 
 \end_inset
 
@@ -18740,6 +18970,7 @@ sortierte Liste:
 LatexCommand href
 name "IPng Standardization Status"
 target "http://playground.sun.com/pub/ipng/html/specs/standards.html"
+literal "false"
 
 \end_inset
 
@@ -18748,6 +18979,7 @@ target "http://playground.sun.com/pub/ipng/html/specs/standards.html"
 LatexCommand href
 name "IPng Current Specifications"
 target "http://playground.sun.com/pub/ipng/html/specs/specifications.html"
+literal "false"
 
 \end_inset
 
@@ -18759,6 +18991,7 @@ target "http://playground.sun.com/pub/ipng/html/specs/specifications.html"
 LatexCommand href
 name "IPv6 Related Specifications"
 target "http://www.ipv6.org/specs.html"
+literal "false"
 
 \end_inset
 
@@ -18778,6 +19011,7 @@ Aktuelle (auch) IPv6-bezogene Drafts finden Sie hier:
 LatexCommand href
 name "IP Version 6 (ipv6)"
 target "http://www.ietf.org/ids.by.wg/ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -18789,6 +19023,7 @@ target "http://www.ietf.org/ids.by.wg/ipv6.html"
 LatexCommand href
 name "Next Generation Transition (ngtrans)"
 target "http://www.ietf.org/ids.by.wg/ngtrans.html"
+literal "false"
 
 \end_inset
 
@@ -18800,6 +19035,7 @@ target "http://www.ietf.org/ids.by.wg/ngtrans.html"
 LatexCommand href
 name "Dynamic Host Configuration (dhc)"
 target "http://www.ietf.org/ids.by.wg/dhc.html"
+literal "false"
 
 \end_inset
 
@@ -18811,6 +19047,7 @@ target "http://www.ietf.org/ids.by.wg/dhc.html"
 LatexCommand href
 name "Domain Name System Extension (dnsext)"
 target "http://www.ietf.org/ids.by.wg/dnsext.html"
+literal "false"
 
 \end_inset
 
@@ -18824,6 +19061,7 @@ target "http://www.ietf.org/ids.by.wg/dnsext.html"
 LatexCommand href
 name "IPv6 Operations (v6ops)"
 target "http://www.ietf.org/ids.by.wg/v6ops.html"
+literal "false"
 
 \end_inset
 
@@ -18835,6 +19073,7 @@ target "http://www.ietf.org/ids.by.wg/v6ops.html"
 LatexCommand href
 name "Mobile IP (mobileip)"
 target "http://www.ietf.org/ids.by.wg/mobileip.html"
+literal "false"
 
 \end_inset
 
@@ -18846,6 +19085,7 @@ target "http://www.ietf.org/ids.by.wg/mobileip.html"
 LatexCommand href
 name "Get any information about IPv6, from overviews, through RFCs & drafts, to implementations"
 target "http://playground.sun.com/pub/ipng/html/ipng-main.html"
+literal "false"
 
 \end_inset
 
@@ -18862,6 +19102,7 @@ Sonstige
 LatexCommand href
 name "SWITCH IPv6 Pilot / References"
 target "http://www.switch.ch/lan/ipv6/references.html"
+literal "false"
 
 \end_inset
 
@@ -18877,6 +19118,7 @@ Weitere Informationen
 LatexCommand href
 name "DeepSpace6 / Weitere interessante Links"
 target "http://www.deepspace6.net/sections/links.html"
+literal "false"
 
 \end_inset
 
@@ -18892,6 +19134,7 @@ Linux Informationen
 LatexCommand href
 name "DeepSpace6 / (Not only) Linux IPv6 Portal"
 target "http://www.deepspace6.net/"
+literal "false"
 
 \end_inset
 
@@ -18902,6 +19145,7 @@ target "http://www.deepspace6.net/"
 LatexCommand href
 name "Spiegel"
 target "http://mirrors.bieringer.de/www.deepspace6.net/"
+literal "false"
 
 \end_inset
 
@@ -18913,6 +19157,7 @@ target "http://mirrors.bieringer.de/www.deepspace6.net/"
 LatexCommand href
 name "IPv6-HowTo for Linux by Peter Bieringer"
 target "http://www.bieringer.de/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -18921,6 +19166,7 @@ target "http://www.bieringer.de/linux/IPv6/"
 LatexCommand href
 name "Bieringer / IPv6 - software archive"
 target "ftp://ftp.bieringer.de/pub/linux/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -18932,6 +19178,7 @@ target "ftp://ftp.bieringer.de/pub/linux/IPv6/"
 LatexCommand href
 name "Linux+IPv6 status by Peter Bieringer"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status.html"
+literal "false"
 
 \end_inset
 
@@ -18945,6 +19192,7 @@ target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status.html"
 LatexCommand href
 name "DeepSpace6 / IPv6 Status Page"
 target "http://www.deepspace6.net/docs/ipv6_status_page_apps.html"
+literal "false"
 
 \end_inset
 
@@ -18953,6 +19201,7 @@ target "http://www.deepspace6.net/docs/ipv6_status_page_apps.html"
 LatexCommand href
 name "Spiegel"
 target "http://mirrors.bieringer.de/www.deepspace6.net/docs/ipv6_status_page_apps.html"
+literal "false"
 
 \end_inset
 
@@ -18964,6 +19213,7 @@ target "http://mirrors.bieringer.de/www.deepspace6.net/docs/ipv6_status_page_app
 LatexCommand href
 name "USAGI project"
 target "http://www.linux-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -18972,6 +19222,7 @@ target "http://www.linux-ipv6.org/"
 LatexCommand href
 name "USAGI project - software archive"
 target "ftp://ftp.linux-ipv6.org/pub/"
+literal "false"
 
 \end_inset
 
@@ -18985,6 +19236,7 @@ target "ftp://ftp.linux-ipv6.org/pub/"
 LatexCommand href
 name "Linux Optimized Link State Routing Protocol (OLSR) IPv6 HOWTO"
 target "http://www.tldp.org/HOWTO/OLSR-IPv6-HOWTO/"
+literal "false"
 
 \end_inset
 
@@ -18998,6 +19250,7 @@ target "http://www.tldp.org/HOWTO/OLSR-IPv6-HOWTO/"
 LatexCommand href
 name "LinShim6"
 target "http://inl.info.ucl.ac.be/LinShim6/"
+literal "false"
 
 \end_inset
 
@@ -19014,6 +19267,7 @@ PLD
 LatexCommand href
 name "PLD Linux Distribution"
 target "http://www.pld-linux.org/"
+literal "false"
 
 \end_inset
 
@@ -19038,6 +19292,7 @@ Hat
 LatexCommand href
 name "Red Hat Enterprise Linux"
 target "http://www.redhat.com/"
+literal "false"
 
 \end_inset
 
@@ -19046,6 +19301,7 @@ target "http://www.redhat.com/"
 LatexCommand href
 name " Pekka Savola's IPv6 packages (historisch)"
 target "http://www.netcore.fi/pekkas/linux/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19058,6 +19314,7 @@ Fedora
 LatexCommand href
 name "Fedora (Project) Linux"
 target "https://fedoraproject.org/"
+literal "false"
 
 \end_inset
 
@@ -19070,6 +19327,7 @@ Debian
 LatexCommand href
 name "Debian Linux"
 target "http://www.debian.org/"
+literal "false"
 
 \end_inset
 
@@ -19078,6 +19336,7 @@ target "http://www.debian.org/"
 LatexCommand href
 name "IPv6 with Debian Linux"
 target "http://ipv6.debian.net/"
+literal "false"
 
 \end_inset
 
@@ -19090,6 +19349,7 @@ SuSE
 LatexCommand href
 name "SuSE Linux"
 target "https://www.suse.com/"
+literal "false"
 
 \end_inset
 
@@ -19104,6 +19364,7 @@ Mandriva
 LatexCommand href
 name "Mandriva (historisch)"
 target "http://wiht.link/mandrivalinux"
+literal "false"
 
 \end_inset
 
@@ -19116,6 +19377,7 @@ Weitere Details siehe unter
 LatexCommand href
 name "IPv6+Linux Status Distributions"
 target "http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-distributions.html"
+literal "false"
 
 \end_inset
 
@@ -19131,6 +19393,7 @@ Allgemeine Informationen
 LatexCommand href
 name "IPv6.org"
 target "http://www.ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -19142,6 +19405,7 @@ target "http://www.ipv6.org/"
 LatexCommand href
 name "6bone"
 target "http://www.6bone.net/"
+literal "false"
 
 \end_inset
 
@@ -19153,6 +19417,7 @@ target "http://www.6bone.net/"
 LatexCommand href
 name "WIDE project"
 target "http://www.v6.wide.ad.jp/"
+literal "false"
 
 \end_inset
 
@@ -19164,6 +19429,7 @@ target "http://www.v6.wide.ad.jp/"
 LatexCommand href
 name "SWITCH IPv6 Pilot"
 target "http://www.switch.ch/lan/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19175,6 +19441,7 @@ target "http://www.switch.ch/lan/ipv6/"
 LatexCommand href
 name "IPv6 Corner of Hubert Feyrer"
 target "http://www.feyrer.de/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -19186,6 +19453,7 @@ target "http://www.feyrer.de/IPv6/"
 LatexCommand href
 name "IPv6 Forum"
 target "http://www.ipv6forum.com/"
+literal "false"
 
 \end_inset
 
@@ -19199,6 +19467,7 @@ target "http://www.ipv6forum.com/"
 LatexCommand href
 name "Playground.sun.com / IPv6 Info Page"
 target "http://playground.sun.com/pub/ipng/html/ipng-main.html"
+literal "false"
 
 \end_inset
 
@@ -19214,6 +19483,7 @@ en & Quellcode diverser IPv6 Stacks).
 LatexCommand href
 name "6INIT"
 target "http://www.6init.com/"
+literal "false"
 
 \end_inset
 
@@ -19226,6 +19496,7 @@ target "http://www.6init.com/"
 LatexCommand href
 name "IPv6 Task Force (European Union)"
 target "http://www.ipv6-taskforce.org/"
+literal "false"
 
 \end_inset
 
@@ -19237,6 +19508,7 @@ target "http://www.ipv6-taskforce.org/"
 LatexCommand href
 name "6init"
 target "http://www.6init.org/"
+literal "false"
 
 \end_inset
 
@@ -19248,6 +19520,7 @@ target "http://www.6init.org/"
 LatexCommand href
 name "IPv6: The New Version of the Internet Protocol"
 target "http://www.usenix.org/publications/library/proceedings/ana97/summaries/deering.html"
+literal "false"
 
 \end_inset
 
@@ -19259,6 +19532,7 @@ target "http://www.usenix.org/publications/library/proceedings/ana97/summaries/d
 LatexCommand href
 name "IPv6: The Next Generation Internet Protocol"
 target "http://www.garykessler.net/library/ipv6_exp.html"
+literal "false"
 
 \end_inset
 
@@ -19272,6 +19546,7 @@ target "http://www.garykessler.net/library/ipv6_exp.html"
 LatexCommand href
 name "IPv6: Next Generation Internet Protocol"
 target "http://www.3com.com/nsc/ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -19283,6 +19558,7 @@ target "http://www.3com.com/nsc/ipv6.html"
 LatexCommand href
 name "internet || site"
 target "http://www.internet2.org/"
+literal "false"
 
 \end_inset
 
@@ -19291,6 +19567,7 @@ target "http://www.internet2.org/"
 LatexCommand href
 name "internet2 Working Group"
 target "http://ipv6.internet2.edu/"
+literal "false"
 
 \end_inset
 
@@ -19303,6 +19580,7 @@ NetworkWorldFusion: Search / Doc Finder:
 LatexCommand href
 name "searched for IPv6"
 target "http://search.nwfusion.com/query.html?qt=IPv6&qp=&ch=cn&"
+literal "false"
 
 \end_inset
 
@@ -19314,6 +19592,7 @@ target "http://search.nwfusion.com/query.html?qt=IPv6&qp=&ch=cn&"
 LatexCommand href
 name "The Register"
 target "http://www.theregister.co.uk/"
+literal "false"
 
 \end_inset
 
@@ -19325,6 +19604,7 @@ target "http://www.theregister.co.uk/"
 LatexCommand href
 name "ZDNet Search for IPv6"
 target "http://zdnet.search.com/search?cat=279&q=IPv6"
+literal "false"
 
 \end_inset
 
@@ -19336,6 +19616,7 @@ target "http://zdnet.search.com/search?cat=279&q=IPv6"
 LatexCommand href
 name "TechTarget Search for IPv6"
 target "http://whatis.techtarget.com/wsearchResults/1,290214,sid9,00.html?query=IPv6"
+literal "false"
 
 \end_inset
 
@@ -19347,6 +19628,7 @@ target "http://whatis.techtarget.com/wsearchResults/1,290214,sid9,00.html?query=
 LatexCommand href
 name "IPv6 & TCP Resources List"
 target "http://www.faqs.org/faqs/internet/tcp-ip/resource-list/index.html"
+literal "false"
 
 \end_inset
 
@@ -19372,6 +19654,7 @@ Marktforschung
 LatexCommand href
 name "statista - The Statistics Portal"
 target "http://www.statista.com/search/internet+america/"
+literal "false"
 
 \end_inset
 
@@ -19383,6 +19666,7 @@ target "http://www.statista.com/search/internet+america/"
 LatexCommand href
 name "Market Research"
 target "http://www.marketresearch.com/"
+literal "false"
 
 \end_inset
 
@@ -19405,6 +19689,7 @@ Delphion Research:
 LatexCommand href
 name "Patent Search Page"
 target "http://www.delphion.com/research/"
+literal "false"
 
 \end_inset
 
@@ -19419,6 +19704,7 @@ target "http://www.delphion.com/research/"
 LatexCommand href
 name "Communicating method between IPv4 terminal and IPv6 terminal and IPv4-IPv6 converting apparatus"
 target "http://www.delphion.com/details?pn=US06118784__"
+literal "false"
 
 \end_inset
 
@@ -19431,6 +19717,7 @@ target "http://www.delphion.com/details?pn=US06118784__"
 LatexCommand href
 name "Translator for IP networks, network system using the translator, and IP network coupling method therefor"
 target "http://www.delphion.com/details?pn=US06038233__"
+literal "false"
 
 \end_inset
 
@@ -19454,6 +19741,7 @@ Europa
 LatexCommand href
 name "www.ist-ipv6.org"
 target "http://www.ist-ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -19467,6 +19755,7 @@ target "http://www.ist-ipv6.org/"
 LatexCommand href
 name "Euro6IX"
 target "http://www.euro6ix.org/"
+literal "false"
 
 \end_inset
 
@@ -19482,6 +19771,7 @@ Australien
 LatexCommand href
 name "Carl's Australian IPv6 Pages"
 target "http://oversteer.bl.echidna.id.au/IPv6/"
+literal "false"
 
 \end_inset
 
@@ -19507,6 +19797,7 @@ Brasilien
 LatexCommand href
 name "IPv6 do Brasil"
 target "http://www.ipv6dobrasil.com.br/"
+literal "false"
 
 \end_inset
 
@@ -19532,6 +19823,7 @@ Deutschland
 LatexCommand href
 name "OpenBC / IPv6"
 target "https://www.xing.com/net/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19547,6 +19839,7 @@ Frankreich
 LatexCommand href
 name "Renater"
 target "http://www.renater.fr/Projets/IPv6/index.htm"
+literal "false"
 
 \end_inset
 
@@ -19560,6 +19853,7 @@ target "http://www.renater.fr/Projets/IPv6/index.htm"
 LatexCommand href
 name "IPv6 - RSVP - ATM at INRIA"
 target "http://www.inria.fr/recherche/equipes/ipv6.fr.html"
+literal "false"
 
 \end_inset
 
@@ -19573,6 +19867,7 @@ target "http://www.inria.fr/recherche/equipes/ipv6.fr.html"
 LatexCommand href
 name "NetBSD IPv6 Dokumentation"
 target "http://www.netbsd.org/fr/Documentation/network/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19588,6 +19883,7 @@ Großbritannien
 LatexCommand href
 name "British Telecom IPv6 Home"
 target "http://www.bt.com/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19611,6 +19907,7 @@ Italien
 LatexCommand href
 name "Project6"
 target "http://project6.ferrara.linux.it/"
+literal "false"
 
 \end_inset
 
@@ -19626,6 +19923,7 @@ Japan
 LatexCommand href
 name "Yamaha IPv6"
 target "http://www.rtpro.yamaha.co.jp/RT/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19641,6 +19939,7 @@ Korea
 LatexCommand href
 name "ETRI"
 target "http://www.krv6.net/"
+literal "false"
 
 \end_inset
 
@@ -19652,6 +19951,7 @@ target "http://www.krv6.net/"
 LatexCommand href
 name "IPv6 Forum Korea"
 target "http://www.ipv6.or.kr/english/index.new.htm"
+literal "false"
 
 \end_inset
 
@@ -19667,6 +19967,7 @@ Mexiko
 LatexCommand href
 name "IPv6 Mexico"
 target "http://www.ipv6.unam.mx/"
+literal "false"
 
 \end_inset
 
@@ -19683,6 +19984,7 @@ Niederlande
 LatexCommand href
 name "SURFnet"
 target "http://www.ipv6.surfnet.nl/"
+literal "false"
 
 \end_inset
 
@@ -19694,6 +19996,7 @@ target "http://www.ipv6.surfnet.nl/"
 LatexCommand href
 name "STACK"
 target "http://www.stack.nl/"
+literal "false"
 
 \end_inset
 
@@ -19702,6 +20005,7 @@ target "http://www.stack.nl/"
 LatexCommand href
 name "STACK (IPv6)"
 target "http://www.stack.nl/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19715,6 +20019,7 @@ e.
 LatexCommand href
 name "IPng.nl"
 target "http://www.ipng.nl/"
+literal "false"
 
 \end_inset
 
@@ -19730,6 +20035,7 @@ target "http://www.ipng.nl/"
 LatexCommand href
 name "IPv6@IKNnet and MIPv6 Research Group"
 target "http://www.ikn.tuwien.ac.at/~ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19754,6 +20060,7 @@ Russland
 LatexCommand href
 name "IPv6 Forum for Russia"
 target "http://www.ipv6.ru/"
+literal "false"
 
 \end_inset
 
@@ -19781,6 +20088,7 @@ Sortiert nach Betriebssystemen
 LatexCommand href
 name "KAME project"
 target "http://www.kame.net/"
+literal "false"
 
 \end_inset
 
@@ -19792,6 +20100,7 @@ target "http://www.kame.net/"
 LatexCommand href
 name "NetBSD's IPv6 Networking FAQ"
 target "http://www.netbsd.org/Documentation/network/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19803,6 +20112,7 @@ target "http://www.netbsd.org/Documentation/network/ipv6/"
 LatexCommand href
 name "FreeBSD Ports: Ipv6"
 target "http://www.freebsd.org/ports/ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -19818,6 +20128,7 @@ Cisco IOS
 LatexCommand href
 name "Cisco IOS IPv6 Entry Page"
 target "http://www.cisco.com/warp/public/732/Tech/ipv6/"
+literal "false"
 
 \end_inset
 
@@ -19829,6 +20140,7 @@ target "http://www.cisco.com/warp/public/732/Tech/ipv6/"
 LatexCommand href
 name "IPv6 for Cisco IOS Software"
 target "http://www.cisco.com/univercd/cc/td/doc/product/software/ios122/122newft/122t/122t2/ipv6/ftipv6c.htm"
+literal "false"
 
 \end_inset
 
@@ -19843,6 +20155,7 @@ Cisco Internet Networking Handbook,
 LatexCommand href
 name "Chapter IPv6"
 target "http://www.cisco.com/univercd/cc/td/doc/cisintwk/ito_doc/ipv6.htm"
+literal "false"
 
 \end_inset
 
@@ -19858,6 +20171,7 @@ HPUX
 LatexCommand href
 name "comp.sys.hp.hpux FAQ"
 target "http://www.faqs.org/faqs/hp/hpux-faq/index.html"
+literal "false"
 
 \end_inset
 
@@ -19874,6 +20188,7 @@ Now that IBM's announced the availability of z/OS V1.4,
 LatexCommand href
 name "what's new in this release?"
 target "http://search390.techtarget.com/ateQuestionNResponse/0,289625,sid10_cid486367_tax292523,00.html"
+literal "false"
 
 \end_inset
 
@@ -19890,6 +20205,7 @@ Microsoft
 LatexCommand href
 name "Microsoft Windows 2000 IPv6"
 target "http://www.microsoft.com/windows2000/technologies/communications/ipv6/default.asp"
+literal "false"
 
 \end_inset
 
@@ -19901,6 +20217,7 @@ target "http://www.microsoft.com/windows2000/technologies/communications/ipv6/de
 LatexCommand href
 name "MSRIPv6"
 target "http://www.research.microsoft.com/msripv6"
+literal "false"
 
 \end_inset
 
@@ -19912,6 +20229,7 @@ target "http://www.research.microsoft.com/msripv6"
 LatexCommand href
 name "Internet Connection Firewall Does Not Block Internet Protocol Version 6 Traffic"
 target "http://support.microsoft.com/default.aspx?scid=kb;en-us;306203"
+literal "false"
 
 \end_inset
 
@@ -19923,6 +20241,7 @@ target "http://support.microsoft.com/default.aspx?scid=kb;en-us;306203"
 LatexCommand href
 name "Internet Protocol Numbers"
 target "http://support.microsoft.com/default.aspx?scid=kb;en-us;289892"
+literal "false"
 
 \end_inset
 
@@ -19934,6 +20253,7 @@ target "http://support.microsoft.com/default.aspx?scid=kb;en-us;289892"
 LatexCommand href
 name "IPv6 Technology Preview Refresh"
 target "http://support.microsoft.com/default.aspx?scid=kb;en-us;273826"
+literal "false"
 
 \end_inset
 
@@ -19945,6 +20265,7 @@ target "http://support.microsoft.com/default.aspx?scid=kb;en-us;273826"
 LatexCommand href
 name "HOW TO: Install and Configure IP Version 6 in Windows .NET Enterprise Server"
 target "http://support.microsoft.com/default.aspx?scid=kb;en-us;325449"
+literal "false"
 
 \end_inset
 
@@ -19956,6 +20277,7 @@ target "http://support.microsoft.com/default.aspx?scid=kb;en-us;325449"
 LatexCommand href
 name "Windows .NET Server 6to4 Router Service Quits When You Advertise a 2002 Address on the Public Interface"
 target "http://support.microsoft.com/default.aspx?scid=kb;en-us;329984"
+literal "false"
 
 \end_inset
 
@@ -19967,6 +20289,7 @@ target "http://support.microsoft.com/default.aspx?scid=kb;en-us;329984"
 LatexCommand href
 name "msdn - Microsoft Windows CE .NET - IPv6 commands"
 target "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wcetcpip/htm/cmconIPv6exe.asp"
+literal "false"
 
 \end_inset
 
@@ -19984,6 +20307,7 @@ Solaris
 LatexCommand href
 name "Sun Microsystems Solaris"
 target "http://www.sun.com/software/solaris/"
+literal "false"
 
 \end_inset
 
@@ -19995,6 +20319,7 @@ target "http://www.sun.com/software/solaris/"
 LatexCommand href
 name "Solaris 2 Frequently Asked Questions (FAQ) 1.73"
 target "http://www.cs.uu.nl/wais/html/na-dir/Solaris2/FAQ.html"
+literal "false"
 
 \end_inset
 
@@ -20010,6 +20335,7 @@ Sumitoma
 LatexCommand href
 name "Sumitomo Electric has implemented IPv6 on Suminet 3700 family routers"
 target "http://playground.sun.com/pub/ipng/html/ipng-implementations.html#Sumitomo"
+literal "false"
 
 \end_inset
 
@@ -20026,6 +20352,7 @@ IpInfusion's
 LatexCommand href
 name "ZebOS Server Routing Software"
 target "http://www.ipinfusion.com/products/server/products_server.html"
+literal "false"
 
 \end_inset
 
@@ -20047,6 +20374,7 @@ IPv6 Sicherheit
 LatexCommand href
 name "NIST IPsec Project"
 target "http://csrc.nist.gov/ipsec/"
+literal "false"
 
 \end_inset
 
@@ -20058,6 +20386,7 @@ target "http://csrc.nist.gov/ipsec/"
 LatexCommand href
 name "Information Security"
 target "http://www.infosecuritymag.com/index.shtml"
+literal "false"
 
 \end_inset
 
@@ -20069,6 +20398,7 @@ target "http://www.infosecuritymag.com/index.shtml"
 LatexCommand href
 name "NewOrder.box.sk (search for IPv6)"
 target "http://neworder.box.sk/search.php3?srch=IPv6"
+literal "false"
 
 \end_inset
 
@@ -20086,6 +20416,7 @@ Programm-Listen
 LatexCommand href
 name "DeepSpace6 / IPv6 Status Page"
 target "http://www.deepspace6.net/docs/ipv6_status_page_apps.html"
+literal "false"
 
 \end_inset
 
@@ -20094,6 +20425,7 @@ target "http://www.deepspace6.net/docs/ipv6_status_page_apps.html"
 LatexCommand href
 name "Mirror"
 target "http://mirrors.bieringer.de/www.deepspace6.net/docs/ipv6_status_page_apps.html"
+literal "false"
 
 \end_inset
 
@@ -20105,6 +20437,7 @@ target "http://mirrors.bieringer.de/www.deepspace6.net/docs/ipv6_status_page_app
 LatexCommand href
 name "IPv6.org / IPv6 enabled applications"
 target "http://www.ipv6.org/v6-apps.html"
+literal "false"
 
 \end_inset
 
@@ -20116,6 +20449,7 @@ target "http://www.ipv6.org/v6-apps.html"
 LatexCommand href
 name "Freshmeat / IPv6 search"
 target "http://freshmeat.net/search/?q=IPv6"
+literal "false"
 
 \end_inset
 
@@ -20130,6 +20464,7 @@ target "http://freshmeat.net/search/?q=IPv6"
 LatexCommand href
 name "IPv6 Forum / Web Links"
 target "http://www.ipv6forum.com/modules.php?op=modload&name=Web_Links&file=index"
+literal "false"
 
 \end_inset
 
@@ -20147,6 +20482,7 @@ Analyse-Werkzeuge
 LatexCommand href
 name "Wireshark"
 target "http://www.wireshark.org/"
+literal "false"
 
 \end_inset
 
@@ -20165,6 +20501,7 @@ Ethereal
 LatexCommand href
 name "Radcom RC100-WL"
 target "http://www.ip6.com/us/analyzer.htm"
+literal "false"
 
 \end_inset
 
@@ -20180,6 +20517,7 @@ IPv6 Produkte
 LatexCommand href
 name "6wind"
 target "http://www.6wind.com/"
+literal "false"
 
 \end_inset
 
@@ -20192,6 +20530,7 @@ l.
 LatexCommand href
 name "Fefe's patches for IPv6 with djbdns"
 target "http://www.fefe.de/dns/"
+literal "false"
 
 \end_inset
 
@@ -20212,6 +20551,7 @@ outperforms BIND in nearly all respects
 LatexCommand href
 name "ZebOS Server Routing Suite "
 target "http://www.ipinfusion.com/products/server/products_server.html"
+literal "false"
 
 \end_inset
 
@@ -20223,6 +20563,7 @@ target "http://www.ipinfusion.com/products/server/products_server.html"
 LatexCommand href
 name "Inframail (Advantage Server Edition)"
 target "http://download.cnet.com/Inframail-Advantage-Server-Edition/3000-10248_4-8202652.html"
+literal "false"
 
 \end_inset
 
@@ -20234,6 +20575,7 @@ target "http://download.cnet.com/Inframail-Advantage-Server-Edition/3000-10248_4
 LatexCommand href
 name "HTTrack Website Copier"
 target "http://download.cnet.com/HTTrack-Website-Copier/3000-2377_4-10149393.html"
+literal "false"
 
 \end_inset
 
@@ -20245,6 +20587,7 @@ target "http://download.cnet.com/HTTrack-Website-Copier/3000-2377_4-10149393.htm
 LatexCommand href
 name "CommView"
 target "http://download.cnet.com/CommView/3000-2085_4-10132748.html"
+literal "false"
 
 \end_inset
 
@@ -20256,6 +20599,7 @@ target "http://download.cnet.com/CommView/3000-2085_4-10132748.html"
 LatexCommand href
 name "Posadis"
 target "http://download.cnet.com/Posadis/3000-2155_4-10149750.html"
+literal "false"
 
 \end_inset
 
@@ -20277,6 +20621,7 @@ SNMP
 LatexCommand href
 name "comp.protocpols.snmp SNMP FAQ Part 1 of 2"
 target "http://www.cs.uu.nl/wais/html/na-dir/snmp-faq/part1.html"
+literal "false"
 
 \end_inset
 
@@ -20296,6 +20641,7 @@ Statistiken
 LatexCommand href
 name "IPv6 routing table history"
 target "http://www.space.net/~gert/RIPE/"
+literal "false"
 
 \end_inset
 
@@ -20304,6 +20650,7 @@ target "http://www.space.net/~gert/RIPE/"
 LatexCommand href
 name "Space.Net"
 target "http://www.space.net/"
+literal "false"
 
 \end_inset
 
@@ -20315,6 +20662,7 @@ target "http://www.space.net/"
 LatexCommand href
 name "Official 6bone Webserver list Statisic"
 target "http://6bone.informatik.uni-leipzig.de/ipv6/stats/stats.php3"
+literal "false"
 
 \end_inset
 
@@ -20333,6 +20681,7 @@ Eine weitere Liste von IPv6 Internet Exchanges gibt es unter:
 LatexCommand href
 name "IPv6 status of IXPs in Europe"
 target "http://www.euro-ix.net/isp/choosing/search/matrix.php"
+literal "false"
 
 \end_inset
 
@@ -20354,6 +20703,7 @@ Deutschland
 LatexCommand href
 name "INXS"
 target "http://www.inxs.de/"
+literal "false"
 
 \end_inset
 
@@ -20375,6 +20725,7 @@ Estlanda
 LatexCommand href
 name "TIX"
 target "http://tix.estpak.ee/"
+literal "false"
 
 \end_inset
 
@@ -20396,6 +20747,7 @@ Europa
 LatexCommand href
 name "Euro6IX"
 target "http://www.euro6ix.net/"
+literal "false"
 
 \end_inset
 
@@ -20417,6 +20769,7 @@ Frankreich
 LatexCommand href
 name "French National Internet  Exchange IPv6"
 target "http://www.fnix6.net/"
+literal "false"
 
 \end_inset
 
@@ -20443,6 +20796,7 @@ Großbritannien
 LatexCommand href
 name "UK6X"
 target "http://www.uk6x.com/"
+literal "false"
 
 \end_inset
 
@@ -20454,6 +20808,7 @@ target "http://www.uk6x.com/"
 LatexCommand href
 name "XchangePoint"
 target "http://www.xchangepoint.net/"
+literal "false"
 
 \end_inset
 
@@ -20475,6 +20830,7 @@ Japan
 LatexCommand href
 name "NSPIXP-6"
 target "http://www.wide.ad.jp/nspixp6/"
+literal "false"
 
 \end_inset
 
@@ -20486,6 +20842,7 @@ target "http://www.wide.ad.jp/nspixp6/"
 LatexCommand href
 name "JPIX"
 target "http://www.jpix.co.jp/"
+literal "false"
 
 \end_inset
 
@@ -20507,6 +20864,7 @@ Korea
 LatexCommand href
 name "6NGIX"
 target "http://www.ngix.ne.kr/"
+literal "false"
 
 \end_inset
 
@@ -20530,6 +20888,7 @@ Niederlande
 LatexCommand href
 name "AMS-IX"
 target "http://www.ams-ix.net/"
+literal "false"
 
 \end_inset
 
@@ -20553,6 +20912,7 @@ USA
 LatexCommand href
 name "6TAP"
 target "http://www.6tap.net/"
+literal "false"
 
 \end_inset
 
@@ -20565,6 +20925,7 @@ target "http://www.6tap.net/"
 LatexCommand href
 name "PAIX"
 target "http://www.paix.net/"
+literal "false"
 
 \end_inset
 
@@ -20589,6 +20950,7 @@ Auch interessant:
 LatexCommand href
 name "http://www.deepspace6.net/docs/tunnelbrokers.html"
 target "http://www.deepspace6.net/docs/tunnelbrokers.html"
+literal "false"
 
 \end_inset
 
@@ -20624,6 +20986,7 @@ Canada
 LatexCommand href
 name "Freenet6"
 target "http://www.freenet6.net/"
+literal "false"
 
 \end_inset
 
@@ -20636,6 +20999,7 @@ target "http://www.freenet6.net/"
 LatexCommand href
 name "Getting IPv6 Using Freenet6 on Debian"
 target "http://www.linuxjournal.com/article.php?sid=5963&mode=thread&order=0"
+literal "false"
 
 \end_inset
 
@@ -20648,6 +21012,7 @@ target "http://www.linuxjournal.com/article.php?sid=5963&mode=thread&order=0"
 LatexCommand href
 name "Freenet6 creater"
 target "http://www.viagenie.qc.ca/en/index.shtml"
+literal "false"
 
 \end_inset
 
@@ -20683,6 +21048,7 @@ Deutschland
 LatexCommand href
 name "6bone Knoten Leipzig"
 target "http://6bone.informatik.uni-leipzig.de/"
+literal "false"
 
 \end_inset
 
@@ -20695,6 +21061,7 @@ target "http://6bone.informatik.uni-leipzig.de/"
 LatexCommand href
 name "Info bez. Hackangriff (2001)"
 target "http://www.mail-archive.com/ipv6@uni-muenster.de/msg00056.html"
+literal "false"
 
 \end_inset
 
@@ -20716,6 +21083,7 @@ Estlanda
 LatexCommand href
 name "Estpak"
 target "http://tunnelbroker.ipv6.estpak.ee/?tunnel&PHPSESSID=aa2184190cc2cc6d3a6f6ddd01ae3635"
+literal "false"
 
 \end_inset
 
@@ -20737,6 +21105,7 @@ Großbritannien
 LatexCommand href
 name "NTT"
 target "http://www.nttv6.net/"
+literal "false"
 
 \end_inset
 
@@ -20761,6 +21130,7 @@ Italien
 LatexCommand href
 name "Comv6"
 target "http://www.comv6.com/"
+literal "false"
 
 \end_inset
 
@@ -20772,6 +21142,7 @@ target "http://www.comv6.com/"
 LatexCommand href
 name "Bersafe"
 target "http://www.bersafe.it/"
+literal "false"
 
 \end_inset
 
@@ -20821,6 +21192,7 @@ Niederlande
 LatexCommand href
 name "IPng Netherland"
 target "http://www.ipng.nl/"
+literal "false"
 
 \end_inset
 
@@ -20835,6 +21207,7 @@ target "http://www.ipng.nl/"
 LatexCommand href
 name "SURFnet Customers"
 target "http://www.ipv6.surfnet.nl/"
+literal "false"
 
 \end_inset
 
@@ -20856,6 +21229,7 @@ Norwegen
 LatexCommand href
 name "UNINETT"
 target "http://www.uninett.no/testnett/index.en.html"
+literal "false"
 
 \end_inset
 
@@ -20868,6 +21242,7 @@ target "http://www.uninett.no/testnett/index.en.html"
 LatexCommand href
 name "Uninett-Autoupdate-HOWTO"
 target "http://www.guruz.de/Uninett-Autoupdate-HOWTO"
+literal "false"
 
 \end_inset
 
@@ -20893,6 +21268,7 @@ Spanien
 LatexCommand href
 name "Consulintel"
 target "http://tb.consulintel.euro6ix.org/"
+literal "false"
 
 \end_inset
 
@@ -20928,6 +21304,7 @@ USA
 LatexCommand href
 name "ESnet"
 target "http://www.es.net/hypertext/welcome/pr/ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -20940,6 +21317,7 @@ target "http://www.es.net/hypertext/welcome/pr/ipv6.html"
 LatexCommand href
 name "Hurricane Electric"
 target "http://ipv6tb.he.net/"
+literal "false"
 
 \end_inset
 
@@ -20952,6 +21330,7 @@ target "http://ipv6tb.he.net/"
 LatexCommand href
 name "Hurrican Electric Tunnelbroker"
 target "http://tunnelbroker.net/"
+literal "false"
 
 \end_inset
 
@@ -20960,6 +21339,7 @@ target "http://tunnelbroker.net/"
 LatexCommand href
 name "http://tunnelbroker.com/"
 target "http://tunnelbroker.com/"
+literal "false"
 
 \end_inset
 
@@ -20972,6 +21352,7 @@ Presseaussendung:
 LatexCommand href
 name "Hurricane Electric Upgrades IPv6 Tunnel Broker"
 target "http://www.he.net/releases/release6.html"
+literal "false"
 
 \end_inset
 
@@ -20984,6 +21365,7 @@ target "http://www.he.net/releases/release6.html"
 LatexCommand href
 name "Tunnel Broker Endpoint Autoupdate"
 target "http://ipv6.he.net/tunnelbroker-update.php"
+literal "false"
 
 \end_inset
 
@@ -21021,6 +21403,7 @@ Weitere Tunnel broker...
 LatexCommand href
 name "Public 6to4 relay routers"
 target "http://www.kfu.com/~nsayer/6to4/"
+literal "false"
 
 \end_inset
 
@@ -21073,6 +21456,7 @@ Spiele Server
 LatexCommand href
 name "Quake2"
 target "http://www.viagenie.qc.ca/en/ipv6/quake2/ipv6-quake2.shtml"
+literal "false"
 
 \end_inset
 
@@ -21116,6 +21500,7 @@ Web Server
 LatexCommand href
 name "Peter Bieringer's Home of Linux IPv6 HOWTO "
 target "http://www.ipv6.bieringer.de/"
+literal "false"
 
 \end_inset
 
@@ -21145,6 +21530,7 @@ Weitere Listen von Mailinglisten sind verfügbar unter:
 LatexCommand href
 name "DeepSpace6 / Mailling Lists"
 target "http://www.deepspace6.net/sections/lists.html"
+literal "false"
 
 \end_inset
 
@@ -21304,6 +21690,7 @@ Englisch
 LatexCommand href
 name "Info"
 target "http://vger.kernel.org/vger-lists.html#netdev"
+literal "false"
 
 \end_inset
 
@@ -21312,6 +21699,7 @@ target "http://vger.kernel.org/vger-lists.html#netdev"
 LatexCommand href
 name "Archive"
 target "http://www.spinics.net/lists/netdev/"
+literal "false"
 
 \end_inset
 
@@ -21387,6 +21775,7 @@ Englisch
 LatexCommand href
 name "Info"
 target "http://www.mobile-ipv6.org/cgi-bin/mailman/listinfo"
+literal "false"
 
 \end_inset
 
@@ -21395,6 +21784,7 @@ target "http://www.mobile-ipv6.org/cgi-bin/mailman/listinfo"
 LatexCommand href
 name "Archive"
 target "http://www.mobile-ipv6.org/pipermail/mipl/"
+literal "false"
 
 \end_inset
 
@@ -21468,6 +21858,7 @@ Englisch
 LatexCommand href
 name "Info / Search"
 target "http://www.linux-ipv6.org/ml/index.html#usagi-users"
+literal "false"
 
 \end_inset
 
@@ -21476,6 +21867,7 @@ target "http://www.linux-ipv6.org/ml/index.html#usagi-users"
 LatexCommand href
 name "Archive"
 target "http://www.linux-ipv6.org/ml/usagi-users/"
+literal "false"
 
 \end_inset
 
@@ -21549,6 +21941,7 @@ Englisch
 LatexCommand href
 name "Info/Subscription/Archive"
 target "http://lists.debian.org/debian-ipv6/"
+literal "false"
 
 \end_inset
 
@@ -21624,6 +22017,7 @@ Englisch
 LatexCommand href
 name "Info"
 target "http://www.6bone.net/6bone_email.html"
+literal "false"
 
 \end_inset
 
@@ -21632,6 +22026,7 @@ target "http://www.6bone.net/6bone_email.html"
 LatexCommand href
 name "Archive"
 target "http://mailman.isi.edu/pipermail/6bone/"
+literal "false"
 
 \end_inset
 
@@ -21707,6 +22102,7 @@ Englisch
 LatexCommand href
 name "Info"
 target "http://www.ipv6.org/mailing-lists.html"
+literal "false"
 
 \end_inset
 
@@ -21718,6 +22114,7 @@ target "http://www.ipv6.org/mailing-lists.html"
 LatexCommand href
 name "Archive"
 target "http://www.mail-archive.com/users@ipv6.org/"
+literal "false"
 
 \end_inset
 
@@ -21791,6 +22188,7 @@ Englisch
 LatexCommand href
 name "Info"
 target "http://online.securityfocus.com/popups/forums/bugtraq/intro.shtml"
+literal "false"
 
 \end_inset
 
@@ -21799,6 +22197,7 @@ target "http://online.securityfocus.com/popups/forums/bugtraq/intro.shtml"
 LatexCommand href
 name "Archive"
 target "http://online.securityfocus.com/archive/1"
+literal "false"
 
 \end_inset
 
@@ -21848,6 +22247,7 @@ Via Web sind auch folgende Mailinglisten & Newsgroups verfügbar:
 LatexCommand href
 name "student-ipv6 (India)"
 target "http://groups.yahoo.com/group/student-ipv6"
+literal "false"
 
 \end_inset
 
@@ -21864,6 +22264,7 @@ Beschreibung: Dies ist eine Newsgruppe für die 'Student Awareness group
 LatexCommand href
 name "sun-ipv6-users"
 target "http://groups.yahoo.com/group/sun-ipv6-users"
+literal "false"
 
 \end_inset
 
@@ -21880,6 +22281,7 @@ Beschreibung: Bitte berichten Sie Probleme/Vorschläge in Bezug auf die IPng
 LatexCommand href
 name "IPv6-BITS"
 target "http://groups.yahoo.com/group/IPv6-BITS"
+literal "false"
 
 \end_inset
 
@@ -21895,6 +22297,7 @@ Beschreibung: Diese Liste dient der Koordination des Projekts Vertebrae.
 LatexCommand href
 name "linux-bangalore-ipv6"
 target "http://groups.yahoo.com/group/linux-bangalore-ipv6"
+literal "false"
 
 \end_inset
 
@@ -21910,6 +22313,7 @@ Beschreibung: Die IPv6 deployment Liste der Bangalore Linux User Group
 LatexCommand href
 name "packet-switching"
 target "http://groups.yahoo.com/group/packet-switching"
+literal "false"
 
 \end_inset
 
@@ -21940,6 +22344,7 @@ Quelle:
 LatexCommand href
 name "Chartas der Newsgruppen in de.*"
 target "http://www.faqs.org/faqs/de-newsgroups/chartas/index.html"
+literal "false"
 
 \end_inset
 
@@ -21952,6 +22357,7 @@ Google Group:
 LatexCommand href
 name "comp.protocols.tcp-ip"
 target "http://groups.google.com/groups?hl=en&lr=&ie=UTF-8&oe=UTF8&safe=off&group=comp.protocols.tcp-ip"
+literal "false"
 
 \end_inset
 
@@ -21964,6 +22370,7 @@ Google Group:
 LatexCommand href
 name "linux.debian.maint.ipv6"
 target "http://groups.google.com/groups?hl=en&lr=&ie=UTF-8&oe=UTF8&safe=off&group=linux.debian.maint.ipv6"
+literal "false"
 
 \end_inset
 
@@ -21976,6 +22383,7 @@ Google Group:
 LatexCommand href
 name "microsoft.public.platformsdk.networking.ipv6"
 target "http://groups.google.com/groups?hl=en&lr=&ie=UTF-8&oe=UTF8&safe=off&group=microsoft.public.platformsdk.networking.ipv6"
+literal "false"
 
 \end_inset
 
@@ -21988,6 +22396,7 @@ Google Group:
 LatexCommand href
 name "fa.openbsd.ipv6"
 target "http://groups.google.com/groups?hl=en&lr=&ie=UTF-8&oe=UTF8&safe=off&group=fa.openbsd.ipv6"
+literal "false"
 
 \end_inset
 
@@ -22014,6 +22423,7 @@ ping, traceroute, tracepath, 6bone registry, DNS:
 LatexCommand href
 name "JOIN / Testtools"
 target "http://www.join.uni-muenster.de/lab/testtools.html"
+literal "false"
 
 \end_inset
 
@@ -22027,6 +22437,7 @@ traceroute6, whois:
 LatexCommand href
 name "IPng.nl"
 target "http://www.ipng.nl/"
+literal "false"
 
 \end_inset
 
@@ -22041,6 +22452,7 @@ AAAA Lookup Checker
 LatexCommand href
 name "http://www.cnri.dit.ie/cgi-bin/check_aaaa.pl"
 target "http://www.cnri.dit.ie/cgi-bin/check_aaaa.pl"
+literal "false"
 
 \end_inset
 
@@ -22058,6 +22470,7 @@ Informationsbeschaffung
 LatexCommand href
 name "List of worldwide all IPv6-aggregated IP-Blocks"
 target "http://www.ripe.net/ripencc/mem-services/registration/ipv6/ipv6allocs.html"
+literal "false"
 
 \end_inset
 
@@ -22073,6 +22486,7 @@ IPv6 Looking Glasses
 LatexCommand href
 name "DRENv6 Looking Glass"
 target "http://www.v6.dren.net/lg/"
+literal "false"
 
 \end_inset
 
@@ -22092,6 +22506,7 @@ Hilfsapplikationen
 LatexCommand href
 name "IPv6 Prefix Calculator"
 target "http://www.tdoi.org/prefcalc.php"
+literal "false"
 
 \end_inset
 
@@ -22100,6 +22515,7 @@ target "http://www.tdoi.org/prefcalc.php"
 LatexCommand href
 name "TDOI"
 target "http://www.tdoi.org/"
+literal "false"
 
 \end_inset
 
@@ -22113,6 +22529,7 @@ target "http://www.tdoi.org/"
 LatexCommand href
 name "DNS record checker"
 target "http://www.maths.tcd.ie/cgi-bin/check_dns.pl"
+literal "false"
 
 \end_inset
 
@@ -22134,6 +22551,7 @@ Trainings, Seminare
 LatexCommand href
 name "CIW Internetworking Professional Training CBT CD"
 target "http://www.e-trainonline.com/html/ciw_internetworking_profession.html#IPv6"
+literal "false"
 
 \end_inset
 
@@ -22145,6 +22563,7 @@ target "http://www.e-trainonline.com/html/ciw_internetworking_profession.html#IP
 LatexCommand href
 name "Training Pages"
 target "http://www.trainingpages.com/x/category,kw-1628,.html"
+literal "false"
 
 \end_inset
 
@@ -22159,6 +22578,7 @@ target "http://www.trainingpages.com/x/category,kw-1628,.html"
 LatexCommand href
 name "Erion IPv6 Training"
 target "http://www.erion.co.uk/ipv6.html"
+literal "false"
 
 \end_inset
 
@@ -22269,6 +22689,7 @@ Die Historie der Änderungen der englischen Sprachversion finden Sie dort:
 LatexCommand href
 name "TLDP / Linux+IPv6-HOWTO / Revision History"
 target "http://www.tldp.org/HOWTO/Linux+IPv6-HOWTO/revision-history.html"
+literal "false"
 
 \end_inset
 
@@ -22554,6 +22975,7 @@ Autoren des
 LatexCommand href
 name "LDP Author Guide"
 target "http://www.tldp.org/LDP/LDP-Author-Guide/"
+literal "false"
 
 \end_inset
 
@@ -22567,6 +22989,7 @@ B.
 LatexCommand href
 name "DocBook with LyX HOWTO"
 target "http://perso.libertysurf.fr/bgu/doc/db4lyx/"
+literal "false"
 
 \end_inset
 
