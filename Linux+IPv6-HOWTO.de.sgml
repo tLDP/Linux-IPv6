@@ -6,14 +6,14 @@
 <!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.3.1
+<!-- SGML file was created by LyX 2.3.4.2
   See http://www.lyx.org/ for more information -->
 <book lang="de">
 <bookinfo>
 <title>Linux IPv6 HOWTO (de)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory> 
-<revision> <revnumber>0.67.de.1wip</revnumber> <date>2018-11-10</date> <authorinitials>PB</authorinitials></revision>
+<revision> <revnumber>0.67.de.1wip</revnumber> <date>2020-04-04</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.66.de.1</revnumber> <date>2014-05-15</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.65.de.1</revnumber> <date>2009-12-13</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.64.de.1</revnumber> <date>2009-06-11</date> <authorinitials>PB</authorinitials></revision>
@@ -26,7 +26,7 @@
 <title><!-- anchor id="general-copright" -->Copyright, Lizenz und anderes</title>
 <sect2>
 <title>Copyright</title>
-<para>Verfasst von und urheberrechtlich geschützt durch Peter Bieringer © 2001-2017.
+<para>Verfasst von und urheberrechtlich geschützt durch Peter Bieringer © 2001-2020
 </para>
 <para>Deutsche Übersetzung:</para>
 <para>Verfasst von und urheberrechtlich geschützt durch Georg Käfer © 2002-2003, weitergeführt von Peter Bieringer © 2004-2014.</para></sect2><sect2>
@@ -35,7 +35,7 @@
 </para>
 <para>Dieses Linux IPv6 HOWTO ist ein Handbuch zur Anwendung und Konfiguration von IPv6 auf Linux-Systemen. 
 </para>
-<para>Copyright © 2001-2017 Peter Bieringer
+<para>Copyright © 2001-2020 Peter Bieringer
 Deutsche Übersetzung Copyright © 2002-2003 Georg Käfer, weitergeführt von Peter Bieringer © 2004-2013.
 </para>
 <para>Diese Dokumentation ist freie Software; Sie können diese unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation publiziert, entweder unter Version 2 oder optional jede höhere Version redistribuieren und/oder modifizieren.</para>
@@ -617,12 +617,12 @@ user@::1's password: ******
 <title>IPv6 kompatible Web-Browser</title>
 <para>Einen aktuellen Statusüberblick zum Thema IPv6 kompatible Web-Browser ist unter <ulink url="http://www.deepspace6.net/docs/ipv6_status_page_apps.html#http">Current Status of IPv6 Support for Networking Applications - HTTP</ulink> verfügbar.</para>
 <para>Die meisten Browser haben zurzeit noch ungelöste Probleme</para><orderedlist>
-<listitem><para>Ist ein IPv4 Proxy in den Einstellungen eingetragen, dann werden IPv6 Anfragen zum Proxy gesendet. Der Proxy kann keine IPv6 Anfragen verstehen und somit scheitert die Anfrage. Lösung: Proxy Software aktualisieren (siehe weiter unten).</para></listitem><listitem><para>Automatik-Einstellungen des Proxy (*.pac) können aufgrund ihrer Beschaffenheit nicht derart erweitert werden, dass sie IPv6 Anfragen anders handhaben (z.B. kein Proxy verwenden) können (Sie sind in Javaskript geschrieben und ziemlich hard coded in den Quellen verankert; z.B. Mozilla Quellcode).</para></listitem></orderedlist><para>Ältere Browser-Versionen verstehen ebenfalls keine URL mit IPv6 Adressen wie z.B. <ulink url="http://[2001:4dd0:f838:a006::6]/">http://[2001:4dd0:f838:a006::6]/</ulink>, IPv6-Addresse von <ulink url="http://www.ipv6.bieringer.de/">http://www.ipv6.bieringer.de/</ulink> (die angegebene URL funktioniert nur mit einem IPv6 kompatiblen Browser!).</para>
+<listitem><para>Ist ein IPv4 Proxy in den Einstellungen eingetragen, dann werden IPv6 Anfragen zum Proxy gesendet. Der Proxy kann keine IPv6 Anfragen verstehen und somit scheitert die Anfrage. Lösung: Proxy Software aktualisieren (siehe weiter unten).</para></listitem><listitem><para>Automatik-Einstellungen des Proxy (*.pac) können aufgrund ihrer Beschaffenheit nicht derart erweitert werden, dass sie IPv6 Anfragen anders handhaben (z.B. kein Proxy verwenden) können (Sie sind in Javaskript geschrieben und ziemlich hard coded in den Quellen verankert; z.B. Mozilla Quellcode).</para></listitem></orderedlist><para>Ältere Browser-Versionen verstehen ebenfalls keine URL mit IPv6 Adressen wie z.B. <ulink url="http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/">http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/</ulink>, IPv6-Addresse von <ulink url="http://www.ipv6.bieringer.de/">http://www.ipv6.bieringer.de/</ulink> (die angegebene URL funktioniert nur mit einem IPv6 kompatiblen Browser!).</para>
 <para>Ein kleiner Test ist diese URL mit einem gegebenen Browser und ohne Proxy zu verwenden.</para><sect3>
 <title>URLs zum testen</title>
 <para>Ein guter Ausgangspunkt zum Betrachten von Webseiten mit IPv6 ist <ulink url="http://www.kame.net/">http://www.kame.net/</ulink>. Ist die Schildkröte animiert, dann ist Verbindung mittels IPv6 Verbindung zustande gekommen, andererseits bleibt die Schildkröte statisch.</para>
 <para>Andere Test-Server sind z.B.</para><itemizedlist>
-<listitem><para><ulink url="http://www.whatismyipv6.com/">What Is My IPv6</ulink></para></listitem><listitem><para><ulink url="http://ip.bieringer.de/">ip.bieringer.de</ulink></para></listitem><listitem><para><ulink url="http://ipv6-test.com/">IPv6 Test</ulink></para></listitem><listitem><para><ulink url="http://test-ipv6.com/">test-ipv6.com</ulink></para></listitem><listitem><para><ulink url="http://netalyzr.icsi.berkeley.edu/">The ICSI Netalyzr</ulink></para></listitem><listitem><para><ulink url="http://speedtest.comcast.net/">Speedtest Comcast</ulink>, <ulink url="http://ipv6.speedtest.comcast.net/">IPv6 Speedtest Comcast</ulink></para></listitem></itemizedlist></sect3></sect2></sect1><sect1>
+<listitem><para><ulink url="http://ip.bieringer.de/">ip.bieringer.de</ulink></para></listitem><listitem><para><ulink url="http://ipv6-test.com/">IPv6 Test</ulink></para></listitem><listitem><para><ulink url="http://test-ipv6.com/">test-ipv6.com</ulink></para></listitem></itemizedlist></sect3></sect2></sect1><sect1>
 <title>IPv6 kompatible Server</title>
 <para>In diesem Teil des HOWTOs wird stärker auf Client-spezifische Belange eingegangen. Folglich sei zu IPv6 kompatiblen Servern wie sshd, httpd, telnetd usw. auf diese Stelle verwiesen: <link linkend="chapter-hints-daemons">Hints for IPv6-enabled daemons</link>.</para></sect1><sect1 id='faq-ipv6-ready-system-check' >
 <title><!-- anchor id="faq-ipv6-ready-system-check" -->FAQ (IPv6 Systemcheck)</title>

@@ -3,14 +3,14 @@
  [ 
  ]>
 
-<!-- XML file was created by LyX 2.3.1
+<!-- XML file was created by LyX 2.3.4.2
   See http://www.lyx.org/ for more information -->
 <book lang="en_US">
 <bookinfo>
 <title>Linux IPv6 HOWTO (pt_BR)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory> 
-<revision> <revnumber>0.66wip</revnumber> <date>2018-11-10</date> <authorinitials>PB</authorinitials></revision>
+<revision> <revnumber>0.66wip</revnumber> <date>2020-04-04</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.65</revnumber> <date>2009-12-13</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.64</revnumber> <date>2009-06-11</date> <authorinitials>PB</authorinitials></revision>
 <revision> <revnumber>0.60</revnumber> <date>2007-05-31</date> <authorinitials>PB</authorinitials></revision>
@@ -23,13 +23,13 @@
 <title><!-- anchor id="general-copright" -->Copyright, licença e outros</title>
 <sect2>
 <title>Copyright</title>
-<para>Escrito e com Copyright (C) 2001-2017 por Peter Bieringer</para></sect2><sect2>
+<para>Escrito e com Copyright (C) 2001-2020 por Peter Bieringer</para></sect2><sect2>
 <title>Licença</title>
 <para>Este Linux IPv6 HOWTO está publicado sob a licença GNU GPL versão 2:
 </para>
 <para>Linux IPv6 HOWTO, um guia para configurar e usar o IPv6 em sistemas Linux. 
 </para>
-<para>Copyright © 2001-2017 Peter Bieringer 
+<para>Copyright © 2001-2020 Peter Bieringer 
 </para>
 <para>Este documento é um software livre; voce pode redistribui-lo e/ou modifica-lo sob os termos da licença GNU GPL, tal como está publicado pela Free Software Foundation; seja pela versão 2 da Licença, ou (em sua opinião) qualquer versão posterior.</para>
 <para>Este programa é distribuído na esperança de que seja útil, mas SEM QUALQUER GARANTIA; nem mesmo qualquer garantia de COMERCIALIZAÇÃO ou ADEQUAÇÃO PARA UM PROPÓSITO PARTICULAR. Veja a GNU GPL para mais detalhes.</para>
@@ -597,7 +597,7 @@ user@::1's password: ******
 <title>Browsers com suporte a IPv6</title>
 <para>O status atual dos browsers com suporte a IPv6 pode ser encontrado aqui<ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-apps.html#HTTP">IPv6+Linux-status-apps.html#HTTP</ulink>.</para>
 <para>A maioria deles ainda tem problemas pendentes, tais como:</para><orderedlist>
-<listitem><para>Se a configuração de proxy usa somente endereços IPv4, os pedidos em IPv6 também serão enviados a este proxy, emas como o proxy não saberá resolver o endereço, o pedido não vai funcionar. A única solução é verificar se o seu software de proxy tem alguma atualização para resolver este problema.</para></listitem><listitem><para>Configuração automática de proxy (*.pac) não pode ser utilizada para manipular pedidos em IPv6 de maneira diferenciada (exemplo: não usar o proxy para o IPv6) por causa da sua natureza (escritos em Javascript e muito encrustado no código fonte, como é visto no Mozilla).</para></listitem></orderedlist><para>As versões anteriores de browsers também não entenderiam uma URL com o endereço IPv6, como no exemplo <ulink url="http://[2001:4dd0:f838:a006::6]/">http://[2001:4dd0:f838:a006::6]/</ulink> (isto funciona somente se a URL for usada em um browser que suporte IPv6).</para>
+<listitem><para>Se a configuração de proxy usa somente endereços IPv4, os pedidos em IPv6 também serão enviados a este proxy, emas como o proxy não saberá resolver o endereço, o pedido não vai funcionar. A única solução é verificar se o seu software de proxy tem alguma atualização para resolver este problema.</para></listitem><listitem><para>Configuração automática de proxy (*.pac) não pode ser utilizada para manipular pedidos em IPv6 de maneira diferenciada (exemplo: não usar o proxy para o IPv6) por causa da sua natureza (escritos em Javascript e muito encrustado no código fonte, como é visto no Mozilla).</para></listitem></orderedlist><para>As versões anteriores de browsers também não entenderiam uma URL com o endereço IPv6, como no exemplo <ulink url="http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/">http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/</ulink> (isto funciona somente se a URL for usada em um browser que suporte IPv6).</para>
 <para>Um pequeno teste é tentar este endereço em um browser sem o proxy configurado.</para><sect3>
 <title>URLs para teste</title>
 <para>Um bom ponto de partida para browsers que usam IPv6 é o site<ulink url="http://www.kame.net/">http://www.kame.net/</ulink>.Se a tartaruga da página estiver animada, a sua conexão é em IPv6. caso contrário, a tartaruga ficará parada.</para></sect3></sect2></sect1><sect1>

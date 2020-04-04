@@ -6,14 +6,14 @@
 <!ENTITY % output.print.bmp "IGNORE">
  ]>
 
-<!-- SGML file was created by LyX 2.3.1
+<!-- SGML file was created by LyX 2.3.4.2
   See http://www.lyx.org/ for more information -->
 <book lang="fr">
 <bookinfo>
 <title>Linux IPv6 HOWTO (fr)</title>
 <author><firstname>Peter</firstname><surname>Bieringer</surname><affiliation><address>pb at bieringer dot de</address></affiliation></author>
 <revhistory>
-<revision><revnumber>0.49.fr.3wip</revnumber><date>2018-11-10</date> <authorinitials>PB</authorinitials> </revision>
+<revision><revnumber>0.49.fr.3wip</revnumber><date>2020-04-04</date> <authorinitials>PB</authorinitials> </revision>
 <revision><revnumber>0.49.fr.2</revnumber><date>2007-10-06</date> <authorinitials>PB</authorinitials> </revision>
 <revision><revnumber>0.49.fr.1</revnumber><date>2006-02-26</date> <authorinitials>MB</authorinitials> </revision>
 <revision><revnumber>0.48.1.fr.1</revnumber><date>2005-01-20</date> <authorinitials>MB</authorinitials></revision>
@@ -27,16 +27,13 @@
 <title><!-- anchor id="general-copright" -->Copyright, licence et autres</title>
 <sect2>
 <title>Copyright</title>
-<para>Rédaction et Copyright (C) 2001-2017 Peter Bieringer, traduction francophone et Copyright (C) 2003-2006 Michel Boucey</para></sect2><sect2>
+<para>Rédaction et Copyright (C) 2001-2020 Peter Bieringer, traduction francophone et Copyright (C) 2003-2006 Michel Boucey</para></sect2><sect2>
 <title>Licence</title>
 <para>Cet HOWTO IPv6 Linux est publié sous GPL GNU version 2:
-
-
-
 </para>
 <para>L'HOWTO IPv6 Linux, un guide sur la façon de configurer et d'utiliser IPv6 sur les systèmes Linux. 
 </para>
-<para>Copyright (C) 2001-2017 Peter Bieringer 
+<para>Copyright (C) 2001-2020 Peter Bieringer 
 </para>
 <para>Ce document est libre; vous pouvez le redistribuer et/ou le modifier dans les termes de la Licence Publique Générale GNU, telle que publiée par la Free Software Foundation; soit dans sa version 2, ou (c'est à votre convenance) une quelconque version postérieure.</para>
 <para>Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE; sans même de garantie impliquée par une COMMERCIALISATION ou d'ADÉQUATION A UNE FIN PARTICULIÈRE. Voir la Licence Publique Générale GNU pour de plus amples détails.</para>
@@ -578,7 +575,7 @@ user@::1's password: ******
 <title>Les navigateurs web prêts pour IPv6</title>
 <para><ulink url="http://www.bieringer.de/linux/IPv6/status/IPv6+Linux-status-apps.html#HTTP">L'état actuel de la liste des navigateurs web IPv6</ulink> est disponible.</para>
 <para>La plupart ont des problèmes irrésolues pour le moment</para><orderedlist>
-<listitem><para>Si un seul proxy IPv4 est utilisé dans les réglages, les requêtes IPv6 seront bien envoyées vers le proxy, mais celui-ci échouera à comprendre la requête, laquelle échouera. Solution: mettre à jour le logiciel proxy (à voir plus tard).</para></listitem><listitem><para>Les réglages de configuration automatique de proxy (*.pac) ne peuvent être étendus afin de prendre en charge différemment les requêtes IPv6 (par exemple ne pas utiliser le proxy) à cause de leur nature (écrits en Java-script et bien encodés en dur dans les sources, comme cela peut être observé pour le code source de Maxilla).</para></listitem></orderedlist><para>C'est ainsi que les anciennes versions ne comprennent pas un URL avec une adresse encodée en IPv6 comme <ulink url="http://[2001:4dd0:f838:a006::6]/">http://[2001:4dd0:f838:a006::6]/</ulink> (cet URL ne fonctionne qu'avec un navigateur disposant d'IPv6!).</para>
+<listitem><para>Si un seul proxy IPv4 est utilisé dans les réglages, les requêtes IPv6 seront bien envoyées vers le proxy, mais celui-ci échouera à comprendre la requête, laquelle échouera. Solution: mettre à jour le logiciel proxy (à voir plus tard).</para></listitem><listitem><para>Les réglages de configuration automatique de proxy (*.pac) ne peuvent être étendus afin de prendre en charge différemment les requêtes IPv6 (par exemple ne pas utiliser le proxy) à cause de leur nature (écrits en Java-script et bien encodés en dur dans les sources, comme cela peut être observé pour le code source de Maxilla).</para></listitem></orderedlist><para>C'est ainsi que les anciennes versions ne comprennent pas un URL avec une adresse encodée en IPv6 comme <ulink url="http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/">http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/</ulink> (cet URL ne fonctionne qu'avec un navigateur disposant d'IPv6!).</para>
 <para>Un bref test est d'essayer l'URL fourni avec un navigateur donné, sans utiliser de proxy.</para><sect3>
 <title>Un URL de test</title>
 <para>Un bon point de départ pour tester la navigation IPv6 est <ulink url="http://www.kame.net/">http://www.kame.net/</ulink>. Si la tortue sur la page est animée, la connexion se fait <emphasis>via</emphasis> IPv6, sinon la tortue est statique.</para></sect3></sect2></sect1><sect1>

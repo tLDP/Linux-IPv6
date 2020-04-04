@@ -119,7 +119,7 @@ status open
 
 \begin_layout Plain Layout
 
-<revision> <revnumber>0.67wip</revnumber> <date>2018-11-10</date> <authorinitials
+<revision> <revnumber>0.67wip</revnumber> <date>2020-04-04</date> <authorinitials
 >PB</authorinitials></revision>
 \end_layout
 
@@ -289,7 +289,7 @@ Copyright
 \end_layout
 
 \begin_layout Standard
-Written and Copyright (C) 2001-2017 by Peter Bieringer
+Written and Copyright (C) 2001-2020 by Peter Bieringer
 \end_layout
 
 \begin_layout Subsection
@@ -322,7 +322,7 @@ Copyright
 \lang ngerman
 ©
 \lang english
- 2001-2017 Peter Bieringer 
+ 2001-2020 Peter Bieringer 
 \begin_inset Newline newline
 \end_inset
 
@@ -4466,8 +4466,8 @@ Also older versions don't understand an URL with IPv6 encoded addresses
  like 
 \begin_inset CommandInset href
 LatexCommand href
-name "http://[2001:4dd0:f838:a006::6]/"
-target "http://[2001:4dd0:f838:a006::6]/"
+name "http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/"
+target "http://[2a01:238:4281:8600:812a:5915:8d24:58f3]/"
 literal "false"
 
 \end_inset
@@ -4518,20 +4518,6 @@ Other test servers are e.g.
 \lang ngerman
 \begin_inset CommandInset href
 LatexCommand href
-name "What Is My IPv6"
-target "http://www.whatismyipv6.com/"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\lang ngerman
-\begin_inset CommandInset href
-LatexCommand href
 name "ip.bieringer.de"
 target "http://ip.bieringer.de/"
 literal "false"
@@ -4562,43 +4548,6 @@ literal "false"
 LatexCommand href
 name "test-ipv6.com"
 target "http://test-ipv6.com/"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\lang ngerman
-\begin_inset CommandInset href
-LatexCommand href
-name "The ICSI Netalyzr"
-target "http://netalyzr.icsi.berkeley.edu/"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\lang ngerman
-\begin_inset CommandInset href
-LatexCommand href
-name "Speedtest Comcast"
-target "http://speedtest.comcast.net/"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset href
-LatexCommand href
-name "IPv6 Speedtest Comcast"
-target "http://ipv6.speedtest.comcast.net/"
 literal "false"
 
 \end_inset
