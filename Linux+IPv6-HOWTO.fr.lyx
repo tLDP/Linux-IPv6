@@ -125,7 +125,7 @@ status open
 
 \begin_layout Plain Layout
 
-<revision><revnumber>0.49.fr.3wip</revnumber><date>2020-04-04</date> <authorinitial
+<revision><revnumber>0.49.fr.3wip</revnumber><date>2020-06-17</date> <authorinitial
 s>PB</authorinitials> </revision>
 \end_layout
 
@@ -1286,7 +1286,6 @@ Dans les exemples génériques vous trouverez parfois ce qui suit:
 \end_layout
 
 \begin_layout Code
-
 <monadresseip>
 \end_layout
 
@@ -1297,7 +1296,6 @@ Pour une utilisation réelle sur votre système, en ligne de commande ou dans
 \end_layout
 
 \begin_layout Code
-
 1.2.3.4
 \end_layout
 
@@ -1315,7 +1313,6 @@ Les commandes exécutables en tant qu'utilisateur non-root commencent avec
 \end_layout
 
 \begin_layout Code
-
 $ whoami
 \end_layout
 
@@ -1325,7 +1322,6 @@ Les commandes exécutables en tant qu'utilisateur root commencent avec un
 \end_layout
 
 \begin_layout Code
-
 # whoami
 \end_layout
 
@@ -1549,72 +1545,58 @@ Le premier code réseau relatif à IPv6 a été ajouté au noyau Linux 2.1.8 en
 \end_layout
 
 \begin_layout Code
-
 diff -u --recursive --new-file v2.1.7/linux/include/linux/in6.h
 \end_layout
 
 \begin_layout Code
-
 ¬ linux/include/linux/in6.h 
 \end_layout
 
 \begin_layout Code
-
 --- v2.1.7/linux/include/linux/in6.h Thu Jan 1 02:00:00 1970 
 \end_layout
 
 \begin_layout Code
-
 +++ linux/include/linux/in6.h Sun Nov 3 11:04:42 1996 
 \end_layout
 
 \begin_layout Code
-
 @@ -0,0 +1,99 @@ 
 \end_layout
 
 \begin_layout Code
-
 +/* 
 \end_layout
 
 \begin_layout Code
-
 + * Types and definitions for AF_INET6 
 \end_layout
 
 \begin_layout Code
-
 + * Linux INET6 implementation 
 \end_layout
 
 \begin_layout Code
-
 + * + * Authors: 
 \end_layout
 
 \begin_layout Code
-
 + * Pedro Roque <******> 
 \end_layout
 
 \begin_layout Code
-
 + * 
 \end_layout
 
 \begin_layout Code
-
 + * Source: 
 \end_layout
 
 \begin_layout Code
-
 + * IPv6 Program Interfaces for BSD Systems 
 \end_layout
 
 \begin_layout Code
-
 + * <draft-ietf-ipngwg-bsd-api-05.txt>
 \end_layout
 
@@ -1724,7 +1706,6 @@ Comme cela a été mentionné précédemment, les adresses IPv6 ont une longueur
 \end_layout
 
 \begin_layout Code
-
 2^128-1: 340282366920938463463374607431768211455
 \end_layout
 
@@ -1740,7 +1721,6 @@ De tels nombres ne sont vraiment pas des adresses pouvant être mémorisées.
 \end_layout
 
 \begin_layout Code
-
 2^128-1: 0xffffffffffffffffffffffffffffffff
 \end_layout
 
@@ -1755,7 +1735,6 @@ Cette représentation est encore peu praticable (possibilité de confusion
 \end_layout
 
 \begin_layout Code
-
 2^128-1: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 \end_layout
 
@@ -1766,7 +1745,6 @@ Une adresse utilisable (nous verrons les différents types d'adresse plus
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:0100:f101:0210:a4ff:fee3:9566
 \end_layout
 
@@ -1776,12 +1754,10 @@ Dans un but de simplification, les zéros non significatifs de chaque bloc
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:0100:f101:0210:a4ff:fee3:9566  -> 
 \end_layout
 
 \begin_layout Code
-
 ¬ 3ffe:ffff:100:f101:210:a4ff:fee3:9566
 \end_layout
 
@@ -1807,7 +1783,6 @@ Une séquence de blocs de 16 bits ne comprenant que des zéros peut être rempla
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f101:0:0:0:1  ->  3ffe:ffff:100:f101::1
 \end_layout
 
@@ -1818,7 +1793,6 @@ La plus importante réduction qui peut être observée est celle de l'adresse
 \end_layout
 
 \begin_layout Code
-
 0000:0000:0000:0000:0000:0000:0000:0001  ->  ::1
 \end_layout
 
@@ -1842,12 +1816,10 @@ literal "false"
 \end_layout
 
 \begin_layout Code
-
 # ipv6calc --addr_to_base85 3ffe:ffff:0100:f101:0210:a4ff:fee3:9566 
 \end_layout
 
 \begin_layout Code
-
 Itu&-ZQ82s>J%s99FJXT
 \end_layout
 
@@ -2075,7 +2047,6 @@ loopback
 \end_layout
 
 \begin_layout Code
-
 0000:0000:0000:0000:0000:0000:0000:0001 
 \end_layout
 
@@ -2084,7 +2055,6 @@ ou compressée:
 \end_layout
 
 \begin_layout Code
-
 ::1
 \end_layout
 
@@ -2128,7 +2098,6 @@ any
 \end_layout
 
 \begin_layout Code
-
 0000:0000:0000:0000:0000:0000:0000:0000 
 \end_layout
 
@@ -2137,7 +2106,6 @@ ou:
 \end_layout
 
 \begin_layout Code
-
 ::
 \end_layout
 
@@ -2175,7 +2143,6 @@ Ces adresses sont définies par un préfixe spécial d'une longueur de 96 (a.b.c
 \end_layout
 
 \begin_layout Code
-
 0:0:0:0:0:ffff:a.b.c.d/96
 \end_layout
 
@@ -2184,7 +2151,6 @@ ou en format compressé:
 \end_layout
 
 \begin_layout Code
-
 ::ffff:a.b.c.d/96
 \end_layout
 
@@ -2193,7 +2159,6 @@ Par exemple, l'adresse IPv4 1.2.3.4 ressemble à ceci:
 \end_layout
 
 \begin_layout Code
-
 ::ffff:1.2.3.4
 \end_layout
 
@@ -2223,7 +2188,6 @@ reference "tunneling-6to4"
 \end_layout
 
 \begin_layout Code
-
 0:0:0:0:0:0:a.b.c.d/96
 \end_layout
 
@@ -2232,7 +2196,6 @@ ou en format compressé:
 \end_layout
 
 \begin_layout Code
-
 ::a.b.c.d/96
 \end_layout
 
@@ -2330,22 +2293,18 @@ x
 \end_layout
 
 \begin_layout Code
-
 fe8x:  <- actuellement le seul en usage.
 \end_layout
 
 \begin_layout Code
-
 fe9x:
 \end_layout
 
 \begin_layout Code
-
 feax:
 \end_layout
 
 \begin_layout Code
-
 febx:
 \end_layout
 
@@ -2388,22 +2347,18 @@ Il commence par:
 \end_layout
 
 \begin_layout Code
-
 fecx:  <- le plus couramment utilisé.
 \end_layout
 
 \begin_layout Code
-
 fedx:
 \end_layout
 
 \begin_layout Code
-
 feex:
 \end_layout
 
 \begin_layout Code
-
 fefx:
 \end_layout
 
@@ -2504,12 +2459,10 @@ x
 \end_layout
 
 \begin_layout Code
-
 2xxx: 
 \end_layout
 
 \begin_layout Code
-
 3xxx:
 \end_layout
 
@@ -2541,7 +2494,6 @@ Elles ont été les premières adresses globales à être définies et mises en
 \end_layout
 
 \begin_layout Code
-
 3ffe:
 \end_layout
 
@@ -2550,7 +2502,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f102::1
 \end_layout
 
@@ -2560,7 +2511,6 @@ Une adresse spéciale de test 6bone, qui ne sera jamais globalement unique,
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff: 
 \end_layout
 
@@ -2616,16 +2566,14 @@ literal "false"
 \end_layout
 
 \begin_layout Code
-
 2002:
 \end_layout
 
 \begin_layout Standard
-Par exemple, pour représenter 92.168.1.1/5:
+Par exemple, pour représenter 192.168.1.1/5:
 \end_layout
 
 \begin_layout Code
-
 2002:c0a8:0101:5::1
 \end_layout
 
@@ -2635,12 +2583,10 @@ Une petite ligne de commande peut vous aider à générer une telle adresse
 \end_layout
 
 \begin_layout Code
-
 ipv4="1.2.3.4"; sla="5"; printf "2002:%02x%02x:%02x%02x:%04x::1" `echo $ipv4
 \end_layout
 
 \begin_layout Code
-
 ¬ | tr "." " "` $sla
 \end_layout
 
@@ -2674,7 +2620,6 @@ Ces adresses sont déléguées aux Fournisseurs d'Accès à Internet (FAI) et
 \end_layout
 
 \begin_layout Code
-
 2001:
 \end_layout
 
@@ -2713,12 +2658,10 @@ tion:
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff::/32
 \end_layout
 
 \begin_layout Code
-
 2001:0DB8::/32   EXAMPLENET-WF
 \end_layout
 
@@ -2745,7 +2688,6 @@ Elles commencent par (xx est la valeur de la portée)
 \end_layout
 
 \begin_layout Code
-
 ffxy:
 \end_layout
 
@@ -2837,7 +2779,6 @@ Un exemple de cette adresse ressemble à ceci
 \end_layout
 
 \begin_layout Code
-
 ff02::1:ff00:1234
 \end_layout
 
@@ -2897,7 +2838,6 @@ Un simple exemple d'une adresse anycast est celle d'un routeur de sous-réseau.
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f101:210:a4ff:fee3:9566/64  <- L'adresse du noeud
 \end_layout
 
@@ -2907,7 +2847,6 @@ L'adresse anycast de routeur de sous-réseau sera créée en laissant totalement
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f101::/64  <- l'adresse anycast de routeur de sous-réseau
 \end_layout
 
@@ -2961,7 +2900,6 @@ Considérons à nouveau le premier exemple:
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f101:210:a4ff:fee3:9566
 \end_layout
 
@@ -2971,7 +2909,6 @@ ici,
 \end_layout
 
 \begin_layout Code
-
 210:a4ff:fee3:9566 
 \end_layout
 
@@ -2981,7 +2918,6 @@ est la partie hôte calculée à partir de l'adresse MAC de la NIC
 \end_layout
 
 \begin_layout Code
-
 00:10:A4:E3:95:66 
 \end_layout
 
@@ -3069,7 +3005,6 @@ Pour les serveurs, il est probablement plus aisé de se rappeler d'adresses
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f101::1
 \end_layout
 
@@ -3182,7 +3117,6 @@ Un exemple:
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:1:2:3:4:5/48
 \end_layout
 
@@ -3196,7 +3130,6 @@ le réseau:
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:0100:0000:0000:0000:0000:0000
 \end_layout
 
@@ -3205,7 +3138,6 @@ le masque de réseau:
 \end_layout
 
 \begin_layout Code
-
 ffff:ffff:ffff:0000:0000:0000:0000:0000
 \end_layout
 
@@ -3230,12 +3162,10 @@ Par exemple, si une table de routage affiche les entrées suivantes (la liste
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100::/48     ::            U  1 0 0 sit1 
 \end_layout
 
 \begin_layout Code
-
 2000::/3               ::192.88.99.1 UG 1 0 0 tun6to4
 \end_layout
 
@@ -3245,13 +3175,11 @@ Ci-dessous, les adresses de destination des paquets IPv6 dont le trafic
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:1:2:3:4:5/48  ->  trafic routé au travers du périphérique
  sit1
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:200:1:2:3:4:5/48  ->  trafic routé au travers du périphérique
  tun6to4
 \end_layout
@@ -3324,7 +3252,6 @@ Afin de vérifier si oui ou non votre actuel noyau supporte IPv6, jetez un
 \end_layout
 
 \begin_layout Code
-
 /proc/net/if_inet6
 \end_layout
 
@@ -3334,7 +3261,6 @@ Un bref test automatique ressemble à:
 \end_layout
 
 \begin_layout Code
-
 # test -f /proc/net/if_inet6 && echo "Running kernel is IPv6 ready"
 \end_layout
 
@@ -3353,7 +3279,6 @@ Vous pouvez tenter de charger le module IPv6 en exécutant
 \end_layout
 
 \begin_layout Code
-
 # modprobe ipv6
 \end_layout
 
@@ -3364,7 +3289,6 @@ Si c'est un succès, la présence de ce module sera testée comme par magie
 \end_layout
 
 \begin_layout Code
-
 # lsmod |grep -w 'ipv6' && echo "IPv6 module successfully loaded"
 \end_layout
 
@@ -3395,7 +3319,6 @@ ules):
 \end_layout
 
 \begin_layout Code
-
 alias net-pf-10 ipv6  # chargement automatique du module IPv6 à la demande
 \end_layout
 
@@ -3405,7 +3328,6 @@ Il est aussi possible de mettre hors service le chargement automatique du
 \end_layout
 
 \begin_layout Code
-
 alias net-pf-10 off   # rend indisponible le chargement automatique du module
  IPv6
 \end_layout
@@ -3660,13 +3582,11 @@ Vérification magique:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig -? 2>& 1 | grep -qw 'inet6' && echo "utility 'ifconfig'
  is
 \end_layout
 
 \begin_layout Code
-
 ¬ IPv6-ready"
 \end_layout
 
@@ -3676,7 +3596,6 @@ La même vérification peut être réalisée pour route:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -? 2>& 1 | grep -qw 'inet6' && echo "utility 'route' is IPv6-ready
 "
 \end_layout
@@ -3697,7 +3616,6 @@ Alexey N.
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip 2>&1 | grep -qw 'inet6' && echo "utility 'ip' is IPv6-ready"
 \end_layout
 
@@ -3796,17 +3714,14 @@ Usage
 \end_layout
 
 \begin_layout Code
-
 # ping6 <hôteavecadresseipv6>
 \end_layout
 
 \begin_layout Code
-
 # ping6 <adresseipv6>
 \end_layout
 
 \begin_layout Code
-
 # ping6 [-I <périphérique>] <adresseipv6-lien-local>
 \end_layout
 
@@ -3815,17 +3730,14 @@ Exemple
 \end_layout
 
 \begin_layout Code
-
 # ping6 -c 1 ::1 
 \end_layout
 
 \begin_layout Code
-
 PING ::1(::1) from ::1 : 56 data bytes 
 \end_layout
 
 \begin_layout Code
-
 64 bytes from ::1: icmp_seq=0 hops=64 time=292 usec
 \end_layout
 
@@ -3834,17 +3746,14 @@ PING ::1(::1) from ::1 : 56 data bytes
 \end_layout
 
 \begin_layout Code
-
 --- ::1 ping statistics --- 
 \end_layout
 
 \begin_layout Code
-
 1 packets transmitted, 1 packets received, 0% packet loss 
 \end_layout
 
 \begin_layout Code
-
 round-trip min/avg/max/mdev = 0.292/0.292/0.292/0.000 ms
 \end_layout
 
@@ -3878,12 +3787,10 @@ En spécifiant uniquement une adresse lien-local à ping IPv6, le noyau ne
 \end_layout
 
 \begin_layout Code
-
 # ping6 fe80::212:34ff:fe12:3456 
 \end_layout
 
 \begin_layout Code
-
 connect: Invalid argument
 \end_layout
 
@@ -3892,22 +3799,18 @@ Dans ce cas vous devez en plus spécifier l'interface comme ci-dessous:
 \end_layout
 
 \begin_layout Code
-
 # ping6 -I eth0 -c 1 fe80::2e0:18ff:fe90:9205 
 \end_layout
 
 \begin_layout Code
-
 PING fe80::212:23ff:fe12:3456(fe80::212:23ff:fe12:3456) from
 \end_layout
 
 \begin_layout Code
-
 ¬ fe80::212:34ff:fe12:3478 eth0: 56 data bytes 
 \end_layout
 
 \begin_layout Code
-
 64 bytes from fe80::212:23ff:fe12:3456: icmp_seq=0 hops=64 time=445 usec
 \end_layout
 
@@ -3916,17 +3819,14 @@ PING fe80::212:23ff:fe12:3456(fe80::212:23ff:fe12:3456) from
 \end_layout
 
 \begin_layout Code
-
 --- fe80::2e0:18ff:fe90:9205 ping statistics --- 
 \end_layout
 
 \begin_layout Code
-
 1 packets transmitted, 1 packets received, 0% packet loss round-trip
 \end_layout
 
 \begin_layout Code
-
 ¬ min/avg/max/mdev = 0.445/0.445/0.445/0.000 ms
 \end_layout
 
@@ -3944,22 +3844,18 @@ all-node
 \end_layout
 
 \begin_layout Code
-
 # ping6 -I eth0 ff02::1
 \end_layout
 
 \begin_layout Code
-
 PING ff02::1(ff02::1) from fe80:::2ab:cdff:feef:012356 eth0: 56 data bytes
 \end_layout
 
 \begin_layout Code
-
 64 bytes from ::1: icmp_seq=1 ttl=64 time=0.104 ms
 \end_layout
 
 \begin_layout Code
-
 64 bytes from fe80::212:34ff:fe12:3450: icmp_seq=1 ttl=64 time=0.549 ms (DUP!)
  
 \end_layout
@@ -3995,51 +3891,42 @@ iputils
 \end_layout
 
 \begin_layout Code
-
 # traceroute6 www.6bone.net 
 \end_layout
 
 \begin_layout Code
-
 traceroute to 6bone.net (3ffe:b00:c18:1::10) from 3ffe:ffff:0000:f101::2,
  30
 \end_layout
 
 \begin_layout Code
-
 ¬ hops max, 16 byte packets 
 \end_layout
 
 \begin_layout Code
-
  1 localipv6gateway (3ffe:ffff:0000:f101::1) 1.354 ms 1.566 ms 0.407 ms 
 \end_layout
 
 \begin_layout Code
-
  2 swi6T1-T0.ipv6.switch.ch (3ffe:2000:0:400::1) 90.431 ms 91.956 ms 92.377 ms
  
 \end_layout
 
 \begin_layout Code
-
  3 3ffe:2000:0:1::132 (3ffe:2000:0:1::132) 118.945 ms 107.982 ms 114.557 ms
  
 \end_layout
 
 \begin_layout Code
-
  4 3ffe:c00:8023:2b::2 (3ffe:c00:8023:2b::2) 968.468 ms 993.392 ms 973.441
  ms 
 \end_layout
 
 \begin_layout Code
-
  5 3ffe:2e00:e:c::3 (3ffe:2e00:e:c::3) 507.784 ms 505.549 ms 508.928 ms 
 \end_layout
 
 \begin_layout Code
-
  6 www.6bone.net (3ffe:b00:c18:1::10) 1265.85 ms * 1304.74 ms
 \end_layout
 
@@ -4075,52 +3962,42 @@ iputils
 \end_layout
 
 \begin_layout Code
-
 # tracepath6 www.6bone.net 
 \end_layout
 
 \begin_layout Code
-
  1?: [LOCALHOST] pmtu 1480 
 \end_layout
 
 \begin_layout Code
-
  1: 3ffe:401::2c0:33ff:fe02:14 150.705ms 
 \end_layout
 
 \begin_layout Code
-
  2: 3ffe:b00:c18::5 267.864ms 
 \end_layout
 
 \begin_layout Code
-
  3: 3ffe:b00:c18::5 asymm 2 266.145ms pmtu 1280 
 \end_layout
 
 \begin_layout Code
-
  3: 3ffe:3900:5::2 asymm 4 346.632ms 
 \end_layout
 
 \begin_layout Code
-
  4: 3ffe:28ff:ffff:4::3 asymm 5 365.965ms 
 \end_layout
 
 \begin_layout Code
-
  5: 3ffe:1cff:0:ee::2 asymm 4 534.704ms 
 \end_layout
 
 \begin_layout Code
-
  6: 3ffe:3800::1:1 asymm 4 578.126ms !N 
 \end_layout
 
 \begin_layout Code
-
 Resume: pmtu 1280
 \end_layout
 
@@ -4212,32 +4089,26 @@ Ping IPv6 vers
 \end_layout
 
 \begin_layout Code
-
 # tcpdump -t -n -i eth0 -s 512 -vv ip6 or proto ipv6 
 \end_layout
 
 \begin_layout Code
-
 tcpdump: listening on eth0 
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f101:2e0:18ff:fe90:9205 > 3ffe:ffff:100:f101::1: icmp6: echo
 \end_layout
 
 \begin_layout Code
-
 ¬ request (len 64, hlim 64) 
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:100:f101::1 > 3ffe:ffff:100:f101:2e0:18ff:fe90:9205: icmp6: echo
 \end_layout
 
 \begin_layout Code
-
 ¬ reply (len 64, hlim 64)
 \end_layout
 
@@ -4255,52 +4126,42 @@ Ping IPv6 vers
 \end_layout
 
 \begin_layout Code
-
 # tcpdump -t -n -i ppp0 -s 512 -vv ip6 or proto ipv6 
 \end_layout
 
 \begin_layout Code
-
 tcpdump: listening on ppp0 
 \end_layout
 
 \begin_layout Code
-
 1.2.3.4 > 5.6.7.8: 2002:ffff:f5f8::1 > 3ffe:ffff:100::1: icmp6: echo request
 \end_layout
 
 \begin_layout Code
-
 ¬ (len 64, hlim 64) (DF) (ttl 64, id 0, len 124) 
 \end_layout
 
 \begin_layout Code
-
 5.6.7.8 > 1.2.3.4: 3ffe:ffff:100::1 > 2002:ffff:f5f8::1: icmp6: echo reply (len
 \end_layout
 
 \begin_layout Code
-
 ¬ 64, hlim 61) (ttl 23, id 29887, len 124) 
 \end_layout
 
 \begin_layout Code
-
 1.2.3.4 > 5.6.7.8: 2002:ffff:f5f8::1 > 3ffe:ffff:100::1: icmp6: echo request
 \end_layout
 
 \begin_layout Code
-
 ¬ (len 64, hlim 64) (DF) (ttl 64, id 0, len 124) 
 \end_layout
 
 \begin_layout Code
-
 5.6.7.8 > 1.2.3.4: 3ffe:ffff:100::1 > 2002:ffff:f5f8::1: icmp6: echo reply (len
 \end_layout
 
 \begin_layout Code
-
 ¬ 64, hlim 61) (ttl 23, id 29919, len 124)
 \end_layout
 
@@ -4380,7 +4241,6 @@ A cause des mises à jour de sécurité ces dernières années, tout serveur
 \end_layout
 
 \begin_layout Code
-
 # host -t AAAA www.join.uni-muenster.de
 \end_layout
 
@@ -4389,14 +4249,12 @@ et cela devrait affiché quelque chose comme ce qui suit:
 \end_layout
 
 \begin_layout Code
-
 www.join.uni-muenster.de.
  is an alias for tolot.join.uni-muenster.de.
  
 \end_layout
 
 \begin_layout Code
-
 tolot.join.uni-muenster.de.
  has AAAA address 2001:638:500:101:2e0:81ff:fe24:37c6
 \end_layout
@@ -4411,30 +4269,25 @@ Des clients telnet prêts pour IPv6 sont disponibles.
 \end_layout
 
 \begin_layout Code
-
 $ telnet 3ffe:400:100::1 80
 \end_layout
 
 \begin_layout Code
-
 Trying 3ffe:400:100::1...
  
 \end_layout
 
 \begin_layout Code
-
 Connected to 3ffe:400:100::1.
  
 \end_layout
 
 \begin_layout Code
-
 Escape character is '^]'.
  
 \end_layout
 
 \begin_layout Code
-
 HEAD / HTTP/1.0
 \end_layout
 
@@ -4443,47 +4296,38 @@ HEAD / HTTP/1.0
 \end_layout
 
 \begin_layout Code
-
 HTTP/1.1 200 OK 
 \end_layout
 
 \begin_layout Code
-
 Date: Sun, 16 Dec 2001 16:07:21 
 \end_layout
 
 \begin_layout Code
-
 GMT Server: Apache/2.0.28 (Unix) 
 \end_layout
 
 \begin_layout Code
-
 Last-Modified: Wed, 01 Aug 2001 21:34:42 GMT 
 \end_layout
 
 \begin_layout Code
-
 ETag: "3f02-a4d-b1b3e080" 
 \end_layout
 
 \begin_layout Code
-
 Accept-Ranges: bytes 
 \end_layout
 
 \begin_layout Code
-
 Content-Length: 2637 
 \end_layout
 
 \begin_layout Code
-
 Connection: close 
 \end_layout
 
 \begin_layout Code
-
 Content-Type: text/html; charset=ISO-8859-1
 \end_layout
 
@@ -4492,7 +4336,6 @@ Content-Type: text/html; charset=ISO-8859-1
 \end_layout
 
 \begin_layout Code
-
 Connection closed by foreign host.
 \end_layout
 
@@ -4546,17 +4389,14 @@ Les versions actuelles d'openssh sont prêtes pour IPv6.
 \end_layout
 
 \begin_layout Code
-
 $ ssh -6 ::1 
 \end_layout
 
 \begin_layout Code
-
 user@::1's password: ****** 
 \end_layout
 
 \begin_layout Code
-
 [user@ipv6host user]$
 \end_layout
 
@@ -5042,12 +4882,10 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # ip link set dev <interface> up
 \end_layout
 
 \begin_layout Code
-
 # ip link set dev <interface> down
 \end_layout
 
@@ -5060,12 +4898,10 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # ip link set dev eth0 up
 \end_layout
 
 \begin_layout Code
-
 # ip link set dev eth0 down
 \end_layout
 
@@ -5079,12 +4915,10 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig <interface> up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig <interface> down
 \end_layout
 
@@ -5093,12 +4927,10 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig eth0 up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig eth0 down
 \end_layout
 
@@ -5138,7 +4970,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr show dev <interface>
 \end_layout
 
@@ -5147,27 +4978,22 @@ Exemple pour un hôte configuré statiquement:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr show dev eth0
 \end_layout
 
 \begin_layout Code
-
 2: eth0: <BROADCAST,MULTICAST,UP&gt; mtu 1500 qdisc pfifo_ fast qlen 100
 \end_layout
 
 \begin_layout Code
-
 inet6 fe80::210:a4ff:fee3:9566/10 scope link
 \end_layout
 
 \begin_layout Code
-
 inet6 3ffe:ffff:0:f101::1/64 scope global
 \end_layout
 
 \begin_layout Code
-
 inet6 fec0:0:0:f101::1/64 scope site 
 \end_layout
 
@@ -5181,42 +5007,34 @@ Ici vous pouvez voir des adresses auto-configurées comme par magie et leurs
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr show dev eth0 
 \end_layout
 
 \begin_layout Code
-
 3: eth0: <BROADCAST,MULTICAST,PROMISC,UP&gt; mtu 1500 qdisc pfifo_fast qlen
 \end_layout
 
 \begin_layout Code
-
 ¬ 100 
 \end_layout
 
 \begin_layout Code
-
 inet6 2002:d950:f5f8:f101:2e0:18ff:fe90:9205/64 scope global dynamic 
 \end_layout
 
 \begin_layout Code
-
 valid_lft 16sec preferred_lft 6sec 
 \end_layout
 
 \begin_layout Code
-
 inet6 3ffe:400:100:f101:2e0:18ff:fe90:9205/64 scope global dynamic 
 \end_layout
 
 \begin_layout Code
-
 valid_lft 2591997sec preferred_lft 604797sec inet6 fe80::2e0:18ff:fe90:9205/10
 \end_layout
 
 \begin_layout Code
-
 ¬ scope link
 \end_layout
 
@@ -5230,7 +5048,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig <interface>
 \end_layout
 
@@ -5241,22 +5058,18 @@ Exemple (la sortie est filtrée avec grep pour n'afficher que les adresses
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig eth0 |grep "inet6 addr:"
 \end_layout
 
 \begin_layout Code
-
 inet6 addr: fe80::210:a4ff:fee3:9566/10 Scope:Link
 \end_layout
 
 \begin_layout Code
-
 inet6 addr: 3ffe:ffff:0:f101::1/64 Scope:Global
 \end_layout
 
 \begin_layout Code
-
 inet6 addr: fec0:0:0:f101::1/64 Scope:Site
 \end_layout
 
@@ -5285,7 +5098,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr add <adresseipv6>/<longueurdupréfixe> dev <interface>
  
 \end_layout
@@ -5295,7 +5107,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr add 3ffe:ffff:0:f101::1/64 dev eth0 
 \end_layout
 
@@ -5309,7 +5120,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig <interface> inet6 add <adresseipv6>/<longueurdupréfixe>
 \end_layout
 
@@ -5318,7 +5128,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig eth0 inet6 add 3ffe:ffff:0:f101::1/64 
 \end_layout
 
@@ -5345,7 +5154,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr del <adresseipv6ipv6address>/<longueurdupréfixe> dev
  <interface> 
 \end_layout
@@ -5355,7 +5163,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr del 3ffe:ffff:0:f101::1/64 dev eth0 
 \end_layout
 
@@ -5369,7 +5176,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig <interface> inet6 del <adresseipv6>/<longueurdupréfixe>
 \end_layout
 
@@ -5378,7 +5184,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig eth0 inet6 del 3ffe:ffff:0:f101::1/64
 \end_layout
 
@@ -5419,7 +5224,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route show [dev <périphérique>]
 \end_layout
 
@@ -5429,27 +5233,22 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route show dev eth0
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:0:f101::/64 proto kernel metric 256 mtu 1500 advmss 1440
 \end_layout
 
 \begin_layout Code
-
 fe80::/10             proto kernel metric 256 mtu 1500 advmss 1440
 \end_layout
 
 \begin_layout Code
-
 ff00::/8              proto kernel metric 256 mtu 1500 advmss 1440
 \end_layout
 
 \begin_layout Code
-
 default               proto kernel metric 256 mtu 1500 advmss 1440
 \end_layout
 
@@ -5463,7 +5262,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 
 \end_layout
 
@@ -5475,45 +5273,37 @@ Exemple (la sortie est filtrée sur l'interface eth0).
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 |grep -w "eth0"
 \end_layout
 
 \begin_layout Code
-
 3ffe:ffff:0:f101 ::/64 :: UA  256 0 0 eth0 <- Route de l'interface de portée
  globale
 \end_layout
 
 \begin_layout Code
-
 ¬ address
 \end_layout
 
 \begin_layout Code
-
 fe80::/10        ::       UA  256 0 0 eth0 <- Route de l'interface de portée
  lien-local
 \end_layout
 
 \begin_layout Code
-
 ¬ address
 \end_layout
 
 \begin_layout Code
-
 ff00::/8         ::       UA  256 0 0 eth0 <- Route de l'interface destiné
  à tout le trafic multicast
 \end_layout
 
 \begin_layout Code
-
 ¬ addresses
 \end_layout
 
 \begin_layout Code
-
 ::/0             ::       UDA 256 0 0 eth0 <- Route automatique par défaut
 \end_layout
 
@@ -5536,12 +5326,10 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add <réseauipv6>/<longueurdupréfixe> via <adresseipv6>
 \end_layout
 
 \begin_layout Code
-
 ¬ [dev <périphérique>]
 \end_layout
 
@@ -5554,7 +5342,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add 2000::/3 via 3ffe:ffff:0:f101::1
 \end_layout
 
@@ -5568,12 +5355,10 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <réseauipv6>/<longueurdupréfixe> gw
 \end_layout
 
 \begin_layout Code
-
 ¬ <adresseipv6> [dev <périphérique>] 
 \end_layout
 
@@ -5592,7 +5377,6 @@ Suivre l'exemple montré ajoute une route à toutes les adresses globales
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add 2000::/3 gw 3ffe:ffff:0:f101::1
 \end_layout
 
@@ -5616,12 +5400,10 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route del <réseauipv6>/<longueurdupréfixe> via <ipv6address>
 \end_layout
 
 \begin_layout Code
-
 ¬ [dev <périphérique>]
 \end_layout
 
@@ -5630,7 +5412,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route del 2000::/3 via 3ffe:ffff:0:f101::1
 \end_layout
 
@@ -5644,7 +5425,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del <réseau>/<longueurdupréfixe> [dev <périphérique>]
 \end_layout
 
@@ -5653,7 +5433,6 @@ Exemple pour de nouveau ôter la route précédemment ajoutée:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del 2000::/3 gw 3ffe:ffff:0:f101::1
 \end_layout
 
@@ -5675,12 +5454,10 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add <réseauipv6>/<longueurdupréfixe> dev <périphérique>
 \end_layout
 
 \begin_layout Code
-
 ¬ metric 1
 \end_layout
 
@@ -5689,7 +5466,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add 2000::/3 dev eth0 metric 1
 \end_layout
 
@@ -5736,7 +5512,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <réseau>/<longueurdupréfixe> dev <périphérique>
 \end_layout
 
@@ -5745,7 +5520,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add 2000::/3 dev eth0 
 \end_layout
 
@@ -5767,7 +5541,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route del <réseauipv6>/<longueurdupréfixe> dev <périphérique>
 \end_layout
 
@@ -5776,7 +5549,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route del 2000::/3 dev eth0 
 \end_layout
 
@@ -5790,7 +5562,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del <réseau>/<longueurdupréfixe> dev <périphérique>
 \end_layout
 
@@ -5800,7 +5571,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del 2000::/3 dev eth0
 \end_layout
 
@@ -5840,17 +5610,14 @@ Les clients peuvent installer une route par défaut avec pour préfixe
 \end_layout
 
 \begin_layout Code
-
 # ip -6 route show | grep ^default
 \end_layout
 
 \begin_layout Code
-
 default via fe80::212:34ff:fe12:3450 dev eth0 proto kernel metric 1024 expires
 \end_layout
 
 \begin_layout Code
-
 ¬ 29sec mtu 1500 advmss 1440
 \end_layout
 
@@ -5958,7 +5725,6 @@ Avec la commande qui suit vous pouvez afficher les voisins IPv6 appris ou
 \end_layout
 
 \begin_layout Code
-
 # ip -6 neigh show [dev <périphérique>]
 \end_layout
 
@@ -5967,12 +5733,10 @@ L'exemple suivant montre un voisin, qui est un routeur pouvant être atteint
 \end_layout
 
 \begin_layout Code
-
 # ip -6 neigh show
 \end_layout
 
 \begin_layout Code
-
 fe80::201:23ff:fe45:6789 dev eth0 lladdr 00:01:23:45:67:89 router nud reachable
 \end_layout
 
@@ -5989,7 +5753,6 @@ La commande suivante vous permet d'ajouter manuellement une entrée
 \end_layout
 
 \begin_layout Code
-
 # ip -6 neigh add <adresseIPv6> lladdr <adressedelacouche-lien> dev <périphériqu
 e>
 \end_layout
@@ -5999,7 +5762,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # ip -6 neigh add fec0::1 lladdr 02:01:02:03:04:05 dev eth0
 \end_layout
 
@@ -6012,7 +5774,6 @@ De même qu'une entrée peut être ajoutée, une entrée peut être détruite:
 \end_layout
 
 \begin_layout Code
-
 # ip -6 neigh del <adresseipv6> lladdr <adressedelacouche-lien> dev <périphériqu
 e>
 \end_layout
@@ -6022,7 +5783,6 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # ip -6 neigh del fec0::1 lladdr 02:01:02:03:04:05 dev eth0
 \end_layout
 
@@ -6044,28 +5804,23 @@ ip
 \end_layout
 
 \begin_layout Code
-
 # ip -6 neigh help
 \end_layout
 
 \begin_layout Code
-
 Usage: ip neigh { add | del | change | replace } { ADDR [ lladdr LLADDR
  ] 
 \end_layout
 
 \begin_layout Code
-
           [ nud { permanent | noarp | stale | reachable } ] 
 \end_layout
 
 \begin_layout Code
-
           | proxy ADDR } [ dev DEV ] 
 \end_layout
 
 \begin_layout Code
-
        ip neigh {show|flush} [ to PREFIX ] [ dev DEV ] [ nud STATE ]
 \end_layout
 
@@ -6210,27 +5965,22 @@ literal "false"
 \end_layout
 
 \begin_layout Code
-
 |   3+13   |    32     |    16  |            64 bits             | 
 \end_layout
 
 \begin_layout Code
-
 +---+------+-----------+--------+--------------------------------+ 
 \end_layout
 
 \begin_layout Code
-
 |  FP+TLA  |  V4ADDR   | SLA ID |           Interface ID         | 
 \end_layout
 
 \begin_layout Code
-
 |  0x2002  |           |        |                                | 
 \end_layout
 
 \begin_layout Code
-
 +---+------+-----------+--------+--------------------------------+
 \end_layout
 
@@ -6361,7 +6111,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 tunnel show [<périphérique>]
 \end_layout
 
@@ -6370,17 +6119,14 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 tunnel show 
 \end_layout
 
 \begin_layout Code
-
 sit0: ipv6/ip remote any local any ttl 64 nopmtudisc 
 \end_layout
 
 \begin_layout Code
-
 sit1: ipv6/ip remote 195.226.187.50 local any ttl 64
 \end_layout
 
@@ -6393,7 +6139,6 @@ Usage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 
 \end_layout
 
@@ -6403,7 +6148,6 @@ Exemple (la sortie est filtrée afin de ne laisser apparaître que les tunnels
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 | grep "
 \backslash
 Wsit0
@@ -6412,27 +6156,22 @@ W*$"
 \end_layout
 
 \begin_layout Code
-
 ::/96      ::               U   256  2  0  sit0 
 \end_layout
 
 \begin_layout Code
-
 2002::/16  ::               UA  256  0  0  sit0 
 \end_layout
 
 \begin_layout Code
-
 2000::/3   ::193.113.58.75  UG    1  0  0  sit0 
 \end_layout
 
 \begin_layout Code
-
 fe80::/10  ::               UA  256  0  0  sit0 
 \end_layout
 
 \begin_layout Code
-
 ff00::/8   ::               UA  256  0  0  sit0
 \end_layout
 
@@ -6502,12 +6241,10 @@ Usage en vue de créer un périphérique de tunnelage (mais il n'est pas monté
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel add <périphérique> mode sit ttl <ttlpardéfaut> remote
 \end_layout
 
 \begin_layout Code
-
 ¬ <adresseipv4dutunnelétranger> local <adresseipv4locale>
 \end_layout
 
@@ -6516,22 +6253,18 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel add sit1 mode sit ttl <ttlpardéfaut> remote
 \end_layout
 
 \begin_layout Code
-
 ¬ <adresseipv4dutunnelétranger1> local <adresseipv4locale>
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set dev sit1 up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add <préfixepourlaroute1> dev sit1 metric 1
 \end_layout
 
@@ -6540,22 +6273,18 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel add sit2 mode sit ttl <ttlpardéfaut>
 \end_layout
 
 \begin_layout Code
-
 ¬ <adresseipv4dutunnelétranger2> local <adresseipv4locale>
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set dev sit2 up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add <préfixepourlaroute2> dev sit2 metric 1
 \end_layout
 
@@ -6564,22 +6293,18 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel add sit3 mode sit ttl <ttlpardéfaut>
 \end_layout
 
 \begin_layout Code
-
 ¬ <adresseipv4dutunnelétranger3> local <adresseipv4locale>
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set dev sit3 up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add <préfixepourlaroute3> dev sit3 metric 1
 \end_layout
 
@@ -6601,7 +6326,6 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 up
 \end_layout
 
@@ -6610,17 +6334,14 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 tunnel <adresseipv4dutunnelétranger1>
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit1 up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <préfixepourlaroute1> dev sit1
 \end_layout
 
@@ -6629,17 +6350,14 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 tunnel <adresseipv4dutunnelétranger2>
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit2 up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <préfixepourlaroute2> dev sit2
 \end_layout
 
@@ -6648,17 +6366,14 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 tunnel <adresseipv4dutunnelétranger3>
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit3 up
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <préfixepourlaroute3> dev sit3
 \end_layout
 
@@ -6687,7 +6402,6 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 up
 \end_layout
 
@@ -6696,32 +6410,26 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <préfixepourlaroute1> gw
 \end_layout
 
 \begin_layout Code
-
 ¬ ::<adresseipv4dutunnelétranger1> dev sit0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <préfixepourlaroute2> gw
 \end_layout
 
 \begin_layout Code
-
 ¬ ::<adresseipv4dutunnelétranger2> dev sit0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <préfixepourlaroute3> gw
 \end_layout
 
 \begin_layout Code
-
 ¬ ::<adresseipv4dutunnelétranger3> dev sit0
 \end_layout
 
@@ -6750,7 +6458,6 @@ Pour ôter un périphérique de tunnelage:
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel del <périphérique>
 \end_layout
 
@@ -6759,17 +6466,14 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route del <préfixepourlaroute1> dev sit1
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set sit1 down
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel del sit1
 \end_layout
 
@@ -6778,17 +6482,14 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route del <préfixepourlaroute2> dev sit2
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set sit2 down
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel del sit2
 \end_layout
 
@@ -6797,17 +6498,14 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route del <préfixepourlaroute3> dev sit3
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set sit3 down
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel del sit3
 \end_layout
 
@@ -6828,12 +6526,10 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del <préfixepourlaroute3> dev sit3
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit3 down
 \end_layout
 
@@ -6842,12 +6538,10 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del <préfixepourlaroute2> dev sit2
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit2 down
 \end_layout
 
@@ -6856,12 +6550,10 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add <préfixepourlaroute1> dev sit1
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit1 down
 \end_layout
 
@@ -6870,7 +6562,6 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 down
 \end_layout
 
@@ -6896,32 +6587,26 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del <préfixepourlaroute1> gw
 \end_layout
 
 \begin_layout Code
-
 ¬ ::<adresseipv4dutunnelétranger1> dev sit0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del <préfixepourlaroute2> gw
 \end_layout
 
 \begin_layout Code
-
 ¬ ::<adresseipv4dutunnelétranger2> dev sit0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del <préfixepourlaroute3> gw
 \end_layout
 
 \begin_layout Code
-
 ¬ ::<adresseipv4dutunnelétranger3> dev sit0
 \end_layout
 
@@ -6930,7 +6615,6 @@ Usage (exemple générique pour trois tunnels):
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 down
 \end_layout
 
@@ -6992,7 +6676,6 @@ En considérant que votre adresse IPv4 soit
 \end_layout
 
 \begin_layout Code
-
 1.2.3.4
 \end_layout
 
@@ -7001,7 +6684,6 @@ le préfixe 6to4 généré sera
 \end_layout
 
 \begin_layout Code
-
 2002:0102:0304::
 \end_layout
 
@@ -7020,7 +6702,6 @@ Les passerelles locales 6to4 devraient (mais cela n'est pas une nécessité,
 \end_layout
 
 \begin_layout Code
-
 2002:0102:0304::1
 \end_layout
 
@@ -7029,7 +6710,6 @@ Utiliser par exemple ce qui suit pour une génération automatique:
 \end_layout
 
 \begin_layout Code
-
 ipv4="1.2.3.4"; printf "2002:%02x%02x:%02x%02x::1" `echo $ipv4 | tr "." " "`
 \end_layout
 
@@ -7052,7 +6732,6 @@ Créez un nouveau périphérique tunnel
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel add tun6to4 mode sit ttl <ttlpardéfaut> remote any local
  <adresseipv4locale> 
 \end_layout
@@ -7062,7 +6741,6 @@ Montez l'interface
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set dev tun6to4 up 
 \end_layout
 
@@ -7072,7 +6750,6 @@ Ajouter une adresse 6to4 locale à l'interface (note: la longueur du préfixe,
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr add <adresse6to4locale>/16 dev tun6to4 
 \end_layout
 
@@ -7086,7 +6763,6 @@ all-6to4-routers
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add 2000::/3 via ::192.88.99.1 dev tun6to4 metric 1
 \end_layout
 
@@ -7105,7 +6781,6 @@ ip
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add 2000::/3 via 2002:c058:6301::1 dev tun6to4 metric
  1
 \end_layout
@@ -7132,7 +6807,6 @@ Monter l'interface de tunnelage générique sit0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 up 
 \end_layout
 
@@ -7141,7 +6815,6 @@ Ajouter une adresse 6to4 locale à une interface
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 add <adresse6to4locale>/16
 \end_layout
 
@@ -7155,7 +6828,6 @@ all-6to4-relays
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 add 2000::/3 gw ::192.88.99.1 dev sit0
 \end_layout
 
@@ -7172,7 +6844,6 @@ Utiliser "ip" et un périphérique de tunnelage dédié
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route flush dev tun6to4
 \end_layout
 
@@ -7181,7 +6852,6 @@ Démonter l'interface
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip link set dev tun6to4 down
 \end_layout
 
@@ -7190,7 +6860,6 @@ Démonter l'interface
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip tunnel del tun6to4 
 \end_layout
 
@@ -7227,7 +6896,6 @@ sit0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/route -A inet6 del 2000::/3 gw ::192.88.99.1 dev sit0
 \end_layout
 
@@ -7236,7 +6904,6 @@ sit0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 del <adresse6to4locale>/16
 \end_layout
 
@@ -7246,7 +6913,6 @@ Démontage d'un périphérique de tunnelage générique (prenez garde, peut-êtr
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ifconfig sit0 down 
 \end_layout
 
@@ -7343,7 +7009,6 @@ Le système de fichiers /proc doit être rendu disponible dans le noyau, ce
 \end_layout
 
 \begin_layout Code
-
 CONFIG_PROC_FS=y
 \end_layout
 
@@ -7353,12 +7018,10 @@ Le système de fichiers /proc doit être auparavant monté, ce qui peut être
 \end_layout
 
 \begin_layout Code
-
 # mount | grep "type proc"
 \end_layout
 
 \begin_layout Code
-
 none on /proc type proc (rw)
 \end_layout
 
@@ -7381,12 +7044,10 @@ La valeur de l'entrée peut être récupérée en utilisant "cat":
 \end_layout
 
 \begin_layout Code
-
 # cat /proc/sys/net/ipv6/conf/all/forwarding
 \end_layout
 
 \begin_layout Code
-
 0
 \end_layout
 
@@ -7400,7 +7061,6 @@ Une nouvelle valeur peut être fixée (si l'entrée est en écriture) en utilisa
 \end_layout
 
 \begin_layout Code
-
 # echo "1" >/proc/sys/net/ipv6/conf/all/forwarding
 \end_layout
 
@@ -7450,7 +7110,6 @@ L'interface sysctl doit être disponible dans le noyau, ce qui signifie qu'à
 \end_layout
 
 \begin_layout Code
-
 CONFIG_SYSCTL=y
 \end_layout
 
@@ -7463,12 +7122,10 @@ La valeur de l'entrée peut maintenant être récupérée:
 \end_layout
 
 \begin_layout Code
-
 # sysctl net.ipv6.conf.all.forwarding
 \end_layout
 
 \begin_layout Code
-
 net.ipv6.conf.all.forwarding = 0
 \end_layout
 
@@ -7481,12 +7138,10 @@ Une nouvelle valeur peut être fixée (si l'entrée est en écriture):
 \end_layout
 
 \begin_layout Code
-
 # sysctl -w net.ipv6.conf.all.forwarding=1
 \end_layout
 
 \begin_layout Code
-
 net.ipv6.conf.all.forwarding = 1
 \end_layout
 
@@ -7498,12 +7153,10 @@ Note: n'utilisez pas d'espaces autour du signe "=" lorsque vous fixez les
 \end_layout
 
 \begin_layout Code
-
 # sysctl -w net.ipv4.ip_local_port_range="32768 61000"
 \end_layout
 
 \begin_layout Code
-
 net.ipv4.ip_local_port_range = 32768 61000
 \end_layout
 
@@ -7995,7 +7648,6 @@ literal "false"
 \end_layout
 
 \begin_layout Code
-
 ZEBRA: netlink-listen error: No buffer space available, type=RTM_NEWROUTE(24),
  seq=426, pid=0
 \end_layout
@@ -8471,27 +8123,22 @@ net/ipv6/addrconf.c
 \end_layout
 
 \begin_layout Code
-
 # cat /proc/net/if_inet6
 \end_layout
 
 \begin_layout Code
-
 00000000000000000000000000000001 01 80 10 80 lo
 \end_layout
 
 \begin_layout Code
-
 +------------------------------+ ++ ++ ++ ++ ++
 \end_layout
 
 \begin_layout Code
-
 |                                |  |  |  |  |
 \end_layout
 
 \begin_layout Code
-
 1                                2  3  4  5  6
 \end_layout
 
@@ -8569,27 +8216,22 @@ net/ipv6/route.c
 \end_layout
 
 \begin_layout Code
-
 # cat /proc/net/ipv6_route
 \end_layout
 
 \begin_layout Code
-
 00000000000000000000000000000000 00 00000000000000000000000000000000 00
 \end_layout
 
 \begin_layout Code
-
 +------------------------------+ ++ +------------------------------+ ++
 \end_layout
 
 \begin_layout Code
-
 |                                |  |                                |
 \end_layout
 
 \begin_layout Code
-
 1                                2  3                                4
 \end_layout
 
@@ -8598,22 +8240,18 @@ net/ipv6/route.c
 \end_layout
 
 \begin_layout Code
-
 ¬ 00000000000000000000000000000000 ffffffff 00000001 00000001 00200200 lo
 \end_layout
 
 \begin_layout Code
-
 ¬ +------------------------------+ +------+ +------+ +------+ +------+ ++
 \end_layout
 
 \begin_layout Code
-
 ¬ |                                |        |        |        |        |
 \end_layout
 
 \begin_layout Code
-
 ¬ 5                                6        7        8        9        10
 \end_layout
 
@@ -8674,27 +8312,22 @@ Statistiques à propos de l'utilisation des sockets IPv6.
 \end_layout
 
 \begin_layout Code
-
 # cat /proc/net/sockstat6
 \end_layout
 
 \begin_layout Code
-
 TCP6: inuse 7 
 \end_layout
 
 \begin_layout Code
-
 UDP6: inuse 2 
 \end_layout
 
 \begin_layout Code
-
 RAW6: inuse 1 
 \end_layout
 
 \begin_layout Code
-
 FRAG6: inuse 0 memory 0
 \end_layout
 
@@ -8831,375 +8464,307 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
 # netstat -nlptu
 \end_layout
 
 \begin_layout Code
-
 Active Internet connections (only servers)
 \end_layout
 
 \begin_layout Code
-
 Proto Recv-Q Send-Q Local Address           Foreign Address         State
       
 \end_layout
 
 \begin_layout Code
-
 ¬ PID/Program name
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 0.0.0.0:32768           0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1258/rpc.statd
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 0.0.0.0:32769           0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1502/rpc.mountd
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 0.0.0.0:515             0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 22433/lpd Waiting
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 1.2.3.1:139             0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1746/smbd
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1230/portmap
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 0.0.0.0:6000            0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 3551/X
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 1.2.3.1:8081            0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 18735/junkbuster
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 1.2.3.1:3128            0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 18822/(squid)
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 127.0.0.1:953           0.0.0.0:*               LISTEN   
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 30734/named
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 ::ffff:1.2.3.1:993      :::*                    LISTEN
      
 \end_layout
 
 \begin_layout Code
-
 ¬ 6742/xinetd-ipv6
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 :::13                   :::*                    LISTEN
      
 \end_layout
 
 \begin_layout Code
-
 ¬ 6742/xinetd-ipv6
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 ::ffff:1.2.3.1:143      :::*                    LISTEN
      
 \end_layout
 
 \begin_layout Code
-
 ¬ 6742/xinetd-ipv6
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 :::53                   :::*                    LISTEN
      
 \end_layout
 
 \begin_layout Code
-
 ¬ 30734/named
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 :::22                   :::*                    LISTEN
      
 \end_layout
 
 \begin_layout Code
-
 ¬ 1410/sshd
 \end_layout
 
 \begin_layout Code
-
 tcp        0      0 :::6010                 :::*                    LISTEN
      
 \end_layout
 
 \begin_layout Code
-
 ¬ 13237/sshd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:32768           0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1258/rpc.statd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:2049            0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ -
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:32770           0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1502/rpc.mountd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:32771           0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ -
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 1.2.3.1:137             0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1751/nmbd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:137             0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1751/nmbd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 1.2.3.1:138             0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1751/nmbd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:138             0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1751/nmbd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:33044           0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 30734/named
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 1.2.3.1:53              0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 30734/named
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 127.0.0.1:53            0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 30734/named
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:67              0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1530/dhcpd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:67              0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1530/dhcpd
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:32858           0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 18822/(squid)
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:4827            0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 18822/(squid)
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 0.0.0.0:111             0.0.0.0:*                        
   
 \end_layout
 
 \begin_layout Code
-
 ¬ 1230/portmap
 \end_layout
 
 \begin_layout Code
-
 udp        0      0 :::53                   :::*                       
         
 \end_layout
 
 \begin_layout Code
-
 ¬ 30734/named
 \end_layout
 
@@ -9231,32 +8796,26 @@ Une annonce de routeur
 \end_layout
 
 \begin_layout Code
-
 15:43:49.484751 fe80::212:34ff:fe12:3450 > ff02::1: icmp6: router
 \end_layout
 
 \begin_layout Code
-
 ¬ advertisement(chlim=64, router_ltime=30, reachable_time=0,
 \end_layout
 
 \begin_layout Code
-
 ¬ retrans_time=0)(prefix info: AR valid_ltime=30, preffered_ltime=20,
 \end_layout
 
 \begin_layout Code
-
 ¬ prefix=2002:0102:0304:1::/64)(prefix info: LAR valid_ltime=2592000,
 \end_layout
 
 \begin_layout Code
-
 ¬ preffered_ltime=604800, prefix=3ffe:ffff:0:1::/64)(src lladdr:
 \end_layout
 
 \begin_layout Code
-
 ¬ 0:12:34:12:34:50) (len 88, hlim 255)
 \end_layout
 
@@ -9314,12 +8873,10 @@ Une sollicitation de routeur
 \end_layout
 
 \begin_layout Code
-
 15:44:21.152646 fe80::212:34ff:fe12:3456 > ff02::2: icmp6: router solicitation
 \end_layout
 
 \begin_layout Code
-
 ¬ (src lladdr: 0:12:34:12:34:56) (len 16, hlim 255)
 \end_layout
 
@@ -9398,12 +8955,10 @@ fe80::212:34ff:fe12:3456
 \end_layout
 
 \begin_layout Code
-
 15:44:17.712338 :: > ff02::1:ff12:3456: icmp6: neighbor sol: who has
 \end_layout
 
 \begin_layout Code
-
 ¬ fe80::212:34ff:fe12:3456(src lladdr: 0:12:34:12:34:56) (len 32, hlim 255)
 \end_layout
 
@@ -9421,18 +8976,15 @@ Le noeud veut configurer son adresse globale
 \end_layout
 
 \begin_layout Code
-
 15:44:21.905596 :: > ff02::1:ff12:3456: icmp6: neighbor sol: who has
 \end_layout
 
 \begin_layout Code
-
 ¬ 2002:0102:0304:1:212:34ff:fe12:3456(src lladdr: 0:12:34:12:34:56) (len
  32,
 \end_layout
 
 \begin_layout Code
-
 ¬ hlim 255)
 \end_layout
 
@@ -9450,18 +9002,15 @@ Le noeud veut configurer son adresse globale
 \end_layout
 
 \begin_layout Code
-
 15:44:22.304028 :: > ff02::1:ff12:3456: icmp6: neighbor sol: who has
 \end_layout
 
 \begin_layout Code
-
 ¬ 3ffe:ffff:0:1:212:34ff:fe12:3456(src lladdr: 0:12:34:12:34:56) (len 32,
  hlim
 \end_layout
 
 \begin_layout Code
-
 ¬ 255)
 \end_layout
 
@@ -9484,18 +9033,15 @@ Un noeud veut émettre des paquets à
 \end_layout
 
 \begin_layout Code
-
 13:07:47.664538 2002:0102:0304:1:2e0:18ff:fe90:9205 > ff02::1:ff00:10: icmp6:
 \end_layout
 
 \begin_layout Code
-
 ¬ neighbor sol: who has 3ffe:ffff:0:1::10(src lladdr: 0:e0:18:90:92:5) (len
  32,
 \end_layout
 
 \begin_layout Code
-
 ¬ hlim 255)
 \end_layout
 
@@ -9512,12 +9058,10 @@ fe80::10
 \end_layout
 
 \begin_layout Code
-
 13:11:20.870070 fe80::2e0:18ff:fe90:9205 > ff02::1:ff00:10: icmp6: neighbor
 \end_layout
 
 \begin_layout Code
-
 ¬ sol: who has fe80::10(src lladdr: 0:e0:18:90:92:5) (len 32, hlim 255)
 \end_layout
 
@@ -9635,7 +9179,6 @@ Vous pouvez tester si votre distribution Linux contient le support pour
 \end_layout
 
 \begin_layout Code
-
 /etc/sysconfig/network-scripts/network-functions-ipv6
 \end_layout
 
@@ -9644,13 +9187,11 @@ Un test magique:
 \end_layout
 
 \begin_layout Code
-
 # test -f /etc/sysconfig/network-scripts/network-functions-ipv6 && echo
  "Main
 \end_layout
 
 \begin_layout Code
-
 ¬ IPv6 script library exists"
 \end_layout
 
@@ -9662,17 +9203,14 @@ La version de la bibliothèque est importante s'il vous manque certaines
 \end_layout
 
 \begin_layout Code
-
 # source /etc/sysconfig/network-scripts/network-functions-ipv6 &&
 \end_layout
 
 \begin_layout Code
-
 ¬ getversion_ipv6_functions 
 \end_layout
 
 \begin_layout Code
-
 20011124
 \end_layout
 
@@ -9714,12 +9252,10 @@ Vérifiez si votre système a déjà le module IPv6 chargé
 \end_layout
 
 \begin_layout Code
-
 # modprobe -c | grep net-pf-10
 \end_layout
 
 \begin_layout Code
-
 alias net-pf-10 off
 \end_layout
 
@@ -9737,7 +9273,6 @@ rk, ajoutez la nouvelle ligne
 \end_layout
 
 \begin_layout Code
-
 NETWORKING_IPV6=yes
 \end_layout
 
@@ -9746,7 +9281,6 @@ Redémarrez la machine, ou simplement le réseau par
 \end_layout
 
 \begin_layout Code
-
 # service network restart
 \end_layout
 
@@ -9755,12 +9289,10 @@ Maintenant le module IPv6 devrait être chargé
 \end_layout
 
 \begin_layout Code
-
 # modprobe -c | grep ipv6
 \end_layout
 
 \begin_layout Code
-
 alias net-pf-10 ipv6
 \end_layout
 
@@ -9822,7 +9354,6 @@ Editez le fichier /etc/sysconfig/network/ifcfg-<nom-de-l'interface> et fixez
 \end_layout
 
 \begin_layout Code
-
 IP6ADDR="<Adresse-ipv6>/<préfixe>"
 \end_layout
 
@@ -9848,7 +9379,6 @@ Editez le fichier /etc/sysconfig/network/ifcfg-<nom-de-l'interface> et fixez
 \end_layout
 
 \begin_layout Code
-
 IPADDR="<Adresse-ipv6>/<préfixe>"
 \end_layout
 
@@ -9898,53 +9428,43 @@ Configurez votre interface.
 \end_layout
 
 \begin_layout Code
-
 iface eth0 inet6 static
 \end_layout
 
 \begin_layout Code
-
         pre-up modprobe ipv6
 \end_layout
 
 \begin_layout Code
-
         address 3ffe:ffff:1234:5::1:1
 \end_layout
 
 \begin_layout Code
-
         # Pour rendre complètement indisponible l'auto-configuration:
 \end_layout
 
 \begin_layout Code
-
         # up echo 0 > /proc/sys/net/ipv6/conf/all/autoconf
 \end_layout
 
 \begin_layout Code
-
         netmask 64
 \end_layout
 
 \begin_layout Code
-
         # Le routeur est auto-configuré, et n'a pas d'adresse fixe.
 \end_layout
 
 \begin_layout Code
-
         # Il est déterminé comme par magie
 \end_layout
 
 \begin_layout Code
-
         # (/proc/sys/net/ipv6/conf/all/accept_ra).
  Sinon:
 \end_layout
 
 \begin_layout Code
-
         # gateway 3ffe:ffff:1234:5::1
 \end_layout
 
@@ -9953,7 +9473,6 @@ Puis vous rebootez, ou alors vous faites juste
 \end_layout
 
 \begin_layout Code
-
 # ifup --force eth0
 \end_layout
 
@@ -10021,22 +9540,18 @@ Exemple:
 \end_layout
 
 \begin_layout Code
-
   # ip -6 addr show dev eth0 scope link 
 \end_layout
 
 \begin_layout Code
-
   2: eth0: <BROADCAST,MULTICAST,UP> mtu 1500 qlen1000 
 \end_layout
 
 \begin_layout Code
-
       inet6 fe80::211:d8ff:fe6b:f0f5/64 scope link 
 \end_layout
 
 \begin_layout Code
-
            valid_lft forever preferred_lft forever
 \end_layout
 
@@ -10662,7 +10177,6 @@ Déplacez-vous dans le répertoire des sources:
 \end_layout
 
 \begin_layout Code
-
 # cd /chemin/vers/les/sources 
 \end_layout
 
@@ -10671,12 +10185,10 @@ Décompactez et renommez les sources du noyau
 \end_layout
 
 \begin_layout Code
-
 # tar z|jxf kernel-version.tar.gz|bz2 
 \end_layout
 
 \begin_layout Code
-
 # mv linux linux-version-iptables-version+IPv6 
 \end_layout
 
@@ -10685,7 +10197,6 @@ Décompactez les sources d'iptables
 \end_layout
 
 \begin_layout Code
-
 # tar z|jxf iptables-version.tar.gz|bz2 
 \end_layout
 
@@ -10698,7 +10209,6 @@ Déplacez-vous dans le répertoire iptables
 \end_layout
 
 \begin_layout Code
-
 # cd iptables-version 
 \end_layout
 
@@ -10707,7 +10217,6 @@ Appliquez les patchs en attente
 \end_layout
 
 \begin_layout Code
-
 # make pending-patches KERNEL_DIR=/chemin/vers/les/sources/linux-version-iptable
 s-version+IPv6/ 
 \end_layout
@@ -10718,7 +10227,6 @@ Appliquez les patchs additionnels relatifs à IPv6 (pas encore inclus dans
 \end_layout
 
 \begin_layout Code
-
 # make patch-o-matic KERNEL_DIR=/path/to/src/linux-version-iptables-version/
  
 \end_layout
@@ -10757,12 +10265,10 @@ Vérifier la présence des extensions IPv6
 \end_layout
 
 \begin_layout Code
-
 # make print-extensions 
 \end_layout
 
 \begin_layout Code
-
 Extensions found: IPv6:owner IPv6:limit IPv6:mac IPv6:multiport
 \end_layout
 
@@ -10775,7 +10281,6 @@ Déplacez-vous dans les sources du noyau
 \end_layout
 
 \begin_layout Code
-
 # cd /chemin/vers/les/sources/linux-version-iptables-version/ 
 \end_layout
 
@@ -10784,12 +10289,10 @@ Editez Makefile
 \end_layout
 
 \begin_layout Code
-
 - EXTRAVERSION = 
 \end_layout
 
 \begin_layout Code
-
 + EXTRAVERSION = -iptables-version+IPv6-try 
 \end_layout
 
@@ -10798,99 +10301,80 @@ Lancez configure, avec IPv6 de disponible
 \end_layout
 
 \begin_layout Code
-
             Code maturity level options 
 \end_layout
 
 \begin_layout Code
-
                   Prompt for development and/or incomplete code/drivers
  : yes 
 \end_layout
 
 \begin_layout Code
-
             Networking options 
 \end_layout
 
 \begin_layout Code
-
                   Network packet filtering: yes 
 \end_layout
 
 \begin_layout Code
-
                   The IPv6 protocol: module 
 \end_layout
 
 \begin_layout Code
-
                        IPv6: Netfilter Configuration 
 \end_layout
 
 \begin_layout Code
-
                              IP6 tables support: module 
 \end_layout
 
 \begin_layout Code
-
                              All new options like following: 
 \end_layout
 
 \begin_layout Code
-
                                    limit match support: module 
 \end_layout
 
 \begin_layout Code
-
                                    MAC address match support: module 
 \end_layout
 
 \begin_layout Code
-
                                    Multiple port match support: module 
 \end_layout
 
 \begin_layout Code
-
                                    Owner match support: module 
 \end_layout
 
 \begin_layout Code
-
                                    netfilter MARK match support: module
  
 \end_layout
 
 \begin_layout Code
-
                                    Aggregated address check: module 
 \end_layout
 
 \begin_layout Code
-
                                    Packet filtering: module 
 \end_layout
 
 \begin_layout Code
-
                                         REJECT target support: module 
 \end_layout
 
 \begin_layout Code
-
                                         LOG target support: module 
 \end_layout
 
 \begin_layout Code
-
                                    Packet mangling: module 
 \end_layout
 
 \begin_layout Code
-
                                    MARK target support: module 
 \end_layout
 
@@ -10916,7 +10400,6 @@ Renommez l'ancien répertoire
 \end_layout
 
 \begin_layout Code
-
 # mv /usr/src/linux /usr/src/linux.old 
 \end_layout
 
@@ -10925,7 +10408,6 @@ Créez un nouveau lien symbolique
 \end_layout
 
 \begin_layout Code
-
 # ln -s /chemin/vers/src/linux-version-iptables-version /usr/src/linux 
 \end_layout
 
@@ -10934,7 +10416,6 @@ Reconstruisez le SRPM
 \end_layout
 
 \begin_layout Code
-
 # rpm --rebuild /chemin/vers/SRPM/iptables-version-release.src.rpm 
 \end_layout
 
@@ -10948,7 +10429,6 @@ Sur les systèmes RH 7.1, normalement, une ancienne version est installée,
 \end_layout
 
 \begin_layout Code
-
 # rpm -Fhv /chemin/vers/RPMS/cpu/iptables*-version-release.cpu.rpm 
 \end_layout
 
@@ -10957,7 +10437,6 @@ Si elle n'était pas installée, utiliser "install"
 \end_layout
 
 \begin_layout Code
-
 # rpm -ihv /chemin/vers/RPMS/cpu/iptables*-version-release.cpu.rpm 
 \end_layout
 
@@ -10968,7 +10447,6 @@ nt les pré-requis ne correspondent pas.
 \end_layout
 
 \begin_layout Code
-
 # rpm -ihv --nodeps /chemin/vers/RPMS/cpu/iptables*-version-release.cpu.rpm
  
 \end_layout
@@ -10979,7 +10457,6 @@ Il sera peut-être nécessaire de créer un lien symbolique vers le lieu où
 \end_layout
 
 \begin_layout Code
-
 # ln -s /lib/iptables/ /usr/lib/iptables 
 \end_layout
 
@@ -10996,7 +10473,6 @@ Chargez le module, s'il est compilé
 \end_layout
 
 \begin_layout Code
-
 # modprobe ip6_tables 
 \end_layout
 
@@ -11005,12 +10481,10 @@ Vérifiez si le noyau courant prend en charge iptables
 \end_layout
 
 \begin_layout Code
-
 # [ ! -f /proc/net/ip6_tables_names ] && echo "Current kernel doesn't support
 \end_layout
 
 \begin_layout Code
-
 ¬ 'ip6tables' firewalling (IPv6)!" 
 \end_layout
 
@@ -11027,7 +10501,6 @@ de façon abrégée
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -L 
 \end_layout
 
@@ -11036,7 +10509,6 @@ de façon détaillée
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -n -v --line-numbers -L 
 \end_layout
 
@@ -11045,7 +10517,6 @@ Lister un filtre spécifique
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -n -v --line-numbers -L INPUT 
 \end_layout
 
@@ -11054,12 +10525,10 @@ Insérer une règle de journal au filtre entrant, avec des options
 \end_layout
 
 \begin_layout Code
-
 # ip6tables --table filter --append INPUT  -j LOG --log-prefix "INPUT:"
 \end_layout
 
 \begin_layout Code
-
 ¬ --log-level 7 
 \end_layout
 
@@ -11072,7 +10541,6 @@ drop rule
 \end_layout
 
 \begin_layout Code
-
 # ip6tables --table filter --append INPUT  -j DROP 
 \end_layout
 
@@ -11081,7 +10549,6 @@ Détruire une règle par son numéro
 \end_layout
 
 \begin_layout Code
-
 # ip6tables --table filter --delete INPUT 1 
 \end_layout
 
@@ -11099,7 +10566,6 @@ Accepter le trafic ICMPv6 entrant dans les tunnels
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -A INPUT -i sit+ -p icmpv6 -j ACCEPT 
 \end_layout
 
@@ -11108,7 +10574,6 @@ Autoriser le trafic ICMPv6 sortant des tunnels
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -A OUTPUT -o sit+ -p icmpv6 -j ACCEPT 
 \end_layout
 
@@ -11117,7 +10582,6 @@ Les nouveaux noyaux permettent de spécifier les types ICMPv6:
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-request -j ACCEPT
 \end_layout
 
@@ -11136,12 +10600,10 @@ Il peut arriver (l'auteur l'a déjà vu) qu'un engorgement ICMPv6 se produise,
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -A INPUT --protocol icmpv6 --icmpv6-type echo-request
 \end_layout
 
 \begin_layout Code
-
 ¬ -j ACCEPT --match limit --limit 30/minute
 \end_layout
 
@@ -11159,12 +10621,10 @@ Autoriser le trafic entrant SSH provenant de 3ffe:ffff:100::1/128
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -A INPUT -i sit+ -p tcp -s 3ffe:ffff:100::1/128 --sport 512:65535
 \end_layout
 
 \begin_layout Code
-
 ¬ --dport 22 -j ACCEPT 
 \end_layout
 
@@ -11174,12 +10634,10 @@ Autoriser les paquets réponse (pour le moment, la traque du trafic IPv6
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -A OUTPUT -o sit+ -p tcp -d 3ffe:ffff:100::1/128 --dport 512:65535
 \end_layout
 
 \begin_layout Code
-
 ¬ --sport 22 ! --syn j ACCEPT 
 \end_layout
 
@@ -11201,7 +10659,6 @@ Accepter le trafic entrant IPv6-in-IPv4 sur l'interface ppp0
 \end_layout
 
 \begin_layout Code
-
 # iptables -A INPUT -i ppp0 -p ipv6 -j ACCEPT 
 \end_layout
 
@@ -11210,7 +10667,6 @@ Permettre au trafic IPv6-in-IPv4 de sortir par l'interface ppp0
 \end_layout
 
 \begin_layout Code
-
 # iptables -A OUTPUT -o ppp0 -p ipv6 -j ACCEPT 
 \end_layout
 
@@ -11225,7 +10681,6 @@ Accepter le trafic entrant IPv6-in-IPv4 sur l'interface ppp0 et provenant
 \end_layout
 
 \begin_layout Code
-
 # iptables -A INPUT -i ppp0 -p ipv6 -s 1.2.3.4 -j ACCEPT 
 \end_layout
 
@@ -11235,7 +10690,6 @@ Autoriser le trafic sortant IPv6-in-IPv4 vers l'interface ppp0 pour l'extrémit�
 \end_layout
 
 \begin_layout Code
-
 # iptables -A OUTPUT -o ppp0 -p ipv6 -d 1.2.3.4 -j ACCEPT 
 \end_layout
 
@@ -11258,7 +10712,6 @@ Bloquer les requêtes de connexion entrante TCP vers cet hôte
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -I INPUT -i sit+ -p tcp --syn -j DROP 
 \end_layout
 
@@ -11268,7 +10721,6 @@ Bloquer les requêtes de connexion entrante TCP allant vers les hôtes placés
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -I FORWARD -i sit+ -p tcp --syn -j DROP 
 \end_layout
 
@@ -11301,7 +10753,6 @@ Bloquer les paquets entrants UDP qui ne peuvent être des réponses de requêtes
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -I INPUT -i sit+ -p udp ! --dport 32768:60999 -j DROP 
 \end_layout
 
@@ -11311,7 +10762,6 @@ Bloquer les paquets entrants UDP qui ne peuvent être des réponses de requêtes
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -I FORWARD -i sit+ -p udp ! --dport 32768:60999 -j DROP 
 \end_layout
 
@@ -11325,578 +10775,472 @@ Les lignes qui suivent montrent en exemple une installation plus sophistiquée.
 \end_layout
 
 \begin_layout Code
-
 # ip6tables -n -v -L 
 \end_layout
 
 \begin_layout Code
-
 Chain INPUT (policy DROP 0 packets, 0 bytes) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
     0     0 extIN      all      sit+   *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     4   384 intIN      all      eth0   *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     all      *      *       ::1/128              ::1/128
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     all      lo     *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `INPUT-default:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain FORWARD (policy DROP 0 packets, 0 bytes) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 int2ext    all      eth0   sit+    ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ext2int    all      sit+   eth0    ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `FORWARD-default:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain OUTPUT (policy DROP 0 packets, 0 bytes) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 extOUT     all      *      sit+    ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     4   384 intOUT     all      *      eth0    ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     all      *      *       ::1/128              ::1/128
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     all      *      lo      ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `OUTPUT-default:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain ext2int (1 references) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     icmpv6    *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        tcp spts:1:65535 dpts:1024:65535 flags:!0x16/0x02 
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `ext2int-default:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       tcp      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       udp      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain extIN (1 references) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       3ffe:400:100::1/128  ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        tcp spts:512:65535 dpt:22 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       3ffe:400:100::2/128  ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        tcp spts:512:65535 dpt:22 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     icmpv6    *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        tcp spts:1:65535 dpts:1024:65535 flags:!0x16/0x02 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     udp      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        udp spts:1:65535 dpts:1024:65535 
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        limit: avg 5/min burst 5 LOG flags 0 level 7 prefix `extIN-default:'
  
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain extOUT (1 references) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       ::/0                
 \end_layout
 
 \begin_layout Code
-
 ¬ 3ffe:ffff:100::1/128tcp spt:22 dpts:512:65535 flags:!0x16/0x02 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       ::/0                
 \end_layout
 
 \begin_layout Code
-
 ¬ 3ffe:ffff:100::2/128tcp spt:22 dpts:512:65535 flags:!0x16/0x02 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     icmpv6    *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        tcp spts:1024:65535 dpts:1:65535 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     udp      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        udp spts:1024:65535 dpts:1:65535 
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `extOUT-default:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain int2ext (1 references) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     icmpv6    *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     tcp      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        tcp spts:1024:65535 dpts:1:65535 
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `int2ext:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `int2ext-default:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       tcp      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       udp      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain intIN (1 references) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     all      *      *       ::/0                
 \end_layout
 
 \begin_layout Code
-
 ¬ fe80::/ffc0:: 
 \end_layout
 
 \begin_layout Code
-
     4   384 ACCEPT     all      *      *       ::/0                 ff02::/16
  
 \end_layout
 
 \begin_layout Code
-
  
 \end_layout
 
 \begin_layout Code
-
 Chain intOUT (1 references) 
 \end_layout
 
 \begin_layout Code
-
  pkts bytes target     prot opt in     out     source               destination
 \end_layout
 
 \begin_layout Code
-
 ¬ 
 \end_layout
 
 \begin_layout Code
-
     0     0 ACCEPT     all      *      *       ::/0                
 \end_layout
 
 \begin_layout Code
-
 ¬ fe80::/ffc0:: 
 \end_layout
 
 \begin_layout Code
-
     4   384 ACCEPT     all      *      *       ::/0                 ff02::/16
  
 \end_layout
 
 \begin_layout Code
-
     0     0 LOG        all      *      *       ::/0                 ::/0
        
 \end_layout
 
 \begin_layout Code
-
 ¬        LOG flags 0 level 7 prefix `intOUT-default:' 
 \end_layout
 
 \begin_layout Code
-
     0     0 DROP       all      *      *       ::/0                 ::/0
  
 \end_layout
@@ -12014,12 +11358,10 @@ etc
 \end_layout
 
 \begin_layout Code
-
 # nc6 ::1 daytime
 \end_layout
 
 \begin_layout Code
-
 13 JUL 2002 11:22:22 CEST
 \end_layout
 
@@ -12042,53 +11384,43 @@ literal "false"
 \end_layout
 
 \begin_layout Code
-
 # nmap -6 -sT ::1
 \end_layout
 
 \begin_layout Code
-
 Starting nmap V.
  3.10ALPHA3 ( www.insecure.org/nmap/ ) 
 \end_layout
 
 \begin_layout Code
-
 Interesting ports on localhost6 (::1): 
 \end_layout
 
 \begin_layout Code
-
 (The 1600 ports scanned but not shown below are in state: closed) 
 \end_layout
 
 \begin_layout Code
-
 Port       State       Service 
 \end_layout
 
 \begin_layout Code
-
 22/tcp     open        ssh 
 \end_layout
 
 \begin_layout Code
-
 53/tcp     open        domain 
 \end_layout
 
 \begin_layout Code
-
 515/tcp    open        printer 
 \end_layout
 
 \begin_layout Code
-
 2401/tcp   open        cvspserver
 \end_layout
 
 \begin_layout Code
-
 Nmap run completed -- 1 IP address (1 host up) scanned in 0.525 seconds
 \end_layout
 
@@ -12112,32 +11444,26 @@ literal "false"
 \end_layout
 
 \begin_layout Code
-
 # ./strobe ::1 strobe 1.05 (c) 1995-1999 Julian Assange <proff@iq.org>.
 \end_layout
 
 \begin_layout Code
-
 ::1 2401 unassigned unknown
 \end_layout
 
 \begin_layout Code
-
 ::1 22 ssh Secure Shell - RSA encrypted rsh 
 \end_layout
 
 \begin_layout Code
-
 ::1 515 printer spooler (lpd)
 \end_layout
 
 \begin_layout Code
-
 ::1 6010 unassigned unknown 
 \end_layout
 
 \begin_layout Code
-
 ::1 53 domain Domain Name Server
 \end_layout
 
@@ -12467,27 +11793,22 @@ Exemple d'une connexion encryptée de boute-en-bout en mode transport
 \end_layout
 
 \begin_layout Code
-
 #!/sbin/setkey -f
 \end_layout
 
 \begin_layout Code
-
 flush;
 \end_layout
 
 \begin_layout Code
-
 spdflush;
 \end_layout
 
 \begin_layout Code
-
 spdadd 2001:db8:1:1::1 2001:db8:2:2::2 any -P out ipsec esp/transport//require;
 \end_layout
 
 \begin_layout Code
-
 spdadd 2001:db8:2:2::2 2001:db8:1:1::1 any -P in  ipsec esp/transport//require;
 \end_layout
 
@@ -12500,37 +11821,30 @@ Exemple d'une connexion encryptée de boute-en-bout en mode tunnel
 \end_layout
 
 \begin_layout Code
-
 #!/sbin/setkey -f
 \end_layout
 
 \begin_layout Code
-
 flush;
 \end_layout
 
 \begin_layout Code
-
 spdflush;
 \end_layout
 
 \begin_layout Code
-
 spdadd 2001:db8:1:1::1 2001:db8:2:2::2 any -P out ipsec
 \end_layout
 
 \begin_layout Code
-
 ¬ esp/tunnel/2001:db8:1:1::1-2001:db8:2:2::2/require;
 \end_layout
 
 \begin_layout Code
-
 spdadd 2001:db8:2:2::2 2001:db8:1:1::1 any -P in  ipsec
 \end_layout
 
 \begin_layout Code
-
 ¬ esp/tunnel/2001:db8:2:2::2-2001:db8:1:1::1/require;
 \end_layout
 
@@ -12593,22 +11907,18 @@ Fichier: /etc/racoon/racoon.conf
 \end_layout
 
 \begin_layout Code
-
 # Fichier de configuration du démon IKE racoon.
 \end_layout
 
 \begin_layout Code
-
 # Voir 'man racoon.conf' pour une description du format et des entrées.
 \end_layout
 
 \begin_layout Code
-
 path include "/etc/racoon";
 \end_layout
 
 \begin_layout Code
-
 path pre_shared_key "/etc/racoon/psk.txt";
 \end_layout
 
@@ -12617,87 +11927,70 @@ path pre_shared_key "/etc/racoon/psk.txt";
 \end_layout
 
 \begin_layout Code
-
 listen
 \end_layout
 
 \begin_layout Code
-
             {
 \end_layout
 
 \begin_layout Code
-
                     isakmp 2001:db8:1:1::1;
 \end_layout
 
 \begin_layout Code
-
             }
 \end_layout
 
 \begin_layout Code
-
             
 \end_layout
 
 \begin_layout Code
-
 remote 2001:db8:2:2::2
 \end_layout
 
 \begin_layout Code
-
 {
 \end_layout
 
 \begin_layout Code
-
         exchange_mode main;
 \end_layout
 
 \begin_layout Code
-
         lifetime time 24 hour;
 \end_layout
 
 \begin_layout Code
-
         proposal
 \end_layout
 
 \begin_layout Code
-
         {
 \end_layout
 
 \begin_layout Code
-
                 encryption_algorithm 3des;
 \end_layout
 
 \begin_layout Code
-
                 hash_algorithm md5;
 \end_layout
 
 \begin_layout Code
-
                 authentication_method pre_shared_key;
 \end_layout
 
 \begin_layout Code
-
                 dh_group 2;
 \end_layout
 
 \begin_layout Code
-
         }
 \end_layout
 
 \begin_layout Code
-
 }
 \end_layout
 
@@ -12706,42 +11999,34 @@ remote 2001:db8:2:2::2
 \end_layout
 
 \begin_layout Code
-
 # De passerelle-à-passerelle
 \end_layout
 
 \begin_layout Code
-
 sainfo address 2001:db8:1:1::1 any address 2001:db8:2:2::2 any
 \end_layout
 
 \begin_layout Code
-
 {
 \end_layout
 
 \begin_layout Code
-
         lifetime time 1 hour;
 \end_layout
 
 \begin_layout Code
-
         encryption_algorithm 3des;
 \end_layout
 
 \begin_layout Code
-
         authentication_algorithm hmac_md5;
 \end_layout
 
 \begin_layout Code
-
         compression_algorithm deflate;
 \end_layout
 
 \begin_layout Code
-
 }
 \end_layout
 
@@ -12750,37 +12035,30 @@ sainfo address 2001:db8:1:1::1 any address 2001:db8:2:2::2 any
 \end_layout
 
 \begin_layout Code
-
 sainfo address 2001:db8:2:2::2 any address 2001:db8:1:1::1 any
 \end_layout
 
 \begin_layout Code
-
 {
 \end_layout
 
 \begin_layout Code
-
         lifetime time 1 hour;
 \end_layout
 
 \begin_layout Code
-
         encryption_algorithm 3des;
 \end_layout
 
 \begin_layout Code
-
         authentication_algorithm hmac_md5;
 \end_layout
 
 \begin_layout Code
-
         compression_algorithm deflate;
 \end_layout
 
 \begin_layout Code
-
 }
 \end_layout
 
@@ -12793,12 +12071,10 @@ Fichier: /etc/racoon/psk.txt
 \end_layout
 
 \begin_layout Code
-
 # Fichier des clés pré-partagées utilisées pour l'authentification IKE
 \end_layout
 
 \begin_layout Code
-
 # Le format est: 'identificateur' 'clé'
 \end_layout
 
@@ -12807,7 +12083,6 @@ Fichier: /etc/racoon/psk.txt
 \end_layout
 
 \begin_layout Code
-
 2001:db8:2:2::2 absolumentsecret
 \end_layout
 
@@ -12847,99 +12122,80 @@ Security Association
 \end_layout
 
 \begin_layout Code
-
 # racoon -F -v -f /etc/racoon/racoon.conf
 \end_layout
 
 \begin_layout Code
-
 Foreground mode.
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:30:15: INFO: @(#)ipsec-tools 0.3.3 (http://ipsec-tools.sourceforge.net
 )
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:30:15: INFO: @(#)This product linked
 \end_layout
 
 \begin_layout Code
-
 ¬ OpenSSL 0.9.7a Feb 19 2003 (http://www.openssl.org/)
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:30:15: INFO: 2001:db8:1:1::1[500] used as isakmp port (fd=7)
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:31:06: INFO: IPsec-SA request for 2001:db8:2:2::2
 \end_layout
 
 \begin_layout Code
-
 ¬ queued due to no phase1 found.
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:31:06: INFO: initiate new phase 1 negotiation:
 \end_layout
 
 \begin_layout Code
-
 ¬ 2001:db8:1:1::1[500]<=>2001:db8:2:2::2[500]
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:31:06: INFO: begin Identity Protection mode.
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:31:09: INFO: ISAKMP-SA established
 \end_layout
 
 \begin_layout Code
-
 ¬ 2001:db8:1:1::1[500]-2001:db8:2:2::2[500] spi:da3d3693289c9698:ac039a402b2db40
 1
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:31:09: INFO: initiate new phase 2 negotiation:
 \end_layout
 
 \begin_layout Code
-
 ¬ 2001:6f8:900:94::2[0]<=>2001:db8:2:2::2[0]
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:31:10: INFO: IPsec-SA established:
 \end_layout
 
 \begin_layout Code
-
 ¬ ESP/Tunnel 2001:db8:2:2::2->2001:db8:1:1::1 spi=253935531(0xf22bfab)
 \end_layout
 
 \begin_layout Code
-
 2005-01-01 20:31:10: INFO: IPsec-SA established:
 \end_layout
 
 \begin_layout Code
-
 ¬ ESP/Tunnel 2001:db8:1:1::1->2001:db8:2:2::2 spi=175002564(0xa6e53c4)
 \end_layout
 
@@ -12958,12 +12214,10 @@ tcpdump
 \end_layout
 
 \begin_layout Code
-
 20:35:55.305707 2001:db8:1:1::1 > 2001:db8:2:2::2: ESP(spi=0x0a6e53c4,seq=0x3)
 \end_layout
 
 \begin_layout Code
-
 20:35:55.537522 2001:db8:2:2::2 > 2001:db8:1:1::1: ESP(spi=0x0f22bfab,seq=0x3)
 \end_layout
 
@@ -12988,117 +12242,94 @@ setkey
 \end_layout
 
 \begin_layout Code
-
 # setkey -D
 \end_layout
 
 \begin_layout Code
-
 2001:db8:1:1::1 2001:db8:2:2::2
 \end_layout
 
 \begin_layout Code
-
         esp mode=tunnel spi=175002564(0x0a6e53c4) reqid=0(0x00000000)
 \end_layout
 
 \begin_layout Code
-
         E: 3des-cbc  bd26bc45 aea0d249 ef9c6b89 7056080f 5d9fa49c 924e2edd
 \end_layout
 
 \begin_layout Code
-
         A: hmac-md5  60c2c505 517dd8b7 c9609128 a5efc2db
 \end_layout
 
 \begin_layout Code
-
         seq=0x00000000 replay=4 flags=0x00000000 state=mature
 \end_layout
 
 \begin_layout Code
-
         created: Jan  1 20:31:10 2005   current: Jan  1 20:40:47 2005
 \end_layout
 
 \begin_layout Code
-
         diff: 577(s)    hard: 3600(s)   soft: 2880(s)
 \end_layout
 
 \begin_layout Code
-
         last: Jan  1 20:35:05 2005      hard: 0(s)      soft: 0(s)
 \end_layout
 
 \begin_layout Code
-
         current: 540(bytes)     hard: 0(bytes)  soft: 0(bytes)
 \end_layout
 
 \begin_layout Code
-
         allocated: 3    hard: 0 soft: 0
 \end_layout
 
 \begin_layout Code
-
         sadb_seq=1 pid=22358 refcnt=0
 \end_layout
 
 \begin_layout Code
-
 2001:db8:2:2::2 2001:db8:1:1::1
 \end_layout
 
 \begin_layout Code
-
         esp mode=tunnel spi=253935531(0x0f22bfab) reqid=0(0x00000000)
 \end_layout
 
 \begin_layout Code
-
         E: 3des-cbc  c1ddba65 83debd62 3f6683c1 20e747ac 933d203f 4777a7ce
 \end_layout
 
 \begin_layout Code
-
         A: hmac-md5  3f957db9 9adddc8c 44e5739d 3f53ca0e
 \end_layout
 
 \begin_layout Code
-
         seq=0x00000000 replay=4 flags=0x00000000 state=mature
 \end_layout
 
 \begin_layout Code
-
         created: Jan  1 20:31:10 2005   current: Jan  1 20:40:47 2005
 \end_layout
 
 \begin_layout Code
-
         diff: 577(s)    hard: 3600(s)   soft: 2880(s)
 \end_layout
 
 \begin_layout Code
-
         last: Jan  1 20:35:05 2005      hard: 0(s)      soft: 0(s)
 \end_layout
 
 \begin_layout Code
-
         current: 312(bytes)     hard: 0(bytes)  soft: 0(bytes)
 \end_layout
 
 \begin_layout Code
-
         allocated: 3    hard: 0 soft: 0
 \end_layout
 
 \begin_layout Code
-
         sadb_seq=0 pid=22358 refcnt=0
 \end_layout
 
@@ -13195,22 +12426,18 @@ Fichier: /etc/ipsec.conf
 \end_layout
 
 \begin_layout Code
-
 # /etc/ipsec.conf - Fichier de configuration d'IPsec Openswan
 \end_layout
 
 \begin_layout Code
-
 #
 \end_layout
 
 \begin_layout Code
-
 # Manuel:     ipsec.conf.5
 \end_layout
 
 \begin_layout Code
-
 version 2.0     # conforme à la seconde version de la spécification d'ipsec.conf
 \end_layout
 
@@ -13219,28 +12446,23 @@ version 2.0     # conforme à la seconde version de la spécification d'ipsec.co
 \end_layout
 
 \begin_layout Code
-
 # configuration de base
 \end_layout
 
 \begin_layout Code
-
 config setup
 \end_layout
 
 \begin_layout Code
-
         # Contrôles du déboguage / journalisation :  "none" pour (presque)
  rien, "all" pour beaucoup.
 \end_layout
 
 \begin_layout Code
-
         # klipsdebug=none
 \end_layout
 
 \begin_layout Code
-
         # plutodebug="control parsing"
 \end_layout
 
@@ -13249,12 +12471,10 @@ config setup
 \end_layout
 
 \begin_layout Code
-
 #Rendre indisponible l'encryptage opportuniste
 \end_layout
 
 \begin_layout Code
-
 include /etc/ipsec.d/examples/no_oe.conf
 \end_layout
 
@@ -13263,67 +12483,54 @@ include /etc/ipsec.d/examples/no_oe.conf
 \end_layout
 
 \begin_layout Code
-
 conn ipv6-p1-p2
 \end_layout
 
 \begin_layout Code
-
         connaddrfamily=ipv6       # Important pour IPv6!
 \end_layout
 
 \begin_layout Code
-
         left=2001:db8:1:1::1
 \end_layout
 
 \begin_layout Code
-
         right=2001:db8:2:2::2
 \end_layout
 
 \begin_layout Code
-
         authby=secret
 \end_layout
 
 \begin_layout Code
-
         esp=aes128-sha1
 \end_layout
 
 \begin_layout Code
-
         ike=aes128-sha-modp1024
 \end_layout
 
 \begin_layout Code
-
         type=transport
 \end_layout
 
 \begin_layout Code
-
         #type=tunnel
 \end_layout
 
 \begin_layout Code
-
         compress=no
 \end_layout
 
 \begin_layout Code
-
         #compress=yes
 \end_layout
 
 \begin_layout Code
-
         auto=add
 \end_layout
 
 \begin_layout Code
-
         #auto=start
 \end_layout
 
@@ -13340,7 +12547,6 @@ Fichier: /etc/ipsec.secrets
 \end_layout
 
 \begin_layout Code
-
 2001:db8:1:1::1 2001:db8:2:2::2 : PSK      "absolumentsecret"
 \end_layout
 
@@ -13363,7 +12569,6 @@ on doit exister permettant le démarrage d'IPsec, lancez simplement (sur
 \end_layout
 
 \begin_layout Code
-
 # /etc/rc.d/init.d/ipsec start
 \end_layout
 
@@ -13381,42 +12586,34 @@ IPsec SA established
 \end_layout
 
 \begin_layout Code
-
 # ipsec auto --up ipv6-peer1-peer2
 \end_layout
 
 \begin_layout Code
-
 104 "ipv6-p1-p2" #1: STATE_MAIN_I1: initiate
 \end_layout
 
 \begin_layout Code
-
 106 "ipv6-p1-p2" #1: STATE_MAIN_I2: sent MI2, expecting MR2
 \end_layout
 
 \begin_layout Code
-
 108 "ipv6-p1-p2" #1: STATE_MAIN_I3: sent MI3, expecting MR3
 \end_layout
 
 \begin_layout Code
-
 004 "ipv6-p1-p2" #1: STATE_MAIN_I4: ISAKMP SA established
 \end_layout
 
 \begin_layout Code
-
 112 "ipv6-p1-p2" #2: STATE_QUICK_I1: initiate
 \end_layout
 
 \begin_layout Code
-
 004 "ipv6-p1-p2" #2: STATE_QUICK_I2: sent QI2,
 \end_layout
 
 \begin_layout Code
-
 ¬ IPsec SA established {ESP=>0xa98b7710 <0xa51e1f22}
 \end_layout
 
@@ -13434,117 +12631,94 @@ setkey
 \end_layout
 
 \begin_layout Code
-
 # setkey -D
 \end_layout
 
 \begin_layout Code
-
 2001:db8:1:1::1 2001:db8:2:2::2
 \end_layout
 
 \begin_layout Code
-
         esp mode=transport spi=2844489488(0xa98b7710) reqid=16385(0x00004001)
 \end_layout
 
 \begin_layout Code
-
         E: aes-cbc  082ee274 2744bae5 7451da37 1162b483
 \end_layout
 
 \begin_layout Code
-
         A: hmac-sha1  b7803753 757417da 477b1c1a 64070455 ab79082c
 \end_layout
 
 \begin_layout Code
-
         seq=0x00000000 replay=64 flags=0x00000000 state=mature
 \end_layout
 
 \begin_layout Code
-
         created: Jan  1 21:16:32 2005   current: Jan  1 21:22:20 2005
 \end_layout
 
 \begin_layout Code
-
         diff: 348(s)    hard: 0(s)      soft: 0(s)
 \end_layout
 
 \begin_layout Code
-
         last:                           hard: 0(s)      soft: 0(s)
 \end_layout
 
 \begin_layout Code
-
         current: 0(bytes)       hard: 0(bytes)  soft: 0(bytes)
 \end_layout
 
 \begin_layout Code
-
         allocated: 0    hard: 0 soft: 0
 \end_layout
 
 \begin_layout Code
-
         sadb_seq=1 pid=23825 refcnt=0
 \end_layout
 
 \begin_layout Code
-
 2001:db8:2:2::2 2001:db8:1:1::1
 \end_layout
 
 \begin_layout Code
-
         esp mode=transport spi=2770214690(0xa51e1f22) reqid=16385(0x00004001)
 \end_layout
 
 \begin_layout Code
-
         E: aes-cbc  6f59cc30 8d856056 65e07b76 552cac18
 \end_layout
 
 \begin_layout Code
-
         A: hmac-sha1  c7c7d82b abfca8b1 5440021f e0c3b335 975b508b
 \end_layout
 
 \begin_layout Code
-
         seq=0x00000000 replay=64 flags=0x00000000 state=mature
 \end_layout
 
 \begin_layout Code
-
         created: Jan  1 21:16:31 2005   current: Jan  1 21:22:20 2005
 \end_layout
 
 \begin_layout Code
-
         diff: 349(s)    hard: 0(s)      soft: 0(s)
 \end_layout
 
 \begin_layout Code
-
         last:                           hard: 0(s)      soft: 0(s)
 \end_layout
 
 \begin_layout Code
-
         current: 0(bytes)       hard: 0(bytes)  soft: 0(bytes)
 \end_layout
 
 \begin_layout Code
-
         allocated: 0    hard: 0 soft: 0
 \end_layout
 
 \begin_layout Code
-
         sadb_seq=0 pid=23825 refcnt=0
 \end_layout
 
@@ -13566,12 +12740,10 @@ ip
 \end_layout
 
 \begin_layout Code
-
 # ip xfrm policy
 \end_layout
 
 \begin_layout Code
-
 ...
 \end_layout
 
@@ -13580,12 +12752,10 @@ ip
 \end_layout
 
 \begin_layout Code
-
 # ip xfrm state
 \end_layout
 
 \begin_layout Code
-
 ...
 \end_layout
 
@@ -13702,22 +12872,18 @@ Pour rendre disponible à named l'écoute IPv6, les options suivantes demandent
 \end_layout
 
 \begin_layout Code
-
 options {
 \end_layout
 
 \begin_layout Code
-
         # certainement que d'autres options sont aussi ici
 \end_layout
 
 \begin_layout Code
-
         listen-on-v6 { any; };
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -13726,59 +12892,48 @@ Il doit en résulter après redémarrage
 \end_layout
 
 \begin_layout Code
-
 # netstat -lnptu |grep "named
 \backslash
 W*$" 
 \end_layout
 
 \begin_layout Code
-
 tcp 0 0 :::53         :::*      LISTEN 1234/named
 \end_layout
 
 \begin_layout Code
-
 ¬ # incoming TCP requests
 \end_layout
 
 \begin_layout Code
-
 udp 0 0 1.2.3.4:53    0.0.0.0:*        1234/named
 \end_layout
 
 \begin_layout Code
-
 ¬ # incoming UDP requests to IPv4 1.2.3.4
 \end_layout
 
 \begin_layout Code
-
 udp 0 0 127.0.0.1:53  0.0.0.0:*        1234/named
 \end_layout
 
 \begin_layout Code
-
 ¬ # incoming UDP requests to IPv4 localhost
 \end_layout
 
 \begin_layout Code
-
 udp 0 0 0.0.0.0:32868 0.0.0.0:*        1234/named
 \end_layout
 
 \begin_layout Code
-
 ¬ # dynamic chosen port for outgoing queries
 \end_layout
 
 \begin_layout Code
-
 udp 0 0 :::53         :::*             1234/named
 \end_layout
 
 \begin_layout Code
-
 ¬ # incoming UDP request to any IPv6
 \end_layout
 
@@ -13787,7 +12942,6 @@ Un test simple ressemble à
 \end_layout
 
 \begin_layout Code
-
 # dig localhost @::1
 \end_layout
 
@@ -13805,22 +12959,18 @@ Pour rendre indisponible l'écoute IPv6, l'option suivante demande à être
 \end_layout
 
 \begin_layout Code
-
 options {
 \end_layout
 
 \begin_layout Code
-
         # certainement que d'autres options sont aussi ici
 \end_layout
 
 \begin_layout Code
-
         listen-on-v6 { none; };
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -13834,67 +12984,54 @@ Les ACL IPv6 sont disponibles et devraient être utilisées dès que possible.
 \end_layout
 
 \begin_layout Code
-
 acl internal-net { 
 \end_layout
 
 \begin_layout Code
-
         127.0.0.1; 
 \end_layout
 
 \begin_layout Code
-
         1.2.3.0/24;  
 \end_layout
 
 \begin_layout Code
-
         3ffe:ffff:100::/56; 
 \end_layout
 
 \begin_layout Code
-
         ::1/128; 
 \end_layout
 
 \begin_layout Code
-
         ::ffff:1.2.3.4/128; 
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
 \begin_layout Code
-
 acl ns-internal-net { 
 \end_layout
 
 \begin_layout Code
-
         1.2.3.4;  
 \end_layout
 
 \begin_layout Code
-
         1.2.3.5;  
 \end_layout
 
 \begin_layout Code
-
         3ffe:ffff:100::4/128; 
 \end_layout
 
 \begin_layout Code
-
         3ffe:ffff:100::5/128; 
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -13906,32 +13043,26 @@ Ces ACL peuvent être utilisées par exemple pour les requêtes des clients
 \end_layout
 
 \begin_layout Code
-
 options {
 \end_layout
 
 \begin_layout Code
-
         # certainement que d'autres options sont aussi ici
 \end_layout
 
 \begin_layout Code
-
         listen-on-v6 { none; };
 \end_layout
 
 \begin_layout Code
-
         allow-query { internal-net; }; 
 \end_layout
 
 \begin_layout Code
-
         allow-transfer { ns-internal-net; }; 
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -13957,7 +13088,6 @@ Cette option n'est pas requise, mais peut être nécessaire:
 \end_layout
 
 \begin_layout Code
-
 query-source-v6 address <adresseipv6|*> port <port|*>;
 \end_layout
 
@@ -13979,7 +13109,6 @@ L'adresse de la source de transfert est utilisée pour aller chercher les
 \end_layout
 
 \begin_layout Code
-
 transfer-source-v6 <adresseipv6|*> [port port];
 \end_layout
 
@@ -13993,7 +13122,6 @@ L'adresse de la source à notifier est utilisée pour les messages de notificati
 \end_layout
 
 \begin_layout Code
-
 notify-source-v6 <adresseipv6|*> [port port];
 \end_layout
 
@@ -14168,27 +13296,22 @@ En spécifiant un serveur pour les requêtes, une connexion IPv6 peut être
 \end_layout
 
 \begin_layout Code
-
 $ host -t aaaa www.6bone.net 3ffe:ffff:200:f101::1 
 \end_layout
 
 \begin_layout Code
-
 Using domain server: 
 \end_layout
 
 \begin_layout Code
-
 Name: 3ffe:ffff:200:f101::1 
 \end_layout
 
 \begin_layout Code
-
 Address: 3ffe:ffff:200:f101::1#53 
 \end_layout
 
 \begin_layout Code
-
 Aliases:
 \end_layout
 
@@ -14197,7 +13320,6 @@ Aliases:
 \end_layout
 
 \begin_layout Code
-
 Host www.6bone.net.
  not found: 5(REFUSED)
 \end_layout
@@ -14207,17 +13329,14 @@ L'entrée relative dans le journal ressemble à ce qui suit:
 \end_layout
 
 \begin_layout Code
-
 Jan 3 12:43:32 gate named[12347]: client
 \end_layout
 
 \begin_layout Code
-
 ¬ 3ffe:ffff:200:f101:212:34ff:fe12:3456#32770: 
 \end_layout
 
 \begin_layout Code
-
  query denied
 \end_layout
 
@@ -14236,27 +13355,22 @@ Une connexion IPv6 réussie ressemble à ce qui suit:
 \end_layout
 
 \begin_layout Code
-
 $ host -t aaaa www.6bone.net 3ffe:ffff:200:f101::1 
 \end_layout
 
 \begin_layout Code
-
 Using domain server: 
 \end_layout
 
 \begin_layout Code
-
 Name: 3ffe:ffff:200:f101::1 
 \end_layout
 
 \begin_layout Code
-
 Address: 3ffe:ffff:200:f101::1#53 
 \end_layout
 
 \begin_layout Code
-
 Aliases:
 \end_layout
 
@@ -14265,14 +13379,12 @@ Aliases:
 \end_layout
 
 \begin_layout Code
-
 www.6bone.net.
  is an alias for 6bone.net.
  
 \end_layout
 
 \begin_layout Code
-
 6bone.net.
  has AAAA address 3ffe:b00:c18:1::10
 \end_layout
@@ -14321,52 +13433,42 @@ Si vous rendez disponible un service fourni avec xinetd, comme par exemple
 \end_layout
 
 \begin_layout Code
-
 # diff -u /etc/xinetd.d/daytime.orig /etc/xinetd.d/daytime 
 \end_layout
 
 \begin_layout Code
-
 --- /etc/xinetd.d/daytime.orig Sun Dec 16 19:00:14 2001 
 \end_layout
 
 \begin_layout Code
-
 +++ /etc/xinetd.d/daytime Sun Dec 16 19:00:22 2001 
 \end_layout
 
 \begin_layout Code
-
 @@ -10,5 +10,5 @@ 
 \end_layout
 
 \begin_layout Code
-
         protocol = tcp 
 \end_layout
 
 \begin_layout Code
-
         user = root 
 \end_layout
 
 \begin_layout Code
-
         wait = no 
 \end_layout
 
 \begin_layout Code
-
 -       disable = yes 
 \end_layout
 
 \begin_layout Code
-
 +       disable = no 
 \end_layout
 
 \begin_layout Code
-
  }
 \end_layout
 
@@ -14376,27 +13478,22 @@ vous devriez recevoir, après le redémarrage de xinetd, une réponse positive
 \end_layout
 
 \begin_layout Code
-
 # netstat -lnptu -A inet6 |grep "xinetd*" 
 \end_layout
 
 \begin_layout Code
-
 tcp 0 0 ::ffff:192.168.1.1:993  :::*  LISTEN  12345/xinetd-ipv6 
 \end_layout
 
 \begin_layout Code
-
 tcp 0 0 :::13                   :::*  LISTEN  12345/xinetd-ipv6 <- service
 \end_layout
 
 \begin_layout Code
-
 ¬ daytime/tcp
 \end_layout
 
 \begin_layout Code
-
 tcp 0 0 ::ffff:192.168.1.1:143  :::*  LISTEN  12345/xinetd-ipv6
 \end_layout
 
@@ -14455,27 +13552,22 @@ Un hôte virtuel écoute sur une adresse IPv6 uniquement
 \end_layout
 
 \begin_layout Code
-
 Listen [3ffe:ffff:100::1]:80
 \end_layout
 
 \begin_layout Code
-
 <VirtualHost [3ffe:ffff:100::1]:80>
 \end_layout
 
 \begin_layout Code
-
         ServerName ipv6seul.votredomaine.votretld
 \end_layout
 
 \begin_layout Code
-
         # certainement des lignes de configuration en plus...
 \end_layout
 
 \begin_layout Code
-
 </VirtualHost>
 \end_layout
 
@@ -14484,32 +13576,26 @@ Un hôte virtuel écoute sur une adresse IPv6 et sur une adresse IPv4
 \end_layout
 
 \begin_layout Code
-
 Listen [3ffe:ffff:100::2]:80 
 \end_layout
 
 \begin_layout Code
-
 Listen 1.2.3.4:80
 \end_layout
 
 \begin_layout Code
-
 <VirtualHost [3ffe:ffff:100::2]:80 1.2.3.4:80>
 \end_layout
 
 \begin_layout Code
-
         ServerName ipv6etipv4.votredomaine.votretld
 \end_layout
 
 \begin_layout Code
-
         # certainement des lignes de configuration en plus...
 \end_layout
 
 \begin_layout Code
-
 </VirtualHost>
 \end_layout
 
@@ -14518,24 +13604,20 @@ Il devrait en résulter après redémarrage
 \end_layout
 
 \begin_layout Code
-
 # netstat -lnptu | grep "httpd2
 \backslash
 W*$" 
 \end_layout
 
 \begin_layout Code
-
 tcp 0 0 1.2.3.4:80          0.0.0.0:* LISTEN 12345/httpd2 
 \end_layout
 
 \begin_layout Code
-
 tcp 0 0 3ffe:ffff:100::1:80 :::*      LISTEN 12345/httpd2 
 \end_layout
 
 \begin_layout Code
-
 tcp 0 0 3ffe:ffff:100::2:80 :::*      LISTEN 12345/httpd2
 \end_layout
 
@@ -14642,52 +13724,42 @@ Le fichier de configuration de radvd est généralement /etc/radvd.conf.
 \end_layout
 
 \begin_layout Code
-
 interface eth0 { 
 \end_layout
 
 \begin_layout Code
-
         AdvSendAdvert on;
 \end_layout
 
 \begin_layout Code
-
         MinRtrAdvInterval 3; 
 \end_layout
 
 \begin_layout Code
-
         MaxRtrAdvInterval 10;
 \end_layout
 
 \begin_layout Code
-
         prefix 3ffe:ffff:0100:f101::/64 { 
 \end_layout
 
 \begin_layout Code
-
                 AdvOnLink on; 
 \end_layout
 
 \begin_layout Code
-
                 AdvAutonomous on; 
 \end_layout
 
 \begin_layout Code
-
                 AdvRouterAddr on; 
 \end_layout
 
 \begin_layout Code
-
         };
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -14696,28 +13768,23 @@ Ce qui a pour résultat côté client
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr show eth0 
 \end_layout
 
 \begin_layout Code
-
 3: eth0: <BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast qlen 100 
 \end_layout
 
 \begin_layout Code
-
     inet6 3ffe:ffff:100:f101:2e0:12ff:fe34:1234/64 scope global dynamic
  
 \end_layout
 
 \begin_layout Code
-
        valid_lft 2591992sec preferred_lft 604792sec 
 \end_layout
 
 \begin_layout Code
-
     inet6 fe80::2e0:12ff:fe34:1234/10 scope link
 \end_layout
 
@@ -14751,67 +13818,54 @@ dial-on-demand
 \end_layout
 
 \begin_layout Code
-
 interface eth0 { 
 \end_layout
 
 \begin_layout Code
-
         AdvSendAdvert on;
 \end_layout
 
 \begin_layout Code
-
         MinRtrAdvInterval 3; 
 \end_layout
 
 \begin_layout Code
-
         MaxRtrAdvInterval 10;
 \end_layout
 
 \begin_layout Code
-
         prefix 0:0:0:f101::/64 { 
 \end_layout
 
 \begin_layout Code
-
                 AdvOnLink off; 
 \end_layout
 
 \begin_layout Code
-
                 AdvAutonomous on; 
 \end_layout
 
 \begin_layout Code
-
                 AdvRouterAddr on; 
 \end_layout
 
 \begin_layout Code
-
                 Base6to4Interface ppp0;
 \end_layout
 
 \begin_layout Code
-
                 AdvPreferredLifetime 20; 
 \end_layout
 
 \begin_layout Code
-
                 AdvValidLifetime 30;
 \end_layout
 
 \begin_layout Code
-
         };
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -14821,28 +13875,23 @@ Il en résulte pour le client situé à l'intérieur (en considérant que ppp0
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 addr show eth0 
 \end_layout
 
 \begin_layout Code
-
 3: eth0: <BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast qlen 100 
 \end_layout
 
 \begin_layout Code
-
    inet6 2002:0102:0304:f101:2e0:12ff:fe34:1234/64 scope global dynamic
  
 \end_layout
 
 \begin_layout Code
-
       valid_lft 22sec preferred_lft 12sec
 \end_layout
 
 \begin_layout Code
-
    inet6 fe80::2e0:12ff:fe34:1234/10 scope link
 \end_layout
 
@@ -14860,7 +13909,6 @@ Note additionnelle: si vous n'utilisez pas de support spécifique 6to4 dans
 \end_layout
 
 \begin_layout Code
-
 # /sbin/ip -6 route add 2002:0102:0304:f101::/64 dev eth0 metric 1
 \end_layout
 
@@ -14892,107 +13940,86 @@ radvdump
 \end_layout
 
 \begin_layout Code
-
 # radvdump 
 \end_layout
 
 \begin_layout Code
-
 Router advertisement from fe80::280:c8ff:feb9:cef9 (hoplimit 255) 
 \end_layout
 
 \begin_layout Code
-
         AdvCurHopLimit: 64 
 \end_layout
 
 \begin_layout Code
-
         AdvManagedFlag: off 
 \end_layout
 
 \begin_layout Code
-
         AdvOtherConfigFlag: off 
 \end_layout
 
 \begin_layout Code
-
         AdvHomeAgentFlag: off 
 \end_layout
 
 \begin_layout Code
-
         AdvReachableTime: 0 
 \end_layout
 
 \begin_layout Code
-
         AdvRetransTimer: 0 
 \end_layout
 
 \begin_layout Code
-
         Prefix 2002:0102:0304:f101::/64 
 \end_layout
 
 \begin_layout Code
-
                 AdvValidLifetime: 30 
 \end_layout
 
 \begin_layout Code
-
                 AdvPreferredLifetime: 20 
 \end_layout
 
 \begin_layout Code
-
                 AdvOnLink: off 
 \end_layout
 
 \begin_layout Code
-
                 AdvAutonomous: on 
 \end_layout
 
 \begin_layout Code
-
                 AdvRouterAddr: on 
 \end_layout
 
 \begin_layout Code
-
         Prefix 3ffe:ffff:100:f101::/64 
 \end_layout
 
 \begin_layout Code
-
                 AdvValidLifetime: 2592000 
 \end_layout
 
 \begin_layout Code
-
                 AdvPreferredLifetime: 604800 
 \end_layout
 
 \begin_layout Code
-
                 AdvOnLink: on 
 \end_layout
 
 \begin_layout Code
-
                 AdvAutonomous: on 
 \end_layout
 
 \begin_layout Code
-
                 AdvRouterAddr: on 
 \end_layout
 
 \begin_layout Code
-
         AdvSourceLLAddress: 00 80 12 34 56 78
 \end_layout
 
@@ -15045,67 +14072,54 @@ Le fichier de configuration de dhcp6s est normalement /etc/dhcp6s.conf.
 \end_layout
 
 \begin_layout Code
-
 interface eth0 {
 \end_layout
 
 \begin_layout Code
-
         server-preference 255;
 \end_layout
 
 \begin_layout Code
-
         renew-time 60;
 \end_layout
 
 \begin_layout Code
-
         rebind-time 90;
 \end_layout
 
 \begin_layout Code
-
         prefer-life-time 130;
 \end_layout
 
 \begin_layout Code
-
         valid-life-time 200;
 \end_layout
 
 \begin_layout Code
-
         allow rapid-commit;
 \end_layout
 
 \begin_layout Code
-
         option dns_servers 2001:db8:0:f101::1 sub.domain.example;
 \end_layout
 
 \begin_layout Code
-
         link AAA {
 \end_layout
 
 \begin_layout Code
-
                 range 2001:db8:0:f101::1000 to 2001:db8:0:f101::ffff/64;
 \end_layout
 
 \begin_layout Code
-
                 prefix 2001:db8:0:f101::/64;
 \end_layout
 
 \begin_layout Code
-
         };
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -15123,22 +14137,18 @@ Le fichier de configuration de dhcp6c est normalement /etc/dhcp6c.conf.
 \end_layout
 
 \begin_layout Code
-
 interface eth0 {
 \end_layout
 
 \begin_layout Code
-
         send rapid-commit;
 \end_layout
 
 \begin_layout Code
-
         request domain-name-servers;
 \end_layout
 
 \begin_layout Code
-
 };
 \end_layout
 
@@ -15155,7 +14165,6 @@ Démarrage du serveur,
 \end_layout
 
 \begin_layout Code
-
 # service dhcp6s start
 \end_layout
 
@@ -15168,7 +14177,6 @@ Démarrage du client en premier plan,
 \end_layout
 
 \begin_layout Code
-
 # dhcp6c -f eth0
 \end_layout
 
@@ -15187,7 +14195,6 @@ Le serveur a un drapeau pour passer en premier plan et deux pour le déboguage
 \end_layout
 
 \begin_layout Code
-
 # dhcp6c -d -D -f eth0
 \end_layout
 
@@ -15201,58 +14208,47 @@ Le client a un drapeau pour passer en premier plan et deux pour le déboguage.
 \end_layout
 
 \begin_layout Code
-
    # dhcp6c -d -f eth0
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:16 dhcpv6 doesn't support hardware type 776
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:16 doesn't support sit0 address family 0
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:16 netlink_recv_rtgenmsg error
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:16 netlink_recv_rtgenmsg error
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:17 status code for this address is: success
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:17 status code: success
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:17 netlink_recv_rtgenmsg error
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:17 netlink_recv_rtgenmsg error
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:17 assigned address 2001:db8:0:f101::1002 prefix len
  isnot    in any RAs prefix length using 64 bit instead
 \end_layout
 
 \begin_layout Code
-
    Oct/03/2005 17:18:17 renew time 60, rebind time 9
 \end_layout
 
@@ -15320,7 +14316,6 @@ eny.
 \end_layout
 
 \begin_layout Code
-
 $ man hosts.allow
 \end_layout
 
@@ -15337,13 +14332,11 @@ i.e.,
 \end_layout
 
 \begin_layout Code
-
 sshd:           1.2.3.
  [3ffe:ffff:100:200::]/64
 \end_layout
 
 \begin_layout Code
-
 daytime-stream: 1.2.3.
  [3ffe:ffff:100:200::]/64
 \end_layout
@@ -15367,7 +14360,6 @@ Ce fichier contient toutes les entrées de filtre négative et devrait dénier
 \end_layout
 
 \begin_layout Code
-
 ALL: ALL
 \end_layout
 
@@ -15384,12 +14376,10 @@ a logwatch
 \end_layout
 
 \begin_layout Code
-
 ALL: ALL: spawn (echo "Attempt from %h %a to %d at `date`" 
 \end_layout
 
 \begin_layout Code
-
  | tee -a /var/log/tcp.deny.log | mail root@localhost)
 \end_layout
 
@@ -15416,22 +14406,18 @@ via
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:40:44 gate xinetd-ipv6[12346]: FAIL: daytime-stream libwrap
 \end_layout
 
 \begin_layout Code
-
 ¬ from=::ffff:1.2.3.4
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:32:06 gate xinetd-ipv6[12346]: FAIL: daytime-stream libwrap 
 \end_layout
 
 \begin_layout Code
-
  from=3ffe:ffff:100:200::212:34ff:fe12:3456
 \end_layout
 
@@ -15445,27 +14431,22 @@ IPv4 à sshd en double écoute produit des lignes telles que celles de l'exemple
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:24:17 gate sshd[12345]: refused connect from ::ffff:1.2.3.4
 \end_layout
 
 \begin_layout Code
-
 ¬ (::ffff:1.2.3.4)
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:39:33 gate sshd[12345]: refused connect 
 \end_layout
 
 \begin_layout Code
-
  from 3ffe:ffff:100:200::212:34ff:fe12:3456
 \end_layout
 
 \begin_layout Code
-
 ¬ (3ffe:ffff:100:200::212:34ff:fe12:3456)
 \end_layout
 
@@ -15483,22 +14464,18 @@ via
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:37:50 gate xinetd-ipv6[12346]: START: daytime-stream pid=0
 \end_layout
 
 \begin_layout Code
-
 ¬ from=::ffff:1.2.3.4 
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:37:56 gate xinetd-ipv6[12346]: START: daytime-stream pid=0 
 \end_layout
 
 \begin_layout Code
-
  from=3ffe:ffff:100:200::212:34ff:fe12:3456
 \end_layout
 
@@ -15512,22 +14489,18 @@ via
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:43:10 gate sshd[21975]: Accepted password for user from ::ffff:1.2.3.4
 \end_layout
 
 \begin_layout Code
-
 ¬ port 33381 ssh2
 \end_layout
 
 \begin_layout Code
-
 Jan 2 20:42:19 gate sshd[12345]: Accepted password for user 
 \end_layout
 
 \begin_layout Code
-
  from 3ffe:ffff:100:200::212:34ff:fe12:3456 port 33380 ssh2
 \end_layout
 
@@ -15559,7 +14532,6 @@ listen
 \end_layout
 
 \begin_layout Code
-
 listen_ipv6=yes
 \end_layout
 
@@ -15588,27 +14560,22 @@ Editer le fichier de configuration, couramment /etc/proftpd.conf, mais prenez
 \end_layout
 
 \begin_layout Code
-
 <VirtualHost 192.0.2.1>
 \end_layout
 
 \begin_layout Code
-
         ...
 \end_layout
 
 \begin_layout Code
-
         Bind 2001:0DB8::1
 \end_layout
 
 \begin_layout Code
-
         ...
 \end_layout
 
 \begin_layout Code
-
 </VirtualHost>
 \end_layout
 
